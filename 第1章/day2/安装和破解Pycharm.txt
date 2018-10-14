@@ -1,0 +1,14 @@
+一、Pycharm  [peit?ɑ:rm]
+
+Professional:专业版：
+Full-featured IDE for Python & Web development
+
+Community：社区版 
+Lightweight IDE for Python & Scientific development
+二、官方网站
+http://www.jetbrains.com/pycharm/download/#section=windows
+三、专业版的破解
+在刚安装的时候，在server选项里边输入 http://elporfirio.com:1017/就可以了。 
+不行再尝试： server选项里边输入 http://idea.imsxm.com/
+四、判断专业版是否破解
+ 打开软件不会有激活的提示，其次在菜单栏下 help 下的about下有注册的信息。

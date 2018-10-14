@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>易购商城首页的制作</title>
+		<style>
+			*{
+				padding:0;
+				margin:0
+			}
+			#container{
+				width:980px;
+				margin: 0 auto;
+				border: 1px solid red;
+				height: 100%;
+				
+				
+			}
+			header{
+				width:1024px;
+				height:136px;
+				background: url(../img/h_bg.jpg) no-repeat;
+				border: 1px solid red;
+			}
+			
+			
+			header #topMenu{
+				width:460px;
+			 	height:30px;
+			    padding-top:15px;
+			 	float:right;
+			}
+			
+			#topMenu ul li{
+			 	list-style: none;
+			 	float: left;
+			 	width:50px;
+			 	padding-right:5px;
+			 }
+			#topMenu .shopping{
+			 	background: url(../img/icon.gif) no-repeat ;
+			 	width:26px;
+			 	height:24px;
+			 	
+			 }
+			 #topMenu .helpCenter{
+			 	
+			 	background: url(../img/icon.gif) no-repeat  -31px -2px;
+			 	width:22px;
+			 	height:24px;
+			 }
+			#topMenu .collection{
+			 	
+			 	background: url(../img/icon.gif) no-repeat  -85px -2px;
+			 	width:24px;
+			 	height:24px;
+			 }
+			#topMenu .indexpage{
+			 	
+			 	background: url(../img/icon.gif) no-repeat  -111px -2px;
+			 	width:24px;
+			 	height:24px;
+			 }
+			#topMenu .button{
+			 
+			 	background: url(../img/icon.gif) no-repeat  -2px -26px;
+			 	width:44px;
+			 	height:22px;
+			 }
+			#topMenu li a{
+			 	color: black;
+			 	text-decoration: none;
+			 	font-size:12px;
+			 	
+			 }
+			header .welcome{
+				clear: both;
+				float:right;
+				width:500px;
+				height: 20px;
+				padding-top: 35px;
+				
+				font-size:12px;
+				letter-spacing: 5px;
+			}
+			header .navbar{
+				clear: both;
+				width:980px;
+				height:35px;
+				
+				padding-left:20px;
+				
+			}
+			.navbar li{
+				list-style:none ;
+				float: left;
+				width:83px;
+			
+				
+				height:25px;
+				line-height:25px;
+			
+				text-align: center;
+			}
+			.navbar li a{
+				text-decoration: none;
+				color: black;
+				font-size:10px;
+				font-weight: bold;
+			}
+			.navbar li a:hover{
+				font-size:15px;
+				background: url(../img/nav_bg.gif);
+				
+				}
+			main{
+				width:980px;
+				height:645px;
+			    padding-left:22px;
+			}
+			#mainLeft{
+				height:100%;
+				width:200px;
+				float: left;
+				background: url(../img/bg.gif) no-repeat 0 -4px;
+			}
+			#mainLeft li{
+				float:left;
+				font-size:12px;
+				list-style: none;
+				padding-left:10px;
+				width:50px;
+				height: 25px;
+			}
+			
+			#mainLeft .goodTitle{
+				color: #FF7300;
+				font-size:14px;
+				width:180px;
+			}
+			#mainMiddle{
+				height:100%;
+				width:50%;
+				float:left;
+			
+				padding-left:6px;
+			}
+			#mainMiddle .middleTop{
+				width:100%;
+				
+				height: 192px;
+				background-color: aquamarine;
+			}
+			#mainMiddle .middleBottom{
+				width:530px;
+				height: 453px;
+				background: url(../img/bg.gif) no-repeat  -210px -200px ;
+				padding-left:25px;
+				
+			}
+			.middleBottom img{
+				border: 1px solid #ccc;
+			}
+			.middleBottom dl{
+				float:left;
+				width:170px;
+				height:145px;
+			}
+			.middleBottom dl dd{
+				font-size: 12px;
+			}
+			#mainRight{
+				height:100%;
+				width:25%;
+				float: right;
+				background-color: darkcyan;
+			}
+			#mainRight .rightTop{
+				width:100%;
+				height: 30%;
+				background-color:gray ;
+			}
+			#mainRight .rightMiddle{
+				width:100%;
+				height: 40%;
+				background-color: royalblue;
+			}
+			#mainRight .rightBottom{
+				width:100%;
+				height: 30%;
+				background-color: teal;
+			}
+			footer{
+				width:1024px;
+				height:100px;
+				background-color:grey ;
+			}
+		</style>
+	</head>
+	<!--
+		静态页面制作的整体步骤：
+		1、先页面的整体布局
+		2、局部布局
+		3、细节处理和美化
+		静态页面制作顺序的方法：
+		先整体 再局部  然后细节
+		从上往下 从左往右 
+	-->
+	
+	<body id="container">
+		<header>
+			
+			<nav id="topMenu">
+				<ul>
+					<li class="shopping"></li>
+					<li><a href="#">购物车</a></li>
+					<li class="helpCenter"></li>
+					<li><a href="#">帮助中心</a></li>
+					<li class="collection"></li>
+					<li><a href="#">加入收藏</a></li>
+					<li class="indexpage"></li>
+					<li><a href="#">设为首页</a></li>
+					<li class="button">
+						<a href="#">&nbsp;&nbsp;登录</a>
+					</li>
+					<li class="button">
+						<a href="#">&nbsp;&nbsp;注册</a>
+					</li>
+					
+				</ul>
+			</nav>
+			<div class="welcome">
+				<p>您好，欢迎访问贵美商城网站！今天是2018年3月8号</p>
+			</div>
+			<nav class="navbar">
+				<ul>
+					<li><a href="#">
+						首&nbsp;&nbsp;页</a></li>
+					<li><a href="#">家用电器</a></li>
+					<li><a href="#">手机数码</a></li>
+					<li><a href="#">日用白货</a></li>
+					<li><a href="#">书&nbsp;&nbsp;籍</a></li>
+					<li><a href="#">帮助中心</a></li>
+					<li><a href="#">免费开店</a></li>
+					<li><a href="#">全球咨询</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<article id="mainLeft">
+				<p style="height:35px"></p>
+				<ul>
+					<li class="goodTitle">家用电器</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					
+					<li class="goodTitle">家用电器</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					
+					<li class="goodTitle">家用电器</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					
+					<li class="goodTitle">家用电器</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+					<li>电冰箱</li>
+					<li>大家电</li>
+					<li>电视机</li>
+				</ul>
+				
+			</article>
+			<article id="mainMiddle">
+				<section class="middleTop">
+					<img src="../img/ad-02.jpg" />
+				</section>
+				<section class="middleBottom">
+					<p style="height:38px"></p>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					<dl>
+						<dt><img src="../img/promote-3.jpg"</dt>
+						<dd>惠普商务移动应用笔记本</dd>
+					</dl>
+					
+				</section>
+			</article>
+			<article id="mainRight">
+				<section class="rightTop"></section>
+				<section class="rightMiddle"></section>
+				<section class="rightBottom"></section>
+			</article>
+		</main>
+		<footer></footer>
+	</body>
+</html>

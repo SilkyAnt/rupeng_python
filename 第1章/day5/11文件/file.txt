@@ -1,0 +1,1 @@
+this is a text file,content is Hello python!我喜欢Python!

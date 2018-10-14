@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>轮播广告</title>
+		<style>
+			img{
+				z-index: 1;
+			}
+			ul{
+				position: absolute;
+				left:120px;
+				z-index:2 ;
+				top:110px;
+			}
+			li{
+				text-align: center;
+				list-style: none;
+				float: left;
+				width:30px;
+				height:30px;
+				margin-left:10px;
+				border:1px solid red;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				font-size:20px;
+				font-weight: bold;
+				background-color: #ccc;
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul id="ul">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>4</li>
+			</ul>
+			<img src="img/ad-01.jpg"  id="advImg"/>
+		</div>
+		<script>
+			/*每隔2秒钟调用lunbo方法*/
+			var t1=window.setInterval(lunbo,2000);
+			/**获取装载图片的元素img**/
+			var img=document.getElementById("advImg");
+			/**获取所有的轮播标签的集合**/
+			lis=document.getElementById("ul").getElementsByTagName("li");
+			/**初始化第一个标签的背景颜色为红色**/
+			lis[0].style.backgroundColor="red";
+			/**初始化全局变量index,初始值为0**/
+			var index=0;
+			//定义实现轮播特效的方法
+			function lunbo(){
+				//每次轮播的时候要加1
+				index=index+1;
+				//获取对应的轮播图片地址
+				var address="img/ad-0"+index+".jpg";
+				//设置对应图片标签的背景颜色为红色
+				lis[index-1].style.backgroundColor="red";
+				//其他的图片标签的背景颜色为灰色
+				for(var m=0;m<lis.length;m++){
+					if(m!=index-1){
+						lis[m].style.backgroundColor="#ccc";
+					}
+				}
+				//当循环大于等于4，又要从第一张开始循环
+				if(index>=4){
+					index=0;
+				}
+				//图片的地址
+				img.src=address;
+			};
+			//遍历所有的图片标签
+			for(var t=0;t<lis.length;t++){
+				//当鼠标悬浮在某个图片标签上时，
+				lis[t].onmouseover=function(){
+					//停止轮播
+					window.clearInterval(t1);
+					//某个图片标签的背景颜色变为红色
+					this.style.backgroundColor="red";
+					//把对应的图片标签的innerHTML转化为整数
+					index=parseInt(this.innerText);
+					//图片标签对应的图片的地址
+					img.src="img/ad-0"+index+".jpg";
+					//
+					index=index-1;
+					//其他图片标签的背景颜色变为灰色
+					for(var m=0;m<lis.length;m++){
+						if(m!=parseInt(this.innerText)-1){
+							lis[m].style.backgroundColor="#ccc";
+						}
+					}
+				};
+				//当鼠标移出图片标签时，轮播继续
+				lis[t].onmouseout=function(){
+					
+					t1=window.setInterval(lunbo,2000);
+				}
+			};
+			
+		</script>
+	</body>
+</html>
