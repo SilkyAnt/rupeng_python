@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div class="container">
+<div id="app">
+    <table class="table table-hover">
+        <tr>
+            <td>商品编号</td>
+            <td>商品名称</td>
+            <td>商品库存</td>
+            <td>商品价格</td>
+            <td>该产品总价值</td>
+            <td>操作</td>
+        </tr>
+        <tr v-for="g in goods">
+            <td>{{g.id}}</td>
+            <td>{{g.name}}</td>
+            <td><button class="btn btn-info" v-on:click="g.count=parseInt(g.count)+1">&nbsp;&nbsp;+&nbsp;&nbsp;</button>&nbsp;&nbsp;<input type="number" v-model="g.count" v-on:blur="checkGoodCount(g)"/>&nbsp;&nbsp;<button class="btn btn-info" v-on:click="goodsReduceOne(g)">&nbsp;&nbsp;-&nbsp;&nbsp;</button></td>
+            <td><input type="text" v-model="g.price" v-on:blur="checkGoodprice(g)"/></td>
+            <td>{{g.count*g.price}}</td>
+            <td><button class="btn btn-danger" v-on:click="delGoods(g)">下架商品</button><button class="btn btn-success" v-on:click="showUpdate(g)">修改商品</button></td>
+        </tr>
+        <tr>
+            <td>上架商品总数量:</td>
+            <td>{{GoodsCount}}</td>
+            <td>上架商品总价格：</td>
+            <td>{{GoodsSumPrices}}</td>
+
+            <td><button class="btn btn-danger" v-on:click="clearAll()">清空所有商品</button></td>
+            <td><button class="btn btn-success" v-on:click="showaddGood()">添加</button></td>
+        </tr>
+    </table>
+    <div id="addDiv" v-show="isAdd">
+        <h3>添加一个商品</h3>
+        <table>
+            <tr>
+                <td>商品ID</td>
+                <td><input type="text" v-model="addOneGood.id" disabled/></td>
+            </tr>
+            <tr>
+                <td>商品名称</td>
+                <td><input type="text"  v-model="addOneGood.name"/></td>
+            </tr>
+            <tr>
+                <td>商品库存</td>
+                <td><input type="text" v-model="addOneGood.count"/></td>
+            </tr>
+            <tr>
+                <td>商品价格</td>
+                <td><input type="text" v-model="addOneGood.price"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button v-on:click="add()">添加商品</button>
+                    <button v-on:click="cancleAdd">取消</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="updateDiv" v-show="isUpdate">
+        <h3>修改一个商品</h3>
+        <table>
+            <tr>
+                <td>商品ID</td>
+                <td><input type="text" :value="updateOneGood.id" disabled/></td>
+            </tr>
+            <tr>
+                <td>修改商品名称</td>
+                <td><input type="text"  :value="updateOneGood.name" /></td>
+            </tr>
+            <tr>
+                <td>修改商品库存</td>
+                <td><input type="text" :value="updateOneGood.count"/></td>
+            </tr>
+            <tr>
+                <td>修改商品价格</td>
+                <td><input type="text" :value="updateOneGood.price"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button v-on:click="update(updateOneGood)">修改</button>
+                    <button v-on:click="cancleUpdate()">取消</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    {{goods}}
+    <br/>
+    {{getMaxIndex}}
+
+</div>
+</div>
+<script>
+    var v=new Vue({
+        el:"#app",
+        data:{
+            updateOneGood:{
+                id:0,
+                name:'',
+                count:0,
+                price:0
+            },
+            addOneGood:{
+                id:0,
+                name:'',
+                count:1,
+                price:1
+            },
+            isAdd:false,
+            isUpdate:false,
+            goods:[
+                {
+                    id:1001,
+                    name:'iphone5',
+                    count:2,
+                    price:3500
+                },
+                {
+                    id:1002,
+                    name:'ipad',
+                    count:4,
+                    price:2000
+                },
+                {
+                    id:1003,
+                    name:'lenovo',
+                    count:2,
+                    price:5500
+                },
+                {
+                    id:1004,
+                    name:'零食',
+                    count:10,
+                    price:100
+                }
+
+            ]
+        },
+        methods:{
+            delGoods:function (g) {
+                index=0;
+                if(confirm("确认删除该数据？")) {
+                    for (var i = 0; i < this.goods.length; i++) {
+                        if (this.goods[i].id == g.id) {
+                            index = i;
+                            break;
+                        }
+                    }
+                    this.goods.splice(index, 1);
+                }
+            },
+            clearAll:function(){
+
+              /*   this.goods=[];*/
+              if(confirm("确认删除所有的数据？")) {
+                  for (var i = 0; i < this.goods.length;) {
+                      this.goods.splice(i, 1);
+                  }
+              }
+            },
+            goodsReduceOne:function (g) {
+                if(g.count<=1){
+                    alert("商品的数量不能小于1！");
+                    g.count=1;
+                    return ;
+                }else{
+                    g.count=g.count-1;
+                }
+            },
+            checkGoodCount:function(g) {
+                if (isNaN(g.count)) {
+                    alert("商品的数量必须是整数！");
+                    return
+                }
+                if (g.count < 1) {
+                    alert("商品的数量不能小于1！");
+                    g.count = 1;
+                    return
+                }
+
+            },
+            checkGoodprice:function (g) {
+                var regu = /^[0-9]+\.?[0-9]*$/;
+
+                if(!regu.test(g.price)){
+                    alert("请输入正确的商品价格(由浮点数或者整数构成)：");
+                    g.price=0.0
+                    return
+                }
+            },
+            update:function () {
+
+                if(confirm("确认修改数据")){
+                inputs=document.getElementById("updateDiv").getElementsByTagName("input")
+                var id=parseInt(inputs[0].value);
+                var  name=inputs[1].value;
+                var count=parseInt(inputs[2].value);
+                var  price=parseFloat(inputs[3].value)
+
+                for(var t=0;t<this.goods.length;t++){
+                    if(parseInt(this.goods[t].id)==id){
+
+                        this.goods[t].name=name;
+                        this.goods[t].count=count;
+                        this.goods[t].price=price;
+                        this.isUpdate=false;
+                        break;
+                    }
+                }
+                }
+            },
+            showUpdate:function (g) {
+                this.isUpdate=true;
+                this.isAdd=false;
+                this.updateOneGood=g;
+
+
+            },
+            showaddGood:function () {
+                this.isAdd=true;
+                this.isUpdate=false;
+
+
+            },
+            cancleUpdate:function () {
+                this.isUpdate=false;
+            },
+            cancleAdd:function(){
+                this.isAdd=false;
+            },
+            add:function () {
+                g=this.addOneGood;
+                if(confirm("确认添加？")) {
+                    this.goods.push(g);
+                    this.isAdd=false;
+                    this.addOneGood={
+                        id:0,
+                        name:'',
+                        count:1,
+                        price:1
+                    }
+
+                }
+            }
+
+        },
+        computed: {
+            GoodsCount: function () {
+                counts=0;
+                for (var i = 0; i < this.goods.length; i++) {
+                    counts+=this.goods[i].count;
+                }
+                return counts;
+            },
+            GoodsSumPrices:function () {
+                prices=0;
+                for (var i = 0; i < this.goods.length; i++) {
+
+                    prices+=this.goods[i].price*this.goods[i].count;
+                }
+                return prices;
+            },
+            getMaxIndex:function () {
+                if(this.goods.length>0) {
+                    var maxIndex = parseInt(this.goods[0].id);
+                    for (var t = 1; t < this.goods.length; t++) {
+                        if (maxIndex < parseInt(this.goods[t].id)) {
+                            maxIndex = parseInt(this.goods[t].id)
+                        }
+                    }
+                    this.addOneGood.id = maxIndex + 1;
+                }else{
+
+                }
+
+            }
+
+        }
+    })
+</script>
+</body>
+
+</html>
