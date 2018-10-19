@@ -1,0 +1,9 @@
+1、python有什么优点和不足？
+2、python有哪些数据类型？
+3、Python中pass语句和with
+    with的作用：https://blog.csdn.net/lxz978161079/article/details/82146180
+        https://blog.csdn.net/IAMoldpan/article/details/78125535
+    pass的作用：https://blog.csdn.net/violet_echo_0908/article/details/52052054
+4、什么是lambda函数？它有什么好处
+    是一个没有定义名称并且相对短小的回调函数
+    https://blog.csdn.net/Little_Fire/article/details/80499913

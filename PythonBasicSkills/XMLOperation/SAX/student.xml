@@ -1,0 +1,112 @@
+<?xml version="1.0" ?>
+<!--作用：1、配置文件   2、存储数据  3、交换数据-->
+<!--XML是一门标签语言-->
+<students>
+
+
+    <student sid="1">
+
+
+        <id>1</id>
+
+
+        <name>陈丽水</name>
+
+
+        <sex>女</sex>
+
+
+        <address>北京昌平</address>
+
+
+        <age>18</age>
+
+
+    </student>
+
+
+    <student sid="2">
+
+
+        <id>2</id>
+
+
+        <name>方军</name>
+
+
+        <sex>男</sex>
+
+
+        <address>北京海淀</address>
+
+
+        <age>20</age>
+
+
+    </student>
+
+
+    <student sid="3">
+
+
+        <id>3</id>
+
+
+        <name>李华</name>
+
+
+        <sex>女</sex>
+
+
+        <address>北京通州</address>
+
+
+        <age>19</age>
+
+
+    </student>
+
+
+    <student sid="4">
+
+
+        <id>4</id>
+
+
+        <name>淮海</name>
+
+
+        <sex>男</sex>
+
+
+        <address>北京顺义</address>
+
+
+        <age>22</age>
+
+
+    </student>
+
+
+    <student sid="5">
+
+
+        <id>5</id>
+
+
+        <name>成功</name>
+
+
+        <sex>男</sex>
+
+
+        <address>北京海淀</address>
+
+
+        <age>18</age>
+
+
+    </student>
+
+
+</students>
