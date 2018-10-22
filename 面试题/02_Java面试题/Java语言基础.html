@@ -1,0 +1,608 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Java语言基础》面试题</h1>
+                    <span>
+                        1、 <p>switch语句支持的类型</p><p><br/></p> 
+                        解析：<p>byte 、short 、char &nbsp;、int、 以及这几个基本类型的包装类型&nbsp;</p><p>enum、 String（java7之后，需要1.7的编译器才可以，而且String的值都不可以为null，因为底层使用的是字符串的.hashcode()方法）</p><p>不支持long</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        2、 <p>char型变量中能不能存贮一个中文汉字?为什么?</p><p><br/></p> 
+                        解析：<p>当然可以，char就是表示一个字符，而一个汉字是一个字符，当然可以存储。java中是使用Unicode来保存字符的，会自动处理中文和英文字符字节长度不同的问题。</p><br />
+                    </span>
+                    <span>
+                        3、 <p>Person p &nbsp;= new Person();</p><p>这句代码执行的时候，以下模块的执行顺序是什么？</p><p>（1）父类静态代码块</p><p>（2）子类静态代码块</p><p>（3）父类非静态代码块</p><p>（4）父类构造函数</p><p>（5）子类非静态代码块</p><p>（6）子类构造函数</p><p><br/></p><p><br/></p> 
+                        解析：<p>顺序是123456</p><br />
+                    </span>
+                    <span>
+                        4、 <p>char c = &#39;c&#39;;<br/></p><p>switch(c){</p><p>&nbsp;&nbsp;&nbsp;default:</p><p>&nbsp;&nbsp;&nbsp;System.out.println(&quot;default&quot;);</p><p>&nbsp;&nbsp;&nbsp;case &#39;a&#39;:</p><p>&nbsp;&nbsp;&nbsp;System.out.println(&quot;a&quot;);</p><p>&nbsp;&nbsp;&nbsp;break;</p><p>&nbsp;&nbsp;&nbsp;case &#39;b&#39;:</p><p>&nbsp;&nbsp;&nbsp;System.out.println(&quot;b&quot;);</p><p>&nbsp;&nbsp;&nbsp;break;</p><p>}</p><p>程序输出什么？</p> 
+                        解析：<p>default</p><p>a</p><p>switch在执行的时候，会先扫描所有的case，如果匹配到，就执行此case，然后继续往下执行；如果没有匹配到，就执行default。</p><br />
+                    </span>
+                    <span>
+                        5、 <p>float a = 2.2;</p><p>double d1 = 3;</p><p>double d2 = 3.3;</p><p>这三句代码导致的结果是什么？</p> 
+                        解析：<p>第一行有编译错误，2.2是double类型的常量值，赋值给float类型的变量时需要进行强制类型转换</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        6、 <p>匿名类有构造函数吗？如果有的话，有几个？</p><p><br/></p> 
+                        解析：<p>有；只能有1个；</p><p>1）</p><p>由于匿名类没有名字，所以无法像声明普通构造函数一样声明。</p><p>假如有一个类：</p><p>public abstract class Parent {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public abstract void test();</p><p>}</p><p>我们声明一个继承自Parent类的匿名类的对象：</p><p>Parent p1 = new Parent() {<span class="Apple-tab-span" style="white-space: pre;">		</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private int age;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>//下面的大括号中的就是构造函数</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(&quot;Child&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.age =5;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>@Override</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void test() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(&quot;I am in child class&quot;+this.age);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>};</p><p>p1.test();</p><p>上面代码中的：</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>System.out.println(&quot;Child&quot;);</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>this.age =5;</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>}</p><p>就是声明构造函数的一种方式，反编译匿名类生成的代码是这样的：</p><p>class Main$1</p><p>&nbsp; extends Parent</p><p>{</p><p>&nbsp; private int age;</p><p>&nbsp;&nbsp;</p><p>&nbsp; Main$1()</p><p>&nbsp; {</p><p>&nbsp; &nbsp; System.out.println(&quot;Child&quot;);</p><p>&nbsp; &nbsp; this.age = 5;</p><p>&nbsp; }</p><p>&nbsp;&nbsp;</p><p>&nbsp; public void test()</p><p>&nbsp; {</p><p>&nbsp; &nbsp; System.out.println(&quot;I am in child class&quot; + this.age);</p><p>&nbsp; }</p><p>}</p><p>可以看到编译器帮我们生成了构造函数。</p><p>2）假如父类有无参构造函数：</p><p>public abstract class Parent {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public Parent(int value)</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public abstract void test();</p><p>}</p><p><br/></p><p>那么匿名的子类创建对象的时候必须给参数赋值：</p><p>Parent p1 = new Parent(3) {<span class="Apple-tab-span" style="white-space: pre;">		</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private int age;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>//下面的大括号中的就是构造函数</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(&quot;Child&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.age =5;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>@Override</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void test() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(&quot;I am in child class&quot;+this.age);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>};</p><p><br/></p><p>p1.test();</p><p><br/></p><p>反编译后是：</p><p>class Main$1</p><p>&nbsp; extends Parent</p><p>{</p><p>&nbsp; private int age;</p><p>&nbsp;&nbsp;</p><p>&nbsp; Main$1(int $anonymous0)</p><p>&nbsp; {</p><p>&nbsp; &nbsp; super($anonymous0);</p><p>&nbsp; &nbsp; System.out.println(&quot;Child&quot;);</p><p>&nbsp; &nbsp; this.age = 5;</p><p>&nbsp; }</p><p>&nbsp;&nbsp;</p><p>&nbsp; public void test()</p><p>&nbsp; {</p><p>&nbsp; &nbsp; System.out.println(&quot;I am in child class&quot; + this.age);</p><p>&nbsp; }</p><p>}</p><p>3）从上面的反编译结果可以看出来，匿名类只能有一个构造函数。</p><br />
+                    </span>
+                    <span>
+                        7、 <p>下列关于Java中继承的哪项叙述是正确的？</p>
+                        A：允许多重继承 <br />
+                        B：一个类只能实现一个接口 <br />
+                        C：一个类不能同时继承一个类和实现一个接口 <br />
+                        D：只允许单一继承使代码更可靠 <br />
+                        答案：D<br />
+                        解析：<p>“只允许单一继承使代码更可靠”的意思是：如果一个类可以继承自两个父类，如果两个父类中都定义了hello方法，那么你通过子类调用hello方法的时候到底调用的是哪个父类的呢？就会混淆了。因此只允许一个父类会减少这种冲突、混淆。<br/></p><br />
+                    </span>
+                    <span>
+                        8、 <p>在类的定义中多个同名方法称为什么？</p><p><br/></p>
+                        A：Encapsulate <br />
+                        B：Extend <br />
+                        C：Override <br />
+                        D：Overload <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        9、 <p>给定如下java代码，编译运行时，结果是？</p><p>&nbsp;&nbsp;&nbsp;public class Test{</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String args[]){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(int i=0;i&lt;3;i++){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(i);</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.print(i);</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;&nbsp;&nbsp;}</p><p><br/></p>
+                        A：编译时报错 i是局部变量 <br />
+                        B：正确运行，输出012 <br />
+                        C：正确运行，输出123 <br />
+                        D：正确运行，输出0123 <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        10、 <p>在Java中，已定义了两个接口B和C，要定义一个实现这两个接口的类A，以下语句正确的是？</p><p><br/></p>
+                        A：interface A extends B,C <br />
+                        B：interface A implements B,C <br />
+                        C：class A implements B,C <br />
+                        D：class A implements B,implements C <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        11、 <p>下面哪些不是Java的基本数据类型？</p><p><br/></p>
+                        A：int <br />
+                        B：float <br />
+                        C：String <br />
+                        D：Date <br />
+                        答案：C,D<br />
+                        解析：<p>Java基本数据类型都是小写开头的。</p><p>int是基本数据类型，Integer不是。</p><br />
+                    </span>
+                    <span>
+                        12、 <p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family:宋体"><span style="font-size: 14px;">下面程序的输出结果是什么？</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">public class Conditional{</span></p><p style="text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">public static void main(String[] gars){</span></p><p style="margin-left:28px;text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">int x=4;</span></p><p style="margin-left:28px;text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">System.out.println( (x&gt;4)?99.9:9 );</span></p><p style="text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">}</span></p><p><span style="font-family: Arial;font-size: 14px">}</span></p><p><br/></p>
+                        A：99.9 <br />
+                        B：9 <br />
+                        C：9.0 <br />
+                        D：编译错误 <br />
+                        答案：C<br />
+                        解析：<p>x=4，所以三元运算符的值应该是冒号后的值，也就是9，由于冒号两边数据类型不一致（左边是小数，所以应该是double），编译器将三元运算符表达式的类型处理成精度更高的类型double，因此输出9.0这样的小数格式；</p><br />
+                    </span>
+                    <span>
+                        13、 <p>当父类的引用变量指向子类对象时，对于同名的方法调用哪个？</p>
+                        A：先调用父类的方法再调用子类的方法 <br />
+                        B：调用子类的方法 <br />
+                        C：调用父类的方法 <br />
+                        D：先调用子类的方法再调用父类的方法 <br />
+                        答案：B<br />
+                        解析：<p>分析多态程序题的口诀：父类类型变量可以指向子类类型对象，子类可以override父类的方法，调用方法的时候调用子类的实现；</p><br />
+                    </span>
+                    <span>
+                        14、 <p>下列Java标识符不合法的有？</p>
+                        A：new <br />
+                        B：$Usdollars <br />
+                        C：1234 <br />
+                        D：car.taxi <br />
+                        答案：A,C,D<br />
+                        解析：<p>Java标识符（变量、方法）的规则：<br/></p><p>1、不能全部由关键字组成；</p><p>2、标识符由字母、数字、下划线“_”、美元符号“$”组成，并且首字母不能是数字。</p><br />
+                    </span>
+                    <span>
+                        15、 <p>不能用来修饰interface的有？</p>
+                        A：private <br />
+                        B：public <br />
+                        C：protected <br />
+                        D：static <br />
+                        答案：A,C,D<br />
+                        解析：<p>接口的方法必须是public，因此如果接口的访问修饰级别比方法低就没意义了。<br/></p><br />
+                    </span>
+                    <span>
+                        16、 <p>下列哪种说法是正确的？(多选题)</p>
+                        A：实例方法可以直接调用超类的实例方法； <br />
+                        B：实例方法可以直接调用超类的类方法 <br />
+                        C：实例方法可以直接调用其他类的实例方法 <br />
+                        D：实例方法可直接调用本类的类方法； <br />
+                        答案：ABD<br />
+                        解析：<p>“实例方法”指的就是“非静态方法”，“类方法”指的就是“static方法”<br/></p><p>“直接调用”指的就是“类名.方法名”这种不通过对象调用的方法；</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        17、 <p>下列哪种说法不正确？</p>
+                        A：一个子类的对象可以接收父类对象能接收的消息； <br />
+                        B：当子类对象和父类对象能接收同样的消息时，他们针对消息产生的行为可能不同 <br />
+                        C：父类比它的子类的方法更多； <br />
+                        D：子类在构造函数中可以使用super()来调用父类的构造函数 <br />
+                        答案：C<br />
+                        解析：<p>“接收消息”是比较学术的说法，其实指的“其他类调用这个类的方法”</p><p>其他类能够调用的父类的方法，肯定也是可以通过子类来调用的，所以A是正确的；</p><p>B也是正确的，这就是多态，子类如果override了父类的方法，则父类类同样方法的实现可能不一样；</p><p>C是错误的，不一定</p><p>D，语法上是这样的</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        18、 <p>精确保存一个值为“53.21458961”的数需要什么数据类型？</p>
+                        A：int <br />
+                        B：long <br />
+                        C：float <br />
+                        D：double <br />
+                        答案：D<br />
+                        解析：<p>小数只能用float或者double，double精度比float高，所以要精确保存肯定首选double</p><br />
+                    </span>
+                    <span>
+                        19、 <p>有关类Demo，哪些描述是正确的？（多选题）</p><p>public class Demo extends Base</p><p>{</p><p>&nbsp; private int count;</p><p>&nbsp; protected void addOne()</p><p>&nbsp; {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; count++;</p><p>&nbsp; &nbsp;}</p><p>}</p><p><br/></p>
+                        A：当创建一个Demo类的实例对象时，count的值为0； <br />
+                        B：当创建一个Demo类的实例对象时，count的值不确定； <br />
+                        C：超类对象中不可以包含改变count值的方法； <br />
+                        D：Demo的子类对象可以访问Count <br />
+                        答案：AC<br />
+                        解析：<p>成员变量int类型默认值是0，所以A对B错。</p><p>“超类”就是“父类”，父类肯定无法写改变子类private变量的代码，所以C对；</p><br />
+                    </span>
+                    <span>
+                        20、 <p>下面说法正确的有？</p>
+                        A：类中的构造函数不可省略 <br />
+                        B：构造函数必须与class同名，但方法不能与class同名 <br />
+                        C：构造函数在一个对象被new时执行； <br />
+                        D：一个class只能定义一个构造函数 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        21、 <p>如下Java代码段，没有错误的是？</p>
+                        A：byte b=257; <br />
+                        B：boolean b = null; <br />
+                        C：float f=1.3; <br />
+                        D：int i=12; <br />
+                        答案：D<br />
+                        解析：<p>A：257超过了byte最大值</p><p>B：boolean 不能为null，Boolean可以为null；</p><p>C：float要写成1.3f</p><br />
+                    </span>
+                    <span>
+                        22、 <p>在java中，下列哪个是合法的变量名</p>
+                        A：123_rupeng <br />
+                        B：$a+b <br />
+                        C：9mystring <br />
+                        D：_mystring <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        23、 <p>如果类中的成员只能被子类或者同一包中的类访问，应该用哪个修饰符</p>
+                        A：private <br />
+                        B：package <br />
+                        C：public <br />
+                        D：protected <br />
+                        答案：D<br />
+                        解析：<p>1、public：任何地方均可访问；</p><p>2、private：只限类的内部访问；</p><p>3、protected：受保护的，类的内部可访问；同一个包下的不管是否有继承关系均可访问；不同包下只有有继承关系的才可访问；</p><p>4、默认（default）：类的内部可访问；同一个包下不管是否有继承关系均可访问；不同包下不管有没有继承关系都不能访问。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        24、 <p>java中，byte类型的取值范围是</p>
+                        A：-256至255 <br />
+                        B：-255至255 <br />
+                        C：-128至127 <br />
+                        D：-127至128 <br />
+                        答案：C<br />
+                        解析：<p>n位二进制数的取值范围是：-2^(n-1)至2^(n-1)-1</p><p>其中“x^y”是表示“x的y次幂”</p><p>byte是8位二进制，所以是-2^7至2^7-1也就是-128至127</p><p><br/></p><p>面试的时候一般只会考byte的取值范围，因为short、int等的数太大，不好记。</p><br />
+                    </span>
+                    <span>
+                        25、 <p>在java中，下列不能通过编译的语句是</p>
+                        A：String s=&quot;rupeng&quot;+&quot;.com&quot;; <br />
+                        B：String s = &quot;rupeng&quot;+88; <br />
+                        C：int a=3+5; <br />
+                        D：float f=5+5.5 <br />
+                        答案：D<br />
+                        解析：<p>5.5是double类型，因此无法隐式转换为精度低的float</p><br />
+                    </span>
+                    <span>
+                        26、 <p>假设类A如下定义，a是A类型的变量，下面哪个是错误的；</p><p>class A</p><p>{</p><p>&nbsp; &nbsp;int i;</p><p>&nbsp; &nbsp;static String s;</p><p>&nbsp; &nbsp;void method1(){}</p><p>&nbsp; &nbsp;static void method2(){}</p><p>}</p><p><br/></p>
+                        A：System.out.println(a.i); <br />
+                        B：a.method1(); <br />
+                        C：A.method1(); <br />
+                        D：A.method2(); <br />
+                        答案：C<br />
+                        解析：<p>method1是非static成员，必须通过对象来调用，不能直接通过类名调用；</p><br />
+                    </span>
+                    <span>
+                        27、 <p>java的字符类型采用的是Unicode编码，每个Unicode码占用多少个比特位</p>
+                        A：8 <br />
+                        B：16 <br />
+                        C：32 <br />
+                        D：64 <br />
+                        答案：B<br />
+                        解析：<p>在java中一个unicode占2个字节（byte）。</p><p>一个字节等于8比特位（bit）。</p><p>所以每个Unicode码占用16个比特位。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        28、 <p>在使用interface声明一个接口时，只可以使用下面哪个修饰符</p>
+                        A：private <br />
+                        B：protected <br />
+                        C：private和protected <br />
+                        D：public <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        29、 <p>下面哪个类的声明是正确的？</p>
+                        A：abstract final class Person{} <br />
+                        B：abstract private move(){} <br />
+                        C：protected private number; <br />
+                        D：public abstract class Car{} <br />
+                        答案：D<br />
+                        解析：<p>abstract是抽象类，允许有子类，而final类不能有子类，所以不能把abstract跟final这个“断子绝孙”的家伙放到一起，因此A是错误的；</p><p>抽象方法不能有方法体，即使{}也是空方法体，而且也不能使用private修饰（private就没法继承了），所以B是错误的；</p><br />
+                    </span>
+                    <span>
+                        30、 <p>下面的方法，如果给i传递2，那么返回值为多少？</p><p>static int getValue(int i) {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>int result = 0;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>switch (i) {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>case 1:</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>result = result + i;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>case 2:</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>result = result + i * 2;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>case 3:</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>result = result + i * 3;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>return result;</p><p>}</p> 
+                        解析：<p>答案：10</p><p>解析：case中如果没有break会继续向下执行。</p><p>先执行case 2之后result为4，再执行case 3的代码，4+2*3=10</p><br />
+                    </span>
+                    <span>
+                        31、 <p>abstract可以修饰下面哪些（多选题）</p>
+                        A：类 <br />
+                        B：方法 <br />
+                        C：字段 <br />
+                        D：枚举 <br />
+                        答案：AB<br />
+                        解析：<p>abstract类是抽象类；abstract方法是抽象方法；字段（成员变量）是不能写成abstract的，是没有意义的；枚举也一样不能abstract。</p><br />
+                    </span>
+                    <span>
+                        32、 <p>0.6332的数据类型是？</p>
+                        A：float <br />
+                        B：double <br />
+                        C：Float <br />
+                        D：Double <br />
+                        答案：B<br />
+                        解析：<p>如果是float需要是： 0.6332f</p><p>Double是包裹类，不是原始数据类型</p><br />
+                    </span>
+                    <span>
+                        33、 <p>下面代码的运行结果为？</p><p>String s;</p><p>System.out.println(&quot;s=&quot;+s);</p>
+                        A：输出&quot;s=&quot; <br />
+                        B：输出&quot;s=null&quot; <br />
+                        C：编译失败 <br />
+                        D：得到NullPointerException异常 <br />
+                        答案：C<br />
+                        解析：<p>局部变量必须初始化才能读取</p><br />
+                    </span>
+                    <span>
+                        34、 <p>下列哪个是正确的？（单选题）</p>
+                        A：java语言的标识符是区分大小写的； <br />
+                        B：源文件名与public类名可以不相同； <br />
+                        C：源文件扩展名为jar <br />
+                        D：源文件中public类的数量不限； <br />
+                        答案：A<br />
+                        解析：<p>一个java源文件中可以有多个类，但是只能有一个类是public的，而且这个类的名字要和java文件名一致；<br/></p><br />
+                    </span>
+                    <span>
+                        35、 <p>给定下面的代码片段，m为哪些值将导致&quot;default&quot;被输出。（多选题）</p><p>switch(m)</p><p>{</p><p>&nbsp; &nbsp;case 0:System.out.println(&quot;0&quot;);</p><p>&nbsp; &nbsp;case 1:System.out.println(&quot;2&quot;);break;</p><p>&nbsp; &nbsp;case 2:</p><p>&nbsp; &nbsp;default:System.out.println(&quot;default&quot;);</p><p>}</p>
+                        A：0 <br />
+                        B：1 <br />
+                        C：2 <br />
+                        D：3 <br />
+                        答案：CD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        36、 <p>在//point x处的哪些声明句法上是合法的？（多选题）</p><p>class Person</p><p>{</p><p>&nbsp; &nbsp;private int a;</p><p>&nbsp; &nbsp;public int change(int m){return m;}</p><p>}</p><p><br/></p><p>public class Teacher extends Person</p><p>{</p><p>&nbsp; &nbsp;public int b;</p><p>&nbsp; &nbsp;public static void main(String[] args)</p><p>&nbsp; &nbsp;{</p><p>&nbsp; &nbsp; &nbsp; Person p = new Person();</p><p>&nbsp; &nbsp; &nbsp; Teacher t = new Teacher();</p><p>&nbsp; &nbsp; &nbsp; int i;</p><p>&nbsp; &nbsp; &nbsp; //point x</p><p>&nbsp; &nbsp;}</p><p>}</p><p><br/></p>
+                        A：i=b; <br />
+                        B：i=p.a; <br />
+                        C：i=p.change(30); <br />
+                        D：i=t.b; <br />
+                        答案：CD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        37、 <p>下列程序的执行结果是什么？</p><p>public class Example {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>String str = &quot;good&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>char[] ch = { &#39;a&#39;, &#39;b&#39;, &#39;c&#39; };</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Example ex = new Example();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>ex.change(ex.str, ex.ch);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.print(ex.str + &quot;and&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.print(ex.ch);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void change(String str, char[] ch) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>str = &quot;test ok&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>ch[1] = &#39;g&#39;;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p> 
+                        解析：<p>答案：goodandagc</p><p><br/></p><p>方法内部对参数变量重新指向不会改变外部传入变量的指向；</p><p>数组是引用传递，ch[1]=&#39;g&#39;改变的是成员变量指向的对象；</p><p><br/></p><p>其实和下面的这段代码道理是一样的</p><p>public class Example {</p><p><br/></p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; String str = &quot;good&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; char[] ch = { &#39;a&#39;, &#39;b&#39;, &#39;c&#39; };</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; String str2 = str;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; str2 = &quot;test ok&quot;;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; ch[1] = &#39;g&#39;;</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(str);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(ch);</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        38、 <p>以下代码运行输出是</p><p>public class Person</p><p>{</p><p>&nbsp; &nbsp;private String name=&quot;Person&quot;;</p><p>&nbsp; &nbsp;int age=0;</p><p>}</p><p><br/></p><p>public class Child extends Person {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public String grade;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Person p = new Child();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(p.name);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p>
+                        A：输出Person <br />
+                        B：没有输出 <br />
+                        C：编译出错 <br />
+                        D：运行有异常 <br />
+                        答案：C<br />
+                        解析：<p>name是Person类的private成员，不能在Child类的main方法中访问其他类的private成员</p><br />
+                    </span>
+                    <span>
+                        39、 <p>以下代码运行输出是</p><p>class Father {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private String name = &quot;father&quot;;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public String getName() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return name;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p><p>public class Test extends Father {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private String name = &quot;test&quot;;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Test test = new Test();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(test.getName());</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p>
+                        A：father <br />
+                        B：test <br />
+                        C：编译出错 <br />
+                        D：运行出异常 <br />
+                        答案：A<br />
+                        解析：<p style="white-space: normal;">public String getName() {</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>return name;</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>}</p><p>访问的是Father类的name字段，父类不能访问子类的字段</p><br />
+                    </span>
+                    <span>
+                        40、 <p><strong style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">1）</strong><strong style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">short s1 = 1; s1 = s1 + 1;有错吗?</strong></p><p><strong style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">2）short s1 = 1; s1 += 1;有错吗？</strong><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;</span></p> 
+                        解析：<p><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">对于short s1 = 1; s1 = s1 + 1;由于1是int类型，因此s1+1运算结果也是int 型，需要强制转换类型才能赋值给short型。因此（1）有错；</span></p><p><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">而short s1 = 1; s1 += 1;可以正确编译，因为s1+= 1;相当于s1 = (short)(s1 + 1);其中有隐含的强制类型转换。因此（2）没错</span></p><br />
+                    </span>
+                    <span>
+                        41、 <p>构造函数（constructor）是否可被重写（override）？</p> 
+                        解析：<p>构造函数不能被继承，因此不能被重写，但可以被重载。</p><br />
+                    </span>
+                    <span>
+                        42、 <p>Java 中的final关键字有哪些用法？&nbsp;</p> 
+                        解析：<p>(1)修饰类：表示该类不能被继承；</p><p>(2)修饰方法：表示方法不能被重写；</p><p>(3)修饰变量：表示变量只能一次赋值以后值不能被修改。</p><br />
+                    </span>
+                    <span>
+                        43、 <p>下面程序的运行结果是什么？</p><p>class A {</p><p>&nbsp; &nbsp; static {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;1&quot;);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public A() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;2&quot;);</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>class B extends A{</p><p>&nbsp; &nbsp; static {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;a&quot;);</p><p>&nbsp; &nbsp; }</p><p>&nbsp; &nbsp; public B() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.print(&quot;b&quot;);</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>public class Hello {</p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; A ab = new B();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; ab = new B();</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p> 
+                        解析：<p>执行结果：1a2b2b。</p><p>创建对象时构造器的调用顺序是：先初始化静态成员，然后调用父类构造器，再初始化非静态成员，最后调用自身构造器。</p><br />
+                    </span>
+                    <span>
+                        44、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">在使用super 和this关键字时，以下描述正确的是？</span></p>
+                        A：在子类构造方法中使用super()显示调用父类的构造方法，super()必须写在子类构造方法的第一行，否则编译不通过 <br />
+                        B： super()和this()不一定要放在构造方法内第一行 <br />
+                        C：this()和super()可以同时出现在一个构造函数中 <br />
+                        D：this()和super()可以在static环境中使用，包括static方法和static语句块 <br />
+                        答案：A<br />
+                        解析：<p>在构造函数中使用this()调用本类的其他重载的构造函数，使用super()调用父类的构造函数；</p><p>this()、super()不能一起用，必须是构造函数的第一行；</p><br />
+                    </span>
+                    <span>
+                        45、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下说法错误的是？</span></p>
+                        A：super可以调用父类的所有非私有方法 <br />
+                        B：super可以调用父类的所有非私有构造函数 <br />
+                        C： super可以调用父类的所有非私有属性 <br />
+                        D：this()和super()可以出现在同一个构造函数中 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        46、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下关于final关键字说法错误的是？（多选题）</span></p>
+                        A：final是java中的修饰符，可以修饰类、接口、抽象类、方法 <br />
+                        B： final修饰的类肯定不能被继承 <br />
+                        C： final修饰的方法不能被重载 <br />
+                        D：final修饰的变量不允许被再次赋值 <br />
+                        答案：AC<br />
+                        解析：<p>final类是不能有子类，因此不能修饰接口、抽象类；所以A是错误的；</p><p>&nbsp;final修饰的方法不能被重写（override），而不是不能重载（overload）</p><br />
+                    </span>
+                    <span>
+                        47、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下对重载描述错误的是？</span></p>
+                        A： 方法重载只能发生在一个类的内部 <br />
+                        B：构造方法不能重载 <br />
+                        C：重载要求方法名相同，参数列表不同 <br />
+                        D：方法的返回值类型不是区分方法重载的条件 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        48、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下对抽象类的描述正确的是？</span></p>
+                        A：抽象类没有构造方法 <br />
+                        B：抽象类必须提供抽象方法 <br />
+                        C：有抽象方法的类一定是抽象类 <br />
+                        D：抽象类可以通过new关键字直接实例化 <br />
+                        答案：C<br />
+                        解析：<p>一个类有抽象方法则类必须是抽象类，但是抽象类可以没有抽象方法（虽然这么说没什么意义，但是语法上是允许的）；</p><br />
+                    </span>
+                    <span>
+                        49、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下对接口描述错误的有？</span></p>
+                        A：接口没有提供构造方法 <br />
+                        B：接口中的方法默认使用public、abstract修饰 <br />
+                        C：接口中的属性默认使用public、static、final修饰 <br />
+                        D：接口不允许多继承 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        50、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">接口和抽象类描述正确的有</span></p>
+                        A：抽象类没有构造函数 <br />
+                        B：接口没有构造函数 <br />
+                        C：抽象类不允许多继承 <br />
+                        D：接口中的方法可以有方法体 <br />
+                        答案：BC<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        51、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下描述错误的有？（单选题）</span></p>
+                        A：abstract 可以修饰类、接口、方法 <br />
+                        B： abstract修饰的类主要用于被继承 <br />
+                        C：abstract 可以修饰变量 <br />
+                        D： abstract修饰的类，其子类也可以是abstract修饰的 <br />
+                        答案：C<br />
+                        解析：<p>A、接口是可以用abstract修饰符的，虽然说不用也行，用上了也没区别；</p><br />
+                    </span>
+                    <span>
+                        52、 <p>已知如下定义：String s = &quot;story&quot;;下面哪个表达式是合法的？</p>
+                        A：s&#160;+=&#160;&quot;books&quot;; <br />
+                        B：char&#160;c&#160;=&#160;s[1]; <br />
+                        C：int len&#160;=&#160;s.length; <br />
+                        D：String&#160;t&#160;=s+’abc’ <br />
+                        答案：A<br />
+                        解析：<p>获取String的第1个字符的写法应该是：char c=s.charAt(1);<br/></p><p>获取字符串的长度应该是：int len = s.length();</p><p>字符串应该是&quot;abc&quot;，单引号是单个字符；</p><br />
+                    </span>
+                    <span>
+                        53、 <p>MAX_LENGTH是int型public成员变量, 变量值保持为常量100，应该如何定义？</p>
+                        A：public&#160;int&#160;MAX_LENGTH=100; <br />
+                        B：final&#160;int&#160;MAX_LENGTH=100; <br />
+                        C：final&#160;public&#160;int&#160;MAX_LENGTH=100; <br />
+                        D：public&#160;final&#160;int&#160;MAX_LENGTH=100; <br />
+                        答案：CD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        54、 <p>如下代码：</p><p>class Base {&nbsp;</p><p>&nbsp; Base()&nbsp;</p><p>&nbsp;{&nbsp;</p><p>&nbsp; &nbsp; System.out.print(&quot;Base&quot;);&nbsp;</p><p>&nbsp; }&nbsp;</p><p>}&nbsp;</p><p>public class Alpha extends Base&nbsp;</p><p>{&nbsp;</p><p>&nbsp; public static void main( String[] args )&nbsp;</p><p>&nbsp; { &nbsp; &nbsp;</p><p>&nbsp; &nbsp; new Alpha();&nbsp;</p><p><br/></p><p>&nbsp; &nbsp; new Base();</p><p>&nbsp; }&nbsp;</p><p>}&nbsp;</p><p>结果是什么？</p><p><br/></p>
+                        A：Base <br />
+                        B：BaseBase <br />
+                        C：运行异常 <br />
+                        D：没有输出 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        55、 <p>下面的程序中，temp的最终值是什么？</p><p>long temp=(int)3.9;</p><p>temp%=2;</p>
+                        A：0 <br />
+                        B：1 <br />
+                        C：2 <br />
+                        D：3 <br />
+                        答案：B<br />
+                        解析：<p>double转换为int是截断，不会四舍五入。(int)3.9转换为3，再赋值给long类型的temp，隐式转换为long类型的3；</p><p>temp%=2等价于temp=temp%2;</p><p>3除以2的余数是1；</p><br />
+                    </span>
+                    <span>
+                        56、 <p>下面哪个不是JAVA的关键字？</p>
+                        A：Integer <br />
+                        B：int <br />
+                        C：double <br />
+                        D：default <br />
+                        答案：A<br />
+                        解析：<p>Integer是JDK中的类，int才是关键字；</p><br />
+                    </span>
+                    <span>
+                        57、 <p>类Test1定义如下：</p><p>1．public class Test1{ &nbsp;</p><p>2． public float aMethod（float a，float b）{ return 0;} &nbsp;</p><p>3．//这里插入代码</p><p>4．}</p><p>将以下哪种方法插入第3行的位置是不合法的？</p>
+                        A：public float aMethod （ float a ，  float b ， float c ） { return 0;} <br />
+                        B：public float aMethod （ float c ， float d ） { return 0;} <br />
+                        C：public int aMethod （ int a ，  int b ） { return 0;}  <br />
+                        D：private float aMethod （ int a ， int b ， int c ） { return 0;} <br />
+                        答案：B<br />
+                        解析：<p>这个考的就是“重载”，参数的类型或者个数不同就能构成重载。如果只是参数名不一样，是不能构成重载的；<br/></p><br />
+                    </span>
+                    <span>
+                        58、 <p>哪个语句创建了一个数组实例？</p>
+                        A：int[] ia = new int [15]; <br />
+                        B：float fa = new float [20]; <br />
+                        C：char[] ca =&quot;rupeng.com&quot;; <br />
+                        D：int ia[][] = {4, 5, 6} {1, 2, 3};  <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        59、 <p>构造函数何时被调用？</p>
+                        A：类定义时 <br />
+                        B：创建对象时 <br />
+                        C：调用对象方法时 <br />
+                        D：使用对象的变量时 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        60、 <p>在接口中以下哪条定义是正确的?（多选题）</p>
+                        A：void methoda();  <br />
+                        B：public double methoda();  <br />
+                        C：public final double methoda(); <br />
+                        D：static void methoda(double d1); <br />
+                        答案：AB<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        61、 <p>下面哪些语句能够正确地生成5个空字符串？（多选题）</p>
+                        A：String   a[]=new   String[5] ; for(int   i=0 ;i&lt;5 ;a[i++]=&quot;&quot;); <br />
+                        B：String  a[]={&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;}; <br />
+                        C：String   a[5]; <br />
+                        D：.String []a=new   String[5] ; for(int   i=0; i&lt;5;a[i++]=null) ; <br />
+                        答案：AB<br />
+                        解析：<p>&quot;&quot;和null不一样，&quot;&quot;是长度为0的字符串对象，也就是“空字符串”，null表示“没有对象”</p><p>for(int &nbsp; i=0 ;i&lt;5 ;a[i++]=&quot;&quot;);按照for循环的“三段的作用”是可以实现给a数组每个元素赋值为&quot;&quot;的作用，虽然这种写法不常见；</p><br />
+                    </span>
+                    <span>
+                        62、 <p>下列说法错误的有？（多选题）</p>
+                        A：数组是一种对象 <br />
+                        B：数组属于一种原生类   <br />
+                        C：int number=[]={31,23,33,43,35,63}  <br />
+                        D：数组的大小可以任意改变   <br />
+                        答案：BCD<br />
+                        解析：<p>数组不是原始数据类型，而是一种对象；数组的长度声明后就不能改变；</p><br />
+                    </span>
+                    <span>
+                        63、 <p>下列说法错误的有？（多选题）</p>
+                        A：在类方法中可用 this 来调用本类的类方法 <br />
+                        B：在类方法中调用本类的类方法时可直接调用 <br />
+                        C：在类方法中只能调用本类中的类方法 <br />
+                        D：在类方法中绝对不能调用实例方法   <br />
+                        答案：ACD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        64、 <p>下列标识符不合法的有？（多选题）</p>
+                        A：new <br />
+                        B：$Usdollars <br />
+                        C：1234 <br />
+                        D：car.taxi <br />
+                        答案：ACD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        65、 <p>用循环控制语句打印输出：1+3+5+...+99的结果</p> 
+                        解析：<p>int sum = 0; &nbsp;&nbsp;</p><p>for(int i=1;i&lt;100;i+=2)</p><p>{</p><p>&nbsp; sum = sum+i;</p><p>}</p><p>System.out.println(sum);</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        66、 <p>Java中普通方法的名字是否可以和类名一样？</p> 
+                        解析：<p>构造函数的名字必须和类名一样，但是不代表其他方法不能和类名一样，虽然一般不这样做。</p><br />
+                    </span>
+                    <span>
+                        67、 <p>下列的变量定义语句中，合法的是？</p>
+                        A： byte b=12345; <br />
+                        B： int i=3214L <br />
+                        C： double d=Double.MAX_VALUE; <br />
+                        D： float $_*9=8.4f <br />
+                        答案：C<br />
+                        解析：<p>A、超过了byte的最大值；</p><p>B、L是定义long类型的，不能赋值给int</p><p>C、Double.MAX_VALUE是double的最大值；</p><p>D、不是合法的变量名，变量名中不能有*</p><br />
+                    </span>
+                    <span>
+                        68、 <p>下面哪个是正确的表达式？</p>
+                        A： byte b = 130; <br />
+                        B： float f = 1.3; <br />
+                        C： Boolean b = null; <br />
+                        D： char c = &quot;a&quot;; <br />
+                        答案：C<br />
+                        解析：<p>A、byte最大值是127</p><p>B、float要写成1.3f</p><p>C、Boolean是包装类型，可以为null</p><p>D、字符应该是单引号；</p><br />
+                    </span>
+                    <span>
+                        69、 <p>以下关于继承的叙述正确的是？</p>
+                        A： 在Java中一个类只能实现一个接口 <br />
+                        B： 在Java中一个类不能同时继承一个类和实现一个接口 <br />
+                        C： 在Java中类只允许单一继承 <br />
+                        D： 在Java中接口只允许单一继承 <br />
+                        答案：C<br />
+                        解析：<p>一个类实现多个接口，一个接口可以从多个接口继承，一个类只能有一个父类。</p><br />
+                    </span>
+                    <span>
+                        70、 <p>关于以下程序代码的说明正确的是</p><p>class &nbsp;HasStatic{&nbsp;</p><p>&nbsp; &nbsp; private &nbsp;static &nbsp;int &nbsp;x=100；&nbsp;</p><p>&nbsp; &nbsp; public &nbsp;static &nbsp;void &nbsp;main(String &nbsp;args[]){&nbsp;</p><p>&nbsp; &nbsp;HasStatic &nbsp;hs1=new &nbsp;HasStatic();&nbsp;</p><p>&nbsp; &nbsp;hs1.x++;&nbsp;</p><p>&nbsp; &nbsp;HasStatic &nbsp;hs2=new &nbsp;HasStatic();&nbsp;</p><p>&nbsp; &nbsp;hs2.x++;&nbsp;</p><p>&nbsp; &nbsp;hs1=new &nbsp;HasStatic();&nbsp;</p><p>&nbsp; &nbsp;hs1.x++;&nbsp;</p><p>&nbsp; HasStatic.x--;</p><p>&nbsp; System.out.println(&quot;x=&quot;+x);&nbsp;</p><p>&nbsp; &nbsp; }&nbsp;</p><p>}</p><p><br/></p>
+                        A： 5行不能通过编译，因为引用了私有静态变量  <br />
+                        B：  10行不能通过编译，因为x是私有静态变量  <br />
+                        C：  程序通过编译，输出结果为：x=103  <br />
+                        D：  程序通过编译，输出结果为：x=102  <br />
+                        答案：D<br />
+                        解析：<p>也可以通过对象访问静态变量，只不过无论是通过对象还是通过类名访问static变量，大家操作的都是同一份</p><br />
+                    </span>
+                    <span>
+                        71、 <p>执行完下面语句int[] x = new int[20];后，说法正确的是？</p>
+                        A： x[20]为0 <br />
+                        B： x[19]未定义 <br />
+                        C： x[0]为空 <br />
+                        D： x[19]为0 <br />
+                        答案：D<br />
+                        解析：<p>数组下标从0开始，因此最后一个元素为“数组长度-1”，int数组元素默认值是0；</p><br />
+                    </span>
+                    <span>
+                        72、 <p>运行以下的main（）方法，结果是？</p><p>public static void main(String[] args)</p><p>{</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>String myString;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>int x=100;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>if（x&lt;100）myString=&quot;111&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>if（x&gt;100）myString=&quot;22222&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>System.out.println(myString.length());</p><p>}</p><p><br/></p>
+                        A：编译时报出错误提示信息“变量myString没有被初始化” <br />
+                        B： 编译通过 <br />
+                        C：运行结果是6 <br />
+                        D：以上都不对 <br />
+                        答案：A<br />
+                        解析：<p>局部变量必须在所有的情况下都初始化</p><br />
+                    </span>
+                    <span>
+                        73、 <p>下列说法中错误的一个是</p>
+                        A： 局部变量必须先声明后使用 <br />
+                        B： 在Java中，类不是用标识符命名的 <br />
+                        C： void是合法的Java保留字 <br />
+                        D： $1_abc是合法的Java标识符 <br />
+                        答案：B<br />
+                        解析：<p>方法、参数、类等都是用标识符命名的；</p><br />
+                    </span>
+                    <span>
+                        74、 <p>说一下值传递和引用传递</p> 
+                        解析：<p>值传递和引用传递都是把变量所表示的值赋值给另一个变量，区别是基本类型变量赋值属于值传递，赋值后值就变成了两份。而对象类型变量赋值时属于引用传递，赋值后两个变量都指向同一个对象</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

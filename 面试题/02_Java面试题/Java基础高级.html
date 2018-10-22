@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Java基础高级》面试题</h1>
+                    <span>
+                        1、 <p>ArrayList和Vector的区别</p><p><br/></p> 
+                        解析：<p>主要是安全性和效率方面的区别。<br/></p><p>ArrayList是线程不安全的，即多个线程同时访问同一个ArrayList对象时可能会导致数据错乱；但它效率高；所以一般单线程使用时就使用ArrayList。</p><p>Vector是老版本JDK1.0遗留的类，新版本JDK1.2也把它加入到了集合框架体系里面。它线程安全但效率低，一般很少使用。</p><br />
+                    </span>
+                    <span>
+                        2、 <p>Set集合的特点之一就是元素不能重复，那Set集合是根据什么判断两个元素是否相等？</p> 
+                        解析：<p>先使用hashCode值判断，如果hashCode相等再使用equals()方法判断</p><br />
+                    </span>
+                    <span>
+                        3、 <p>Comparable和Comparator的区别？</p> 
+                        解析：<p>Comparable表示类本身所具有的比较性，也称为自然排序，比如字符串按照abcd的字符顺序排序。</p><p>Comparator称为比较器，比如当我们希望以另一种规则比较字符串时，就可以使用Comparator实现自己的比较规则。</p><br />
+                    </span>
+                    <span>
+                        4、 <p>TreeSet要添加一批元素，其中有父类还有子类，那添加父类的时候，调用的是父类的compareTo()方法还是子类的，还是抛出异常？</p> 
+                        解析：<p>此题具有迷惑性，其实只需要记住一条：添加的哪个元素就调用哪个元素的compareTo()方法。至于会不会抛出异常就要看compareTo()方法是如何实现的</p><br />
+                    </span>
+                    <span>
+                        5、 <p>HashMap和Hashtable的区别？</p><p><br/></p> 
+                        解析：<p style="white-space: normal;">主要是安全性和效率方面的区别。<br/></p><p style="white-space: normal;">HashMap是线程不安全的，即多个线程同时访问同一个HashMap对象时可能会导致数据错乱；但它效率高；所以一般单线程使用时就使用HashMap。</p><p style="white-space: normal;">Hashtable是老版本JDK1.0遗留的类，新版本JDK(1.2)也把它加入到了集合框架体系里面。它线程安全但效率低，一般很少使用。</p><p>多线程环境下需要使用Map时可以使用ConcurrentHashMap（把一个HashMap根据hashCode分成若干“HashTable”从而让效率提高若干倍，同时又是线程安全的）</p><br />
+                    </span>
+                    <span>
+                        6、 <p>List、Set和Map存取元素时各有什么特点？</p> 
+                        解析：<p>List：支持索引操作，索引操作速度很快；元素可重复；元素存入顺序和迭代顺序一致；非索引操作的添加、删除操作速度相对慢些。</p><p>Set：不支持索引操作，元素不可重复；元素存入顺序和迭代顺序不一致；添加、删除操作速度很快。</p><p>Map：不支持索引操作，key不可重复；key存入顺序和迭代顺序不一致（需要借助Set实现以key进行迭代）；添加、删除操作速度很快。</p><br />
+                    </span>
+                    <span>
+                        7、 <p>Collection和Collections的区别？</p> 
+                        解析：<p>Collection是Java集合框架的顶层接口之一，子接口有List、Set，用来存储、操作多个元素。</p><p>Collections是Java集合框架提供的一个工具类，主要提供了一些工具方法实现一些对Collection常用的操作。</p><br />
+                    </span>
+                    <span>
+                        8、 <p>线程和进程的区别？</p> 
+                        解析：<p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">在操作系统中，进程是程序的一次执行。</span></span><span style="font-family: 宋体; font-size: 14px;">在执行过程中，进程会申请、持有或释放操作系统资源。</span></p><p><span style="font-family: 宋体; font-size: 14px;"></span><span style="font-family: 宋体; font-size: 14px;">线程和进程非常相似，又被称为轻量级进程。一个进程可拥有多个线程，这些线程共享此进程所持有的系统资源。</span></p><p><span style="font-family: 宋体; font-size: 14px;"></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">调度、执行的基本单位是线程，资源分配的基本单位是进程。</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体"></span></span><br/></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>说说socket的通信步骤？</p> 
+                        解析：<p>（1）服务器端和客户端建立socket连接</p><p>（2）获取socket连接的输入流和输出流</p><p>（3）使用IO流进行数据交换，即通信</p><p>（4）关闭资源，即关闭流、socket连接</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        10、 <p>线程的stop()和suspend()方法为什么不推荐使用？</p> 
+                        解析：<p>stop()是用来直接终止线程，会导致run方法中代码还没有执行完就被强制终止了，可能会导致问题。</p><p>suspend()会挂起线程直到另一个线程resume。但由于挂起时仍然会持有锁，很容易造成死锁。一般使用wait()/notify()代替，因为wait()会释放所持有的锁。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        11、 <p>Java中有几种方法可以实现一个线程？</p> 
+                        解析：<p>两种。一种是继承Thread类，另一种是实现Runnable接口，当然使用Runnable最终还是要用到Thread。</p><br />
+                    </span>
+                    <span>
+                        12、 <p>sleep()和wait()的区别？</p> 
+                        解析：<p>sleep()会让线程停止，但此时线程仍然持有所，并不会释放这些锁。另外一般使用时都会让线程停止指定的时间如1000毫秒。<br/></p><p>wait()也会让线程停止，但此时线程释放所持有的锁。一般和notify()配合使用。</p><br />
+                    </span>
+                    <span>
+                        13、 <p>同步和异步有什么区别？</p> 
+                        解析：<p>同步一般指多线程环境下数据（如一个List）可能被多个线程同时访问，为了防止数据错乱而进行多个线程间的同步控制，可以使用synchronized、wait()/notify()实现。<br/></p><p>异步可以指执行一个动作时，不等到这个动作真正执行完成就返回。</p><br />
+                    </span>
+                    <span>
+                        14、 <p>说说Thread类的run()方法和start()方法？</p> 
+                        解析：<p>run()方法是线程所要执行的代码，在进行多线程编程时，代码都写在run()方法中。<br/></p><p>start()方法用来告诉CPU此线程已经准备就绪，可以被调度了，cpu会选择合适的时机执行run方法。</p><br />
+                    </span>
+                    <span>
+                        15、 <p>当线程A进入一个对象O1的非静态synchronized方法后，其他线程是否可以进入该对象的其他方法？</p><p><br/></p> 
+                        解析：<p>由于非静态synchronized方法的锁是当前对象（this），而静态synchronized方法的锁是本类的Class对象，而且再加上非synchronized方法，再加上如果调用了wait()方法会释放持有的锁，情况比较复杂。</p><p>总的来说记住一句话：如果线程A没有调用wait()方法，则其他线程不可进入对象O1的非静态synchronized方法。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        16、 <p>编码题：设计4个线程，其中两个线程每次对i增加1，另外两个线程每次对i减少1。</p> 
+                        解析：<p>package com.rupeng;</p><p><br/></p><p>public class TestThread {</p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; Resource resource = new Resource();// 指定资源 方便共享</p><p>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; 2; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread incThread = new Thread(new Increment(resource));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; incThread.start();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Thread decThread = new Thread(new Decrement(resource));</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; decThread.start();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>class Resource {</p><p>&nbsp; &nbsp; private int i;</p><p><br/></p><p>&nbsp; &nbsp; public int getI() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return i;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public synchronized void inc() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; i++;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public synchronized void dec() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; i--;</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>class Increment implements Runnable {</p><p>&nbsp; &nbsp; private Resource resource;</p><p><br/></p><p>&nbsp; &nbsp; public Increment(Resource resource) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; this.resource = resource;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; @Override</p><p>&nbsp; &nbsp; public void run() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; while (true) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.resource.inc();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>class Decrement implements Runnable {</p><p>&nbsp; &nbsp; private Resource resource;</p><p><br/></p><p>&nbsp; &nbsp; public Decrement(Resource resource) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; this.resource = resource;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; @Override</p><p>&nbsp; &nbsp; public void run() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; while (true) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; this.resource.dec();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><p style="text-align: justify;"><br/></p><br />
+                    </span>
+                    <span>
+                        17、 <p>编码题：有一个子线程和一个主线程，子线程先对count自增1次，然后主线程对count自增1次；接着又回到子线程对count自增1次...如此循环50次</p> 
+                        解析：<p>package com.rupeng;</p><p><br/></p><p>public class MainThread {</p><p>&nbsp; &nbsp; //有一个子线程和一个主线程，子线程先对count自增1次，然后主线程对count自增1次；接着又回到子线程对count自增1次...如此循环50次</p><p>&nbsp; &nbsp; public static int count = 0;</p><p><br/></p><p>&nbsp; &nbsp; public static void main(String[] args) throws InterruptedException {</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; Object lock = new Object();</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; MyThread myThread = new MyThread(lock);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; myThread.start();</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; //先暂停主线程，保证子线程先对count进行自增</p><p>&nbsp; &nbsp; &nbsp; &nbsp; synchronized (lock) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lock.wait();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; //控制循环50次</p><p>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; 50; i++) {</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //主线程对count进行自增</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; synchronized (lock) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count++;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;主线程对count自增了1&quot;);</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (i &lt; 49) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //唤醒子线程，然后暂停主线程</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lock.notify();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lock.wait();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } else {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //最后一次循环时直接打断子线程，让子线程正常结束</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; myThread.interrupt();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;最终count的值为 &quot; + count);</p><p><br/></p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p><br/></p><p>class MyThread extends Thread {</p><p><br/></p><p>&nbsp; &nbsp; private Object lock;</p><p><br/></p><p>&nbsp; &nbsp; public MyThread(Object lock) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; this.lock = lock;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; @Override</p><p>&nbsp; &nbsp; public void run() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; while (true) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; synchronized (lock) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //对count进行自增</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MainThread.count++;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;子线程对count自增了1&quot;);</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //唤醒主线程</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lock.notify();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //暂停子线程</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lock.wait();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; } catch (InterruptedException e) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; //当主线程循环50次后会打断子线程，这是直接退出，结束子线程</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; }</p><p>}</p><br />
+                    </span>
+                    <span>
+                        18、 <p>如何中断运行中的线程？</p> 
+                        解析：<p>（1）正常来说一个线程的run()方法执行完成这个线程就结束了，所以可以想办法让run()方法执行完成以达到中断运行的目的。比如在run()方法中使用while(flag)，当设置flag为false时循环结束run()方法很快也就完成了。</p><p>（2）interrupt()会以抛出异常的方式打断线程的阻塞状态，如果线程代码没有catch此异常，则可以直接结束线程。不推荐使用。</p><p>（3）使用stop()直接结束线程。也不推荐使用。</p><br />
+                    </span>
+                    <span>
+                        19、 <p>说说反射的具体用法?</p> 
+                        解析：<p>反射的过程就是把类拆解后，根据需要使用其中的若干部分的过程。</p><p>反射的核心类有四个：Class、Constructor、Field、Method</p><p>当我们希望创建这个类的对象时，可以使用Constructor</p><p>当我们希望操作某个字段时，可以使用这个字段对应的Field</p><p>当我们希望调用某个方法时，可以使用这个方法对应的Method</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        20、 <p>notify()是Thread的方法吗？</p> 
+                        解析：<p>是，notify()在Object类中定义，由于Object是所有类的父类，所有类都有notify()方法，当然Thread类也有</p><br />
+                    </span>
+                    <span>
+                        21、 <p>用简短的代码实现字符串&quot;s&nbsp;&nbsp;&nbsp;tr i&nbsp;&nbsp;&nbsp;n g&quot;&nbsp;到&nbsp;&quot;s tr i ng&quot;转换（即将多个空格转换为一个空格）</p><p><br/></p> 
+                        解析：<p>String str = &quot;s&nbsp;&nbsp;&nbsp;tr i&nbsp;&nbsp;&nbsp;n g&quot;.replaceAll(&quot; +&quot;, &quot; &quot;);</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        22、 <p>数组有没有length()方法？ 字符串有没有length()方法？ 集合有没有length()方法？</p> 
+                        解析：<p>数组求长度用length属性</p><p>字符串求长度用length()方法</p><p>集合求长度用size()方法</p><p>例子：</p><p>String[] strings = {&quot;aaa&quot;,&quot;bbb&quot;,&quot;ccc&quot;}; &nbsp;</p><p>String string = &quot;aaabbbccc&quot;; &nbsp;</p><p>List&lt;Integer&gt; list = new ArrayList&lt;Integer&gt;(); &nbsp;</p><p>list.add(1); &nbsp;</p><p>&nbsp;&nbsp;</p><p>System.out.println(&quot;String[].length=&quot;+strings.length); &nbsp;</p><p>System.out.println(&quot;String.length()=&quot;+string.length()); &nbsp;</p><p>System.out.println(&quot;List.size()=&quot;+list.size());&nbsp;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        23、 <p>下面哪些是Thread类的方法（多选）</p>
+                        A：start() <br />
+                        B：run() <br />
+                        C：exit() <br />
+                        D：getPriority() <br />
+                        答案：ABD<br />
+                        解析：<p>start()是启动线程的方法；run()是线程执行的代码；getPriority()获取线程的优先级</p><br />
+                    </span>
+                    <span>
+                        24、 <p>new一个ArrayList的代码，如果一次要往ArrayList里添加1000个数据，如何优化能够提高性能？</p> 
+                        解析：<p>ArrayList的默认构造函数是创建一个容量为10的列表，因为ArrayList是使用数组实现的，当超过ArrayList现有容量的时候，会自动创建一个新的数组来保存数据，性能比较低。可以调用这个构造函数ArrayList list = new ArrayList(1000)创建一个初始容量为1000的列表，避免重新“扩容”。<br/></p><br />
+                    </span>
+                    <span>
+                        25、 <p>下面程序的运行结果是什么？</p><p>String str1 = &quot;rupeng.com&quot;;</p><p>String str2 = &quot;rupeng&quot;+new String(&quot;.com&quot;);</p><p>String str3 = &quot;rupeng&quot;+&quot;.com&quot;;</p><p>System.out.println(str1==str2);</p><p>System.out.println(str1==str3);</p><p><br/></p> 
+                        解析：<p>答案：</p><p>false</p><p>true</p><p>解释：java中==是比较是否是同一个对象；new String(&quot;.com&quot;)就会创建一个新的对象，和&quot;rupeng&quot;相加会产生新的字符串对象。所以str1==str2为false</p><p style="white-space: normal;">String str3 = &quot;rupeng&quot;+&quot;.com&quot;;会被编译器优化为String str3 = &quot;rupeng.com&quot;;字符串常量池的存在，str3和str1共用同一个字符串对象，所以str1==str3为true</p><p style="white-space: normal;"><br/></p><br />
+                    </span>
+                    <span>
+                        26、 <p>下列关于集合类描述错误的是？</p>
+                        A：ArrayList和LinkedList均实现了List接口 <br />
+                        B：ArrayList的访问速度比LinkedList快； <br />
+                        C：添加和删除元素时，ArrayList表现更佳； <br />
+                        D：HashMap实现Map接口，它允许任何类型的键和值对象，并允许将null用作键或值 <br />
+                        答案：C<br />
+                        解析：<p>“访问速度”指的是遍历的速度，ArrayList由于内部是用数组保存的，所以遍历速度比用节点链接的LinkedList遍历速度快；因此B是对的；</p><p>ArrayList由于内部是用数组保存的，当添加、删除元素的时候需要重新构建数组，所以添加、删除元素效率比LinkedList低；</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        27、 <p>获得一个类的类对象有哪些方式？&nbsp;</p> 
+                        解析：<p><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">- 方法1：类型.class，例如：String.class&nbsp;</span><br style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">- 方法2：对象.getClass()，例如：&quot;hello&quot;.getClass()&nbsp;</span><br style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">- 方法3：Class.forName()，例如：Class.forName(&quot;java.lang.String&quot;)</span></p><br />
+                    </span>
+                    <span>
+                        28、 <p>如何通过反射创建对象？&nbsp;</p> 
+                        解析：<p><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">- 方法1：通过类对象调用newInstance()方法，例如：String.class.newInstance()&nbsp;</span><br style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">- 方法2：通过类对象的getConstructor()或getDeclaredConstructor()方法获得构造器（Constructor）对象并调用其newInstance()方法创建对象，例如：String.class.getConstructor(String.class).newInstance(&quot;Hello&quot;);</span></p><br />
+                    </span>
+                    <span>
+                        29、 <p>如何通过反射调用对象的方法？&nbsp;</p> 
+                        解析：<p>String str = &quot;hello&quot;;</p><p>Method m = str.getClass().getMethod(&quot;toUpperCase&quot;);</p><p>System.out.println(m.invoke(str));</p><br />
+                    </span>
+                    <span>
+                        30、 <p><span style="font-family: &quot;Microsoft YaHei&quot;, 宋体, &quot;Myriad Pro&quot;, Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">数组(Array)和列表(ArrayList)有什么区别？</span></p> 
+                        解析：<p>Array可以包含基本类型和对象类型，ArrayList只能包含对象类型。</p><p>Array大小是固定的，ArrayList的大小是动态变化的。</p><p>ArrayList提供了更多的方法和特性，比如：addAll()，removeAll()，iterator()等等。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        31、 <p><span style="font-family: &quot;Microsoft YaHei&quot;, 宋体, &quot;Myriad Pro&quot;, Lato, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">ArrayList和LinkedList有什么区别？</span></p> 
+                        解析：<p>ArrayList和LinkedList都实现了List接口，他们有以下的不同点：</p><p>ArrayList是基于索引的数据接口，它的底层是数组。LinkedList是以元素列表的形式存储它的数据，每一个元素都和它的前一个和后一个元素链接在一起。</p><p>LinkedList的插入，添加，删除操作速度更快，因为当元素被添加到集合任意位置的时候，不需要像数组那样重新计算大小或者是更新索引。</p><p>ArrayList进行元素定位的时候（比如获取第50个元素）的性能比LinkedList高。</p><br />
+                    </span>
+                    <span>
+                        32、 <p>欲构造ArrayList类的一个实例，此类继承了List接口，下列哪个方法是正确的？</p>
+                        A：ArrayList myList=new&#160;Object(); <br />
+                        B：List&#160;myList=new&#160;ArrayList(); <br />
+                        C：ArrayList myList=new&#160;List(); <br />
+                        D：List&#160;myList=new&#160;List(); <br />
+                        答案：B<br />
+                        解析：<p>接口类型的变量可以指向实现了这个接口的变量的对象</p><br />
+                    </span>
+                    <span>
+                        33、 <p>对于import java.util，以下那种说法是错误的？</p>
+                        A：Vector 类属于 java.util 包 <br />
+                        B：Vector 类放在某个目录的 java/util/ 目录下 <br />
+                        C：Vector 类放在 java.util 文件中 <br />
+                        D：Vector 类是 Sun 公司的产品 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        34、 <p>在一个线程中执行Thread.sleep(1000)，将使得该线程在多少时间后重新执行（假设睡眠过程中不会有其他事件唤醒该线程）？</p><p><br/></p>
+                        A：正好 1000 毫秒 <br />
+                        B：1000 毫秒不到 <br />
+                        C：=&gt;1000 毫秒 <br />
+                        D：不一定 <br />
+                        答案：C<br />
+                        解析：<p>sleep不是精准的，休息的时间只会多、不会少。</p><br />
+                    </span>
+                    <span>
+                        35、 <p>多线程有几种实现方法,都是什么?</p><p>同步有几种实现方法，都是什么?&nbsp;</p><p><br/></p> 
+                        解析：<p>多线程有两种实现方法，分别是继承Thread类与实现Runnable接口。 &nbsp;</p><p>同步的实现方面有两种，分别是synchronized关键字、wait()方法与notify()方法</p><br />
+                    </span>
+                    <span>
+                        36、 <p>下面哪些接口直接继承自Collection接口？（多选题）</p>
+                        A：List <br />
+                        B：Map <br />
+                        C：Set <br />
+                        D：Iterator <br />
+                        答案：AC<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        37、 <p>Java的集合框架中重要的接口java.util.Collection定义了许多方法。选项中哪个方法不是Collection接口所定义的？</p>
+                        A：boolean containsAll(Collection c) <br />
+                        B： compareTo(Object obj) <br />
+                        C： int size() <br />
+                        D： boolean remove(Object obj) <br />
+                        答案：B<br />
+                        解析：<p>compareTo是Comparable接口定义的方法</p><br />
+                    </span>
+                    <span>
+                        38、 <p>下列数据结构中，按“先进后出”原则组织数据的是？</p>
+                        A：链表LinkedList <br />
+                        B：栈Stack <br />
+                        C：队列Queue <br />
+                        D：集合HashSet <br />
+                        答案：B<br />
+                        解析：<p>栈Stack是先入后出；队列Queue是先入先出；<br/></p><br />
+                    </span>
+                    <span>
+                        39、 <p>Thread.sleep()方法的作用是？</p>
+                        A： 使所有线程挂起 <br />
+                        B： 使托管虚拟机挂起 <br />
+                        C： 使当前线程挂起 <br />
+                        D： 仅挂起同步方法 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        40、 <p>当使用客户端套接字Socket创建对象时，需要指定？</p>
+                        A： 服务器端口和文件 <br />
+                        B： 服务器地址和文件 <br />
+                        C： 服务器主机名称和端口 <br />
+                        D： 服务器名称和文件 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        41、 <p>如何根据类名创建类实例，并调用类的一个方法。</p> 
+                        解析：<p>要使用反射。</p><p>假设Person类定义如下：</p><p>class Person</p><p>{</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void sayHello(String name)</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(name+&quot;你好&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p>主体代码如下（不考虑异常）：</p><p>public class Main {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) throws Exception {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>String className = &quot;a3.Person&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>String methodName=&quot;sayHello&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span></p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Class clz = Class.forName(className);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Object newPerson = clz.newInstance();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Method method = clz.getMethod(methodName, String.class);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>method.invoke(newPerson, &quot;rupeng&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        42、 <p>(安纳西游戏面试题）玩家信息：姓名（name）、财富（money）、性别（sex）；</p><p>1）定义一个玩家信息类；</p><p>2）假设有一个玩家类List，请根据财富（从多到少）对玩家进行排序输出玩家名字；</p><p><br/></p> 
+                        解析：<p>1）Player 类</p><p>class Player {<br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private String name;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private int money;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>private boolean sex;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public Player(String name, int money, boolean sex) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>super();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.name = name;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.money = money;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.sex = sex;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public String getName() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return name;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void setName(String name) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.name = name;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public int getMoney() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return money;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void setMoney(int money) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.money = money;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public boolean isSex() {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return sex;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public void setSex(boolean sex) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>this.sex = sex;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p>2）排序代码：</p><p>List&lt;Player&gt; list = new ArrayList&lt;&gt;();</p><p>list.add(new Player(&quot;张三&quot;, 300, true));</p><p>list.add(new Player(&quot;李四&quot;, 200, true));</p><p>list.add(new Player(&quot;王五&quot;, 500, true));</p><p><br/></p><p>list.sort(new Comparator&lt;Player&gt;() {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public int compare(Player o1, Player o2) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return o1.getMoney()-o2.getMoney();</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>};</p><p>});</p><p><br/></p><p>for(Player p : list)</p><p>{</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>System.out.println(p.getName());</p><p>}</p><p><br/></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        43、 <p>编写代码，找出int数组arr1[]和arr2[]中都包含的数字有几个，并计算出执行该过程所花费的时间</p><p><br/></p> 
+                        解析：<p>public class Main1 {</p><p><br/></p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9 };</p><p>&nbsp; &nbsp; &nbsp; &nbsp; int[] arr2 = { 1, 1, 2, 2, 3, 3, 4, 4 };</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; long beginTime = System.currentTimeMillis();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; int count = equalCount(arr1, arr2);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;所用时间为&quot; + (System.currentTimeMillis() - beginTime) + &quot;毫秒&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(&quot;两个数组都包含的数字有&quot; + count + &quot;个&quot;);</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static int equalCount(int[] arr1, int[] arr2) {</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; //先把arr1中相同元素排除掉</p><p>&nbsp; &nbsp; &nbsp; &nbsp; Set&lt;Integer&gt; set1 = new HashSet&lt;Integer&gt;();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; arr1.length; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; set1.add(arr1[i]);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; &nbsp; &nbsp; //再计算set1和arr2之间相同元素的个数</p><p>&nbsp; &nbsp; &nbsp; &nbsp; int count = 0;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; Iterator&lt;Integer&gt; it = set1.iterator();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; while (it.hasNext()) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Integer temp = it.next();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for (int i = 0; i &lt; arr2.length; i++) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (temp == arr2[i]) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count++;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return count;</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

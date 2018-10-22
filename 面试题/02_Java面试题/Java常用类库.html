@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Java常用类库》面试题</h1>
+                    <span>
+                        1、 <p>String s = new String(&quot;abc&quot;); 这句代码创建了几个对象?</p><p><br/></p> 
+                        解析：<p>两个。</p><p>类加载时遇到&quot;abc&quot;会创建一个String对象并放入常量池；程序执行时new String()又会在堆内存中创建一个，总共两个</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        2、 <p>可以自己写个类也叫做java.lang.String吗？</p><p><br/></p> 
+                        解析：<p>可以，而且eclipse也能正确识别，但是，程序执行时Java虚拟机加载的是JDK的String类。</p><p>其实是有办法加载自己的String的，只是对于大家来说没什么用，不用去管它</p><br />
+                    </span>
+                    <span>
+                        3、 <p>String类可以被继承吗？</p><p><br/></p> 
+                        解析：<p>不能，String是final修饰的类，不能被继承</p><br />
+                    </span>
+                    <span>
+                        4、 <p>error和exception有什么区别?</p><p><br/></p> 
+                        解析：<p>一般来说，error 表示严重的错误，比如内存溢出，一般和代码没有关系，即使代码逻辑正确也可能发生，此时程序员也无能为力。exception 是可预知可控制的异常，通常发生这类异常时，程序员可以编码控制是继续运行还是结束程序。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        5、 <p>说说java序列化</p><p><br/></p> 
+                        解析：<p>（1）Java序列化是把Java在内存中的对象按照一定的格式以字节流的方式传输到别的地方，如存储到硬盘的文件里，或者通过网络传输到另一台电脑。</p><p>（2）Java反序列化和序列化的过程相反。</p><p>（3）只有那些实现了Serializable接口的类才可以进行序列化操作，此接口只是一个标记接口，不提供任何方法。</p><p>（4）为了解决类修改后反序列化时可能会产生的数据错乱等问题，应该给实现Serializable接口的类声明一个序列号，以标记不同的类版本，如：private static final long serialVersionUID = 1L;，当修改后手动改成2L。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        6、 <p>说说java的IO</p> 
+                        解析：<p>IO是指数据的输入（Input）、 输出（Output）操作输入是指数据从别的地方传输到计算机，输出是指数据从计算机传输到别的地方。</p><p>常见的IO概念：</p><p>字节流：数据以字节数据的方式传输，传输过程不做中间处理。</p><p>字符流：字符数据在传输开始时会转换为字节进行传输，传输结束时会从字节转换回字符。</p><p>常见的IO类有InputStream、FileInputStream、OutputStream、FileOutputStream、Reader、FileReader、Writer、FileWriter、BufferReader、BufferWriter</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        7、 <p>Boolean a = new Boolean(true);</p><p>Boolean b = new Boolean(true);</p><p>System.out.println(a==b);</p><p>System.out.println(a==true);</p><p>System.out.println(b==true);</p><p>程序的输出结果是什么？</p> 
+                        解析：<p>false</p><p>true</p><p>true</p><br />
+                    </span>
+                    <span>
+                        8、 <p>byte b = 256; 对不对</p> 
+                        解析：<p>不对，byte的取值范围是[-128,127]</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>String a = &quot;dd&quot;+&#39;a&#39;;对不对？</p> 
+                        解析：<p>对，由于&quot;dd&quot;和&#39;a&#39;都是常量，编译器可以识别，在编译的时候即可完成拼接运算即String a =&nbsp;&quot;dda&quot;;</p><br />
+                    </span>
+                    <span>
+                        10、 <p>读取ASCII码文本文件可以用字节流吗，为什么？</p> 
+                        解析：<p>可以，ASCII字符都是单字节的，使用字节流读取时也不会导致数据错乱。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        11、 <p>Object o = new Object();</p><p>o = (Map)o;</p><p>这两句代码会导致什么结果？</p> 
+                        解析：<p>会导致运行时抛出ClassCastException异常，因为o指向的对象是Object类型，无法转换为Map类型。</p><br />
+                    </span>
+                    <span>
+                        12、 <p>常用的包有哪些？</p> 
+                        解析：<p>java.lang</p><p>java.util</p><p>java.io</p><p>java.sql</p><p>java.net</p><p>等</p><br />
+                    </span>
+                    <span>
+                        13、 <p>下面代码的执行结果？</p><p>public class Replace {</p><p>&nbsp; &nbsp; public static void stringReplace(String text) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; text = text.replace(&#39;j&#39;, &#39;l&#39;);</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static void bufferReplace(StringBuffer text) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; text = text.append(&quot;c&quot;);</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; String textString = new String(&quot;java&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; StringBuffer textBuffer = new StringBuffer(&quot;java&quot;);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; stringReplace(textString);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; bufferReplace(textBuffer);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(textString + textBuffer);</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p> 
+                        解析：<p>答案：javajavac</p><p>因为String具有“不可变形”，所以String的replace是生成一个新的String对象，所以text.replace(&#39;j&#39;, &#39;l&#39;)并不会改变原本的对象，同时java中在方法中中修改参数变量的指向并不会改变方法外部的指向，所以执行完了stringReplace(textString)后，textString还是指向的new String(&quot;java&quot;)这个对象。</p><p>而StringBuffer和String不一样，他的append还是修改原本的对象，因此bufferReplace中append也是修改的new StringBuffer(&quot;java&quot;)这个对象。</p><p><span style="font-family: Arial;font-size: 14px"></span></p><br />
+                    </span>
+                    <span>
+                        14、 <p>下面程序的输出结果是什么？</p><p>class Singleton {</p><p>&nbsp; &nbsp; private static Singleton instance = new Singleton();</p><p>&nbsp; &nbsp; public static int count1;</p><p>&nbsp; &nbsp; public static int count2 = 0;</p><p><br/></p><p>&nbsp; &nbsp; private Singleton() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; count1++;</p><p>&nbsp; &nbsp; &nbsp; &nbsp; count2++;</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static Singleton getInstance() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return instance;</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>public class Test {</p><p>&nbsp; &nbsp; public static void main(String[] args) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; Singleton.getInstance();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(Singleton.count1);</p><p>&nbsp; &nbsp; &nbsp; &nbsp; System.out.println(Singleton.count2);</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p> 
+                        解析：<p>1</p><p>0</p><p><br/></p><p>解释：</p><p>类加载过程有这么三个阶段</p><p><strong><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">加载阶段</span></span></strong></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">根据全限定类名找到类的</span>.class<span style="font-family:宋体">文件并加载到方法区内存中，同时在堆内存中生成一个</span><span style="font-family:Arial">java.lang.Class</span><span style="font-family:宋体">对象来表示这个类</span></span></p><p><span style=";font-family:宋体;font-size:14px">&nbsp;</span></p><p><strong><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">准备阶段</span></span></strong></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">在方法区内为静态变量分配内存，这个时候静态变量的值是其类型的初始值，比如</span>int<span style="font-family:宋体">类型的初始值为</span><span style="font-family:Arial">0</span></span></p><p><font face="宋体"><span style="font-size: 14px;">这个时候</span></font></p><p><font face="宋体"><span style="font-size: 14px;">instance=null</span></font></p><p><font face="宋体"><span style="font-size: 14px;">count1=0</span></font></p><p><font face="宋体"><span style="font-size: 14px;">count2=0</span></font></p><p><font face="宋体"><span style="font-size: 14px;"><br/></span></font></p><p><strong><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">初始化阶段</span></span></strong></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">按出现顺序把静态变量赋值语句和静态代码块合并成</span>&lt;clinit&gt;()<span style="font-family:宋体">方法，然后执行此方法，以便给静态变量赋值和执行静态代码块</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">void &lt;clinit&gt;(){</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">&nbsp; &nbsp;instance = new Singleton();//这句代码执行后 coun1=1,count2=1</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">&nbsp; &nbsp;count2 = 0;//这句代码执行后，count1=1，count2=0</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">}</span></span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">所以打印出 1 0</span></span></p><br />
+                    </span>
+                    <span>
+                        15、 <p>在Java中，下列哪个类不能派生出子类？</p><p><br/></p>
+                        A：public class MyClass{ } <br />
+                        B：class MyClass{ } <br />
+                        C：abstract class MyClass{ } <br />
+                        D：final class MyClass{ } <br />
+                        答案：D<br />
+                        解析：<p>final类不能有子类</p><br />
+                    </span>
+                    <span>
+                        16、 <p>在Java中，哪些接口位于集合框架的顶层？</p><p><br/></p>
+                        A：Map <br />
+                        B：Collection <br />
+                        C：List <br />
+                        D：Set <br />
+                        答案：A,B<br />
+                        解析：<p><img src="//static.rupeng.com/upload/images/20173/E8B4AB29EAE22F3D7E93F75176021CE5.png" title="3ADB2633F564A0643DD61423146784A2.png" alt="3ADB2633F564A0643DD61423146784A2.png"/></p><br />
+                    </span>
+                    <span>
+                        17、 <p>String str = &quot;123456789&quot;;</p><p>str=str.substring(1,3);</p><p>这两句代码执行后str的值为？</p><p><br/></p>
+                        A：&quot;23&quot; <br />
+                        B：&quot;123&quot; <br />
+                        C：&quot;12&quot; <br />
+                        D：&quot;234&quot; <br />
+                        答案：A<br />
+                        解析：<p>substring的方法签名为 substring(beginIndex, endIndex)</p><p>从方法签名可以看出第一个参数指定子字符串开始索引，第二个参数指定子字符串结束索引，一般来说都不会包含结束索引，也就是[begin,end)（左闭区间，右开区间）</p><br />
+                    </span>
+                    <span>
+                        18、 <p>说说final、finally、finalize的区别？</p> 
+                        解析：<p>（1）final：修饰类时被修饰的类不可被继承；修饰方法时被修饰的方法不可被子类重写；修饰变量时被修饰的变量不可被重复赋值</p><p>（2）finally：和try-catch配合使用，不管有没有抛出异常，finally中的代码都会执行，常用来关闭资源</p><p>（3）finalize：Object类的方法，可用来写一些回收资源的代码，当垃圾回收器回收一个对象时，通常会调用该对象的finalize方法</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        19、 <p>Java中的异常分为哪两种类型？</p> 
+                        解析：<p>Throwable包含了错误(Error)和异常(Excetion两类)</p><p>Exception又包含了运行时异常(RuntimeException, 又叫非检查异常)和非运行时异常(又叫检查异常)</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        20、 <p>给你 一组字符串如“abc1f0ff9aaa8rr4”，编程输出里面的数字：10984</p> 
+                        解析：<p>String s = &quot;abc1f0ff9aaa8rr4&quot;;</p><p>for(int i=0;i&lt;s.length();i++)</p><p>{</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>char ch = s.charAt(i);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>if(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;)</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.print(ch);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        21、 <p><span style="font-family: 宋体; color: rgb(34, 34, 34);">一个数组：1,1,2,3,5,8,13,21...+m，求第<span style="font-family: &quot;Times New Roman&quot;;">30</span>位数是多少？</span><span style="font-family: 宋体; color: rgb(34, 34, 34);">分别用递归和非递归实现</span><span style="font-family: 宋体; color: rgb(255, 0, 0);">；(常考！！！<span style="font-family: &quot;Times New Roman&quot;;">)</span></span></p> 
+                        解析：<p style="white-space: normal;"><span style="font-family: 宋体; color: rgb(255, 0, 0);">递归写法：</span></p><p style="white-space: normal;"><span style="font-family: 宋体; color: rgb(34, 34, 34);">写递归要确定两个：递归的终止条件；递归表达式。</span></p><p style="white-space: normal;"><span style="font-family: 宋体; color: rgb(34, 34, 34);">解答：总结递归规律：F(n)=F(n-2)+F(n-1)&nbsp;</span><span style="font-family: 宋体;">Fibonacci</span><span style="font-family: 宋体;">数列</span></p><p style="white-space: normal;">static int F(int n)</p><p style="white-space: normal;">{</p><p style="white-space: normal;">&nbsp; &nbsp; if (n == 1)</p><p style="white-space: normal;">&nbsp; &nbsp; {</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>return 1;</p><p style="white-space: normal;">&nbsp; &nbsp; }</p><p style="white-space: normal;">&nbsp; &nbsp; if (n == 2)</p><p style="white-space: normal;">&nbsp; &nbsp; {</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>return 1;</p><p style="white-space: normal;">&nbsp; &nbsp; }</p><p style="white-space: normal;">&nbsp; &nbsp; return F(n - 2) + F(n - 1);</p><p style="white-space: normal;">}</p><p style="white-space: normal;"><span style="font-family: 宋体; color: rgb(34, 34, 34);">非递归</span><span style="font-family: 宋体; color: rgb(34, 34, 34);">方法：</span></p><p style="white-space: normal;"><span style="font-family: 宋体; color: rgb(34, 34, 34);"></span></p><p style="white-space: normal;">static int F(int n)</p><p style="white-space: normal;">{</p><p style="white-space: normal;">&nbsp; int[] data =new int[n];<br/></p><p style="white-space: normal;">&nbsp;&nbsp;data[0] = 1;</p><p style="white-space: normal;">&nbsp;&nbsp;data[1] = 1;</p><p style="white-space: normal;">&nbsp;&nbsp;for(int i=2;i&lt;n;i++)</p><p style="white-space: normal;">&nbsp;&nbsp;{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>data[i] = data[i-1]+data[i-2];</p><p style="white-space: normal;">&nbsp;&nbsp;}</p><p style="white-space: normal;">&nbsp;&nbsp;return data[n-1];</p><p style="white-space: normal;">}</p><br />
+                    </span>
+                    <span>
+                        22、 <p>what is the result if a NullPointerException occurs on line &quot;some code here&quot;?</p><p>try{</p><p>&nbsp; &nbsp; //some code here&nbsp;</p><p>}</p><p>catch(NullPointerException e1){</p><p>&nbsp; &nbsp;System.out.print(&quot;a&quot;);</p><p>}</p><p>catch(RuntimeException e2){</p><p>&nbsp; &nbsp;System.out.print(&quot;b&quot;);</p><p>}</p><p>finally{</p><p>&nbsp; &nbsp;System.out.print(&quot;c&quot;);</p><p>}</p><p><br/></p> 
+                        解析：<p>答案：ac</p><p>翻译题目：在“some code here”这行的代码如果发生NullPointerException 异常，那么程序的运行结果是什么？</p><p>catch住了NullPointerException 异常，所以会执行System.out.print(&quot;a&quot;);</p><p>因为异常已经被catch了，所以虽然NullPointerException 继承自RuntimeException ，但是System.out.print(&quot;b&quot;);也不会执行了。</p><p>finally无论如何都会执行</p><br />
+                    </span>
+                    <span>
+                        23、 <p>下面哪个流属于面向字符的输入流（单选题）</p>
+                        A：BufferedWriter <br />
+                        B：FileInputStream <br />
+                        C：ObjectInputStream <br />
+                        D：InputStreamReader <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        24、 <p>在java中，以下代码中哪个正确的创建了一个InputStreamReader对象？</p>
+                        A：new InputStreamReader(new FileInputStream(&quot;1.txt&quot;)); <br />
+                        B：new InputStreamReader(new FileReader(&quot;1.txt&quot;)); <br />
+                        C：new InputStreamReader(new BufferReader(&quot;1.txt&quot;)); <br />
+                        D：new InputStreamReader(&quot;1.txt&quot;); <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        25、 <p>在java中，哪个类提供定位本地文件系统、对文件或者目录及其属性进行基本操作</p>
+                        A：FileInputStream <br />
+                        B：FileReader <br />
+                        C：FileWriter <br />
+                        D：File <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        26、 <p>int和Integer有什么区别？&nbsp;</p> 
+                        解析：<p>int是基本数据类型，Integer是包装类；int不可以为null，Integer可以为null；</p><br />
+                    </span>
+                    <span>
+                        27、 <p>1）</p><p>下面程序的执行结果是什么？</p><p>Integer a = new Integer(3);</p><p>Integer b = 3;&nbsp;</p><p>Integer c = 3;</p><p>int d = 3;</p><p>int e = 3;</p><p>System.out.println(a == b);&nbsp;</p><p>System.out.println(b == c);</p><p>System.out.println(c==d);</p><p>System.out.println(d==e);</p><p>2）下面程序的执行结果是什么？</p><p>Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;</p><p>System.out.println(f1 == f2);</p><p>System.out.println(f3 == f4);</p> 
+                        解析：<p>答案：</p><p>1）</p><p>false</p><p>true</p><p>true</p><p>true</p><p>2）</p><p>true</p><p>false</p><p><br/></p><p>解析：</p><p>Integer b = 3;</p><p>3是int类型，而b是Integer类型，因此会发生装箱；编译器会把Integer b = 3;编译成Integer b = Integer.valueOf(3);</p><p>valueOf方法的实现是：</p><p>public static Integer valueOf(int i) {</p><p>if (i &gt;= IntegerCache.low &amp;&amp; i &lt;= IntegerCache.high)</p><p>&nbsp; &nbsp; return IntegerCache.cache[i + (-IntegerCache.low)];</p><p>return new Integer(i);</p><p>}</p><p>IntegerCache是一个Integer对象的缓存，默认缓存了-128到127这些整数对应的Integer对象。因此调用valueOf传的i在-128到127之间会返回缓存的Integer对象，在这个范围之外的再new Integer(i)</p><p>因此Integer.valueOf(3)和Integer.valueOf(3)返回同一个Integer对象；当然如果直接new Integer(3)还是会创建新的Integer类对象（记住：只要new就会产生新对象）。</p><p><br/></p><p>Java中==是用来判断是否是同一个对象；</p><p><br/></p><p>因此，对于 题目1）：</p><p style="white-space: normal;">Integer a = new Integer(3);</p><p style="white-space: normal;">Integer b = 3;//编译成Integer b = Integer.valueOf(3);</p><p style="white-space: normal;">Integer c = 3;//编译成Integer c = Integer.valueOf(3);</p><p style="white-space: normal;">int d = 3;</p><p style="white-space: normal;">int e = 3;</p><p style="white-space: normal;">System.out.println(a == b);//Integer.valueOf(3)获得的是缓存的Integer对象，a是new的一个新的Integer对象。所以不是一个对象。</p><p style="white-space: normal;">System.out.println(b == c);//b、c都是指向缓存的同一个Integer对象。是一个对象</p><p style="white-space: normal;">System.out.println(c==d);//Integer和int比较，会先把Integer拆箱出来再和int比较</p><p style="white-space: normal;">System.out.println(d==e);//int和int比较就是比较值是否相当</p><p style="white-space: normal;"><br/></p><p style="white-space: normal;">对于题目2）</p><p style="white-space: normal;">Integer f1 = 100, f2 = 100, f3 = 150, f4 = 150;//Integer.valueOf()缓存对象的范围是-128到127。100在这个范围内，150不在这个范围内。因此f3、f4是两个不同的Integer对象；f1和f2指向是同一个Integer对象；</p><p style="white-space: normal;">System.out.println(f1 == f2);</p><p style="white-space: normal;">System.out.println(f3 == f4);</p><p style="white-space: normal;"><br/></p><br />
+                    </span>
+                    <span>
+                        28、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下对异常的描述不正确的有？</span></p>
+                        A：异常分为Error和Exception <br />
+                        B：Throwable是所有异常类的父类 <br />
+                        C：Exception是所有异常类父类 <br />
+                        D：Exception包括RuntimeException和RuntimeException之外的异常 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        29、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;以下描述不正确的有？</span></p>
+                        A：try块不可以省略 <br />
+                        B：可以使用多重catch块 <br />
+                        C： finally块可以省略 <br />
+                        D：catch块和finally块可以同时省略 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        30、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">如果<span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">String s = null;，那么</span>下面的哪些代码</span><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">会抛出NullPointerException异常？（多选题）</span></p>
+                        A：if( (s!=null) &amp; (s.length()&gt;0) ) <br />
+                        B：if( (s!=null) &amp; &amp; (s.length()&gt;0) ) <br />
+                        C： if( (s==null) | (s.length()==0) ) <br />
+                        D： if( (s==null) || (s.length()==0) ) <br />
+                        答案：AC<br />
+                        解析：<p>&amp;和|不会有短路运算。&amp;&amp;和||会有短路运算。&amp;和|很少用。</p><br />
+                    </span>
+                    <span>
+                        31、 <p>以下关于异常的说法正确的是？</p>
+                        A：一旦出现异常，程序运行就终止了 <br />
+                        B：如果一个方法申明将抛出某个异常，它就必须真的抛出那个异常 <br />
+                        C：在 catch 子句中匹配异常是一种精确匹配 <br />
+                        D：可能抛出系统异常的方法是不需要申明异常的 <br />
+                        答案：D<br />
+                        解析：<p>A、如果异常被处理了，就不会终止；</p><p>B、方法声明throws AAAException表示这个方法“可能”抛出一样，不是必须抛出异常。如果方法一定会抛出异常，谁还会调用它？</p><p>C、catch(Exception ex)会匹配所有从Exception继承的异常，所以不是精确匹配具体某个异常类；</p><p>D、如果抛出的是运行时异常（RuntimeException）就不需要声明抛出；</p><br />
+                    </span>
+                    <span>
+                        32、 <p>如下代码：</p><p>public class Foo&nbsp;</p><p>{</p><p>&nbsp; public static void main(String[] args)&nbsp;</p><p>&nbsp; {&nbsp;</p><p>&nbsp; &nbsp; try&nbsp;</p><p>&nbsp; &nbsp; {</p><p>&nbsp; &nbsp; &nbsp;return;&nbsp;</p><p>&nbsp; &nbsp; }&nbsp;</p><p>&nbsp; &nbsp; finally&nbsp;</p><p>&nbsp; &nbsp; {&nbsp;</p><p>&nbsp; &nbsp; &nbsp; System.out.println( &quot;Finally&quot; );&nbsp;</p><p>&nbsp; &nbsp; }&nbsp;</p><p>&nbsp; }&nbsp;</p><p>}&nbsp;</p><p>输出结果是什么? &nbsp;</p><p><br/></p>
+                        A：Finally <br />
+                        B：编译失败 <br />
+                        C：代码正常运行但没有任何输出 <br />
+                        D：运行时抛出异常 <br />
+                        答案：A<br />
+                        解析：<p>finally的代码一定会被执行，即使在try中return了</p><br />
+                    </span>
+                    <span>
+                        33、 <p>下面哪些不是java的基本数据类型?（多选题）</p>
+                        A：short <br />
+                        B：Boolean <br />
+                        C：Double <br />
+                        D：float <br />
+                        答案：BC<br />
+                        解析：<p>小写的是基本数据类型，大写开头的是包装类；</p><br />
+                    </span>
+                    <span>
+                        34、 <p>1）下面代码的执行结果是什么？</p><p>try{</p><p>&nbsp; System.out.println(&quot;hello world&quot;);</p><p>&nbsp; &nbsp;return;</p><p>}catch(RuntimeException e){</p><p>&nbsp; &nbsp;e.printStackTrace();</p><p>}finally{</p><p>&nbsp; &nbsp;System.out.println(&quot;goodbye world&quot;);</p><p>}</p><p><br/></p><p>2）下面代码的执行结果是什么？</p><p>try{</p><p>&nbsp; &nbsp;System.out.println(&quot;hello world&quot;);</p><p>&nbsp; &nbsp;System.exit(0);</p><p>}catch(RuntimeException e){</p><p>&nbsp; &nbsp;e.printStackTrace();</p><p>}finally{</p><p>&nbsp; &nbsp;System.out.println(&quot;goodbye world&quot;);</p><p>}</p><p><br/></p> 
+                        解析：<p>1）hello world</p><p>goodbye world</p><p>2）</p><p>hello world</p><p><br/></p><p>一旦执行System.exit(0) 之后JVM会立即停止，这样finally就不执行了</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

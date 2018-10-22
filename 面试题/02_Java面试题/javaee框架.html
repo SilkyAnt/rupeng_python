@@ -1,0 +1,541 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《javaee框架》面试题</h1>
+                    <span>
+                        1、 <p>谈谈你对struts2的理解</p> 
+                        解析：<p>(1) strust2的优缺点</p><p>优点：</p><p>&nbsp;&nbsp;把一般的处理流程步骤化：参数自动类型转换、参数值有效性检验、处理结果导航</p><p>&nbsp;&nbsp;有比el表达式更强大的ognl表达式，再配合struts的自定义标签，使得页面数据显示非常方便</p><p>&nbsp;&nbsp;提供了强大的拦截器，可以定制个性化的需求处理流程</p><p>&nbsp;&nbsp;线程安全，因为每次请求都会产生一个action对象以及和action相关的对象</p><p>&nbsp;&nbsp;耦合度低，降低编码复杂度</p><p>&nbsp;</p><p>缺点：</p><p>&nbsp; 属于重量级框架，太复杂，现在使用很多项目使用SpringMVC代替Struts。</p><p>&nbsp;</p><p>(2)struts2请求处理流程</p><p>客户端发送请求到服务器后, 请求被struts2 核心过滤器”捕获”</p><p>请求经过一系列拦截器的拦截处理最终到达匹配的action</p><p>action调用业务逻辑层执行业务,完成后返回一个字符串</p><p>struts2引擎根据配置信息和字符串 , 把请求导航到某个资源生成响应</p><br />
+                    </span>
+                    <span>
+                        2、 <p>谈谈你对hibernate的理解</p> 
+                        解析：<p>（1）Java是面向对象的，操作的习惯是直接对 对象进行操作；现在主流的数据库是关系型的，操作的习惯是对关系表进行操作。Java代码要想访问数据库获取或者存储数据，就需要使用一个中间媒介：JDBC。由于是java通过JDBC去操作数据库，所以JDBC编程时代码的风格并不是面向对象的风格，这样就会导致JDBC的代码量很多而且很复杂不方便。这对于中小型项目来说勉强可以接受，但对于大型项目能把程序员逼疯。</p><p><br/></p><p>（2）一个新技术的出现往往是解决现有技术的缺点，hibernate就属于这样。Hibernate通过封装JDBC，使用orm思想把程序对对象的操作自动的映射成对关系数据库的操作，从而使java访问数据库的编码更符合面向对象的操作习惯，而且简化了很多复杂操作</p><p>&nbsp;</p><p>（3）hibernate对数据库操作的封装十分完善，从而功能异常强大，但这也不得不增加hibernate自身的复杂度，也就增加了学习的成本。一般来说很多程序员很难很好的掌握hibernate，所以现在很多企业使用hibernate时主要使用hibernate管理对象和表之间的映射，而表和表之间的各种关联关系特别是多对多关系则用的很少，而是使用普通的JDBC方式去解决表和表之间的关联关系</p><p>&nbsp;</p><p>&nbsp;</p><p>（4）使用Hibernate的基本流程是：配置核心hibernate.cfg.xml核心配置文件、配置对象和表之间的映射文件xxx.hbm.xml、创建SessionFactory核心对象、创建session对象，启动事务，完成CRUD操作，提交事务，关闭session。</p><p>&nbsp;</p><p>（5）还需要特别说一下的就是hibernate的缓存，有session级别的一级缓存还有sessionfactory级别的二级缓存。可以很好的提高访问数据库的效率</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        3、 <p>为什么要用 ORM？和JDBC 有何不一样？</p> 
+                        解析：<p>因为现在主流的数据库都是面向关系型的，对于使用java操作起来很不方便，这样就把Class类和数据库中的表进行了关联，一个对象对应一条记录，这样我们就能够以面向对象的编程思想去操作数据库，这就是ORM。</p><p>JDBC是面向sql的连接数据库技术，操作起来不方便。</p><p>ORM是对JDBC进行了封装，也就是ORM底层仍然是使用JDBC实现的；</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        4、 <p>hibernate中的update()和saveOrUpdate()的区别，session的load()和get()的区别</p><p><br/></p> 
+                        解析：<p style=";text-align:justify;text-justify:inter-ideograph">update()只能执行更新的操作，而使用saveOrUpdate()的时候，如果该domain对象中含有id，那么就是执行更新操作，否则即使插入操作。</p><p>session中load()方法，当数据库中不存在与OID对应的记录时，load抛出异常，而get()返回null</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        5、 <p>简述 hibernate 和 JDBC 的优缺点？</p><p><br/></p> 
+                        解析：<p>（1）hibernate是JDBC的重量级封装，用来解决JDBC编程时的缺点，比如JDBC操作是非面向对象风格的，JDBC编码是很复杂等</p><p>（2）既然hibernate是对JDBC的封装，那hibernate的开发效率很高，而且方便管理维护。但操作数据库的效率就没有JDBC高了，不过hibernate提供了两级缓存，也很可观的提高了操作数据库的效率</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        6、 <p>简单说说hibernate和JDBC的相同点和不同点</p> 
+                        解析：<p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">相同点：</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>1<span style="font-family:宋体">）两者都是</span><span style="font-family:Arial">JAVA</span><span style="font-family:宋体">的数据库操作中间件。</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>2<span style="font-family:宋体">）两者对于数据库进行直接操作的对象都不是线程安全的，都需要及时关闭。</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>3<span style="font-family:宋体">）两者都可以对数据库的更新操作进行显式的事务处理。</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&nbsp;</span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">不同点：</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>1<span style="font-family:宋体">）使用的</span><span style="font-family:Arial">SQL</span><span style="font-family:宋体">语言不同：</span><span style="font-family:Arial">JDBC</span><span style="font-family:宋体">使用的是基于关系型数据库的标准</span><span style="font-family:Arial">SQL</span><span style="font-family:宋体">语言，而</span><span style="font-family:Arial">hibernate</span><span style="font-family:宋体">既可以直接操作对象，也可以使用</span><span style="font-family:Arial">HQL(Hibernate query language)</span><span style="font-family:宋体">语言，也可以使用</span><span style="font-family:Arial">sql</span><span style="font-family:宋体">语言</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>2<span style="font-family:宋体">）操作的东西不同：</span><span style="font-family:Arial">JDBC</span><span style="font-family:宋体">操作的是基本数据，</span><span style="font-family:Arial">hibernate</span><span style="font-family:宋体">操作的</span><span style="font-family:Arial">java</span><span style="font-family:宋体">对象</span></span></p><p><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">（</span>3<span style="font-family:宋体">）数据状态不同：</span><span style="font-family:Arial">JDBC</span><span style="font-family:宋体">操作的数据是</span><span style="font-family:Arial">“</span><span style="font-family:宋体">瞬时</span><span style="font-family:Arial">”</span><span style="font-family:宋体">的，变量的值无法与数据库中的值保持一致，而</span><span style="font-family:Arial">hibernate</span><span style="font-family:宋体">操作的数据是可持久的，即持久化对象的数据属性的值是可以跟数据库中的值保持一致的</span></span></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        7、 <p>写出hibernate的一对多和多对一双向关联的orm配置？</p><p><br/></p> 
+                        解析：<p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-size: 14px;"><font face="Arial">（1）</font><span style="font-family: 宋体;">在一段的</span><span style="font-family: Arial;">domain</span><span style="font-family: 宋体;">中定义</span><span style="font-family: Arial;">Set</span><span style="font-family: 宋体;">类型（</span><span style="font-family: Arial;">a</span><span style="font-family: 宋体;">） 存储多端集合对象元素，同时在一端</span><span style="font-family: Arial;">hbm.xml</span><span style="font-family: 宋体;">中配置</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&lt;set name=”a” inverse=”true” cascade=”all” lazy=”false” &nbsp;&gt;</span></p><p style="text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&lt;key column=”idkey”&gt;&lt;/key&gt;</span></p><p style="text-indent:28px;text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&lt;one-to-many &nbsp;class=”<span style="font-family:宋体">全路径多端类</span><span style="font-family:Arial">” &nbsp;/&gt;</span></span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&lt;/set&gt;</span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&nbsp;</span></p><p style=";text-align:justify;text-justify:inter-ideograph"><font face="Arial"><span style="font-size: 14px;">（2）</span></font><span style="font-size: 14px; font-family: 宋体;">在多端的</span><span style="font-family: Arial; font-size: 14px;">domain</span><span style="font-size: 14px; font-family: 宋体;">中定义一端类型（</span><span style="font-family: Arial; font-size: 14px;">b</span><span style="font-size: 14px; font-family: 宋体;">） ，同时在多端</span><span style="font-family: Arial; font-size: 14px;">hbm.xml</span><span style="font-size: 14px; font-family: 宋体;">中配置</span></p><p style=";text-align:justify;text-justify:inter-ideograph"><span style="font-family: Arial;font-size: 14px">&lt;many-to-one name=”b” class=”<span style="font-family:宋体">全路径一端类</span><span style="font-family:Arial">” &nbsp;column=” idkey ”&gt;&lt;/many-to-one&gt;</span></span></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        8、 <p>hibernate的inverse属性的作用？</p> 
+                        解析：<p>inverse是hibernate双向关系中的基本概念。inverse的真正作用就是指定由哪一方来维护之间的关联关系。当一方中指定了“inverse=false”（默认），那么那一方就有责任负责之间的关联关系，说白了就是hibernate如何生成Sql来维护关联的记录</p><p>&nbsp;</p><p>补充：inverse与cascade 的比较：</p><p>&nbsp;</p><p>inverse：负责控制关系，默认为false，也就是关系的两端都能控制，但这样会造成一些问题，更新的时候会因为两端都控制关系，于是重复更新。一般来说有一端要设为true。</p><p>&nbsp;</p><p>cascade：负责控制关联对象的级联操作，包括更新、删除等，也就是说对一个对象进行更新、删除时，其它对象也受影响，比如我删除一个对象，那么跟它是多对一关系的对象也全部被删除。</p><p>&nbsp;</p><p>例如删除“一”那一端一个对象O的时候，如果“多”的那一端的inverse设为true（cascade设为delete），则把“多”的那一端所有与O相关联的对象外键清空。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>hibernate进行多表查询每个表中各取几个字段，也就是说查询出来的结果集没有一个实体类与之对应如何解决</p><p><br/></p> 
+                        解析：<p>这里说的并不是把这些数据都封装到一个对象里面）</p><p>解决方案一，按照Object[]数据取出数据，然后自己组bean</p><p>&nbsp;</p><p>解决方案二，对每个表的bean写构造函数，比如表一要查出field1,field2两个字段，那么有一个构造函数就是Bean(type1 filed1,type2 field2) ，然后在hql里面就可以直接生成这个bean了</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        10、 <p>hibernate load和get什么区别？</p> 
+                        解析：<p>get和load的根本区别，一句话，hibernate对于load方法认为该数据在数据库中一定存在，可以放心的使用代理来延迟加载，如果在使用过程中发现了问题，只能抛异常；而对于get方法，hibernate一定要获取到真实的数据，否则返回null</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        11、 <p>介绍一下Hibernate的二级缓存</p> 
+                        解析：<p>按照以下思路来回答：（1）首先说清楚什么是缓存，（2）再说有了hibernate的Session就是一级缓存，即有了一级缓存，为什么还要有二级缓存，（3）最后再说如何配置Hibernate的二级缓存。</p><p>&nbsp;</p><p>（1）缓存就是把以前从数据库中查询出来和使用过的对象保存在内存中（一个数据结构中），这个数据结构通常是或类似Hashmap，当以后要使用某个对象时，先查询缓存中是否有这个对象，如果有则使用缓存中的对象，如果没有则去查询数据库，并将查询出来的对象保存在缓存中，以便下次使用。下面是缓存的伪代码：</p><p>&nbsp;</p><p>（2）hibernate的session里面有缓存，我们通常将之称为一级缓存。当想使用session从数据库中查询出一个对象时，session先从自己内部查看是否存在这个对象，存在则直接返回，不存在才去访问数据库，并将查询的结果保存在自己内部。由于session代表一次会话过程，一个session与一个数据库连接相关连，所以session最好不要长时间保持打开，通常仅用于一个事务当中，在事务结束时就应关闭。并且session是线程不安全的，被多个线程共享时容易出现问题。通常只有那种全局意义上的缓存才是真正的缓存应用，才有较大的缓存价值，因此，hibernate的session这一级缓存的缓存作用并不明显，应用价值不大。hibernate的二级缓存就是要为hibernate配置一种全局缓存，让多个线程和多个事务都可以共享这个缓存。我们希望的是一个人使用过，其他人也可以使用，session没有这种效果。</p><p>&nbsp;</p><p>（3）hibernate只负责制定二级缓存的标准，任何人都可以实现这个标准，例如，EHCache和OSCache就是第三方厂商的产品。在hibernate中使用二级缓存，首先就要在hibernate.cfg.xml配置文件中配置使用哪个厂家的缓存产品，接着需要配置该缓存产品自己的配置文件，最后要配置hibernate中的哪些实体对象要纳入到二级缓存的管理中。明白了二级缓存原理和有了这个思路后，很容易配置起hibernate的二级缓存。扩展知识：一个SessionFactory可以关联一个二级缓存，也即一个二级缓存只能负责缓存一个数据库中的数据，当使用hibernate 的二级缓存后，注意不要有其他的应用或SessionFactory来更改当前数据库中的数据，这样缓存的数据就会与数据库中的实际数据不一致</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        12、 <p>你对spring的理解</p> 
+                        解析：<p>1）spring是个对象容器，用来管理众多的java对象，包括创建对象、维护对象间的关系、自动调用部分对象的方法完成通用功能、销毁对象等。Spring通过IOC和AOP两种思想实现上述功能。</p><p>&nbsp;</p><p>（2）IOC称为控制翻转，也可以称为DI，即依赖注入，这种思想用来让spring根据配置自动创建需要的对象，并管理对象之间的关系（给对象的字段赋值），这就使得程序员不需要考虑如何创建需要的对象，而是认为spring已经直接把对象提供好了，可以直接使用这个对象干活了</p><p>&nbsp;</p><p>（3）AOP是面向切面编程，是OOP面向对象编程的很好的补充。 AOP用来把一些通用的和核心业务逻辑无关的操作抽取出来，交给容器去自动处理，比如检查权限、记录日志等，这样可以大大简化程序员的编码工作，让程序员只专注于核心业务逻辑的实现</p><p><br/></p><p>（4）提供了非常好用的声明式事务管理</p><br />
+                    </span>
+                    <span>
+                        13、 <p>使用spring的好处有哪些</p> 
+                        解析：<p>（1）程序员不需要自己去管理对象，只需要做一些简单的配置（通过IOC实现）</p><p>&nbsp;</p><p>（2）程序员不需要关注业务逻辑之外的事情，比如编码是不需要考虑检查权限，记录日志等（通过AOP实现）</p><p>&nbsp;</p><p>（3）程序员不需要管理事务，这个也属于第二条，但这个尤为重要，spring专门提供了一组API和配置方式来解决事务管理</p><p>&nbsp;</p><p>（4）方便程序的测试，可以用非容器依赖的编程方式（自己写个main方法）进行几乎所有的测试工作。</p><p>&nbsp;</p><p>（5）方便集成各种优秀框架，spring不排斥各种优秀的开源框架，spring提供了对各种优秀框架（如Struts,Hibernate、Hessian、Quartz）直接支持。</p><p>&nbsp;</p><p>（6）降低Java EE API的使用难度，spring对很多难用Java EE API（如JDBC，JavaMail，远程调用）提供一个薄薄的简易封装层，大大降低这些Java EE API使用难度</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        14、 <p>spring中有几种bean作用域？</p> 
+                        解析：<p>bean作用域在配置时使用属性scope属性决定，可选值如下：</p><p>singleton：单例 (默认值)</p><p>prototype：原型 &nbsp;允许bean多次实例化(使用一次就创建一个实例)</p><p>request：每次http请求将会有各自的bean实例，类似于prototype（不常用）</p><p>session：在一个http session中，一个bean定义对应一个bean实例（不常用）</p><p>global session：在一个全局http session中，一个bean定义对应一个bean实例（不常用）</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        15、 <p>Hibernate对象的三种状态是什么？Hibernate对象的生命周期是怎么样的？</p> 
+                        解析：<p>hibernate的对象有3种状态,分别为:瞬时态(Transient)、持久态(Persistent)、游离态(Detached).</p><p><br/></p><p>瞬时对象是普通Java对象,不和数据库的数据有任何关联关系,在Hibernate中,可通过session的save()或saveOrUpdate()方法将瞬时对象与数据库相关联,并将数据对应的插入数据库中,此时该瞬时对象转变成持久化对象.</p><p>处于持久态的对象在数据库中具有对应的记录,并拥有一个持久化标识，当一个session执行close()或clear()、evict()之后,持久对象变成游离态<br/></p><p>当与某持久态对象关联的session被关闭后,该持久对象转变为游离对象.当游离对象被重新关联到session上时,并再次转变成持久对象.<br/></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        16、 <p>关于spring说法错误的是？</p>
+                        A：spring提供了aop方式的日志系统 <br />
+                        B：spring包含一个“依赖注入”模式的实现； <br />
+                        C：使用spring可以实现声明事务； <br />
+                        D：spring是一个轻量级JavaEE的框架集合； <br />
+                        答案：A<br />
+                        解析：<p>spring没有提供一个现成的日志系统，需要自己写；</p><br />
+                    </span>
+                    <span>
+                        17、 <p>关于struts说法错误的是？</p>
+                        A：struts基于MVC架构，开发流程一目了然，开发人员可以很好的掌握开发的过程； <br />
+                        B：使用OGNL进行参数传递； <br />
+                        C：强大的事务配置管理能力； <br />
+                        D：强大拦截器； <br />
+                        答案：C<br />
+                        解析：<p>A是正确的，你不能因为自己Struts学起来难，就否定熟练的人“可以很好的掌握开发的过程”</p><p>C是错误的，事务不是Struts的事情，是spring负责配置的</p><br />
+                    </span>
+                    <span>
+                        18、 <p>Hibernate和Mybatis相比有什么区别？<br/></p> 
+                        解析：<p>1、Hibernate功能强大，是强大的ORMapping；MyBatis只是个SQL Mapper；</p><p>2、Hibernate的缺点就是学习门槛高，需要对Hibernate内部非常熟悉才能用好Hibernate；MyBATIS入门简单，可以继续编写SQL语句。</p><p>3、Hibernate屏蔽底层数据库语法差异；MyBatis需要自己编写不同数据库的语句；</p><br />
+                    </span>
+                    <span>
+                        19、 <p>说一下Hibernate的延迟加载</p> 
+                        解析：<p>（1）首先介绍一下延迟加载的几种情况：</p><p>&nbsp; &nbsp; &nbsp; &nbsp;当调用Session上的load（）方法加载实体时，就会采用延迟加载</p><p>&nbsp; &nbsp; &nbsp; &nbsp;当Session加载某个实体时，会对这个实体中的集合属性值采用延迟加载</p><p>&nbsp; &nbsp;当Session加载某个实体时，会对这个实体所单端关联的另一个实体对象采用延迟加载</p><p>&nbsp; &nbsp; &nbsp; &nbsp;总结一句话延迟加载就是分为类的延迟加载和集合的延迟加载，即类的延迟加载包括用load（）方法加载实体和加载实体所单向关联的另一个实体的对象</p><p>（2）延迟加载的过程：</p><p>&nbsp; &nbsp; &nbsp; &nbsp;Hibernate从数据库获取某一个对象数据、获取某一个对象的集合属性时，获取某一个对象所关联的另一个对象时，由于没有使用该对象的数据，hibernate并不从数据库加载真正的数据。而是为该对象创建一个代理对象来代表这个对象，这个对象上的所有属性都为默认值，只有在真正的需要该对象的数据时才创建这个真实的对象，真正的从数据库中加载数据。</p><p>(3)延迟加载的使用</p><p>&nbsp; &nbsp; &nbsp;因为在类加载和集合加载的时候都会遇到延迟加载的问题，当我们在查询的时候不需要延迟加载，因为通过延迟加载不能查到是情况下，可以在class类标签或者是set集合的标签中设置lazy=false，表示立即加载，而true表示延迟加载</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        20、 <p>关于AOP（面向切面编程），如下说的错误的是？</p>
+                        A：AOP将散落在系统中的切面代码集中实现 <br />
+                        B：AOP有助于提高系统可维护性 <br />
+                        C：AOP已经表现出要替代面向对象编程的趋势； <br />
+                        D：AOP一种设计模式，Spring提供了一种实现； <br />
+                        答案：C<br />
+                        解析：<p>AOP（面向切面编程）是为了解决“把日志、权限检查等代码集中在一个地方实现”的问题，并不是用来替代面向对象的。</p><br />
+                    </span>
+                    <span>
+                        21、 <p>在JavaWeb应用中，MVC设计模式中的V（视图）通常由什么充当？</p>
+                        A：JSP <br />
+                        B：Servlet&#160; <br />
+                        C：Action  <br />
+                        D：JavaBean  <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        22、 <p>在Java Web应用程序中，使用哪个数据源与JNDI获得数据库连接时，应把JDBC驱动程序jar文件放在哪里？</p>
+                        A：应用程序的src目录 <br />
+                        B：应用程序的/WEB-INF/lib目录 <br />
+                        C：Tomcat的根目录 <br />
+                        D：Tomcat的common/lib目录 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        23、 <p>哪一个不是EL定义的隐式对象？</p>
+                        A：cookie <br />
+                        B：pageContext&#160; <br />
+                        C：attributes&#160; <br />
+                        D：initParam&#160; <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        24、 <p>EL表达式${10 mod 3}，执行结果为？</p>
+                        A：10&#160;mod&#160;3 <br />
+                        B：1 <br />
+                        C：3 <br />
+                        D：null <br />
+                        答案：B<br />
+                        解析：<p>mod是求余运算，相当于java中的“%”运算符</p><br />
+                    </span>
+                    <span>
+                        25、 <p>jsp指令中isELIgnored=&quot;boolean&quot;的意思是？</p><p><br/></p>
+                        A：决定是否实现 Servler 的单线程模式 <br />
+                        B：决定改页面是否是一个错误处理页面 <br />
+                        C：决定是否支持 EL 表示 <br />
+                        D：没有具体的含义 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        26、 <p>在配置tomcat虚拟目录时，需要打开哪个文件？</p><p><br/></p>
+                        A：index.jsp <br />
+                        B：web.xml <br />
+                        C：server.xml <br />
+                        D：以上都不是 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        27、 <p>Mybatis中 #{...} 和 ${...} 的区别是什么？</p> 
+                        解析：<p>MyBatis将 #{…} 解释为JDBC prepared statement 的一个参数标记。而将 ${…} 解释为字符串替换。</p><p>因为在某些SQL语句中并不能使用参数标记(parameter markers)。 比如,我们不能在表名(table name)的位置使用参数标记。&nbsp;</p><p>使用$ {…} (字符串替换)时可能会有SQL注入攻击的风险。另外,字符串替换在处理复杂类型也可能常常发生问题,如日期类型。因此尽可能地使用 #{…} 这种方式。</p><br />
+                    </span>
+                    <span>
+                        28、 <p>struts2中，配置自定义拦截器使用下面哪个选项？</p>
+                        A：interceptors <br />
+                        B： inter <br />
+                        C：interceptor <br />
+                        D：interface <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        29、 <p>struts2中，如果没有为action指定class，默认class是</p>
+                        A：ServletAction <br />
+                        B：Action <br />
+                        C：ActionSupport <br />
+                        D：ActionContext <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        30、 <p>谈一下拦截器和过滤器的区别</p> 
+                        解析：<p>拦截器和过滤器都可以用来实现横切关注功能，其区别主要在于：</p><p>1、拦截器是基于Java反射机制的，而过滤器是基于接口回调的。&nbsp;</p><p>2、过滤器依赖于Servlet容器，而拦截器不依赖于Servlet容器。&nbsp;</p><p>3、拦截器只能对Action请求起作用，而过滤器可以对所有请求起作用。&nbsp;</p><p>4、拦截器可以访问Action上下文、值栈里的对象，而过滤器不能。</p><br />
+                    </span>
+                    <span>
+                        31、 <p>struts2中，自定义拦截器可以继承下面哪个类实现？</p>
+                        A： com.opensymphony.interceptor.AbstractInterceptor <br />
+                        B： com.open.xwork2.interceptor.AbstractInterceptor <br />
+                        C： com.opensymphony.xwork2.interface.AbstractInterceptor <br />
+                        D： com.opensymphony.xwork2.interceptor.AbstractInterceptor <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        32、 <p>struts2是由下面哪个框架发展而来的？</p>
+                        A： WebWork1 <br />
+                        B： WebWork2 <br />
+                        C：Struts1 <br />
+                        D： 全不正确 <br />
+                        答案：B<br />
+                        解析：<p>很早以前有个框架是Struts1，后来它看WebWork2更高级，但是WebWork的名气没有Struts1大，所以Struts就把WebWork2收编进来改造成Struts2了，抛弃了Struts1的代码。这就是传说中的“借壳上市”</p><p>Struts2和Struts1没什么太大关系。</p><br />
+                    </span>
+                    <span>
+                        33、 <p>下面哪个不是Struts2的标签库？</p>
+                        A：Bean <br />
+                        B：WEB <br />
+                        C：HTML <br />
+                        D：Template <br />
+                        答案：B<br />
+                        解析：<p>Struts提供了五个标签库，即：HTML、Bean、Logic、Template和Nested。</p><p>HTML 标签 用来创建能够和Struts 框架和其他相应的HTML 标签交互的HTML 输入表单&nbsp;</p><p>Bean 标签 在访问JavaBeans 及其属性，以及定义一个新的bean 时使用&nbsp;</p><p>Logic 标签 管理条件产生的输出和对象集产生的循环 Template 标签 随着Tiles框架包的出现，此标记已开始减少使用</p><p>Nested 标签 增强对其他的Struts 标签的嵌套使用的能力&nbsp;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        34、 <p>struts2中，如果Action中存在多个方法时，可以使用下面哪个符号加方法名调用指定方法？</p>
+                        A：英文句号 <br />
+                        B：下划线 <br />
+                        C：冒号 <br />
+                        D：感叹号 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        35、 <p>下面不属于Struts2的动作类的常量返回值的是？</p>
+                        A：never <br />
+                        B：success <br />
+                        C：login <br />
+                        D：input <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        36、 <p>下列说法哪个是正确的？</p>
+                        A：Struts2 框架中的Model必须继承org.apache.struts.action.Action <br />
+                        B：Struts2 框架中的Controller必须是Servlet <br />
+                        C：Struts2 框架中的Model必须继承ActionSupport <br />
+                        D：Struts2 框架中的Model可以是任何POJO <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        37、 <p>struts2中，关于拦截器说法正确的是？</p>
+                        A： 某个action显式指定了某个拦截器后，默认拦截器会先起作用，再调用这个指定的拦截器 <br />
+                        B： 某个action显式指定了某个拦截器后，默认拦截器不会起作用 <br />
+                        C： 某个action显式指定了某个拦截器后，指定的拦截器先起作用，再调用默认拦截器 <br />
+                        D： 某个action显式指定了某个拦截器后，默认拦截器与指定拦截器会随机调用 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        38、 <p>关于struts2框架引入jar包，下面选项错误的是？（单选题）</p>
+                        A： ognl-x.x.x.jar，struts2 框架通过其读写对象属性 <br />
+                        B： commons-logging-x.x.x.jar支持 log4j的日志记录 <br />
+                        C：xwork-core-x.x.x.jar xwork类库，与struts2关系不大，可以不引入 <br />
+                        D：struts2-core-x.x.x.jar struts2框架核心类库 <br />
+                        答案：C<br />
+                        解析：<p>Struts2就是根据WebWork改造的，所以必须要引入xwork-core-x.x.x.jar</p><br />
+                    </span>
+                    <span>
+                        39、 <p>struts2中，如果没有为action指定method，默认执行action的哪个方法？</p>
+                        A：validate <br />
+                        B：post <br />
+                        C：execute <br />
+                        D：get <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        40、 <p>struts2中，获取HttpServletResponse对象正确的写法是？</p>
+                        A： HttpServletResponse response = ServletActionContext.getResponse(); <br />
+                        B： HttpServletResponse response = ServletContext.getResponse(); <br />
+                        C： HttpServletResponse response = ActionContext.getResponse(); <br />
+                        D： HttpServletResponse response = ServletAction.getResponse(); <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        41、 <p>在使用struts2时定义Action通常使用哪种方式？</p>
+                        A： 直接定义Action类 <br />
+                        B： 实现Action接口 <br />
+                        C： 从ActionSupport继承 <br />
+                        D： 从Action继承 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        42、 <p>struts2中，控制器需要在下面哪个配置文件中进行配置？</p>
+                        A： struts.xml <br />
+                        B： webwork.xml <br />
+                        C： web.xml <br />
+                        D： struts2.xml <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        43、 <p>关于struts2，下面描述错误的是？</p>
+                        A： 可以在struts2的拦截器中进行AOP编程 <br />
+                        B： struts2提供了全局范围的资源文件管理实现 <br />
+                        C： struts2提供了数据转换器 <br />
+                        D： Struts2的输入校验不能对指定方法进行校验 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        44、 <p>下列哪项不是hibernate中Session类的方法？</p>
+                        A：update <br />
+                        B：delete <br />
+                        C：save <br />
+                        D：list <br />
+                        答案：D<br />
+                        解析：<p>搜索数据用find，而不是list</p><br />
+                    </span>
+                    <span>
+                        45、 <p>关于Hibernate如何获取对象，下面正确说法的是？（单选题）</p>
+                        A： Hibernate中，使用原生SQL查询不能取到对象 <br />
+                        B： 使用get()方法获取在数据库中不存在的对象，Hibernate会抛出一个异常 <br />
+                        C： 使用load()方法来检索数据库中不存在的对象时，Hibernate将返回null <br />
+                        D： HQL Hibernate查询语言是一个完整的面向对象查询语言 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        46、 <p>在使用了Hibernate的系统中，要想在删除某个客户数据的同时删除该客户对应的所有订单数据，下面方法可行的是?</p>
+                        A： 配置客户和订单关联的cascade属性为save-update <br />
+                        B： 设置多对一关联的inverse属性为true <br />
+                        C： 配置客户和订单关联的cascade属性为all <br />
+                        D： 设置多对一关联的inverse属性为false <br />
+                        答案：C<br />
+                        解析：<p>cascade是“级联删除”的配置；reverse是设置关联控制方的；<br/></p><br />
+                    </span>
+                    <span>
+                        47、 <p>下列关于hibernate的Query接口说法错误的是？</p>
+                        A： Query的list方法返回一组对象 <br />
+                        B： Query接口没有list方法 <br />
+                        C： Query对象通过session.createQuery()方法创建 <br />
+                        D： Query的uniqueResult方法返回一个对象 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        48、 <p>下列关于hibernate延迟加载说法错误的是？</p>
+                        A： session的load方法默认会使用延迟加载 <br />
+                        B： 在多对多关联关系中,关联属性会使用延迟加载 <br />
+                        C： 在一对多关联关系中,关联属性会使用延迟加载 <br />
+                        D： session的get方法默认会使用延迟加载 <br />
+                        答案：D<br />
+                        解析：<p>get不会延迟加载（又叫懒加载，英文是lazyload），laod才会延迟加载；</p><br />
+                    </span>
+                    <span>
+                        49、 <p>在hibernate的多对多关系中，对inverse属性描述正确的是？</p>
+                        A：关系双方都在&lt;set&gt;节点中设置inverse=&quot;false&quot;属性 <br />
+                        B：一方在&lt;set&gt;节点中设置inverse=&quot;true&quot;属性，另一方不设置 <br />
+                        C： 关系双方都在&lt;set&gt;节点中去掉inverse属性 <br />
+                        D： 关系双方都在&lt;set&gt;节点中设置inverse=&quot;true&quot;属性 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        50、 <p>下列哪项不是bean在hibernate中的状态？</p>
+                        A： 持久状态 <br />
+                        B： 缓存状态 <br />
+                        C： 临时状态 <br />
+                        D： 脱管状态 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        51、 <p>下面哪种情况发生，Hibernate认为实例是未保存的瞬时状态？</p>
+                        A： version属性（如果存在）是 null <br />
+                        B： class 在映射文件中提供了unsaved-value，而且与标识符属性的值相匹配 <br />
+                        C： identifier属性（如果存在）是 null <br />
+                        D：以上全部 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        52、 <p>Hibernate提供了下面哪个规范的实现？</p>
+                        A： JDBC <br />
+                        B：ORM <br />
+                        C：JPA <br />
+                        D：JMS <br />
+                        答案：C<br />
+                        解析：<p>JDBC是数据库连接驱动的规范；</p><p>ORM是“对象关系映射”的简写，没有一个叫ORM的规范；</p><p>JPA中Java中对于ORM的实现规范，Spring、Hibernate等都提供了JPA的实现；</p><p>JMS是Java中消息服务的规范；</p><br />
+                    </span>
+                    <span>
+                        53、 <p>谈谈hibernate的延迟加载和openSessionInView</p> 
+                        解析：<p>延迟加载要在session范围内，用到的时候再加载；opensessioninview是在web层写了一个 filter来打开和关闭session，这样就表示在一次request过程中session一直开着，保证了延迟 加载在session中的这个前提。</p><br />
+                    </span>
+                    <span>
+                        54、 <p>Hibernate 是高性能的ORM. ORM 是什么的缩写？</p>
+                        A： object real maker <br />
+                        B： object relational mapping <br />
+                        C： object relational marker <br />
+                        D： object redundant marker <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        55、 <p>在hibernate 中，在配置文件中标示一对多的标签是？</p>
+                        A：&lt;many-and-one&gt; <br />
+                        B：&lt;one-and-many&gt; <br />
+                        C：&lt;one-to-many&gt; <br />
+                        D：&lt; many-to-one&gt; <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        56、 <p>下面关于Hibernate的说法，错误的是？</p>
+                        A： Hibernate是JDBC的替代技术 <br />
+                        B： 使用Hibernate可以简化持久化层的编码 <br />
+                        C： Hibernate是一个“对象-关系映射”的实现 <br />
+                        D： Hibernate是一种数据持久化技术 <br />
+                        答案：A<br />
+                        解析：<p>Hibernate底层仍然是用JDBC实现的，所以A是错误的；</p><br />
+                    </span>
+                    <span>
+                        57、 <p>Spring DAO 中最常用的类是？</p>
+                        A： JdbcTemplate ，SimpleJdbcTemplate <br />
+                        B： SimpleJdbcInsert ，SimpleJdbcProcedure <br />
+                        C： SimpleJdbcInsert ，SimpleJdbcStoredProc <br />
+                        D： SimpleJdbcQuery ，SimpleJdbcExec <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        58、 <p>你更推荐那种类型的事务管理？</p> 
+                        解析：<p>许多Spring框架的用户选择声明式事务管理，因为这种方式和应用程序的关联较少，因此更加符合轻量级容器的概念。</p><p>声明式事务管理要优于编程式事务管理，尽管在灵活性方面它弱于编程式事务管理(这种方式允许你通过代码控制业务)。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        59、 <p>Spring AOP 中， 织入（Weaving） 可以在下面什么时间完成？</p>
+                        A：Run time <br />
+                        B：Load time <br />
+                        C：Compile time <br />
+                        D：以上全部 <br />
+                        答案：A<br />
+                        解析：<p>spring AOP使用的时JDK动态代理或者CGLIB代理实现，这两种代理方式都是在运行时完成织入</p><br />
+                    </span>
+                    <span>
+                        60、 <p>下面关于Spring MVC 描述正确的是？</p>
+                        A： DispatcherServlet在 Spring MVC 中是核心servlet , 它负责接收请求并将请求分发给适合的控制器 <br />
+                        B： 在Spring MVC 中,可以配置多个DispatcherServlet <br />
+                        C： 要使Spring MVC可用，DispatcherServlet需要在web.xml中配置 <br />
+                        D：以上全部 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        61、 <p>在Spring MVC中，哪个类是负责处理HTTP请求的？</p>
+                        A：DispatcherServlet <br />
+                        B：RequestHandler <br />
+                        C：HttpServlet <br />
+                        D：SpringMVC handler <br />
+                        答案：D<br />
+                        解析：<p>DispatcherServlet是SpringMVC的调度器，不具体处理请求，最终会使用handler处理i请求</p><br />
+                    </span>
+                    <span>
+                        62、 <p>Spring中，BeanFactory 是流行的装载bean的方式，下面哪个选项是正确的创建BeanFactory 的方式？</p>
+                        A： BeanFactory factory = new BeanFactory(new FileInputStream(“beans.xml”)); <br />
+                        B： BeanFactory factory = new XmlBeanFactory(“classpath:beans.xml”); <br />
+                        C： BeanFactory factory = new BeanFactory(“beans.xml”); <br />
+                        D： BeanFactory factory = new XmlBeanFactory(new FileInputStream(“beans.xml”)); <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        63、 <p>以下哪个不是 Spring AOP 的注解？</p>
+                        A： @Before <br />
+                        B： @Around <br />
+                        C： @BeforeReturning <br />
+                        D： @AfterThrowing <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        64、 <p>@RequestMapping 是Spring中的哪一部分？</p>
+                        A： DAO <br />
+                        B： Security <br />
+                        C： Web MVC <br />
+                        D： Web <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        65、 <p>下列哪个不是Web应用开发的框架系统？</p>
+                        A： Spring <br />
+                        B：JSF <br />
+                        C：Struts <br />
+                        D：JavaMail <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        66、 <p>Spring DAO 类抛出的异常是下面哪个选项的子类？</p>
+                        A：DataException <br />
+                        B：AccessException <br />
+                        C：DAOException <br />
+                        D：DataAccessException <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        67、 <p>Spring 中，&quot;@Transactional&quot;注解的 Propagation.REQUIRED 属性是什么含义？</p>
+                        A： 如果未启动事务，则失败 <br />
+                        B： 提交原事务，启动新事务，结束后提交 <br />
+                        C： 启动新事务，结束后提交，并恢复原事务 <br />
+                        D： 如果未启动事务，则启动新事务 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        68、 <p>下列关于依赖注入(DI)说法错误的是？</p>
+                        A： 只有通过Spring才能实现依赖注入(DI) <br />
+                        B： 依赖注入的主要目的是解耦合 <br />
+                        C： 常见的依赖注入方式有Setter和构造方法 <br />
+                        D： 依赖注入指的是对象之间的关系在运行时由容器进行管理 <br />
+                        答案：A<br />
+                        解析：<p>还有其他技术实现DI，不是只有Spring能干这个</p><br />
+                    </span>
+                    <span>
+                        69、 <p>下列关于Hibernate与Spring的整合说法错误的是？</p>
+                        A：必须继承HibernateDaoSupport类，才能使用HibernateTemplate <br />
+                        B： Spring的HibernateTemplate依赖sessionFactory <br />
+                        C： 使用HibenateTemplate时不需要写代码关闭session <br />
+                        D： Hibernate的SessionFactory可以由Spring创造 <br />
+                        答案：A<br />
+                        解析：<p>有HibernateTemplate、HibernateDaoSupport两种方法实现，所以A是错误的，具体见：<a href="//blog.csdn.net/baple/article/details/23352059" target="_blank" textvalue="//blog.csdn.net/baple/article/details/23352059">//blog.csdn.net/baple/article/details/23352059</a>&nbsp;</p><br />
+                    </span>
+                    <span>
+                        70、 <p>Spring和IOC和AOP指的是什么？有什么好处？</p> 
+                        解析：<p>1、IOC称为控制翻转，也可以称为DI，即依赖注入，这种思想用来让spring根据配置自动创建需要的对象，并管理对象之间的关系（给对象的字段赋值），这就使得程序员不需要考虑如何创建需要的对象，而是认为spring已经直接把对象提供好了，可以直接使用这个对象干活了</p><p>2、AOP是面向切面编程，是OOP面向对象编程的很好的补充。 AOP用来把一些通用的和核心业务逻辑无关的操作抽取出来，交给容器去自动处理，比如检查权限、记录日志等，这样可以大大简化程序员的编码工作，让程序员只专注于核心业务逻辑的实现<br/></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        71、 <p>spring底层实现原理</p> 
+                        解析：<p>spring有三个核心模块，就以这三个核心举例说明。</p><p>1 spring容器使用反射实现对象的创建、依赖注入，进而完成bean的管理等</p><p>2 spring AOP依赖spring容器，使用JDK动态代理和CGLIB代理实现了大部分AOP规范</p><p>3 声明式事物管理依赖spring AOP实现</p><p><br/></p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

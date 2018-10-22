@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Javaweb》面试题</h1>
+                    <span>
+                        1、 <p>说说servlet工作的原理</p> 
+                        解析：<p>（1）服务器启动时解析web.xml，把servlet的虚拟路径管理起来</p><p>（2）服务器收到浏览器的请求后，就把请求解析为request对象，同时创建一个response对象</p><p>（3）服务器根据请求路径找到匹配的servlet，调用servlet对应的doGet或者doPost方法，同时把request和response传递给该方法</p><p>（4）servlet就开始对请求进行处理，处理完成后生成响应发送到浏览器</p><br />
+                    </span>
+                    <span>
+                        2、 <p>GET和POST提交方式的区别</p> 
+                        解析：<p>（1）GET方式的请求把请求参数拼接在请求路径后面，在有些时候（如超链接上）特别方便，但这种方式所能携带的数据量有限，并且可以被直接看到，不太安全</p><p>（2）POST方式把请求参数放在请求体中，可以携带大量数据，并且安全性相对较高</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        3、 <p>request.getAttribute()和request.getParameter()有何区别？</p> 
+                        解析：<p>request.getAttribute()是获得程序员主动存放在request中的值，此时的request是作为web域对象来用的</p><p>request.getParameter()是获得http请求参数的值</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        4、 <p>jsp有哪些内置对象?作用分别是什么?分别有什么主要方法？</p> 
+                        解析：<p>JSP共有以下9个内置的对象：</p><p><span style="color: rgb(255, 0, 0);">（1）pageContext 页面上下文对象，可以通过该对象获取其他内置对象</span></p><p><span style="color: rgb(255, 0, 0);">（2）request 请求对象，包含所有客户端请求信息</span></p><p><span style="color: rgb(255, 0, 0);">（3）session session对象</span></p><p><span style="color: rgb(255, 0, 0);">（4）application &nbsp;ServletContext对象（前四个是非常重要的web域对象，用来作为数据仓库存储不同生命周期的数据使用）</span></p><p>（5）response 响应对象</p><p>（6）out 输出流对象，用来把响应输出到客户端</p><p>（7）config &nbsp;&nbsp;ServletConfig对象</p><p>（8）page &nbsp;JSP页面本身，即this</p><p>（9）exception 异常对象，如果此JSP页面被设置为错误页面，则此对象可用，表示发生的异常</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        5、 <p>JSP的常用指令元素有哪些？</p> 
+                        解析：<p>&lt;%@ 指令名称 属性名称=&quot;值&quot; 属性名称=&quot;值&quot; ... %&gt;</p><p>page 指令整个jsp页面配置</p><p>include 指令 包含目标资源</p><p>taglib 指令 标签库使用指令</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        6、 <p>JSP和Servlet有哪些相同点和不同点，他们之间的联系是什么？</p> 
+                        解析：<p>JSP本质是就是Servlet（JSP会被编译成Servlet）</p><p>在MVC的开发模式中：Servlet负责处理业务逻辑，生成处理结果，JSP负责生成页面，把处理结果显示给用户</p><br />
+                    </span>
+                    <span>
+                        7、 <p>描述一下MVC模式，MVC的各个部分都有些技术来实现？如何实现？</p> 
+                        解析：<p>MVC是Model--View-Controller简写</p><p>Model指数据模型，用来携带数据以及操作数据库，但在javaweb中已经弱化了Model</p><p>View表示视图，用来把数据展示给用户，在javaweb中使用JSP作为View</p><p>Controller表示控制器，控制业务逻辑，在javaweb中使用Servlet作为Controller</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        8、 <p>说出数据连接池的工作机制是什么？</p> 
+                        解析：<p>（1）程序启动时连接池就创建好若干数据库连接并保存起来</p><p>（2）当用户需要连接时，直接从连接池中获取连接</p><p>（3）当用户本次使用连接完毕后，就把连接归还给连接池</p><p>（4）假设在没有空闲连接时用户A来获取连接，如果当前连接数小于最大连接数，则连接池创建新的连接并交给A；如果当前连接数达到最大连接数，则连接池不再创建新的连接，而是等待其他用户归还连接，再把归还的连接交给A</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>购物车和订单的具体实现？</p> 
+                        解析：<p>（1）购物车信息保存在session中，包含若干个购物车项信息，每个购物车项就是用户购买的某个商品的信息以及购买数量</p><p>（2）订单信息根据购物车生成，再加上收货地址等信息。订单中包含若干订单项，订单项即对应购物车中的购物车项，也是用户购买的商品信息以及数量</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        10、 <p><span style="font-family: Arial;font-size: 14px"><span style="font-family:宋体">下列定义</span>XML<span style="font-family:宋体">文件版本的声明，正确的是</span></span></p><p><br/></p>
+                        A：&lt;?xml version=”1.0” ?&gt; <br />
+                        B：&lt;?xml version=”1.0” &gt; <br />
+                        C：&lt;?xml version=”1.0” /&gt; <br />
+                        D：&lt;xml version=”1.0” /&gt; <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        11、 <p>Javaweb应用的打包格式是哪个？</p><p><br/></p>
+                        A：war <br />
+                        B：jar <br />
+                        C：zip <br />
+                        D：rar <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        12、 <p>session和cookie的区别和联系是什么？</p> 
+                        解析：<p style="white-space: normal;">区别：</p><p style="white-space: normal;">1、Session保存在服务器端、Cookie保存在浏览器端；</p><p style="white-space: normal;">2、Session可以保存比较大的数据、Cookie保存的数据量有限；</p><p style="white-space: normal;">联系：Session是靠Cookie实现的，在Cookie保存一个jsessionid</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        13、 <p>java servlet中forward和sendRedirect的区别是什么？</p> 
+                        解析：<p>forward是服务器内部的控制权转移，服务器和浏览器之间只进行一次通讯，浏览器地址栏不发生变化；</p><p>sendRedirect是让浏览器去重定向，服务器和浏览器之间会再进行一次通讯，浏览器地址栏会发生变化；</p><br />
+                    </span>
+                    <span>
+                        14、 <p>which JSP code snippet performs the import of the header content?</p><p>A、</p><p>&lt;jsp:include page=&#39;WEB-INF/header.jsp&#39;&gt;</p><p>&nbsp; &nbsp;&lt;jsp:param name=&#39;name&#39; value=&#39;rupeng.com&#39;/&gt;</p><p>&lt;/jsp:include&gt;</p><p><br/></p><p>B、</p><p>&lt;jsp:import page=&#39;WEB-INF/header.jsp&#39;&gt;</p><p>&nbsp; &nbsp;&lt;jsp:param name=&#39;name&#39; value=&#39;rupeng.com&#39;/&gt;</p><p>&lt;/jsp:import&gt;</p><p><br/></p><p>C、</p><p>&lt;jsp:include page=&#39;WEB-INF/header.jsp&#39;&gt;</p><p>&nbsp; &nbsp;&lt;jsp:attribute name=&#39;name&#39; value=&#39;rupeng.com&#39;/&gt;</p><p>&lt;/jsp:include&gt;</p><p><br/></p><p>D、</p><p>&lt;jsp:import page=&#39;WEB-INF/header.jsp&#39;&gt;</p><p>&nbsp; &nbsp;&lt;jsp:attribute name=&#39;name&#39; value=&#39;rupeng.com&#39;/&gt;</p><p>&lt;/jsp:import&gt;</p><p><br/></p> 
+                        解析：<p>答案：A</p><p>翻译题目：下面代码片段哪个是引入header内容的。include是jsp的，import是c的，也就是&lt;jsp:include&gt;和&lt;c:import&gt;参数，是&lt;jsp:param&gt;</p><br />
+                    </span>
+                    <span>
+                        15、 <p>在J2EE的Web应用中，编译后的class文件存放的目录为？</p>
+                        A：classes目录 <br />
+                        B：images目录 <br />
+                        C：jar目录 <br />
+                        D：任意位置 <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        16、 <p>在JSP中，哪个指令用来声明JSP欲使用的标签库？</p>
+                        A：tld <br />
+                        B：taglib <br />
+                        C：import  <br />
+                        D：include  <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        17、 <p>网页Http服务默认的端口号是？</p> 
+                        解析：<p>答案：80</p><br />
+                    </span>
+                    <span>
+                        18、 <p>JSP标准标签库（JSTL）的标签库描述符文件的后缀是？</p>
+                        A：tld&#160; <br />
+                        B：jar  <br />
+                        C：properties  <br />
+                        D：xml  <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        19、 <p>不能在不同用户之间共享数据的方法是？</p>
+                        A：通过cookie <br />
+                        B：利用文件系统 <br />
+                        C：利用数据库 <br />
+                        D：通过ServletContext对象 <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        20、 <p>下列哪个为JSP的隐含对象？</p>
+                        A：env&#160; <br />
+                        B：page <br />
+                        C：jspinfo&#160; <br />
+                        D：context <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        21、 <p>关于JSP，下列说法不正确的是？</p>
+                        A：JSP的全称是JavaServer&#160;Pages <br />
+                        B：JSP是由sun(现被oracle收购）公司倡导，许多别的公司参与一起建立起来的一种动态网页技术 <br />
+                        C：jsp包含html和java代码片段 <br />
+                        D：JSP的运行环境是：正确安装JDK即可。 <br />
+                        答案：D<br />
+                        解析：<p>jsp运行除了安装JDK，还需要配置Tomcat等Web服务器</p><br />
+                    </span>
+                    <span>
+                        22、 <p>下列选项中能在JSP页面中实现重定向的是？</p>
+                        A：response.forward(“/index.jsp”) <br />
+                        B：response.sendRedirect(“/index.jsp”) <br />
+                        C：request.forward&#160;(“/index.jsp”) <br />
+                        D：request.sendRedirect(“/index.jsp&quot;) <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        23、 <p>如果某一JSP页面的表单中，有几个复选框，name为“habit”,则该jsp提交后，通过下面哪个语句去获取用户选中复选框的值？</p>
+                        A：request.getAttribute(“habit”) <br />
+                        B：request.getParameter(“habit”) <br />
+                        C：request.getParameterValues(“habit”) <br />
+                        D：request.getHabit() <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        24、 <p>关于session的使用，下列说话正确的是？</p>
+                        A：不同的用户窗口具有不同的session <br />
+                        B：不同的用户窗口具有相同的session <br />
+                        C：session可能超时 <br />
+                        D：Session永远不可能超时 <br />
+                        答案：C<br />
+                        解析：<p>“用户窗口”指的就是“浏览器窗口”。如果是同一个浏览器的不同窗口是相同的Session，如果是不同浏览器的窗口则是不同的Session。</p><br />
+                    </span>
+                    <span>
+                        25、 <p>如果用JSP开发一个聊天程序，不用数据库存储聊天纪录，请问聊天记录最好存储在哪里？</p>
+                        A：request&#160; <br />
+                        B：page&#160; <br />
+                        C：session&#160; <br />
+                        D：application <br />
+                        答案：D<br />
+                        解析：<p>因为application是全局的对象，可以供整个web服务器的全局访问。当然如果真的用application作聊天室的话，纯属找死，性能很差。</p><br />
+                    </span>
+                    <span>
+                        26、 <p>编写自定义标签处理类后，需要编写一个什么文件去描述？</p>
+                        A：tag <br />
+                        B：tld <br />
+                        C：xml <br />
+                        D：dtd <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        27、 <p>在一个Filter中，处理Filter业务的是哪个方法</p>
+                        A：dealFilter(ServletRequestrequest,ServletResponseresponse,FilterChain&#160;chain) <br />
+                        B：dealFilter(ServletRequestrequest,ServletResponse&#160;response) <br />
+                        C：doFilter(ServletRequestrequest,ServletResponseresponse,FilterChain&#160;chain) <br />
+                        D：doFilter(ServletRequestrequest,ServletResponse&#160;response) <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        28、 <p>下面哪一个隐含变量的存取范围不是page？</p>
+                        A：config&#160; <br />
+                        B：application&#160; <br />
+                        C：out&#160; <br />
+                        D：page&#160; <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        29、 <p>在MVC设计模式中，JavaBean的作用是？</p>
+                        A：Controller&#160; <br />
+                        B：Model&#160; <br />
+                        C：业务数据的封装 <br />
+                        D：View&#160; <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        30、 <p>javax.Servlet的包中，属于类的是？</p>
+                        A：Servlet <br />
+                        B：GenericServlet <br />
+                        C：ServletRequest <br />
+                        D：ServletContext <br />
+                        答案：B<br />
+                        解析：<p>其他三个都是接口</p><br />
+                    </span>
+                    <span>
+                        31、 <p>编写一个Filter，需要？</p>
+                        A：继承Filter&#160;类 <br />
+                        B：实现Filter&#160;接口 <br />
+                        C：继承HttpFilter类 <br />
+                        D：实现HttpFilter接口 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        32、 <p>编写jsp自定义标签的作用是？</p>
+                        A：编写和使用方便 <br />
+                        B：规定是这样的，如果不用，别人会说我们不专业 <br />
+                        C：可以减少jsp中的java代码,将代码与界面标签分离,简化前台开发 <br />
+                        D：连接数据库 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        33、 <p>request.getRequestDispatcher().forward(request,response)称之为？</p>
+                        A：流转 <br />
+                        B：转发 <br />
+                        C：重定向 <br />
+                        D：导航 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        34、 <p>在Servlet中，response.getWriter()返回的是什么类型的对象？</p>
+                        A：JspWriter <br />
+                        B：PrintWriter <br />
+                        C：Out <br />
+                        D：ResponseWriter <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        35、 <p>JavaEE中，Servlet API 为使用Cookie,提供了哪个类？</p>
+                        A：javax.servlet.http.Cookie <br />
+                        B：javax.servlet.http.HttpCookie <br />
+                        C：javax.servlet.&#160;Cookie <br />
+                        D：javax.servlet.http.&#160;HttpCookie&#160; <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        36、 <p>某JSP中有如下代码&lt;% int a = 5; request.setAttribute(&quot;a&quot;,&quot;123&quot;); session.setAttribute(&quot;a&quot;,&quot;456&quot;);%&gt;&lt;c:out value=&quot;${a}&quot;/&gt;，显示结果为？</p>
+                        A：5 <br />
+                        B：123 <br />
+                        C：456 <br />
+                        D：null <br />
+                        答案：B<br />
+                        解析：<p>c:out不会读取局部变量；c:out读取的优先级是：<span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(51, 51, 51); font-family: Arial; font-size: 14px; background-color: rgb(255, 255, 255);">request session application，先在哪个里面找到指定名字的就找到了。</span></span></p><br />
+                    </span>
+                    <span>
+                        37、 <p>在编写过滤器时，需要完成的方法是？</p>
+                        A：doFilter() <br />
+                        B：doChain()&#160; <br />
+                        C：doPost() <br />
+                        D：doDelete() <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        38、 <p>&lt;c:forEach var= &quot;i&quot; begin=&quot;1&quot; end=&quot;5&quot; step=&quot;2&quot;&gt;&lt;c:out value=&quot;${i}&quot;/&gt;&lt;/c:forEach&gt;&nbsp;</p><p>上面代码执行效果为？</p>
+                        A：1&#160;2&#160;3&#160;4&#160;5 <br />
+                        B：1&#160;3&#160;5 <br />
+                        C：i i i <br />
+                        D：15 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        39、 <p>假如有如下代码：</p><p>pageContext.setAttribute(&quot;user&quot;,&quot;tom&quot;);</p><p>request.setAttribute(&quot;user&quot;,&quot;bob&quot;);&nbsp;</p><p>如果显示&quot;bob&quot;,则可以使用？</p>
+                        A：${request.getAttribute(&quot;user&quot;)} <br />
+                        B：${param.user}&#160; <br />
+                        C：&#160;${user} <br />
+                        D：${requestScope.user} <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        40、 <p>JSP中有三大类标签，分别是？</p>
+                        A：HTML标记&#160;&#160;&#160;JSP标记&#160;&#160;&#160;Servlet标记 <br />
+                        B：CSS标记&#160;&#160;&#160;HTML标记 Javascript标记 <br />
+                        C：动作标记&#160;&#160;脚本标记&#160;&#160;指令标记 <br />
+                        D：指令标记&#160;&#160;脚本标记&#160;&#160;HTML标记 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        41、 <p>在JSP中，只有一行代码：${1+2}，运行将输出？</p>
+                        A：1+2 <br />
+                        B：3 <br />
+                        C：null <br />
+                        D：没有任何输出，因为表达式是错误的 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        42、 <p>下面__________方法可以返回当前请求的请求方式？</p>
+                        A：request.getAttribute()&#160; <br />
+                        B：session.getMethod()&#160; <br />
+                        C：request.getMethod() <br />
+                        D：request.getRequestURI()&#160; <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        43、 <p>在Servlet的生命周期中，容器只调用一次的方法是？</p>
+                        A：service <br />
+                        B：getServletConfig <br />
+                        C：init  <br />
+                        D：destroy <br />
+                        答案：C<br />
+                        解析：<p>init是Servlet初始化代码，只执行一次；</p><br />
+                    </span>
+                    <span>
+                        44、 <p>在JavaWeb项目的WEB-INF目录下，必须存放的文件为？</p>
+                        A：class 文件 <br />
+                        B：web.xml <br />
+                        C：jar 文件 <br />
+                        D：html 文件 <br />
+                        答案：B<br />
+                        解析：<p>web3.0及以上版本可以省略web.xml文件</p><br />
+                    </span>
+                    <span>
+                        45、 <p>下面哪项不是servlet中response对象的方法？</p>
+                        A：setContentType(String contentTypestr)  <br />
+                        B：setHeader(String headername,String headervalue)  <br />
+                        C：getParameter(String str) <br />
+                        D：sendError(int errorcode)   <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        46、 <p>下列是jsp作用域的通信对象的有？</p>
+                        A：Session <br />
+                        B：application <br />
+                        C：pageContext <br />
+                        D：cookie <br />
+                        答案：ABC<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        47、 <p>对该段代码描述正确的有&lt;% int i = Integer.parseInt(request.getParemeter(&quot;value&quot;)); %&gt;（多选题）</p>
+                        A：不会有错 <br />
+                        B：当 value值含有字母时会报错 <br />
+                        C：当 value=&quot;&quot;时会报错 <br />
+                        D：为了安全起见应该将该段代码放在 try{} 和 catch(){} 之间 <br />
+                        答案：BCD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        48、 <p>说一下Servlet的的生命周期。</p> 
+                        解析：<p>Servlet被服务器实例化后，容器运行其init方法，请求到达时运行其service方法，service方法自动运行与请求对应的doGet或者doPost方法，当服务器决定将实例销毁的时候调用其destroy方法。</p><br />
+                    </span>
+                    <span>
+                        49、 <p>关于Java Web应用程序，下列说法错误的是</p>
+                        A： Web应用程序可以打包为war文件 <br />
+                        B： WEB-INF目录存在于web应用的根目录下 <br />
+                        C： WEB-INF目录与classes 目录平行 <br />
+                        D： web.xml在WEB-INF目录下 <br />
+                        答案：C<br />
+                        解析：<p>classes 位于&nbsp;WEB-INF下</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《ASP.Net MVC》面试题</h1>
+                    <span>
+                        1、 <p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">说出几个你了解的开源软件？</span></span></p> 
+                        解析：<p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">参考：</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">MySQL</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">、</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Linux</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">、</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&nbsp;Android</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">、</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">Chrome浏览器</span><span style="font-size: 14px;"><span style="font-family:宋体">、</span></span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">Jquery</span><span style="font-family: 宋体; font-size: 14px;">、</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">NPOI</span><span style="font-family: 宋体; font-size: 14px;">、</span><span style="font-family: &quot;Times New Roman&quot;; font-size: 14px;">ASP.Net MVC</span><span style="font-family: 宋体; font-size: 14px;">、</span><span style="font-family: 宋体; font-size: 14px;">json.net、.Net Core等</span></p><br />
+                    </span>
+                    <span>
+                        2、 <p>asp.net&nbsp;MVC中ViewBag、ViewData和TempData的异同是什么？</p> 
+                        解析：<p>1、ViewBag和ViewData的生命周期和Action相同，不能跨越请求，用来给View提供数据<br/></p><p>ViewData是使用类似于Dictionary的方式读写：ViewData[&quot;uname&quot;]=&quot;如鹏网&quot;;</p><p>ViewBag是使用dynamic方式进行读写：ViewBag.uname=&quot;如鹏网&quot;;</p><p>2、TempData是保存在Session中的，在本次请求中把数据放到TempData中，在下次请求的时候可以从TempData中读取数据，在下次请求处理结束后就从Session中销毁了。TempData主要从来给下个请求传递不方便放到url或者cookie中的临时数据使用。</p><br />
+                    </span>
+                    <span>
+                        3、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">有个重要的概念ORM,其意思是？</span></p>
+                        A：约定大于配置 <br />
+                        B：实体框架模型 <br />
+                        C：关注点分离 <br />
+                        D：对象关系映射 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        4、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">如果定义了一个可供网址直接访问Action,其名称是:Add(int First,int Second),那么URL访问形式为？</span></p>
+                        A：//localhost:2180/Home/Add?First=1&amp;Second=2 <br />
+                        B：//localhost:2180/Home/Add(1,2) <br />
+                        C：//localhost:2180/Home/Add(First,Second)?First=1&amp;Second=2 <br />
+                        D：以上写法都不对 <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        5、 <p>我们采用Entity Framework支持的Code First开发模式时,需要先建立数据库,然后再进行其它的开发，对吗？</p> 
+                        解析：<p>不对。CodeFirst是先通过代码写模型，再生成数据库；</p><br />
+                    </span>
+                    <span>
+                        6、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">在Models目录下,创建一个类文件,需要声明字段长度,以下说法正确的是？</span></p>
+                        A：在相应的Property上加一个MaxLength Attribute <br />
+                        B：在相应的Property上加一个Required Attribute. <br />
+                        C：在相应的Property上加一个Key Attribute <br />
+                        D：以上都错 <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        7、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);"><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">数据库中字段是日期类型,并且允许NULL，那么Entity Framwork的的Model的属性需要声明为什么类型？</span></span></p> 
+                        解析：<p>DateTime?</p><p>DateTime不能为null，加上?就是可空数据类型；</p><br />
+                    </span>
+                    <span>
+                        8、 <p>Entity Framework的属性加一个NotMapperd Attribute是什么意思？</p>
+                        A：禁止用户通过URL直接访问此Property <br />
+                        B：允许用户通过URL直接访问此Property <br />
+                        C：把此Property排除在Entity Framework自动对应的数据库表格字段之外 <br />
+                        D：把此Property包含在Entity Framework自动对应的数据库表格字段之内 <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        9、 <p>ASP.Net MVC中<span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">判断模型绑定的验证结果,可以通过以下哪个对象进行判断？</span></p>
+                        A：Model <br />
+                        B：State <br />
+                        C：ModelState <br />
+                        D：Session <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        10、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">MVC让软件开发的过程大致切割成哪三个主要单元?分别有什么作用?</span></p> 
+                        解析：<p>分成Model、View、Controller三部分。Model负责在Controller和View之间传递数据；View负责数据显示和获取用户输入；Controller负责业务逻辑代码；</p><br />
+                    </span>
+                    <span>
+                        11、 <p><span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">采用Entity Framework开发技术,有哪三种开发模式?</span></p> 
+                        解析：<p>DB First：先设计数据库，再根据数据库生成edmx模型文件，edmx自动生成实体类；</p><p>Model First：先设计edmx模型文件，edmx自动生成实体类，再根据edmx自动生成数据库表；</p><p>Code First：手动编写实体类，没有edmx模型文件，根据实体类自动生成数据库；</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        12、 <p>ASP.Net MVC中<span style="color: rgb(85, 85, 85); font-family: &quot;microsoft yahei&quot;; font-size: 15px; background-color: rgb(255, 255, 255);">从Controller取得数据后,可以传递给View.请说出几种传递方法？</span></p> 
+                        解析：<p>1、return View(data);</p><p>2、ViewBag</p><p>3、ViewData</p><br />
+                    </span>
+                    <span>
+                        13、 <p><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">列举ASP.NET MVC ActionResult的返回值有几种类型？</span></p> 
+                        解析：<p><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">主要有View（视图）、PartialView（部分视图）、Content（内容）、Json（Json字符串）、Javascript（js脚本）、File（文件）等几种类型。</span></p><br />
+                    </span>
+                    <span>
+                        14、 <p><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Entity Framework 中的延迟加载与直接加载有什么异同？</span></p> 
+                        解析：<p><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">延迟加载（Lazy Loading）只在真正需要进行数据操作的时候再进行加载数据</span></p><br />
+                    </span>
+                    <span>
+                        15、 <p>Entity Framework有哪三种开发方式？</p> 
+                        解析：<p>DBFirst（数据优先）；Model First（模型优先）；Code First（代码优先）<br/></p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

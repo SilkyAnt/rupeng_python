@@ -1,0 +1,464 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《java其他》面试题</h1>
+                    <span>
+                        1、 <p>你了解NIO吗？</p> 
+                        解析：<p>Java NIO是从Java1.4版本开始引入的一个新的IO API，可以替代标准的Java IO API。主要是提供了新的、高效的、非阻塞的数据读写方式。</p><p>NIO的含义可以理解为New IO，也可以理解为Nonblocking IO （非阻塞IO），具体用法可以在工作以后研究。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        2、 <p>用最高效的方式计算2乘以8的积？</p> 
+                        解析：<p>2 &lt;&lt; 3</p><p>位移运算（也称为移位运算）是计算机速度最快的运算</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        3、 <p>GC是什么？为什么要有GC？Java的垃圾回收可以马上回收内存吗？有什么方法通知虚拟机进行垃圾回收？</p> 
+                        解析：<p>GC(Garbage Collection) 是指垃圾回收，对于Java来说，就是回收内存中无用的数据、对象等。<br/></p><p>Java有多套规则可以判断一个对象是否是垃圾，是否应该被回收。主要规则是：当没有任何引用指向一个对象的时候，这个对象就可以被回收了。</p><p>Java中有专门的线程负责垃圾回收，不需要程序员自己控制回收过程，以便让程序员专注于业务逻辑代码，而不用考虑数据回收等繁琐问题。</p><p>此外Java中提供了System.gc() 方法来通知JVM尽快回收，但也不是立马回收，JVM会选择合适的时机进行回收。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        4、 <p>Java中会存在内存泄露吗？</p> 
+                        解析：<p>内存泄露指的是：没用的内存不被回收而导致的内存浪费。虽然说GC会帮我们释放无用对象占用的内存，但是GC只会释放没有任何引用的对象，如果一个对象已经没用了，但是由于我们代码的问题导致整个对象一直被引用，它占据的内存就迟迟不能被回收，这种情况也属于内存泄露。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        5、 <p>oracle中数据库存储过程的关键字是什么？</p> 
+                        解析：<p>procedure</p><br />
+                    </span>
+                    <span>
+                        6、 <p>SQL语句中delete与truncate的区别？</p> 
+                        解析：<p>都可删除表中数据</p><p>delete只会删除表中记录，属于DML（数据操纵）语言，受事务控制，可回滚，后面可跟where子句。</p><p>truncate会先删除整个表结构（表中数据自然就被删除了）然后重建表结构，这时除了表中记录之外，其他附属数据也会被删除。属于DDL(数据定义)语言，不受事务控制，不可回滚，后面不可跟where子句。</p><p>另外，delete会执行触发器，truncate不会执行触发器；truncate执行速度比delete快。</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        7、 <p>mysql和oracle分页上有什么区别？</p><p><br/></p> 
+                        解析：<p>mysql使用limit关键字进行分页，如：select * from students limit 0,10</p><p><br/></p><p>oracle借助rownum伪列进行分页，如：</p><p>select * from (select rownum r,ename ,sal from emp where rownum &lt;=10) where r &gt;=1 &nbsp;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        8、 <p>oracle常用的函数有哪些？</p> 
+                        解析：<p>to_char、to_number、to_date 、LOWER 、UPPER、 SUBSTR 、REPLACE、 TRIM 、ROUND 、NVL等</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>分别写出饿汉式和懒汉式的单例类，并说说懒汉式有什么弊端？</p><p><br/></p> 
+                        解析：<p>//饿汉式单例类</p><p>public class Singleton {</p><p><br/></p><p>&nbsp; &nbsp; private static Singleton instance = new Singleton();</p><p><br/></p><p>&nbsp; &nbsp; private Singleton() {</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static Singleton getInstance() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return instance;</p><p>&nbsp; &nbsp; }</p><p>}</p><p><br/></p><p>//懒汉式单例类</p><p>public class Singleton {</p><p><br/></p><p>&nbsp; &nbsp; private static Singleton instance;</p><p><br/></p><p>&nbsp; &nbsp; private Singleton() {</p><p>&nbsp; &nbsp; }</p><p><br/></p><p>&nbsp; &nbsp; public static Singleton getInstance() {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; if (instance == null) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; synchronized (Singleton.class) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (instance == null) {</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; instance = new Singleton();</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; }</p><p>&nbsp; &nbsp; &nbsp; &nbsp; return instance;</p><p>&nbsp; &nbsp; }</p><p>}</p><p>//懒汉式需要控制线程安全，而且如果创建对象需要花费很长时间的话，会导致用户体验不佳</p><br />
+                    </span>
+                    <span>
+                        10、 <p>linux中vi编辑器的dd的作用是?</p>
+                        A：删除光标当前所在字符 <br />
+                        B：删除光标所在行 <br />
+                        C：以上均不是 <br />
+                        D： <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        11、 <p>linux中哪个命令会显示你所在目录的绝对路径？</p><p><br/></p>
+                        A：dir <br />
+                        B：whereami <br />
+                        C：pwd <br />
+                        D：ls <br />
+                        答案：C<br />
+                        解析：<p>dir是windows下的指令</p><p>whereami是显示当前登录用户名“who am I”是“我是谁”的意思</p><p>“pwd”是打印当前工作路径，是print work directory的简写；</p><p>ls是列出当前工作路径下的文件、文件夹</p><br />
+                    </span>
+                    <span>
+                        12、 <p>下列不是InputStream子类的是（单选）</p>
+                        A：压缩输入流ZipInputStream <br />
+                        B：对象输入流ObjectInputStream <br />
+                        C：字符输入流CharInputStream <br />
+                        D：输入流FileInputStream <br />
+                        答案：C<br />
+                        解析：<p>根本没有CharInputStream这么一个类，字符流一般使用InputStreamReader</p><br />
+                    </span>
+                    <span>
+                        13、 <p>在java中，要获取ResultSet类型变量rs中的数据，必须执行的语句是</p>
+                        A：rs.next() <br />
+                        B：rs.previous() <br />
+                        C：rs.getNext() <br />
+                        D：rs.getPrevious() <br />
+                        答案：A<br />
+                        解析：<p>jdbc基础</p><br />
+                    </span>
+                    <span>
+                        14、 <p>编写一个方法，对输入的以逗号做分割的一串数据进行顺序排序，例如对5,35,6,2,98,3,67进行升序排列；</p> 
+                        解析：<p>import java.util.Arrays;</p><p>import java.util.Comparator;</p><p><br/></p><p>public class Main2 {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>String s = &quot;5,35,6,2,98,3,67&quot;;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>String[] strs = s.split(&quot;,&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Arrays.sort(strs,new Comparator&lt;String&gt;() {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>@Override</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>public int compare(String o1, String o2) {</p><p><span class="Apple-tab-span" style="white-space:pre">				</span>int i1 = Integer.parseInt(o1);</p><p><span class="Apple-tab-span" style="white-space:pre">				</span>int i2 = Integer.parseInt(o2);</p><p><span class="Apple-tab-span" style="white-space:pre">				</span>return i1-i2;</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>});</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>for(String item : strs)</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>{</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.println(item);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        15、 <p>有语句 String s = &quot;rupeng&quot;，以下操作哪个是错误的（多选）</p>
+                        A：int i = s.length(); <br />
+                        B：int i =s.length; <br />
+                        C：s&gt;&gt;&gt;=3; <br />
+                        D：String ts = s.trim(); <br />
+                        答案：BC<br />
+                        解析：<p>字符串的长度用length()方法，而不是length，因此B是错的。</p><p>&gt;&gt;&gt;是位运算，只针对数字类型，因此C是错误的；</p><br />
+                    </span>
+                    <span>
+                        16、 <p>下列关于Java语言的特点，描述错误的是</p>
+                        A：Java是跨平台的编程语言 <br />
+                        B：Java支持分布式计算 <br />
+                        C：Java是面向过程的编程语言 <br />
+                        D：Java支持多线程 <br />
+                        答案：C<br />
+                        解析：<p>“跨平台”指的是可以在Windows、Linux、Unix等操作系统下运行；<br/></p><p>Java是面向对象的编程语言；</p><br />
+                    </span>
+                    <span>
+                        17、 <p>有序整形数组a[]={ 2, 5, 10, 11, 19, 50, 51 }，用二分查找法找出整数n在数组中的位置，找不到则返回-2</p> 
+                        解析：<p>static int binarySearch(int[] a,int n) {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>int low = 0;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>int high = a.length - 1;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>while (low &lt;= high) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>int middle = (low + high) / 2;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>if (n == a[middle]) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>return middle;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} else if (n &lt; a[middle]) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>high = middle - 1;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} else {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>low = middle + 1;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>return -2;</p><p>}</p><p><br/></p><p>调用方式：</p><p>System.out.println(binarySearch(a,3));</p><p>System.out.println(binarySearch(a,10));</p><p>System.out.println(binarySearch(a,19));</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        18、 <p><span style="font-family: 宋体; font-size: 14px;">写一个冒泡排序算法对</span><span style="font-family: 宋体; font-size: 14px;">int</span><span style="font-family: 宋体; font-size: 14px;">数组进行排序</span></p> 
+                        解析：<p style="white-space: normal; text-align: justify;"><span style="font-family: 宋体; font-size: 14px;">注：工作中很少自己写排序算法，但是面试时候有时候会考，因此还是需要掌握一种排序算法的。网上可以找关于“冒泡排序”算法的介绍资料，如果不理解“冒泡排序”算法就背过来就行。</span></p><p style="white-space: normal;">public static void Sort(int[] myArray)</p><p style="white-space: normal;">{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>for (int j = 1; j &lt; myArray.Length; j++)</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>for (int i = 0; i &lt; myArray.Length - 1; i++)</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>// 如果 myArray[i] &gt; myArray[i+1] ，则 myArray[i] 上浮一位</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>if (myArray[i] &gt; myArray[i + 1])</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>{</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">				</span>int temp = myArray[i];</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">				</span>myArray[i] = myArray[i + 1];</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">				</span>myArray[i + 1] = temp;</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>}</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>}</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">	</span>}</p><p style="white-space: normal;">}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        19、 <p>用过BigDecimal类吗？</p> 
+                        解析：<p>double、float进行小数运算是有精度损失的，如果想进行精确运算，要使用BigDecimal类，用法详细介绍，看这个文章：<a href="//www.cnblogs.com/chenssy/archive/2012/09/09/2677279.html" target="_blank" textvalue="//www.cnblogs.com/chenssy/archive/2012/09/09/2677279.html">//www.cnblogs.com/chenssy/archive/2012/09/09/2677279.html</a>&nbsp;</p><p><br/></p><p><br/></p><br />
+                    </span>
+                    <span>
+                        20、 <p>GC线程是否为守护线程？</p> 
+                        解析：<p>答案：是</p><br />
+                    </span>
+                    <span>
+                        21、 <p>volatile关键字是否能保证线程安全？</p> 
+                        解析：<p>答案：不能。volatile保护的是变量安全。主要的功能是保护变量不被主线程和子线程反复修改造成读写错误。不能保证多线程的执行有序性。而最彻底的同步要保证有序性要使用synchronized。</p><br />
+                    </span>
+                    <span>
+                        22、 <p>不通过构造函数也能创建对象吗？</p> 
+                        解析：<p>无论是通过new还是通过反射创建对象都会调用构造函数，只有根据对象序列化的数据反序列出对象的时候是不调用构造函数的；</p><br />
+                    </span>
+                    <span>
+                        23、 <p>下面的程序能正常运行吗？</p><p>public class NULL</p><p>{</p><p>&nbsp; &nbsp;public static void haha()</p><p>&nbsp; &nbsp;{</p><p>&nbsp; &nbsp; &nbsp; System.out.println(&quot;haha&quot;);</p><p>&nbsp; &nbsp;}</p><p>&nbsp; &nbsp;public static void main(String[] args)</p><p>&nbsp; &nbsp;{</p><p>&nbsp; &nbsp; &nbsp; ((NULL)null).haha();</p><p>&nbsp; &nbsp;}</p><p>}</p> 
+                        解析：<p>答案：可以。</p><p>haha是静态方法，因此不需要对象，因此不会报NullPointerException</p><br />
+                    </span>
+                    <span>
+                        24、 <p>下列哪种异常是检查异常？（单选题）</p>
+                        A：NullPointerException <br />
+                        B：ClassCastException <br />
+                        C：FileNotFoundException <br />
+                        D：IndexOutOfBoundsException <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        25、 <p>对于下面的代码运行之后foo的值是什么？</p><p>int index=1;</p><p>boolean[] test=new boolean[3];</p><p>boolean foo = test[index];</p>
+                        A：0 <br />
+                        B：null <br />
+                        C：false <br />
+                        D：true <br />
+                        答案：C<br />
+                        解析：<p>boolean数组元素默认值是false，int数组元素默认值是0，对象数组元素默认值是null</p><br />
+                    </span>
+                    <span>
+                        26、 <p>对于下面的代码运行之后foo的值是什么？</p><p>int index=1;</p><p>Boolean[] test=new Boolean[3];</p><p>Boolean foo = test[index];</p>
+                        A：0 <br />
+                        B：null <br />
+                        C：false <br />
+                        D：true <br />
+                        答案：B<br />
+                        解析：<p>boolean数组元素默认值是false，int数组元素默认值是0，对象数组元素默认值是null</p><p>boolean是原始数据类型；Boolean是包装类，Boolean数组元素默认值是null</p><br />
+                    </span>
+                    <span>
+                        27、 <p>String、StringBuffer、StringBuilder的相同和不同是什么？</p> 
+                        解析：<p>1）String是不可变的；StringBuffer、StringBuilder是可变的；</p><p>2）String连接的时候会产生临时字符串对象；StringBuffer、StringBuilder不会产生临时字符串对象。当进行大量字符串拼接的时候要用tringBuffer或者StringBuilder；</p><p>3）String是不可变的，因此是线程安全的；StringBuffer也是线程安全的，StringBuilder不是线程安全的。</p><p><br/></p><p>1、2都好记。3经常混淆StringBuilder和StringBuffer，我们平时开发的时候都用StringBuilder，因为大部分都不是多线程环境，必须要线程安全，所以能够帮我们记忆“用的多的StringBuilder线程不安全，用的少的StringBuffer线程安全”。</p><br />
+                    </span>
+                    <span>
+                        28、 <p>创建一个流对象，下面哪个代码是错误的？</p>
+                        A：new BufferedWriter(new FileWriter(&quot;a.txt&quot;)); <br />
+                        B：new BufferedReader(new FileInputStream(&quot;a.txt&quot;)); <br />
+                        C：new GZIPOutputStream(new FileOutputStream(&quot;a.txt&quot;)); <br />
+                        D：new ObjectInputStream(new FileInputStream(&quot;a.txt&quot;)); <br />
+                        答案：B<br />
+                        解析：<p>BufferedReader是负责逐行读取的，需要借助于InputStreamReader实现逐字符读取，B应该改成new BufferedReader(new InputStreamReader(new FileInputStream(&quot;a.txt&quot;)))</p><br />
+                    </span>
+                    <span>
+                        29、 <p>以下代码运行输出是</p><p><br/></p><p>public class Demo {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public int add(int a, int b) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>try {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>return a + b;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} catch (Exception e) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.print(&quot;catch语句块&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} finally {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.print(&quot;finally语句块&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return 0;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Demo demo = new Demo();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.print(&quot;和是：&quot; + demo.add(9, 34));</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p>
+                        A：编译错误 <br />
+                        B：finally语句块和是：43 <br />
+                        C：和是：43finally语句块 <br />
+                        D：catch语句块和是：43 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        30、 <p>以下程序的执行结果是什么？</p><p>public class Test {</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public int div(int a, int b) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>try {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>return a / b;</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} catch (Exception e) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.println(&quot;Exception&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} catch (NullPointerException e) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.println(&quot;NullPointerException&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} catch (ArithmeticException e) {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.println(&quot;ArithmeticException&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>} finally {</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>System.out.println(&quot;finally&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>return 0;</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>public static void main(String[] args) {</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>Test demo = new Test();</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>System.out.println(&quot;商是&quot; + demo.div(9, 0));</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p>}</p><p><br/></p>
+                        A：Exception finally 商是：0 <br />
+                        B：ArithmeticException finally 商是：0 <br />
+                        C：finally 商是：0 <br />
+                        D：编译报错 <br />
+                        答案：D<br />
+                        解析：<p>NullPointerException、ArithmeticException等异常都是继承自Exception的，已经catch住Exception了，这样NullPointerException、ArithmeticException等异常都会被</p><p style="white-space: normal;">catch (Exception e) {</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>System.out.println(&quot;Exception&quot;);</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>}&nbsp;</p><p><br/></p><p>catch住了，后面的</p><p style="white-space: normal;">catch (NullPointerException e) {</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">			</span>System.out.println(&quot;NullPointerException&quot;);</p><p style="white-space: normal;"><span class="Apple-tab-span" style="white-space: pre;">		</span>}&nbsp;</p><p>等都属于“不可达代码”、属于无意义的代码，因此编译不通过。</p><br />
+                    </span>
+                    <span>
+                        31、 <p><strong style="box-sizing: border-box; color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">Math.round(11.5) 等于多少？Math.round(-11.5)等于多少？</strong><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;</span></p> 
+                        解析：<p><span style="color: rgb(51, 51, 51); font-family: &quot;microsoft yahei&quot;; font-size: 14px; background-color: rgb(255, 255, 255);">Math.round(11.5)的返回值是12，Math.round(-11.5)的返回值是-11。四舍五入的原理是在参数上加0.5然后进行下取整。</span></p><br />
+                    </span>
+                    <span>
+                        32、 <p>两个对象值相同(x.equals(y) == true)，但却可有不同的hash code，这句话对不对？&nbsp;</p> 
+                        解析：<p>不对，如果两个对象x和y满足x.equals(y) == true，它们的哈希码（hash code）应当相同。Java对于eqauls方法和hashCode方法是这样规定的：(1)如果两个对象相同（equals方法返回true），那么它们的hashCode值一定要相同；(2)如果两个对象的hashCode相同，它们并不一定相同。</p><br />
+                    </span>
+                    <span>
+                        33、 <p>JDK和JRE的区别是什么？</p> 
+                        解析：<p>Java运行时环境(JRE)是将要执行Java程序的Java虚拟机。</p><p>Java开发工具包(JDK)是完整的Java软件开发包，包含了JRE，编译器和其他的工具，可以让开发者开发、编译、执行Java应用程序。</p><br />
+                    </span>
+                    <span>
+                        34、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下哪个不是Object类的方法</span></p>
+                        A：clone() <br />
+                        B：finalize() <br />
+                        C：toString() <br />
+                        D：hasNext() <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        35、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下对TCP和UDP描述正确的是？</span></p>
+                        A：TCP不能提供数据的可靠性 <br />
+                        B：UDP能够保证数据库的可靠性 <br />
+                        C：TCP数据传输效率高于UDP <br />
+                        D：UDP数据传输效率高于TCP <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        36、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">在Java中，关于HashMap类的描述，以下错误的是？（单选题）</span></p>
+                        A：HashMap使用键值得形式保存数据 <br />
+                        B：HashMap 能够保证其中元素的顺序 <br />
+                        C： HashMap允许将null用作键 <br />
+                        D：HashMap允许将null用作值 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        37、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下对JDBC事务描述错误的是？</span></p>
+                        A：JDBC事务属于JAVA事务的一种 <br />
+                        B：JDBC事务属于容器事务类型 <br />
+                        C： JDBC事务可以保证操作的完整性和一致性 <br />
+                        D：JDBC事务是由Connection发起的，并由Connection控制 <br />
+                        答案：B<br />
+                        解析：<p>Tomcat等服务器通过JNDI等提供了容器事务，不需要程序员写代码控制事务。但是JDBC的事务是需要程序员编写代码的，因此JDBC事务不属于容器事务。</p><br />
+                    </span>
+                    <span>
+                        38、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下描述正确的是？</span></p>
+                        A：CallableStatement是PreparedStatement的父接口 <br />
+                        B：PreparedStatement是CallableStatement的父接口 <br />
+                        C：CallableStatement是Statement的子接口 <br />
+                        D：PreparedStatement是Statement的父接口 <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        39、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">要删除book表中书籍(bookName)是”java”的记录，以下代码正确的是？</span></p><p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">String sql=”delete from book where bookName=?”;</span><br style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">PreparedStatement pst=con.preparedStatement(sql);</span><br style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">______________________________</span><br style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">pst.execute();</span></span></p>
+                        A： pst.setString(1,”java”); <br />
+                        B：pst.setString(0,”java”); <br />
+                        C：pst.setInt(0,”java”); <br />
+                        D：以上选项都不正确 <br />
+                        答案：A<br />
+                        解析：<p>JDBC中参数的序号是从1开始的。</p><br />
+                    </span>
+                    <span>
+                        40、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">获取ResutlSet对象rst的第一行数据，以下正确的是？</span></p>
+                        A：rst.hashNext(); <br />
+                        B：rst.next(); <br />
+                        C：rst.first(); <br />
+                        D： rst.nextRow(); <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        41、 <p><span style="color: rgb(51, 51, 51); font-family: &quot;Segoe UI&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">以下可以正确获取结果集的有？（多选题）</span></p>
+                        A： Statement sta=con.createStatement(); ResultSet rst=sta.executeQuery(“select * from book”); <br />
+                        B：Statement sta=con.createStatement(“select * from book”); ResultSet rst=sta.executeQuery(); <br />
+                        C：PreparedStatement pst=con.preparedStatement(); ResultSet rst=pst.executeQuery(“select * from book”); <br />
+                        D：PreparedStatement pst=con.preparedStatement(“select * from book”); ResultSet rst=pst.executeQuery(); <br />
+                        答案：AD<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        42、 <p>MVC属于JavaWeb哪种开发方式？</p>
+                        A：Model1 <br />
+                        B：Model2 <br />
+                        C：Model3 <br />
+                        D：Model4 <br />
+                        答案：B<br />
+                        解析：<p>Model1是JSP+JavaBean；Model2是JSP+Servlet+JavaBean；</p><br />
+                    </span>
+                    <span>
+                        43、 <p>Session对象的哪个方法用于设置会话的超时时间？</p>
+                        A：session.setMaxInactiveInterval(30) <br />
+                        B：session.setMaxTime(30) <br />
+                        C：session.getMaxInactiveInterval() <br />
+                        D：session.setAttribute(“time”,30) <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        44、 <p>在JavaEE中属于Web层的组件是？（单选题）</p>
+                        A：HTML&#160; <br />
+                        B：EJB&#160; <br />
+                        C：Applet&#160; <br />
+                        D：JSP <br />
+                        答案：D<br />
+                        解析：<p>HTML是通用的网页技术，不属于JavaEE的一部分；EJB是应用服务器开发技术；Applet是已经过时的开发小窗口程序的技术；JSP才是做web开发的；</p><br />
+                    </span>
+                    <span>
+                        45、 <p>MVC中的 M V C &nbsp;分别用_______、_______、_____表示？</p>
+                        A：jsp&#160;&#160;servlet&#160;&#160;javabean <br />
+                        B：Html javabean jsp <br />
+                        C：javabean  jsp&#160;&#160;servlet <br />
+                        D：servlet&#160;&#160;&#160;html&#160;&#160;jsp <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        46、 <p>JDBC中，用于表示数据库连接的对象是？</p>
+                        A：Statement <br />
+                        B：Connection <br />
+                        C：DriverManager <br />
+                        D：PreparedStatement <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        47、 <p>用于调用存储过程的对象是？</p>
+                        A：ResultSet <br />
+                        B：DriverManager <br />
+                        C：CallableStatemet <br />
+                        D：PreparedStatement <br />
+                        答案：C<br />
+                        解析：<p>后面补充课程中的oracle部分会讲CallableStatemet如何调用存储过程</p><br />
+                    </span>
+                    <span>
+                        48、 <p>如下代码</p><p>10. public Object m() {&nbsp;</p><p>11. Object o = new Float(3.14F);&nbsp;</p><p>12. Object [] oa = new Object[1];&nbsp;</p><p>13. oa[0] = o;&nbsp;</p><p>14. o = null;&nbsp;</p><p>15. oa[0] = null;&nbsp;</p><p>16. System.out.println(&quot;hell&quot;);&nbsp;</p><p>17. }&nbsp;</p><p>当Float对象在第11行被创建后, 什么时候能够被垃圾回收?</p><p><br/></p>
+                        A：13 行以后 <br />
+                        B：14 行以后 <br />
+                        C：15 行以后 <br />
+                        D：16 行以后 <br />
+                        答案：C<br />
+                        解析：<p>当一个对象没有任何引用的时候就可以被回收了。oa[0] = o;是引用了o当前所指向的对象。</p><br />
+                    </span>
+                    <span>
+                        49、 <p>下面关于垃圾收集的说法正确的是？</p>
+                        A：一旦一个对象成为垃圾，就立刻被收集掉 <br />
+                        B：对象内存空间被收集掉之后，会执行该对象的 finalize 方法 <br />
+                        C： finalize 方法和 C++ 的析构函数是完全一回事情 <br />
+                        D：一个对象成为垃圾是因为不再有引用指着它，但是线程并非如此。 <br />
+                        答案：D<br />
+                        解析：<p>A、GC会选择合适的时机进行对象内存的回收；</p><p>B、对象的finalize是在对象内存会回收的时候执行，而不是“之后”。我们平时开发的时候不会写finalize方法，能够通过面试就可以了；</p><p>C、大家都没学过C++，记住不对就行了，别管为什么；</p><p>D、线程是操作系统进行资源的管理，和普通对象不一样；</p><br />
+                    </span>
+                    <span>
+                        50、 <p>JDK中的java.exe和javac.exe分别是做什么的？</p>
+                        A：java解释器；java编译器； <br />
+                        B：java编译器；java解释器； <br />
+                        C：Java 文档生成器；java编译器； <br />
+                        D：Java 文档生成器；java解释器； <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        51、 <p>JSP中如何利用ServletContext和ServletConfig对象获得初始化参数？</p><p><br/></p> 
+                        解析：<p>String psw = config.getInitParameter(&quot;psw&quot;);</p><p>ServletContext ss = config.getServletContext();</p><p>String ppp = ss.getInitParameter(&quot;name&quot;);</p><br />
+                    </span>
+                    <span>
+                        52、 <p>编写一个连接mysql数据库，查询并且打印T_Users表的代码。</p> 
+                        解析：<p>这是JDBC的基本代码，必须能在纸上把主体代码写出来！</p><p>Class.forName(driver); &nbsp;&nbsp;</p><p>Connection conn = DriverManager.getConnection(url,name,psw);</p><p>PreparedStatement pstat = null;</p><p>ResultSet res =null;</p><p>String sql = &quot;select * from users&quot;;&nbsp;</p><p>pstat = conn.prepareStatement(sql);</p><p>res = pstat.executeQuery();</p><p>while(res.next())</p><p>{</p><p>&nbsp; &nbsp; String name = res.getString(&quot;name&quot;);</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        53、 <p>能够向文件输入逻辑型数据的类是？</p>
+                        A：DataOutputStream <br />
+                        B：FileWriter <br />
+                        C：OutputStream <br />
+                        D：FileOutputStream <br />
+                        答案：A<br />
+                        解析：<p>DataOutputStream可以直接写int、String、double等，它会帮我们将这些数据转换为字节存储；</p><br />
+                    </span>
+                    <span>
+                        54、 <p>JDBC中创建SQL语句对象可能产生异常，此异常是？</p>
+                        A：SQLWaring <br />
+                        B：SQLException <br />
+                        C：DataTruncation <br />
+                        D：IOException <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        55、 <p>下列语句哪一个正确？</p>
+                        A： Java程序经编译后会产生machine code <br />
+                        B： Java程序经编译后会产生byte code <br />
+                        C： Java程序经编译后会产生DLL <br />
+                        D： 都不正确 <br />
+                        答案：B<br />
+                        解析：<p>machine code是“机器码”，只有C这样的语言才会生成机器码，Java生成的.class是“字节码（byte code）”</p><br />
+                    </span>
+                    <span>
+                        56、 <p>编译并运行以下程序，以下描述哪个选项是正确的</p><p>class A{&nbsp;</p><p>&nbsp;protected boolean equals(){&nbsp;</p><p>&nbsp;return super.equals();&nbsp;</p><p>&nbsp;}&nbsp;</p><p>}&nbsp;</p><p><br/></p>
+                        A： 编译通过运行无异常 <br />
+                        B： 编译通过但运行时出错 <br />
+                        C： 行2出错，不能成功编译 <br />
+                        D： 不能成功编译，行3出错 <br />
+                        答案：D<br />
+                        解析：<p>Object类没有equals（）方法 只有equals（Object obj）方法。所以super.equals();出错</p><br />
+                    </span>
+                    <span>
+                        57、 <p>有源文件Test.java，请问用命令行怎么编译？怎么运行编译后的class？</p>
+                        A：1） javac Test.java 2）java Test <br />
+                        B：1）java Test.java 2）java Test.class <br />
+                        C：1）java Test 2） javac Test <br />
+                        D：1）javac Test 2）java Test.class <br />
+                        答案：A<br />
+                        解析：<p>javac.exe是编译工具，把源代码A.java编译成字节码文件A.class，java.exe是运行A.class的解释器；</p><p>javac.exe编译的时候要带上java的全文件名；java.exe是运行字节码文件用的程序，不用也不能带上.class文件名，只要写类名即可。</p><br />
+                    </span>
+                    <span>
+                        58、 <p>对一个java源文件 aaa.java，编辑保存后但未编译，在其所在目录下执行 java aaa，则接着会出现什么？</p>
+                        A： 程序正常执行并显示 <br />
+                        B： 无任何显示 <br />
+                        C： Exception in thread &quot;main&quot; java.lang.NoClassDefFoundError: aaa <br />
+                        D： error: cannot read: aaa.java <br />
+                        答案：C<br />
+                        解析：<p>java aaa表示运行aaa这个类，由于还没有根据aaa.java编译成aaa.class，所以会报错NoClassDefFoundError（类定义没找到）</p><br />
+                    </span>
+                    <span>
+                        59、 <p>&quot;try-catch&quot;块可能会跟哪一个关键字？</p>
+                        A：finally <br />
+                        B：final <br />
+                        C：finish <br />
+                        D：finalize <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        60、 <p>编译一个定义了5个类和18个方法的Java源代码文件，编译该源代码文件时会产生几个字节码文件？</p>
+                        A：1 <br />
+                        B：23 <br />
+                        C：5 <br />
+                        D：18 <br />
+                        答案：C<br />
+                        解析：<p>一个类对应一个.class文件；</p><br />
+                    </span>
+                    <span>
+                        61、 <p>Java编程所必须的默认引用包为？</p>
+                        A： java.lang包 <br />
+                        B： java.sys包 <br />
+                        C： java.util包 <br />
+                        D：都不是 <br />
+                        答案：A<br />
+                        解析：<p>Integer、String等这些基本的类都定义在java.lang下</p><br />
+                    </span>
+                    <span>
+                        62、 <p>不可变对象（Immutable object）总是？</p>
+                        A： 线程安全 <br />
+                        B： 可序列化 <br />
+                        C： 多态的 <br />
+                        D： 节省内存 <br />
+                        答案：A<br />
+                        解析：<p>线程安全问题就是多个线程修改同一个对象的状态引起的。不可变对象是状态不可变的对象，因此是线程安全的</p><br />
+                    </span>
+                    <span>
+                        63、 <p>常用的unix命令（5-10个）</p> 
+                        解析：<p><span style="font-family: verdana; font-size: 14px;">ls 显示文件名</span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">cd 切换目录</span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">rm 删除文件</span></span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">mkdir 创建目录</span></span></span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">cp 文档复制</span></span></span></span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">find 文件查找&nbsp;</span></span></span></span></span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">vi 编辑器</span></span></span></span></span></span></span></p><p><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;"><span style="font-family: verdana; font-size: 14px;">grep 搜索字符串</span></span></span></span></span></span></span></span></p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

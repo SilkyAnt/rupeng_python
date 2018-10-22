@@ -1,0 +1,205 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Web前端》面试题</h1>
+                    <span>
+                        1、 <p><strong><span style="font-family: 宋体;font-size: 14px">XML <span style="font-family:宋体">与 </span><span style="font-family:Times New Roman">HTML </span><span style="font-family:宋体">的主要区别</span></span></strong></p> 
+                        解析：<p><span style=";font-family:宋体;font-size:14px">1. XML<span style="font-family:宋体">是区分大小写字母的，</span><span style="font-family:Times New Roman">HTML</span><span style="font-family:宋体">不区分。 </span></span></p><p><span style=";font-family:宋体;font-size:14px">2. </span><span style=";font-family:宋体;color:rgb(255,0,0);font-size:14px"><span style="font-family:宋体">在</span>HTML<span style="font-family:宋体">中，如果上下文清楚地显示出段落或者列表键在何处结尾，那么你可以省略</span><span style="font-family:Times New Roman">&lt;/p&gt;</span><span style="font-family:宋体">或者</span><span style="font-family:Times New Roman">&lt;/li&gt;</span><span style="font-family:宋体">之类的结束 标记。在</span><span style="font-family:Times New Roman">XML</span><span style="font-family:宋体">中，绝对不能省略掉结束标记。</span></span><span style=";font-family:宋体;font-size:14px">&nbsp;</span></p><p><span style=";font-family:宋体;font-size:14px">HTML<span style="font-family:宋体">：</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&lt;img src=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;br&gt;</span></p><p><span style=";font-family:宋体;font-size:14px">XML<span style="font-family:宋体">：</span></span><span style=";font-family:&#39;Times New Roman&#39;;font-size:14px">&lt;img src=&quot;1.jpg&quot;&gt;&lt;/img&gt;&lt;br/&gt;&lt;br/&gt;</span></p><p><span style=";font-family:宋体;font-size:14px">3. <span style="font-family:宋体">在</span><span style="font-family:Times New Roman">XML</span><span style="font-family:宋体">中，拥有单个标记而没有匹配的结束标记的元素必须用一个 </span><span style="font-family:Times New Roman">/ </span><span style="font-family:宋体">字符作为结尾。</span></span></p><p><span style=";font-family:宋体;font-size:14px">4. <span style="font-family:宋体">在</span><span style="font-family:Times New Roman">XML</span><span style="font-family:宋体">中，属性值必须放到在引号中 &lt;Person name=&quot;rupeng&quot;&gt;。在</span><span style="font-family:Times New Roman">HTML</span><span style="font-family:宋体">中，引号是可用可不用的&lt;input name=rupeng&gt;。 </span></span></p><p><span style=";font-family:宋体;font-size:14px">5. <span style="font-family:宋体">在</span><span style="font-family:Times New Roman">HTML</span><span style="font-family:宋体">中，可以拥有不带值的属性名&lt;input type=&quot;checkbox&quot; checked/&gt;。在</span><span style="font-family:Times New Roman">XML</span><span style="font-family:宋体">中，所有的属性都必须带有相应的值。&lt;Person checked=&quot;true&quot;/&gt;</span></span></p><p><span style=";font-family:宋体;font-size:14px">&nbsp;</span></p><p><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">如果使用了完全符合</span>XML<span style="font-family:宋体">语法要求的</span><span style="font-family:Times New Roman">HTML</span><span style="font-family:宋体">，那么就叫做符合</span></span><span style=";font-family:宋体;color:rgb(255,0,0);font-size:14px">XHTML</span><span style=";font-family:宋体;font-size:14px"><span style="font-family:宋体">标准。</span></span></p><br />
+                    </span>
+                    <span>
+                        2、 <p><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">关于function的问题</span></span></p><p><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">（</span>1）</span></p><p><span style="font-family: 宋体;font-size: 14px">var x=1;</span></p><p><span style="font-family: 宋体;font-size: 14px">var y=0;</span></p><p><span style="font-family: 宋体;font-size: 14px">var z=0;</span></p><p><span style="font-family: 宋体;font-size: 14px">function add(n){n=n+1;return n;}</span></p><p><span style="font-family: 宋体;font-size: 14px">y=add(x);</span></p><p><span style="font-family: 宋体;font-size: 14px">function add(n){n=n+3;return n;}</span></p><p><span style="font-family: 宋体;font-size: 14px">z=add(x);</span></p><p><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">求</span></span><span style="font-family: 宋体;font-size: 14px">y</span><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">和</span></span><span style="font-family: 宋体;font-size: 14px">z</span><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">的值是多少</span></span><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">？</span></span></p><p><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体">2）</span></span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">var x=1;</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">var y=0;</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">var z=0;</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">var add = function(n){n=n+1;return n;}</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">y=add(x);</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">add =function(n){n=n+3;return n;}</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;">z=add(x);</span></p><p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 10px; color: rgb(51, 51, 51); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; white-space: normal; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box; font-family: 宋体;"><span style="box-sizing: border-box;">求</span></span><span style="box-sizing: border-box; font-family: 宋体;">y</span><span style="box-sizing: border-box; font-family: 宋体;"><span style="box-sizing: border-box;">和</span></span><span style="box-sizing: border-box; font-family: 宋体;">z</span><span style="box-sizing: border-box; font-family: 宋体;"><span style="box-sizing: border-box;">的值是多少</span></span><span style="box-sizing: border-box; font-family: 宋体;"><span style="box-sizing: border-box;">？</span></span></p><p><span style="font-family: 宋体;font-size: 14px"><span style="font-family:宋体"></span></span><br/></p> 
+                        解析：<p><span style="font-family: 宋体;font-size: 14px">1）JavaScript引擎会先解析所有的命名函数，再去从上向下执行js代码。所以第二个add覆盖了第一个add的定义。因此结果是4、4</span></p><p><span style="font-family: 宋体;font-size: 14px">2）这个和上面不一样，这个是匿名函数，add指向谁,add(x)就执行谁，所以结果是2、4</span></p><p><span style="font-family: 宋体;font-size: 14px"><span style="font-family: 宋体;">命名函数的add就是函数的名字。而var add = function(n){n=n+1;return n;}则是创建一个匿名函数，并且把变量add指向它，这个函数还是匿名函数，并不会因为有一个变量指向它他就不是匿名函数了。</span></span></p><br />
+                    </span>
+                    <span>
+                        3、 <p><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">做一个</span><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">HTML</span><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">表格，三行三列。其中第一列的前两行合一；第二行的后两列合一。</span></p><p><span style="color:#222222;font-family:宋体">效果如下：</span></p><p><span style="color:#222222;font-family:宋体"><img src="//static.rupeng.com/upload/images/201612/468C80D29DFC985B8D9A24477546724E.png" title="blob.png" alt="blob.png"/></span></p> 
+                        解析：<p>&lt;table border=&quot;1&quot;&gt;</p><p>&nbsp; &lt;tr&gt;&lt;td rowspan=&quot;2&quot;&gt;1&lt;/td&gt;&lt;td&gt;2&lt;/td&gt;&lt;td&gt;3&lt;/td&gt;&lt;/tr&gt;</p><p>&nbsp; &lt;tr&gt;&lt;td colspan=&quot;2&quot;&gt;5&lt;/td&gt;&lt;/tr&gt;</p><p>&nbsp; &lt;tr&gt;&lt;td&gt;7&lt;/td&gt;&lt;td&gt;8&lt;/td&gt;&lt;td&gt;9&lt;/td&gt;&lt;/tr&gt;</p><p>&lt;/table&gt;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        4、 <p><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">下面的</span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">HTML</span><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">代码</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&lt;style type=&quot;text/css&quot;&gt;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#text1{ background-color:red}</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.txt{ background-color:green}</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;input {background-color:black}</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&lt;input id=&quot;text1&quot; type=&quot;text&quot; /&gt;</span></p><p><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&lt;input type=&quot;text&quot; /&gt;</span></p><p><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">两个文本框各是什么颜色？</span></p> 
+                        解析：<p><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">样式优先级的问题，元素单独设置的样式</span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&gt;class</span><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">命名样式</span><span style=";font-family:&#39;Times New Roman&#39;;color:rgb(34,34,34);font-size:16px">&gt;</span><span style=";font-family:宋体;color:rgb(34,34,34);font-size:16px">标签样式。</span></p><br />
+                    </span>
+                    <span>
+                        5、 <p>HTML 的 form 提交之前如何验证数值文本框的内容不空且全部为数字? 否则的话提示用户并终止提交</p> 
+                        解析：<p>方法一，使用正则表达式</p><p>/^\d+$/.test(value)&nbsp;</p><p>因为test是部分匹配，即value中只需要有一部分和正则匹配就会返回true，所以需要加上^和$保证完全匹配</p><p>&nbsp;</p><p>&nbsp;</p><p>方法二：</p><p>&lt;script type=&quot;text/javascript&quot;&gt;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;document.getElementById(&quot;form01&quot;).onsubmit=function(){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var value = document.getElementById(&quot;phone&quot;).value;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//如果value为空</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(!value){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&quot;手机号不能为空&quot;);</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for(var i=0;i&lt;value.length;i++){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var ch = value.charAt(i);</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;//字符串直接比较时是按字典顺序进行比较的</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(ch&lt;&quot;0&quot; || ch&gt;&quot;9&quot;){</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;alert(&quot;只能输入数字&quot;);</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&nbsp;&nbsp;&nbsp;&nbsp;}</p><p>&lt;/script&gt;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        6、 <p>用js动态创建一个Dom元素（不用jquery）</p> 
+                        解析：<p style="white-space: normal;">&lt;script type=&quot;text/javascript&quot;&gt;<br/></p><p style="white-space: normal;">&nbsp;&nbsp;&nbsp;&nbsp;window.onload=function(){</p><p style="white-space: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var divObj = document.createElement(&quot;div&quot;);</p><p style="white-space: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;divObj.innerHTML=&quot;hello&quot;;</p><p style="white-space: normal;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;document.body.appendChild(divObj);</p><p style="white-space: normal;">&nbsp;&nbsp;&nbsp;&nbsp;}</p><p style="white-space: normal;">&lt;/script&gt;</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        7、 <p>jQuery获取文本框的内容用什么，获取span的内容用什么?</p><p><br/></p> 
+                        解析：<p>文本框的内容是value属性的值，所以使用jQuery对象的val()函数。</p><p>span标签的内容是标签体内容，所以使用jQuery对象的html()函数。</p><br />
+                    </span>
+                    <span>
+                        8、 <p>手动写一个函数用来发送ajax请求（不用jQuery）</p> 
+                        解析：<p>function mypost(url,param,successFunc){</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>var xmlHttp ;</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>if(window.XMLHttpRequest){</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>xmlHttp &nbsp; = new XMLHttpRequest();</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}else{</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>xmlHttp = new ActiveXObject(&quot;Microsoft.XMLHTTP&quot;);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>xmlHttp.onreadystatechange=function(){</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>if(xmlHttp.readyState==4 &amp;&amp; xmlHttp.status==200){</p><p><span class="Apple-tab-span" style="white-space:pre">			</span>successFunc(xmlHttp.responseText);</p><p><span class="Apple-tab-span" style="white-space:pre">		</span>}</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>}</p><p><br/></p><p><span class="Apple-tab-span" style="white-space:pre">	</span>xmlHttp.open(&quot;POST&quot;,url,true);</p><p><span class="Apple-tab-span" style="white-space:pre">	</span>xmlHttp.send(param);</p><p>}</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        9、 <p>jQuery中如何获得你想要操作的元素？</p><p><br/></p> 
+                        解析：<p>使用选择器，或者使用如&nbsp;next()、nextAll()、prev()、siblings()一类的函数</p><br />
+                    </span>
+                    <span>
+                        10、 <p>js如何创建一个对象？</p> 
+                        解析：<p>使用new关键字，如var obj = new Object();</p><p>也可以使用json的方式创建，如var obj = {};</p><br />
+                    </span>
+                    <span>
+                        11、 <p>span和div的区别是什么？</p> 
+                        解析：<p>div是块级元素,会占据单独一行;</p><p>span是内联元素，可以与其他元素位于同一行。</p><br />
+                    </span>
+                    <span>
+                        12、 <p>请用Jquery给页面中title属性为num的所有p元素添加边框样式</p> 
+                        解析：<p>$(&quot;p[title=num]&quot;).css(&quot;border-width&quot;,&quot;2px&quot;).css(&quot;border-style&quot;,&quot;solid&quot;);</p><br />
+                    </span>
+                    <span>
+                        13、 <p>如何使用jQuery检查&lt;input type=&quot;hidden&quot; id=&quot;id&quot; name=&quot;id&quot; /&gt;这样的元素是否存在？</p>
+                        A：if($(“#id”).length&gt;0) <br />
+                        B：if($(“#id”).size&gt;0) <br />
+                        C：if($(“id”).length()&gt;0) <br />
+                        D：if($(“#id”)) <br />
+                        答案：A<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        14、 <p>在jQuery中，如果想要删除所有匹配的元素，使用哪个函数？</p>
+                        A：delete() <br />
+                        B：empty() <br />
+                        C：remove() <br />
+                        D：removeAll() <br />
+                        答案：C<br />
+                        解析：<p>因为jquery的选择器是迭代的，所以$(&quot;input&quot;)是匹配所有input，因此$(&quot;input&quot;).val(&quot;hello&quot;);是设置所有input的value，$(&quot;input&quot;).remove()也就是删除每个元素了</p><br />
+                    </span>
+                    <span>
+                        15、 <p>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;男<br/></p><p>&lt;input type=&quot;radio&quot; name=&quot;gender&quot; /&gt;女</p><p>页面中有一个性别单选按钮,请设置“男”为选中状态</p><p><br/></p>
+                        A：$(&quot;gender[0]&quot;).prop(&quot;checked&quot;,true); <br />
+                        B：$(&quot;#gender[0]&quot;).prop(&quot;checked&quot;,true); <br />
+                        C：$(&quot;[name=gender]:radio&quot;).prop(&quot;checked&quot;,true); <br />
+                        D：$(&quot;:radio[name=gender]:eq(0)&quot;).prop(&quot;checked&quot;,true); <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        16、 <p>在jQuery中指定一个css类，如果存在就执行删除功能，如果不存在就执行添加功能，下面哪一个可以直接完成该功能？</p><p><br/></p>
+                        A：removeClass() <br />
+                        B：toggleClass(class) <br />
+                        C：deleteClass() <br />
+                        D：addClass() <br />
+                        答案：B<br />
+                        解析：<p>toggle是切换：“有”改成“没有”，“没有”改成“有”</p><br />
+                    </span>
+                    <span>
+                        17、 <p>如果想在一个指定的元素后面添加内容，下面哪个可以实现该功能？</p><p><br/></p>
+                        A：append(content) <br />
+                        B：appendTo(content) <br />
+                        C：insertAfter(content) <br />
+                        D：after(content) <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        18、 <p>JavaScript中foo对象有att属性，下面那些方式可以获取att属性的值？</p><p><br/></p>
+                        A：foo[&quot;att&quot;] <br />
+                        B：foo(&quot;att&quot;) <br />
+                        C：foo.att <br />
+                        D：foo{&quot;att&quot;} <br />
+                        答案：A,C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        19、 <p>在HTML页面中，不能使用change事件处理的表单元素有？</p><p><br/></p>
+                        A：文本框 <br />
+                        B：复选框 <br />
+                        C：列表框 <br />
+                        D：按钮 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        20、 <p>JavaScript中eval的作用是什么？</p> 
+                        解析：<p>eval() 函数可以把一个字符串当成JavaScript代码去执行。比如：</p><p>eval(&quot;x=10;y=20;document.write(x*y);&quot;)</p><p>用来动态生成JavaScript语句，然后执行</p><br />
+                    </span>
+                    <span>
+                        21、 <p>你用过jquery easyui的哪些组件？</p> 
+                        解析：<p>panel、validatebox、window、tree、datagrid等</p><br />
+                    </span>
+                    <span>
+                        22、 <p>jquery有哪些选择器？</p> 
+                        解析：<p>id选择器、标签选择器、类选择器、属性选择器等，选择器语法基本和CSS的选择器一致。</p><br />
+                    </span>
+                    <span>
+                        23、 <p>ajax支持文件上传吗？</p> 
+                        解析：<p>HTML4中AJAX的核心对象XmlHttpRequest是不支持文件上传的，只能借助于swfupload等flash方式来做类似效果；</p><p>HTML5中已经支持AJAX文件上传；</p><p>百度的Webuploader等组件提供了兼容HTML4、HTML5的异步上传方案，在不支持Html5的浏览器下它会使用Flash来实现上传，在支持Html5的浏览器会使用浏览器的AJAX文件上传；</p><br />
+                    </span>
+                    <span>
+                        24、 <p>用HTML编写的网页的基本结构是</p>
+                        A：&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;frame&gt;&lt;/frame&gt;&lt;/html&gt; <br />
+                        B：&lt;html&gt;&lt;title&gt;&lt;/title&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; <br />
+                        C：&lt;html&gt;&lt;title&gt;&lt;/title&gt;&lt;frame&gt;&lt;/frame&gt;&lt;/html&gt; <br />
+                        D：&lt;html&gt;&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt; <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        25、 <p>下列哪项是在新窗口中打开网页文档</p>
+                        A：_self <br />
+                        B：_blank <br />
+                        C：_top <br />
+                        D：_parent <br />
+                        答案：B<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        26、 <p>假如已经引入jquery库，请编写如下的功能（如果不会jquery也可以写原生js）</p><p>1）向&lt;div id=&quot;content&quot;&gt;&lt;/div&gt;中插入“如鹏网”，字体红色</p><p>2）将上面的div隐藏；</p><p>3）使用Ajax，往下面的div中载入1.htm中的内容</p><p>&lt;div id=&quot;ajax1&quot;&gt;&lt;/div&gt;</p><p><br/></p> 
+                        解析：<p>1）$(&quot;#content&quot;).append($(&quot;&lt;span style=&#39;color:red&#39;&gt;如鹏网&lt;/span&gt;&quot;));</p><p>2）$(&quot;#content&quot;).hide();</p><p>3)$.ajax({</p><p>&nbsp; type:&quot;get&quot;,url:&quot;1.htm&quot;,success:function(res)</p><p>{</p><p>&nbsp; &nbsp;$(&quot;#content&quot;).html(res);</p><p>}</p><p>})</p><br />
+                    </span>
+                    <span>
+                        27、 <p>如何让HTML页面的内容居中对齐？</p> 
+                        解析：<p>&lt;center&gt;&lt;/center&gt;</p><br />
+                    </span>
+                    <span>
+                        28、 <p>在JavaScript中如何验证一个数据是否是数字？</p><p><br/></p>
+                        A：如果用 Integer.parseInt(value) 有误就不是数字 <br />
+                        B： int I = value  若报错就不是数字 <br />
+                        C：没有方法验证 <br />
+                        D：利用 isNaN(value) <br />
+                        答案：D<br />
+                        解析：<p>NaN就是“Not a Number”（不是一个数字）的简写</p><br />
+                    </span>
+                    <span>
+                        29、 <p><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">简述javascript中的“=、==、===”的区别？</span></p> 
+                        解析：<p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">=赋值</span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">==比较是否一般相等 &nbsp; &nbsp;//会做类型的隐式转换，<span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&quot;3&quot;==3结果为true，</span></span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">===比较是否严格相等 //先比较类型,再进行值比较，<span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">&nbsp;&quot;3&quot;===3 结果为false</span></span></p><br />
+                    </span>
+                    <span>
+                        30、 <p><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">看下列代码输出为何？解释原因</span><br style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">var a = null;</span><br style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">alert(typeof a);&nbsp;</span><br style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">var b;</span><br style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">alert(typeof b);</span><br style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"/><span style="margin: 0px; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">alert(c);</span></p> 
+                        解析：<p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">a为null，也是一个对象，所以typeof(a)为object.</span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">b只有声明没有初始化，因此typeof(b)为undefined.</span></p><p style="margin: 10px auto; padding: 0px; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);"><span style="margin: 0px; padding: 0px;">c没有定义，因此alert(c)会出现异常.</span></p><br />
+                    </span>
+                    <span>
+                        31、 <p>下面有关javascript系统方法的描述，错误的是？</p>
+                        A：parseFloat方法：该方法将一个字符串转换成对应的小数 <br />
+                        B：isNaN方法：该方法用于检测参数是否为数值型，如果是，返回true，否则，反回false。 <br />
+                        C：escape方法： 该方法返回对一个字符串编码后的结果字符串 <br />
+                        D：eval方法：该方法将某个参数字符串作为一个JavaScript执行 <br />
+                        答案：B<br />
+                        解析：<p>isNaN是用来判断“是否<span style="color: rgb(255, 0, 0);"><strong>不是</strong></span>数值类型”，NaN是“Not A Number”（不是一个数字）的简写，B说反了</p><br />
+                    </span>
+                    <span>
+                        32、 <p>分析以下JavaScript代码片段，输出结果是？</p><p>var a = Math.round(13.21);</p><p>var b = Math.round(16.89);</p><p>document.write(a+b);</p><p><br/></p>
+                        A：30 <br />
+                        B： 29 <br />
+                        C：31 <br />
+                        D： 13.2116.89 <br />
+                        答案：A<br />
+                        解析：<p>round是四舍五入</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

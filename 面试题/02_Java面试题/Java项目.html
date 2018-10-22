@@ -1,0 +1,45 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《Java项目》面试题</h1>
+                    <span>
+                        1、 <p>《如鹏网项目》中消息通知是如何实现的</p> 
+                        解析：<p>比如学生提问了一个问题，系统会把问题信息先保存到数据库，这个时候此问题就有了id，然后系统使用该问题id作为key，通知消息作为value，把键值对保存到redis服务器中。最后，在页面上使用ajax每隔10秒发生请求查看有没有通知消息...<br/></p><br />
+                    </span>
+                    <span>
+                        2、 <p>《如鹏网项目》中使用redis服务器如何实现缓存功能</p> 
+                        解析：<p>在service层使用spring AOP织入缓存功能，使用service层查询方法的方法签名和方法参数值作为key，使用json格式的查询结果作为value，保存到redis服务器中。再使用自定义注解标注哪些查询方法会使用缓存，哪些更新方法会清空缓存等</p><br />
+                    </span>
+                    <span>
+                        3、 <p>《掌上租项目》中，权限管理是如何实现的</p> 
+                        解析：<p>数据库层面使用用户-角色-权限表记录用户和角色的关联关系以及角色和权限的关联关系，controller层中使用自定义注解标注某个方法所需要的权限，通过Filter进行权限的过滤操作</p><br />
+                    </span>
+                    <span>
+                        4、 <p>《如鹏网项目》中，使用jQuery的$.post()函数时，一般指定哪些参数</p> 
+                        解析：<p>$.post(url,data,function(){},&#39;json&#39;)</p><p>最后的&#39;json&#39;表示返回结果为json对象</p><br />
+                    </span>
+                    <span>
+                        5、 <p>多线程了解吗？项目中设计到多线程吗？怎么解决的？</p> 
+                        解析：<p>多线程很熟悉，比如线程状态转变、同步控制等都很清楚。不过项目里面使用的SSM一般用不到多线程，而且项目功能也没有需要使用多线程来解决的</p><br />
+                    </span>
+                    <span>
+                        6、 <p>《如鹏网项目》项目中怎么管理事物的</p> 
+                        解析：<p>使用spring声明式事物进行管理，在service层织入事物通知，对那些查询方法设置为只读事物，其他更新方法设置为读写事物</p><br />
+                    </span>
+                    <span>
+                        7、 <p>springMVC的实现原理？</p> 
+                        解析：<p>使用一个核心控制器（servlet）拦截所有请求，然后调用springMVC内部的其他组件按照既定规则对请求进行预处理，最后把请求交给开发人员自定义的handler做业务逻辑处理</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>

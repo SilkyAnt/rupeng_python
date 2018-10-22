@@ -1,0 +1,155 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>打印面试题</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="margin-left:50px;">
+        <h1 style="font-weight:bold;">如鹏网《其他》面试题</h1>
+                    <span>
+                        1、 <p>面试中常见的非技术问题：</p><p style="white-space: normal;">1、你以前公司的名字？公司规模（多少人）？你所在的部门多少人？</p><p style="white-space: normal;">2、你以前公司主营业务是什么（即制造型企业还是外包公司还是互联网公司等）？以前工作公司地址在哪里（哪个城市、哪个区、哪个大厦）？以前公司的网址是什么？</p><p style="white-space: normal;">3、你以前公司给上五险一金了吗？在以前公司工资是多少？</p><p style="white-space: normal;">4、你以前公司一周上几天班？加班吗？加班的话加班到几点？</p><p style="white-space: normal;">5、离职原因是什么？什么时候离职的？</p><p style="white-space: normal;">6、以前你工作的项目组几个人？怎么分工的？你主要负责什么？</p><p style="white-space: normal;">7、你们的软件或者开发包用什么版本？Java班（以下软件的版本：JDK、Eclipse、MYSQL、Tomcat、JQuery、Hibernate、Spring、Struts、MyBatis、Oracle）、.Net班（以下软件的版本：.Net Framework、Visual Studio、SQLServer、IIS、JQuery、Entity Framework、ASP.Net MVC）</p><p style="white-space: normal;">8、对于在校生来讲，还会问：介绍一下你的大学生活？你们学校是在哪个城市？哪个校区？你是什么学院的？你们专业的专业课有哪些？班级有多少人，你在班级中学习排名怎么样？</p><p style="white-space: normal;">9、最近关注什么技术？平时上哪些技术网站？这些网站最近今天印象最深刻的一篇文章是讲什么的？</p><p style="white-space: normal;">10、你大学中印象最深刻的一件事情是什么？你工作中印象最深刻的一件事情是什么？你开发中印象最深刻的一件事情是什么？</p><p style="white-space: normal;">11、你的同事是怎么评价你的？你的同学是怎么评价你的？你的领导是怎么评价你的？</p><p>12、你的系统有多少张表？可以说有大约50张表，和自己相关的有N张表（N到底是几取决于自己能说出来的每张表干啥的、主要字段是什么、之间的关系是什么）</p> 
+                        解析：无<br />
+                    </span>
+                    <span>
+                        2、 <p>网络通讯中tcp udp的区别是什么？</p> 
+                        解析：<p>1、TCP是需要先建立连接的;UDP是无连接的，即发送数据之前不需要建立连接</p><p>2、TCP提供可靠的服务。也就是说，通过TCP连接传送的数据，无差错，不丢失，不重复，且按序到达；UDP不保证数据的传输的完整性；</p><p>3、TCP效率低，UDP效率高；</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        3、 <p>http协议中，状态码500的含义为</p>
+                        A：重定向 <br />
+                        B：访问被拒绝 <br />
+                        C：未找到请求的内容 <br />
+                        D：服务器内部错误 <br />
+                        答案：D<br />
+                        解析：<p>重定向是301、302</p><p>访问被拒绝是401</p><p>未找到是404</p><br />
+                    </span>
+                    <span>
+                        4、 <p>A派生出子类B，B类派生出子类C，那么如下声明哪个是对的？（多选题）</p>
+                        A：A a=new A(); <br />
+                        B：A a = new B(); <br />
+                        C：A a = new C(); <br />
+                        D：B b = new A(); <br />
+                        答案：ABC<br />
+                        解析：<p>父类类型的变量可以指向子类对象。“A派生出子类B”的意思就是“B类继承自A类”</p><br />
+                    </span>
+                    <span>
+                        5、 <p>下列概念中不属于面向对象的是？</p>
+                        A：对象、消息 <br />
+                        B：继承、多态 <br />
+                        C：类、封装 <br />
+                        D：过程调用 <br />
+                        答案：D<br />
+                        解析：<p>“消息”是面向对象理论中的概念，a.hello()可以说成“向a指向的对象发送hello()消息”</p><p>“过程调用”中的“过程”是英语“procedure”的翻译，procedure也可以翻译成“函数”或者“方法”，函数和面向对象没有关系，因为C语言这样的面向过程的语言中也有函数。</p><br />
+                    </span>
+                    <span>
+                        6、 <p>下面哪个循环会导致死循环？</p>
+                        A：for(int k=0;k&lt;0;k++){} <br />
+                        B：for(int k=10;k&gt;0;k--){} <br />
+                        C：for(int k=0;k&lt;10;k--){} <br />
+                        D：for(int k=0;k&gt;0;k++){} <br />
+                        答案：C<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        7、 <p>有下面的代码：</p><p>int k=0;</p><p>int ret = ++k+k++ + ++k+k;</p><p>执行完后ret的值为多少</p> 
+                        解析：<p>答案：8</p><p>++运算符优先级高于+，因此用()明确一下优先级为：</p><p style="white-space: normal;">int ret = (++k)+(k++) + (++k)+k;</p><p>++k表达式的值为自增之后的值，k++表达式的值为自增之前的值；表达式从左向右执行；</p><p>咱们从左向右分析：</p><p>(++k)执行后表达式的值为1，执行后k=1</p><p>(k++)执行后表达式的值还是1，执行后k=2</p><p>(++k)执行后表达式的值为3，执行后k=3</p><p>所以int ret=1+1+3+3=8</p><p><br/></p><p>这样的代码只会考试的时候考，工作中写这样的代码会被打死。</p><br />
+                    </span>
+                    <span>
+                        8、 <p>内部存储器和外部存储器相比来说有什么不同</p>
+                        A：容量大、速度快 <br />
+                        B：容量小、速度快 <br />
+                        C：容量大、速度慢 <br />
+                        D：容量小，速度慢 <br />
+                        答案：B<br />
+                        解析：<p>内部存储器一般指的是内存，外部存储器一般指的是硬盘。</p><p>内存容量肯定没有硬盘大，但是硬盘访问速度肯定没有内存访问速度快。</p><br />
+                    </span>
+                    <span>
+                        9、 <p>10进制的28对应2进制数据是多少？</p> 
+                        解析：<p>答案：11100</p><p>十进制和二进制的转换，详见：<a href="//jingyan.baidu.com/article/597a0643614568312b5243c0.html" _src="//jingyan.baidu.com/article/597a0643614568312b5243c0.html">//jingyan.baidu.com/article/597a0643614568312b5243c0.html</a>&nbsp;</p><br />
+                    </span>
+                    <span>
+                        10、 <p>int i,j;</p><p>i=1;j=i++;</p><p>//此时i,j的值分别为多少</p><p>i=1;j=++i;</p><p>//此时i,j的值分别为多少</p><p><br/></p> 
+                        解析：<p>2,1</p><p>2,2</p><p><br/></p><br />
+                    </span>
+                    <span>
+                        11、 <p>写一个方法，把文件c:\tmp.txt复制到d:\dest.txt</p> 
+                        解析：<p>这是IO课程中讲的，忘了的话去复习</p><br />
+                    </span>
+                    <span>
+                        12、 <p>有以下方法的定义，请选择改方法的返回类型</p><p>ReturnType method(byte x,double y)</p><p>{</p><p>&nbsp; &nbsp;return (short)x/y*2;</p><p>}</p><p><br/></p>
+                        A：byte <br />
+                        B：short <br />
+                        C：int <br />
+                        D：double <br />
+                        答案：D<br />
+                        解析：<p>()用来进行显式转换是修饰离他最近的变量，因此(short)x/y*2等价于((short)x)/y*2<br/></p><p><br/></p><p>((short)x)是short类型、y是double类型，2是int类型，short、double、int进行运算，结果是最大的精度、最大的长度，因此结果是double类型</p><br />
+                    </span>
+                    <span>
+                        13、 <p>int i=12;</p><p>int j=(i*=++i);</p><p>请问j的值是多少？</p> 
+                        解析：<p>答：156</p><p>解析：</p><p style="white-space: normal;">int j=(i*=++i);</p><p>等价于：int j=(i=i*(++i));<br/></p><p>表达式是从左向右：所以是int j=(i=12*13);因此i=12*13之后i=156，“赋值表达式也有值，其值是赋值之后左边的值”，所以j=156</p><br />
+                    </span>
+                    <span>
+                        14、 <p>下列代码可以替换题目中//add code here 的位置而不产生编译错误的是？</p><p>public abstract class MyClass</p><p>{</p><p>&nbsp; &nbsp;public int constInt = 5;</p><p>&nbsp; &nbsp;//add code here</p><p>&nbsp; &nbsp;public void method(){}</p><p>}</p><p><br/></p>
+                        A：public abstract void method(int a); <br />
+                        B：constInt = constInt+5; <br />
+                        C：public int method(); <br />
+                        D：public abstract void method2(){}; <br />
+                        答案：A<br />
+                        解析：<p>A、抽象方法不能有方法体，所以正确；</p><p>B、非方法体的地方不能写i=i+1这样的赋值语句，所以错误</p><br />
+                    </span>
+                    <span>
+                        15、 <p>下列属于关系型数据库的是？（多选题）</p>
+                        A：Oracle <br />
+                        B：MySQL <br />
+                        C：MIS <br />
+                        D：MangoDB <br />
+                        答案：AB<br />
+                        解析：<p>MySQL、Oracle、SQLServer、DB2等是关系型数据库，MangoDB、Redis、memcached等是NOSQL数据库，MIS是“信息管理系统 Management Information System”的简写；<br/></p><br />
+                    </span>
+                    <span>
+                        16、 <p>下面哪些是使用单向散列函数的加密算法（多选题）</p>
+                        A：DES <br />
+                        B：DSA <br />
+                        C：MD5 <br />
+                        D：SHA <br />
+                        答案：CD<br />
+                        解析：<p>DES是加密算法，有加密就有解密，因此不是“单向散列”</p><p>MD5、SHA都是散列算法</p><br />
+                    </span>
+                    <span>
+                        17、 <p>下列哪一种叙述是正确的？</p>
+                        A：abstract可以修饰字段、方法和类 <br />
+                        B：抽象方法的方法体必须用{}包住 <br />
+                        C：声明抽象方法，大括号可有可无 <br />
+                        D：声明抽象方法不可以写出大括号 <br />
+                        答案：D<br />
+                        解析：无<br />
+                    </span>
+                    <span>
+                        18、 <p>下面这条语句一共创建了多少个对象：String s=&quot;a&quot;+&quot;b&quot;+&quot;c&quot;+&quot;d&quot;;</p> 
+                        解析：<p>编译器会进行优化，编译后就变成了String s=&quot;abcd&quot;;</p><p>所以只有一个String对象</p><br />
+                    </span>
+                    <span>
+                        19、 <p>你的领导有一个紧急任务让你做，要求必须3天完成，但是你评估了一下需要6天才能完成。怎么办？</p> 
+                        解析：<p>建议的答案：我会评估一下加班几天的话能不能把这个问题用3天时间搞定，如果加班3天也搞不定的话，我会和我的领导提出来，然后和领导一起想办法解决。</p><p><br/></p><p>这样解答既体现了自己为了完成公司任务愿意加班的勤劳精神，又提现了“公司的事情不能耽误，如果搞不定一定要提前跟领导说，避免到了3天自己搞不定让公司受损失”这样目标导向的职业化思维。</p><br />
+                    </span>
+                    <span>
+                        20、 <p>你的领导有一个紧急任务让你做，要求必须3天完成，但是你评估了一下需要6天才能完成。怎么办？</p> 
+                        解析：<p>建议的答案：我会评估一下加班几天的话能不能把这个问题用3天时间搞定，如果加班3天也搞不定的话，我会和我的领导提出来，然后和领导一起想办法解决。</p><p><br/></p><p>这样解答既体现了自己为了完成公司任务愿意加班的勤劳精神，又提现了“公司的事情不能耽误，如果搞不定一定要提前跟领导说，避免到了3天自己搞不定让公司受损失”这样目标导向的职业化思维。</p><br />
+                    </span>
+                    <span>
+                        21、 <p>我感觉你不太适合，给你30秒钟，给我留下你的理由</p> 
+                        解析：<p>主要就是说自己有哪些优点可以给公司带来什么价值。</p><br />
+                    </span>
+                    <span>
+                        22、 <p>【选做】给定一个字符串s,找到并且返回其中第一个不重复的字符。如果没有这样一个字符,则返回&#39;_&#39;。编写一个只要遍历一次字符串并且空间复杂度是O(1)的解决方案。</p><p>假定输入:&quot;aabbc&quot;就会返回&#39;c&#39;,输入&quot;acabdaac&quot;返回&#39;b&#39;,输入&quot;ababab&quot;返回&#39;-&#39;</p> 
+                        解析：<p>详见：<a href="https://bbs.rupeng.com/Post/index/4175" target="_blank" textvalue="https://bbs.rupeng.com/Post/index/4175">https://bbs.rupeng.com/Post/index/4175</a>&nbsp;</p><br />
+                    </span>
+
+    </div>
+</body>
+</html>
