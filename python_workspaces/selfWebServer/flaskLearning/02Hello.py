@@ -15,4 +15,3 @@ if __name__=="__main__":
     # 启动服务器
     # 端口号只能用参数设置，debug模式可以用参数，也可以用第六行的代码
     app.run(port=8080,debug=True)
-
