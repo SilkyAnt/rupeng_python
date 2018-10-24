@@ -1,0 +1,10 @@
+{% macro showComment(comment) %}
+    <li>{{ comment }}</li>
+{% endmacro %}
+
+
+<ul>
+    {% for foo in  comments %}
+    {{ showComment(foo) }}
+    {% endfor %}
+</ul>

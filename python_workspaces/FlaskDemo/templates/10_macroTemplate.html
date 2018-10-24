@@ -1,0 +1,6 @@
+{% import "10_ShowComments.html" as macros %}
+<ul>
+    {% for foo in  comments %}
+    {{ macros.showComment(foo) }}
+    {% endfor %}
+</ul>

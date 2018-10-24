@@ -1,0 +1,18 @@
+<ul>
+    {% for a in comments %}
+    <li>{{ a }}</li>
+    {% endfor %}
+</ul>
+
+<table>
+    <tr>
+        <td>KEY</td>
+        <td>VALUE</td>
+    </tr>
+    {% for k in dicts %}
+    <tr>
+        <td>{{k}}</td>
+        <td>{{dicts.get(k)}}</td>
+    </tr>
+    {% endfor %}
+</table>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Jinja2中的变量过滤器</title>
+</head>
+<body>
+{{ name|capitalize }}
+<br/>
+
+<h3>常见变量过滤器</h3>
+<table border="2">
+    <tr>
+        <td>过滤器名</td>
+        <td>说明</td>
+    </tr>
+    <tr>
+        <td>safe</td>
+        <td>渲染值时转义，默认不转义</td>
+    </tr>
+    <tr>
+        <td>capitalize</td>
+        <td>把值的首字母转化成大写，其他字母转化为小写</td>
+    </tr>
+    <tr>
+        <td>lower</td>
+        <td>把值转化为小写</td>
+    </tr>
+    <tr>
+        <td>upper</td>
+        <td>把值转化为大写</td>
+    </tr>
+    <tr>
+        <td>title</td>
+        <td>把值中每个单词的首字母都转化为大写</td>
+    </tr>
+    <tr>
+        <td>trim</td>
+        <td>把值的首尾空格去掉</td>
+    </tr>
+    <tr>
+        <td>striptags</td>
+        <td>渲染之前把值中所有的HTML标签都删掉</td>
+    </tr>
+</table>
+
+<h3>Jinja2模板引擎提供了丰富的内置过滤器,这里介绍几个常用的。</h3>
+<p>更多的额过滤器列表可在Jinja2文档:</p>
+<a href="http://jinja.pocoo.org/docs/2.10/templates/#builtin-filters">http://jinja.pocoo.org/docs/2.10/templates/#builtin-filters</a>
+</body>
+</html>
