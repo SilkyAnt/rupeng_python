@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图片的展示</title>
+    {#<link type="text/css" rel="stylesheet" href="../static/css/13_img.css">#}
+    <link type="text/css" rel="stylesheet" href={{ url_for("static",filename="css/13_img.css") }}>
+
+</head>
+<body>
+{#<img src="../static/img/13_img.jpg"/>#}
+<img src="{{ url_for("static",filename="img/13_img.jpg") }}">
+<button id="hello">按钮</button>
+{#<script type="application/javascript" src="../static/js/13_HelloWorld.js"></script>#}
+<script type="application/javascript" src={{ url_for("static",filename="js/13_HelloWorld.js",_external=True) }}></script>
+</body>
+</html>
