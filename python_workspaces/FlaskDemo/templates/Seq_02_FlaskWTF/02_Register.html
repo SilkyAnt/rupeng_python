@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WTForms的插件应用</title>
+</head>
+<body>
+{% from "Seq_02_FlaskWTF/_field.html" import reder_filed %}
+<form method="post" action={{ url_for('register') }}>
+    {{ form.hidden_tag(form.username) }}
+<table>
+    {{ reder_filed(form.username) }}
+    {{ reder_filed(form.email) }}
+    {{ reder_filed(form.password) }}
+    {{ reder_filed(form.repwd) }}
+    {{ reder_filed(form.age) }}
+    {{ reder_filed(form.height) }}
+    {{ reder_filed(form.birthdate) }}
+    {{ reder_filed(form.gender) }}
+    {{ reder_filed(form.job) }}
+    {{ reder_filed(form.hobby) }}
+    {{ reder_filed(form.description) }}
+    {{ reder_filed(form.accept_terms) }}
+</table>
+    {{ form.submit }}
+</form>
+</body>
+</html>

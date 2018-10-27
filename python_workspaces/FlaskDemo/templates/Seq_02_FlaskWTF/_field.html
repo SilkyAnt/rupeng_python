@@ -1,0 +1,15 @@
+{% macro reder_filed(filed2) %}
+<tr>
+    <td>{{ filed2.label }}</td>
+    <td>{{ filed2(**kwargs)|safe }}</td>
+    <td>{{ filed2.errors[0] }}</td>
+</tr>
+{% endmacro %}
+
+{% macro reder_filed2(filed2) %}
+<tr>
+    <td>{{ filed2.label }}</td>
+    <td>{{ filed2(**kwargs)|safe }}</td>
+    <td>{{ filed2.errors[0] }}</td>
+</tr>
+{% endmacro %}

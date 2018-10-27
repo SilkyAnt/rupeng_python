@@ -1,0 +1,18 @@
+<form action="{{ url_for("login") }}" method="post">
+{{ form.hidden_tag() }}
+    <table>
+        <tr>
+            <td>{{ form.user.label }}</td>
+            <td>{{ form.user(size=20) }}</td>
+            <td>{{ form.user.errors[0] }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.nick.label }}</td>
+            <td>{{ form.nick(size=20) }}</td>
+            <td>{{ form.nick.errors[0] }}</td>
+        </tr>
+    </table>
+
+
+    <input type="submit" value="提交">
+</form>
