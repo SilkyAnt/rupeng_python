@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用WTFORMS实现文件上传</title>
+</head>
+<body>
+<form action={{ url_for("upload") }} method="post" enctype="multipart/form-data">
+    {{ form.hidden_tag() }}
+    {{ form.attach.label }}
+    {{ form.attach }}
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
