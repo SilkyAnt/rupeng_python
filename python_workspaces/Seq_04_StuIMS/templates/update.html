@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改页面</title>
+</head>
+<body>
+<form action={{ url_for("updateStu") }} method="post">
+    <table>
+        <tr>
+            <td>学生的ID</td>
+            <td><input type="text" name="sid" readonly value={{ stu[0] }}></td>
+        </tr>
+        <tr>
+            <td>请输入学生的新名字</td>
+            <td><input type="text" name="sname" value={{ stu[1] }}></td>
+        </tr>
+        <tr>
+            <td>请输入学生的心地址：</td>
+            <td><input type="text" name="saddress" value={{ stu[2] }}></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="修改"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

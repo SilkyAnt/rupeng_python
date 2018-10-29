@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask+MySQL学生信息管理</title>
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>学生的ID</td>
+        <td>学生的NAME</td>
+        <td>学生的Address</td>
+        <td>操作</td>
+    </tr>
+
+    {% for s in students %}
+        <tr>
+            <td>{{ s[0] }}</td>
+            <td>{{ s[1] }}</td>
+            <td>{{ s[2] }}</td>
+            <td><a href={{ url_for("toUpdate") }}?sid={{ s[0] }}>修改</a>&nbsp;<a href={{ url_for("delStu") }}?sid={{ s[0] }}>删除</a></td>
+        </tr>
+    {% endfor %}
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a href={{ url_for("toAdd") }}>添加</a></td>
+    </tr>
+</table>
+</body>
+</html>
