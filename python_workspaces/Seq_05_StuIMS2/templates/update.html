@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask+MySQL实现前后台交互-开发实例2</title>
+    <style>
+        img {
+            max-width: 100%;
+            height: 200px;
+            width: 180px;
+        }
+    </style>
+</head>
+<body>
+<form action={{ url_for("UpdateStu") }} method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>学生的ID</td>
+            <td><input type="text" name="stu_id" value="{{ stu[0] }}" readonly></td>
+        </tr>
+        <tr>
+            <td>学生姓的姓名</td>
+            <td><input type="text" name="stu_name" value="{{ stu[1] }}"></td>
+        </tr>
+        <tr>
+            <td>学生的年龄</td>
+            <td><input type="text" name="stu_age" value="{{ stu[2] }}"></td>
+        </tr>
+        <tr>
+            <td>学生姓的年级</td>
+            <td>
+                <select name="stu_grade">
+                    <option>请选择年级</option>
+                    {% for g in gnames %}
+                        <option value="{{ g[0] }}" {% if stu[3]==g[0] %}
+                                selected
+                        {% endif %}>{{ g[1] }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>学生的原照片</td>
+            <td>
+                <img src="static/{{ stu[4] }}">
+                <input type="hidden" name="stu_old_pic" value="{{ stu[4] }}">
+            </td>
+
+        </tr>
+        <tr>
+            <td>学生的新照片</td>
+            <td><input type="file" name="stu_pic"></td>
+        </tr>
+        <tr>
+            <td>学生的爱好</td>
+            <td>
+                <input type="checkbox" name="stu_hobby" value="游泳" {% if "游泳" in stu[5] %}
+                       checked
+                {% endif %}>游泳
+                <input type="checkbox" name="stu_hobby" value="爬山" {% if "爬山" in stu[5] %}
+                       checked
+                {% endif %}>爬山
+                <input type="checkbox" name="stu_hobby" value="打球" {% if "打球" in stu[5] %}
+                       checked
+                {% endif %}>打球
+                <input type="checkbox" name="stu_hobby" value="阅读" {% if "阅读" in stu[5] %}
+                       checked
+                {% endif %}>阅读
+            </td>
+        </tr>
+        <tr>
+            <td>学生的性别</td>
+            <td>
+                <input type="radio" name="stu_sex" value="男" {% if stu[6]=="男" %}
+                       checked
+                {% endif %}>男
+                <input type="radio" name="stu_sex" value="女" {% if stu[6]=="女" %}
+                       checked
+                {% endif %}>女
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="提交">
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>

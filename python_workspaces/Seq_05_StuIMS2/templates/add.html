@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask+MySQL实现前后台交互-开发实例2</title>
+</head>
+<body>
+<form action={{ url_for("AddStu") }} method="post" enctype="multipart/form-data">
+    <table>
+        <tr>
+            <td>学生姓的姓名</td>
+            <td><input type="text" name="stu_name"></td>
+        </tr>
+        <tr>
+            <td>学生的年龄</td>
+            <td><input type="text" name="stu_age"></td>
+        </tr>
+        <tr>
+            <td>学生姓的年级</td>
+            <td>
+                <select name="stu_grade">
+                    <option>请选择年级</option>
+                    {% for g in gnames %}
+                        <option value="{{ g[0] }}">{{ g[1] }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>学生的照片</td>
+            <td><input type="file" name="stu_pic"></td>
+        </tr>
+        <tr>
+            <td>学生的爱好</td>
+            <td>
+                <input type="checkbox" name="stu_hobby" value="游泳">游泳
+                <input type="checkbox" name="stu_hobby" value="爬山">爬山
+                <input type="checkbox" name="stu_hobby" value="打球">打球
+                <input type="checkbox" name="stu_hobby" value="阅读">阅读
+            </td>
+        </tr>
+        <tr>
+            <td>学生的性别</td>
+            <td>
+                <input type="radio" name="stu_sex" value="男">男
+                <input type="radio" name="stu_sex" value="女">女
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit"  value="提交">
+            </td>
+        </tr>
+    </table>
+</form>
+
+
+</body>
+</html>

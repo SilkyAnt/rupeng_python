@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask+MySQL实现前后台交互-开发实例2</title>
+    <style>
+        img{
+            max-width: 100%;
+            width: 50px;
+            height: 80px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<form action="" method="post">
+    <table border="1">
+        <tr>
+            <td>学生的ID</td>
+            <td>学生的名字</td>
+            <td>学生的年龄</td>
+            <td>所读年级</td>
+            <td>照片</td>
+            <td>爱好</td>
+            <td>性别</td>
+            <td>操作</td>
+        </tr>
+        {% for s in  allStus %}
+            <tr>
+                <td>{{ s[0] }}</td>
+                <td>{{ s[1] }}</td>
+                <td>{{ s[2] }}</td>
+                <td>{{ gdict.get(s[0]) }}</td>
+                <td><img src="/static/{{ s[4] }}"></td>
+                <td>{{ s[5] }}</td>
+                <td>{{ s[6] }}</td>
+            <td><a href="toUpdate?sid={{ s[0] }}" >修改</a>&nbsp;<a href="delStu?sid={{ s[0] }}" >删除</a></td>
+            </tr>
+        {% endfor %}
+    <tr><td colspan="8" style="text-align: right"><a href="{{ url_for("toAdd") }}">添加</a></td></tr>
+    </table>
+</form>
+</body>
+</html>
