@@ -4,7 +4,7 @@ import pymysql
 
 class PyMySQL:
     # 初始化，获取连接对象
-    def __init__(self, host="172.3.8.234", port=3306, user="root", passwd="Ozaki1994", db="rupeng", charset='utf8'):
+    def __init__(self, host="172.3.8.234", port=3306, user="root", passwd="您的数据库密码", db="rupeng", charset='utf8'):
         self.host = host
         self.port = port
         self.user = user
