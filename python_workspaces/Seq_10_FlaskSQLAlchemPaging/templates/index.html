@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Flask-SQLAlchemy实现分页功能</title>
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<table border="1">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>ADDRESS</td>
+    </tr>
+    {% for p in lists %}
+        <tr>
+            <td>{{ p.id }}</td>
+            <td>{{ p.name }}</td>
+            <td>{{ p.address }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<a href="#">第一页</a>&nbsp;
+<a href="/pre">前一页</a>&nbsp;
+<a href={{ url_for("next") }}>后一页</a>&nbsp;
+<a href="last">尾页</a>&nbsp;
+</body>
+</html>
