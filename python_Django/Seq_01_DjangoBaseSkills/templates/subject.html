@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>传一个列表</title>
+</head>
+<body>
+<table>
+    {% comment %}
+    {{ subjectLists|length }}
+    {{ subjectLists|lower }}
+    {{ subjectLists|upper }}
+    {% endcomment %}
+    <h1>所学科目</h1>
+    {% for s in subjectLists %}
+        <li>{{ s }}</li>
+    {% endfor %}
+    <hr/>
+    <h1>所学科目</h1>
+    {% for s in subjectLists %}
+        <p>{{ forloop.counter }}:{{ s }}</p>
+    {% endfor %}
+    <hr/>
+    <h1>所学科目</h1>
+    {% for s in subjectLists %}
+        <p>{{ forloop.counter0 }}:{{ s }}</p>
+    {% endfor %}
+    <hr/>
+    <h1>所学科目</h1>
+    {% for s in subjectLists %}
+        <p>{{ forloop.revcounter }}:{{ s }}</p>
+    {% endfor %}
+    <hr/>
+    <h1>所学科目</h1>
+    {% for s in subjectLists %}
+        <p>{{ forloop.revcounter0 }}:{{ s }}</p>
+    {% endfor %}
+    <hr/>
+    {% for t in a %}
+        {{ t }}
+    {% empty %} 列表为空
+    {% endfor %}
+    <h1>显示及格分数</h1>
+    {% for s in scores %}
+        {% if s > 60 %}
+            {{ s }}
+        {% endif %}
+    {% endfor %}
+    <hr/>
+    {% for s in scores %}
+        {{ s }}{% if not forloop.last %},{% endif %}
+    {% endfor %}
+    <hr/>
+    <h1>科目和分数</h1>
+    <table border="1">
+        <tr>
+            <td>科目的名字</td>
+            <td>科目的分数</td>
+        </tr>
+
+        {% for k,v in ss.items %}
+            <tr>
+                <td>{{ k }}</td>
+                <td>{{ v }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</table>
+</body>
+</html>
