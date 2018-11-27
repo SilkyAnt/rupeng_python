@@ -6,3 +6,4 @@ venv
 .idea/workspace.xml
 *.exe
 __pycache__
+Seq_11_Basic
