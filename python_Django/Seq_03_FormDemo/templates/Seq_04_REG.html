@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style type="text/css">
+        ul li {
+            list-style: none;
+        }
+
+        .errorlist {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form action="/reg" method="post">
+    {% csrf_token %}
+    <table>
+        {% for f in form %}
+            <tr>
+                <td>{{ f.label_tag }}</td>
+                <td>{{ f }}</td>
+                <td>{{ f.errors }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <p><input type="submit" value="提交"></p>
+</form>
+
+</body>
+</html>
