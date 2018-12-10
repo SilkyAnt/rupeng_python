@@ -14,3 +14,8 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'Seq_07_MyView.settings'
 
 django.setup()
 * 设置上下文环境结束
+
+### 测试
+如果是使用tests.py这个文件测试
+需要执行如下代码：
+python manage.py test

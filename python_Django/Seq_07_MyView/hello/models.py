@@ -9,3 +9,11 @@ class Login(models.Model):
 
     def __str__(self):
         return str(self.id)
+
+
+class Animal(models.Model):
+    name = models.CharField(max_length=40)
+    sounds = models.CharField(max_length=80)
+
+    def speak(self):
+        return "the %s says %s " % (self.name, self.sounds)
