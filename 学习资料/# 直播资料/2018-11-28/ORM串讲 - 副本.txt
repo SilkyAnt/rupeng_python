@@ -1,0 +1,313 @@
+1、什么是“持久化”? 瞬时态？ 
+
+
+
+
+
+持久（Persistence），即把数据（如内存中的对象）保存到可永久保存的存储设备中（如磁盘）。持久化的主要应用是将内存中的数据存储在关系型的数据库中，当然也可以存储在磁盘文件中、XML数据文件中等等。
+
+
+
+
+2、什么是 “持久层” 
+
+
+
+
+
+
+持久层（Persistence Layer），即专注于实现数据持久化应用领域的某个特定系统的一个逻辑层面，将数据使用者和数据实体相关联。
+
+
+
+
+
+3、什么是ORM
+
+
+
+
+
+即Object-Relationl Mapping，它的作用是在关系型数据库和对象之间作一个映射，这样，我们在具体的操作数据库的时候，就不需要再去和复杂的SQL语句打交道，只要像平时操作对象一样操作它就可以了 。
+ ORM建立实体对象与数据表中记录映射，也自动根据数据表中记录之间的关系创建对象的关系，并且提供了维持这些关系完整、有效的机制。
+
+
+
+
+4、为什么要做持久化和ORM设计(重要)
+
+
+
+
+在目前的企业应用系统设计中，MVC，即 Model（模型）- View（视图）- Control（控制）为主要的系统架构模式。MVC 中的 Model 包含了复杂的业务逻辑和数据逻辑，以及数据存取机制（如 数据库的连接、SQL生成和Statement创建、还有ResultSet结果集的读取等）等。将这些复杂的业务逻辑和数据逻辑分离，以将系统的紧耦 合关系转化为松耦合关系（即解耦合），是降低系统耦合度迫切要做的，也是持久化要做的工作。MVC 模式实现了架构上将表现层（即View）和数据处理层（即Model）分离的解耦合，而持久化的设计则实现了数据处理层内部的业务逻辑和数据逻辑分离的解耦合。 而 ORM 作为持久化设计中的最重要也最复杂的技术，也是目前业界热点技术。
+
+1、繁琐的代码问题
+2、数据库对象连接问题
+关系数据对象之间，存在各种关系，包括1对1、1对多、多对1、多对多、级联等。在数据库对象更新的时候，程序员必须十分小心处理这些关系.，以保证维持这些关系不会出现错误，而这个过程是一个很痛苦的过程
+3、系统架构问题
+现在的应用系统，一般由展示层、业务逻辑层、数据访问层、数据库层等组成，各层次功能划分非常清晰。PyMySQL属于数据访问层，但是使用PyMySQL编程时，程序员必须知道后台是用什么数据库、有哪些表、各个表有有哪些字段、各个字段的类型是什么、表与表之间什么关系、创建了什么索引等等与后台数据库相关的详细信息。相当于软件程序员兼职数据库DBA。
+使用ORM技术，可以将数据库层完全隐蔽，呈献给程序员的只有对象，程序员只需要根据业务逻辑的需要调用对象的对应方法，即可实现对后台数据库的操作，程序员不必知道后台采用什么数据库、有哪些表、有什么字段、表与表之间有什么关系。于是，系统设计人员把ORM搭建好后，把对象交给程序员去实现业务逻辑，使数据访问层与数据库层清晰分界。
+
+
+
+
+
+
+5、使用python操作数据库的一般步骤?
+   1、安装PyMySQL?
+   2、导入PyMySQL模块
+   3、创建连接对象
+   4、由连接对象获取游标对象
+   5、由游标对象执行sql语句
+   6、在游标对象中获取结果
+   7、关闭资源(包括游标和连接对象)
+
+
+
+
+
+
+6、使用ORM框架操作数据库的一般步骤？
+
+
+1、创建引擎 
+engine = create_engine('mysql+mysqldb://root:root@localhost:3306/blog?charset=utf8',echo=True)
+2、创建映射关系对象类，在创建映射关系类时使用declarative_base()函数来创建基类。
+Base = declarative_base()
+class User(Base):
+    # 类和表的对应:
+    __tablename__ = 'user'
+    #类的属性对应表格的字段，（需要注意的是，类的属性名和表格的字段名相同)
+    fullname=Column(String(40))
+    name = Column(String(20))
+    id = Column(Integer, primary_key=True)
+3、创建session并绑定引擎，session是使用ORM来操作持久化的接口。 
+# 创建DBSession类型:
+DBSession = sessionmaker(bind=engine)
+# 创建session对象:
+session = DBSession()
+4、操作数据库 
+# 创建新User对象:
+new_user = User(id='1235', name='afeng',fullname="chen afeng")
+# 添加到session:
+session.add(new_user)
+5、如果是插入更新操作的恶化需要提交数据
+# 提交即保存到数据库:
+session.commit()
+6、关闭
+# 关闭session:
+session.close()
+
+
+
+
+
+7、python中有哪些ORM框架？最著名的是什么框架？
+
+
+
+
+
+python中比较著名的ORM框架有很多，大名顶顶的SQLAlchemy是python世界里当仁不让的ORM框架。江湖中peewee，strom，pyorm，SQLObject各领风骚，可是最终还是SQLAlchemy 傲视群雄。
+
+
+
+
+
+8、如何安装SQLAlchemy？
+
+
+
+
+pip install sqlalchemy
+
+
+9、db.engine.execute()来执行原生的sql语句和通过 engine 获取连接对象后再查询，例如 conn = engine.connect() 通过 conn.execute()方法进行查询，这两者之间有什么区别？
+
+
+
+
+直接使用engine的execute执行sql的方式, 叫做connnectionless执行,
+借助 engine.connect()获取conn, 然后通过conn执行sql, 叫做connection执行
+主要差别在于是否使用transaction模式, engine.connect()可以使用事务，如果不涉及transaction, 两种方法效果是一样的. 官网推荐使用后者。
+
+
+
+
+10、常见的实体对应关系有哪些？
+one to many 
+many to one
+ one to-one 
+one-to-any
+many-to-many
+
+
+
+11、FLASK中ORM框架是什么？
+
+
+
+
+Flask-SQLAlchemy
+
+
+
+
+
+12、如何一个one-to-one的实体对应关系，举出实例
+
+
+
+
+
+
+class Wife(Base):
+    __tablename__ = 'wife'
+    id = Column(Integer,primary_key=True,autoincrement=True)
+    name = Column(String(10),nullable=False)
+    hid = Column(Integer,ForeignKey('husband.id') ) #外键关联
+    def __repr__(self):
+        output = "(%s,%s,%s)" %(self.id,self.name,self.hid)
+        return output
+class Husband(Base):
+    __tablename__ = 'husband'
+    id = Column(Integer, primary_key=True, autoincrement=True)  #主键，自增
+    name = Column(String(10))
+    #定义了一个one-to-one:
+    wife=relationship("Wife",backref=backref("husband"), uselist=False)
+    def __repr__(self):
+        output = "(%s,%s)" %(self.id,self.name)
+        return output
+
+
+
+
+
+13、如何定义一个one-to-many的实体对应关系，举出实例
+
+
+
+
+
+
+   class Role(Base):
+    __tablename__ = 'role'
+    rid = Column(Integer, primary_key=True, autoincrement=True)    #主键，自增
+    role_name = Column(String(10))
+    #定义了一个one-to-many:即某个角色下有若干个用户
+    #在User中添加一个属性role,指明这个用户的角色
+    users=relationship("User",backref=backref("role"))
+    def __repr__(self):
+        output = "(%s,%s)" %(self.rid,self.role_name)
+        return output
+class User(Base):
+    __tablename__ = 'user'
+    nid = Column(Integer,primary_key=True,autoincrement=True)
+    name = Column(String(10),nullable=False)
+    roleid = Column(Integer,ForeignKey('role.rid') ) #外键关联
+    def __repr__(self):
+        output = "(%s,%s,%s)" %(self.nid,self.name,self.role)
+        return output
+
+
+
+
+14、如何定义一个many-to-one的实体对应关系，举出实例
+
+
+
+
+
+    class Role(Base):
+    __tablename__ = 'role'
+    rid = Column(Integer, primary_key=True, autoincrement=True)    #主键，自增
+    role_name = Column(String(10))
+
+    def __repr__(self):
+        output = "(%s,%s)" %(self.rid,self.role_name)
+        return output
+class User(Base):
+    __tablename__ = 'user'
+    nid = Column(Integer,primary_key=True,autoincrement=True)
+    name = Column(String(10),nullable=False)
+    roleid = Column(Integer,ForeignKey('role.rid') ) #外键关联
+    #定义了一个many-to-one的关系,backref定义了一个双向的访问，
+    # 表示某个角色下所有的用户,relationship 在Role对象中创建了新的属性users，
+    # 这个属性用来存放user表中和role表中的对应关系，
+    # 在数据库中并不实际存在存在Role对象的users属性
+    role = relationship("Role",  backref=backref("users", cascade="all, delete,delete-orphan"))
+
+
+
+
+
+15、如何定义一个many-to-many的实体对应关系，举出实例
+
+
+
+
+
+Mysql多对多关系指的是两张表A和B本没有任何关系，而是通过第三张表C建立关系，通过关系表C，使得表A在表B中存在多个关联数据，表B在表A中同样存在多个关联数据。
+创建三张表 host表 hostuser表 host_to_hostuser表
+class Host(Base):
+    __tablename__ = 'host'
+    id = Column(Integer, primary_key=True,autoincrement=True)
+    hostname = Column(String(32))
+    port = Column(String(32))
+    ip = Column(String(32))
+class HostUser(Base):
+    __tablename__ = 'hostuser'
+    id = Column(Integer, primary_key=True,autoincrement=True)
+    name = Column(String(32))
+class HostToHostUser(Base):
+    __tablename__ = 'host_to_hostuser'
+    id = Column(Integer, primary_key=True,autoincrement=True)
+    host_id = Column(Integer,ForeignKey('host.id'))
+    user_id = Column(Integer,ForeignKey('hostuser.id'))
+
+
+
+
+16、orm中的查询有哪些方法？
+
+
+
+
+
+user2=session.query(User).get(12325)
+#print(session.query(User).filter(User.id == 1235).one().name)
+#lists=session.query(User).filter(User.id > 1235).all();
+  filter():把过滤器添加到原查询上，添加一个新查询
+  filter_by():把等值过滤器添加到原查询上，返回一个新的查询
+  limit():查询条数的限制
+  offset():偏移
+  order_by:排序
+  group_by:分组
+  常见查询方法:
+   all()
+   first()
+   get()
+   count()
+   paginate()
+
+
+
+
+17、ORM中非查询方法有哪些？
+
+
+
+
+  1、session.add()
+  2、、插入行
+   1、p1=Person(name=”jonn”,address=”北京昌平”)
+   db.session.add(p1)
+   db.session.add_all(p1,p2,p3)
+   db.session.commit()
+3、、修改行
+   p1.name=”jack”
+   db.session.add(p1)
+   db.session.commit()
+4、删除行 
+   db.session.delete(p1)
+   db.session.commit() 
