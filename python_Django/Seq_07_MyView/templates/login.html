@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>password</td>
+    </tr>
+{% for login in lists %}
+    <tr>
+        <td>{{ login.id }}</td>
+        <td>{{ login.name }}</td>
+        <td>{{ login.password }}</td>
+    </tr>
+{% endfor %}
+</table>
+</body>
+</html>
