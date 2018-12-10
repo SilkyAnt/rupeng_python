@@ -1,0 +1,186 @@
+一、基本语法
+  变量 函数 条件语句 循环语句 break  continue 组成 数据类型 运算符号  
+二、重点：节点的操作：查询和定位  添加 删除  插入 
+三、常见特效制作
+   1、打开一个广告窗口
+   2、时钟特效
+   3、制作带关闭按钮的滚动广告
+   4、表单验证
+   5、轮播特效
+   6、省市级联
+   7、Tab切换
+   8、全选/奇偶选
+   9、树形菜单特效
+四、习题
+1、JavaScript由（ ）组成
+   A、BOM  B、DOM C、ECMAScript D、ES6
+
+
+
+
+
+
+2、JavaScript的特点有(  )
+   A、直译式脚本语言 B、动态类型  C、弱类型  D、面向过程，不具备面向对象功能
+
+
+
+
+
+
+
+3、document.write和document.writeln的区别？
+
+
+
+
+
+
+<br/>
+4、在一个函数中，如果一个变量不使用var声明，则下列说法正确的是(  )
+   A、是一个局部变量  B、是一个全局变量  C、报错  D、以上说法都不对 
+
+
+
+5、下面(  )是JS中的number类型?
+   A、int  B、float  C、double D、True 
+
+
+
+
+
+
+(true)
+
+
+
+
+
+
+6、下面()是JS中的输入\输出框?
+   A、alert  B、confirm   C、prompt  D、info
+
+
+
+
+
+
+
+7、下面(   )方法可以定位查找页面元素?
+   A、getElementsByClassName() B、getElementsByName()  
+ C、getElementById()   D、getElementsByTagName()
+
+
+
+
+
+
+
+
+
+8、visibility和display实现元素的隐藏的不同点在哪?
+
+
+
+
+
+
+
+
+9、下面（）事件最先被触发？
+A、onkeypress  B、onkeyup  C、onkeydown  D、onkeyEnter
+
+
+
+
+
+
+
+10、下面（）方法可以实现每隔一段时间就会执行某段代码？
+A、setTimeout B、setInterval  C、clearInterval  D、setTime
+
+
+
+
+
+
+
+11、当下拉列表框的选项发生变化时，会触发(  )事件?
+A、onkeypress B、onload  C、onchange D、onclick 
+
+
+
+
+
+
+12、Date的对象的getDay的值为3，表示() getDate()
+A、当前月的第3天  B、当前月的第4天   C、星期三  D、星期四
+
+
+
+
+
+
+
+
+13、有哪些方法可以操作DOM的样式？
+A、HTML元素.style.样式属性＝"值"  B、HTML元素.className=“类名” 
+
+
+
+
+
+
+14、下面()方法把字符串转化为小写字母？
+A、toLowerCase() B、toUpperCase() C、charAt(index) D、substring(index1,index2)
+
+
+
+
+
+
+
+15、下面()匹配前一项0次或1次，也就是说前一项是可选的，等价于{0,1}
+A、*  B、+  C、？ D、^
+
+
+
+
+
+
+16、innerHTML和innerText的区别？
+
+
+
+
+
+17、JavaScript 全局属性有（）
+A、Infinity B、NaN C、 undefined D、eval()
+
+
+
+
+
+
+
+
+18、下面()方法把对象的值转换为数字。
+A、isFinite() B、parseInt() C、Number() D、encodeURI() 
+
+
+
+
+
+
+
+
+19、下面Math 对象方法（）返回 x 的 y 次幂。
+A、sqrt(x) B、random(x,y) C、pow(x,y) D、round(x) 
+
+
+
+
+
+
+20、下面()方法把字符串分割为字符串数组。
+A、search() B、substring()  C、slice() D、split() 

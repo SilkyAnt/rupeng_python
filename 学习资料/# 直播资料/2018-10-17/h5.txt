@@ -1,0 +1,233 @@
+1、HTML5是一门编程语言吗?
+
+
+
+
+
+
+编程语言定义为“描述逻辑的计算机语言”
+HTML 乃至任何置标语言（markup language）都不能算是编程语言（programming language），因为它们只是对于数据的标记，而不能用于对数据进行处理。
+编程语言是人与程序编译器（compiler）或解读器（intepreter）之间的协议，规定了特定语法结构所表征的执行过程
+
+2、HTML5可以做移动端的页面吗？
+
+
+
+
+3、HTML5可以做移动app吗？
+
+
+
+
+
+4、float有哪些值？
+
+
+
+
+
+5、margin:2px 3px 4px;margin-bottom=? margin-left=?
+
+
+
+
+
+
+6、<img/>中的title和alt属性有何区别
+
+
+
+
+
+7、<nav>标签用于什么场景？
+
+
+
+
+
+9、HTML5的语法变化有(  )
+  A、标签不再区分大小写
+  B、元素可以省略结束标签<p>
+  C、允许省略属性值的属性
+  D、允许属性值不使用引号
+
+
+
+
+
+10、块级标签不包括()
+A、<h4> B、<hr/> C、<br/> D、<table>
+
+
+
+
+
+
+11、a超链接标签定义标记（锚）时，用（）属性
+A、name  B、href  C、title D、alt
+
+
+
+
+12、用（）可以显示版权号？
+A、&copy;   B、&nbsp;  C、&quot; D、&gt; 
+
+
+
+
+
+
+13、h5中用( )表示电子信箱的表单元素?
+A、email  B、number  C、phone(tel) D、range
+
+
+
+
+
+14、下拉列表框中设置()属性可以被选中该选项？
+ A、selected  B、checked  C、readonly D、disabled
+
+
+
+
+
+
+15、可以设置()属性，可以选中下拉列表框的多个选项？
+ A、selected  B、checked  C、multiple  D、disabled
+
+
+
+
+
+
+16、隐藏表单元素如何设置？有何用？
+<input type="hidden"/>
+将不愿意给用户看的数据，发送给后端
+
+
+
+
+
+
+
+17、在表单元素里，设置（）可以让它自动获取光标?
+A、selected  B、autofocus C、multiple  D、placeholder
+
+
+
+
+
+18、在表单元素里，设置（）可以设置提示信息?
+A、selected  B、autofocus C、multiple  D、placeholder
+
+
+
+
+
+19、下面元素让文本内容在浏览器中呈现特定效果，()是对的？
+A、<b> 定义字体粗体
+B、<i> 定义斜体文本
+C、<em> 强调文本
+D、<strong>:定义粗体，也可以代表重要的内容。
+
+
+
+
+
+20、(   )表示计算机一段代码
+A、<code> B、<pre> C、<cite>  D、<q>
+
+
+
+21、HTML5为大部分元素添加了（  ），如果该属性是true，那么浏览器会直接允许开发者直接编辑该HTML元素里的内容，其中包括<table><div>等标签
+A、contentEditable  B、hidden  C、 spellCheck  D、<meta>
+
+
+
+
+22、下面（）常用于布局标签?
+A、<header> B、<footer> C、<nav>  D、<aside>
+
+
+
+
+
+23、text-decoration有（）值？
+A、underline B、overline C、line-through  D、none
+
+
+
+
+
+
+
+24、背景偏移截取技术包括（）步骤
+A、移动要截取的图片到原点
+B、获取要截取图片的宽度和高度
+C、使用<img src="/>显示图片
+D、从大图上用PS截取下图
+
+
+
+
+
+25、常用的背景属性Background-有（）
+A、color B、image   C、repeat   D、position
+
+
+
+
+
+
+26、盒子模型包括
+A、元素 B、padding   C、border   D、margin
+
+
+
+
+
+27、clear属性的取值有（）
+A、right B、left   C、both   D、none（不清除）
+
+
+
+
+
+
+28、link和@import的区别
+A、link属于XHTML标签，而@import是CSS提供的。
+
+B、页面被加载时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载。
+
+C、import只在IE 5以上才能识别，而link是XHTML标签，无兼容问题。
+
+D、link方式的样式权重高于@import的权重。
+
+E、使用dom控制样式时的差别。当使用javascript控制dom去改变样式的时候，只能使用link标签，因为@import不是dom可以控制的。
+
+
+
+
+
+
+
+
+29、设置元素display的值为（）时，元素会显示?
+A、 hidden   B、block C、none D、show 
+
+
+
+
+
+
+
+30、position有(  )值？
+A、 static B、relative C、absolute  D、fixed
+static：
+对象遵循常规流。top，right，bottom，left等属性不会被应用。
+relative：
+对象遵循常规流，并且参照自身在常规流中的位置通过top，right，bottom，left属性进行偏移时不影响常规流中的任何元素。
+absolute：
+对象脱离常规流，使用top，right，bottom，left等属性进行绝对定位，盒子的偏移位置不影响常规流中的任何元素，其margin不与其他任何margin折叠。
+fixed：
+对象脱离常规流，使用top，right，bottom，left等属性以窗口为参考点进行定位，当出现滚动条时，对象不会随着滚动。
