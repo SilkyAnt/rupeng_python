@@ -23,7 +23,20 @@ def querydata1():
     # values 获取字典形式的结果
     print(Author.objects.values("addr", "qq"))
     print(Article.objects.filter(author__name='Hanhu').values("title"))
-
+    # 排序
+    print(Tag.objects.all().order_by("id"))
+    # 条件查询
+    print(Tag.objects.all().extra(where=['name=%s'], params=['AI']))
+    # 聚合查询
+    from django.db.models import Count
+    print(Article.objects.all().values('author_id')
+          .annotate(count=Count('author_id')).values("author_id", "count"))
+    print(Article.objects.all().values('author__name').
+          annotate(count=Count('author')).values('author__name', 'count'))
+    # 求和
+    from django.db.models import Sum
+    print(Article.objects.values('author__name').
+          annotate(sum_score=Sum('score')).values('author__name', 'sum_score'))
 
 if __name__ == "__main__":
     querydata1()
