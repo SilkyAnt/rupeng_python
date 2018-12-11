@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3cb4e767-7c20-43ae-97d6-ad02958d4da1" name="Default Changelist" comment="" />
+    <list default="true" id="3cb4e767-7c20-43ae-97d6-ad02958d4da1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_01_Ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_02_Ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +36,7 @@
     <SUITE FILE_PATH="coverage/python_Django$Seq_04_PictureVerfication.coverage" NAME="Seq_04_PictureVerfication Coverage Results" MODIFIED="1543935553915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_PictureVerification" />
     <SUITE FILE_PATH="coverage/python_Django$Seq_02_Http.coverage" NAME="Seq_02_Http Coverage Results" MODIFIED="1543325194167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_02_Http" />
     <SUITE FILE_PATH="coverage/python_Django$initData__1_.coverage" NAME="initData (1) Coverage Results" MODIFIED="1544464753171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_08_MySql" />
-    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="Seq_07_MyView Coverage Results" MODIFIED="1544462358255" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_MyView" />
+    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="Seq_09_Ajax Coverage Results" MODIFIED="1544542604160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax" />
     <SUITE FILE_PATH="coverage/python_Django$queryDemo.coverage" NAME="queryDemo Coverage Results" MODIFIED="1544107591053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite/app" />
     <SUITE FILE_PATH="coverage/python_Django$sqlite3Demo.coverage" NAME="sqlite3Demo Coverage Results" MODIFIED="1544023379170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite" />
     <SUITE FILE_PATH="coverage/python_Django$queryData.coverage" NAME="queryData Coverage Results" MODIFIED="1544450001290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Blog/blog" />
@@ -41,33 +60,33 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="MD" value="14" />
-          <entry key="html" value="34" />
-          <entry key="py" value="80" />
+          <entry key="MD" value="15" />
+          <entry key="html" value="38" />
+          <entry key="py" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="34" />
-          <entry key="Markdown" value="14" />
-          <entry key="Python" value="80" />
+          <entry key="HTML" value="38" />
+          <entry key="Markdown" value="15" />
+          <entry key="Python" value="82" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="MD" value="935" />
+          <entry key="MD" value="950" />
           <entry key="dummy" value="2" />
-          <entry key="html" value="2055" />
-          <entry key="py" value="14282" />
+          <entry key="html" value="3049" />
+          <entry key="py" value="14605" />
           <entry key="txt" value="184" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2055" />
-          <entry key="Markdown" value="935" />
+          <entry key="HTML" value="3049" />
+          <entry key="Markdown" value="950" />
           <entry key="PLAIN_TEXT" value="186" />
-          <entry key="Python" value="14280" />
+          <entry key="Python" value="14603" />
           <entry key="RegExp" value="1" />
           <entry key="SQL" value="1" />
         </counts>
@@ -77,75 +96,66 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="191">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/Seq_08_MySql/settings.py">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding>
+                <element signature="e#635#667#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="707">
+              <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+                <marker date="1544547248414" expanded="true" signature="120:356" ph="..." />
+                <marker date="1544547248414" expanded="true" signature="380:430" ph="..." />
+                <marker date="1544547248414" expanded="true" signature="453:458" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="621">
-              <caret line="92" column="5" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+              <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/Seq_08_MySql/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_01_Ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="25" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/hello/models.py">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_02_Ajax.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <marker date="1544464229611" expanded="true" signature="82:87" ph="..." />
-              </folding>
+              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-end-line="8" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_07_MyView/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="162">
-                <caret line="6" selection-start-line="6" selection-end-line="15" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="243">
-                <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/initData.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/settings.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -153,8 +163,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -170,6 +180,7 @@
       <find>se`</find>
       <find>上下文</find>
       <find>您的数据库密码</find>
+      <find>url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -178,13 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_01_index.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_02_form.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_03_form.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_03_reg.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/hello/forms.py" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_04_REG.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_05_Add.html" />
         <option value="$PROJECT_DIR$/Seq_03_FormDemo/hello/views.py" />
         <option value="$PROJECT_DIR$/Seq_03_FormDemo/Seq_03_FormDemo/context_processor.py" />
         <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_06_Content.html" />
@@ -229,6 +233,13 @@
         <option value="$PROJECT_DIR$/Seq_08_MySql/README.MD" />
         <option value="$PROJECT_DIR$/Seq_08_MySql/initData.py" />
         <option value="$PROJECT_DIR$/Seq_08_MySql/Seq_08_MySql/settings.py" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/templates/index.html" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/README.MD" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_01_Ajax.html" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_02_Ajax.html" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/app/views.py" />
+        <option value="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html" />
       </list>
     </option>
   </component>
@@ -258,6 +269,29 @@
               <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_Django" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -273,16 +307,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_08_MySql" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_07_MyView" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_06_Blog\blog" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_06_Blog" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_05_SQLite" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_07_MyView\hello" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_04_PictureVerification\static" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_09_Ajax\templates" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_09_Ajax" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_08_MySql" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_07_MyView" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_06_Blog\blog" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -297,7 +331,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.Seq_09_Ajax">
+  <component name="RunManager" selected="Python.Seq_09_Ajax">
     <configuration name="Seq_07_MyView" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_07_MyView" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -312,6 +346,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_07_MyView/manage.py" />
+      <option name="PARAMETERS" value="runserver localhost:8080" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_09_Ajax" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_09_Ajax" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_09_Ajax" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_09_Ajax/manage.py" />
       <option name="PARAMETERS" value="runserver localhost:8080" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -356,28 +412,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_07_MyView/hello/initData.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="queryData2" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_06_Blog" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_06_Blog/blog" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_06_Blog/blog/queryData2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -552,20 +586,20 @@
       <item itemvalue="Django server.Seq_05_SQLite" />
       <item itemvalue="Django server.Seq_06_Blog" />
       <item itemvalue="Django server.Seq_08_MySql" />
-      <item itemvalue="Python.queryData2" />
+      <item itemvalue="Django server.Seq_09_Ajax" />
       <item itemvalue="Python.Seq_07_MyView" />
       <item itemvalue="Python.initData" />
       <item itemvalue="Python.testDemo" />
       <item itemvalue="Python.initData (1)" />
-      <item itemvalue="Django server.Seq_09_Ajax" />
+      <item itemvalue="Python.Seq_09_Ajax" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Seq_09_Ajax" />
         <item itemvalue="Python.initData (1)" />
         <item itemvalue="Python.testDemo" />
         <item itemvalue="Python.Seq_07_MyView" />
         <item itemvalue="Python.initData" />
-        <item itemvalue="Python.queryData2" />
       </list>
     </recent_temporary>
   </component>
@@ -655,13 +689,13 @@
       <window_info id="Favorites" order="2" sideWeight="0.5668239" side_tool="true" weight="0.25364667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294025" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38339624" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.41037735" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.41037735" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -743,55 +777,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="在Django中连接MySql数据库" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/Seq_04_PictureVerification/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2781">
-          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_01_Reg.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_02_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_03_upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_04_downloadfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Seq_04_PictureVerification/Seq_04_PictureVerification/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -1007,6 +992,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="27" column="68" selection-start-line="27" selection-start-column="68" selection-end-line="27" selection-end-column="68" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1021,6 +1009,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <marker date="1544463094186" expanded="true" signature="37:42" ph="..." />
+            <marker date="1544463094186" expanded="true" signature="112:117" ph="..." />
+            <marker date="1544463094186" expanded="true" signature="268:277" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,8 +1077,73 @@
     <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/settings.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="216">
+            <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_01_Ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_02_Ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="707">
+          <caret line="33" column="44" selection-start-line="33" selection-start-column="44" selection-end-line="33" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1544547248414" expanded="true" signature="120:356" ph="..." />
+            <marker date="1544547248414" expanded="true" signature="380:430" ph="..." />
+            <marker date="1544547248414" expanded="true" signature="453:458" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

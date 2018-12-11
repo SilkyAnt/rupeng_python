@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery中Ajax、后台传list</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                $.ajax({
+                    type: "get",
+                    url: "ajax2",
+                    dataType: "json",
+                    success: function (data) {
+                        //alert(typeof data)
+                        for (k in data) {
+                            alert(k + " " + data[k])
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<button id="btn">ajax</button>
+
+</body>
+</html>

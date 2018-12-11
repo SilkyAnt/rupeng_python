@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+自己按F12研究一下！
+<ul id="subjects">
+
+</ul>
+<table border="1" id="dicts">
+    <tr>
+        <td>key</td>
+        <td>value</td>
+    </tr>
+</table>
+</body>
+<script>
+    subjects = {{ list1|safe }}
+    for (var t = 0; t < subjects.length; t++) {
+        console.log(subjects[t])
+        li = document.createElement("li")
+        li.innerText = subjects[t]
+        document.getElementById("subjects").appendChild(li)
+    }
+    dicts = {{ dict1|safe }}
+    console.log(dicts)
+    for(key in dicts){
+        console.log(key,dicts[key])
+        tr = document.createElement("tr")
+        td1 = document.createElement("td")
+        td2 = document.createElement("td")
+        td1.innerText = key
+        td2.innerText = dicts[key]
+        tr.appendChild(td1)
+        tr.appendChild(td2)
+        document.getElementById("dicts").appendChild(tr)
+    }
+</script>
+</html>

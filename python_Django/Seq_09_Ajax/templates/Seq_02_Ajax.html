@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生Ajax、后台传dict</title>
+</head>
+<body>
+<button id="btn">ajax</button>
+<ul id="name"></ul>
+<script>
+    <!-- 原生ajax -->
+    document.getElementById("btn").onclick = function (ev) {
+        xhr = new XMLHttpRequest()
+        xhr.open("get", "ajax2")
+        xhr.send()
+        xhr.onreadystatechange = function (ev) {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                {#alert(xhr.responseText)#}
+                json = JSON.parse(xhr.responseText)
+                for (k in json) {
+                    alert(k + " " + json[k])
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
