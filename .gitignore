@@ -2,8 +2,6 @@
 *.pdf
 学习视频
 venv
-.idea
-.idea/workspace.xml
 *.exe
 __pycache__
 Seq_11_Basic

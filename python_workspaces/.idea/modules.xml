@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Seq_04_StuIMS/.idea/Seq_04_StuIMS.iml" filepath="$PROJECT_DIR$/Seq_04_StuIMS/.idea/Seq_04_StuIMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_06_Paging/.idea/Seq_06_Paging.iml" filepath="$PROJECT_DIR$/Seq_06_Paging/.idea/Seq_06_Paging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_07_Python_ORM/.idea/Seq_07_Python_ORM.iml" filepath="$PROJECT_DIR$/Seq_07_Python_ORM/.idea/Seq_07_Python_ORM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" filepath="$PROJECT_DIR$/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" filepath="$PROJECT_DIR$/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" filepath="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_11_Basic/.idea/Seq_11_Basic.iml" filepath="$PROJECT_DIR$/Seq_11_Basic/.idea/Seq_11_Basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/python_workspaces.iml" filepath="$PROJECT_DIR$/.idea/python_workspaces.iml" />
+    </modules>
+  </component>
+</project>

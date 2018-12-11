@@ -1,0 +1,949 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a0a85d2-6a6d-4c8e-ae8b-0ef8017da1c1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_01_VironDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_02_EmailDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_03_EmailDemo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_04_Config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_05_ReadConfig.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_06_Unittest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_11_Basic/Seq_07_Faker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../学习资料/第6章 Flask Web/第2部分资料/14、flask_sqlalchemy.rar" beforeDir="false" afterPath="$PROJECT_DIR$/../学习资料/第6章 Flask Web/第2部分资料/14、flask_sqlalchemy.rar" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_Model_model_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/Model/model.py) Coverage Results" MODIFIED="1542045018355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_Seq_02_one_to_many_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/Seq_02_one-to-many.py) Coverage Results" MODIFIED="1542046256015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_10_FlaskSQLAlchemPaging_FlaskSQLAlchemPaging_py_.coverage" NAME="Flask (Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py) Coverage Results" MODIFIED="1542304013133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$09_many_to_one.coverage" NAME="09_many_to_one Coverage Results" MODIFIED="1541948927819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$11_Filter_Tempplate.coverage" NAME="11_Filter_Tempplate Coverage Results" MODIFIED="1540390332021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$StuIMS.coverage" NAME="StuIMS Coverage Results" MODIFIED="1540828083415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_StuIMS" />
+    <SUITE FILE_PATH="coverage/python_workspaces$2_Form_Submit.coverage" NAME="2_Form_Submit Coverage Results" MODIFIED="1540638382785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
+    <SUITE FILE_PATH="coverage/python_workspaces$11_base.coverage" NAME="11_base Coverage Results" MODIFIED="1540389653005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$PagingDemo3.coverage" NAME="PagingDemo3 Coverage Results" MODIFIED="1541231943827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Paging" />
+    <SUITE FILE_PATH="coverage/python_workspaces$PagingDemo.coverage" NAME="PagingDemo Coverage Results" MODIFIED="1541212914248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Paging" />
+    <SUITE FILE_PATH="coverage/python_workspaces$10_one_to_one.coverage" NAME="10_one_to_one Coverage Results" MODIFIED="1542034655765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$09_Macro_Template.coverage" NAME="09_Macro_Template Coverage Results" MODIFIED="1540388849917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$06_Jinja2.coverage" NAME="06_Jinja2 Coverage Results" MODIFIED="1540384366323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$08_For_Template.coverage" NAME="08_For_Template Coverage Results" MODIFIED="1540386503701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_09_EasyShopping_EasyShoppingDemo_py_.coverage" NAME="Flask (Seq_09_EasyShopping/EasyShoppingDemo.py) Coverage Results" MODIFIED="1542255352647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$07_If_Template.coverage" NAME="07_If_Template Coverage Results" MODIFIED="1540384906384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_09_EasyShopping_model_py_.coverage" NAME="Flask (Seq_09_EasyShopping/model.py) Coverage Results" MODIFIED="1542254477273" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$10_Macro_Template.coverage" NAME="10_Macro_Template Coverage Results" MODIFIED="1540389146037" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_app_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/app.py) Coverage Results" MODIFIED="1542039639612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$02_Conn.coverage" NAME="02_Conn Coverage Results" MODIFIED="1541241323506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_01_VironDemo.coverage" NAME="Seq_01_VironDemo Coverage Results" MODIFIED="1542306934152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$02_WTFFormDemo.coverage" NAME="02_WTFFormDemo Coverage Results" MODIFIED="1540648014856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
+    <SUITE FILE_PATH="coverage/python_workspaces$PagingDemo2.coverage" NAME="PagingDemo2 Coverage Results" MODIFIED="1541231684768" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Paging" />
+    <SUITE FILE_PATH="coverage/python_workspaces$11_many_to_many.coverage" NAME="11_many_to_many Coverage Results" MODIFIED="1542038000789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$02_Form_Submit.coverage" NAME="02_Form_Submit Coverage Results" MODIFIED="1540641772086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
+    <SUITE FILE_PATH="coverage/python_workspaces$01_EasyWTF.coverage" NAME="01_EasyWTF Coverage Results" MODIFIED="1540641827825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
+    <SUITE FILE_PATH="coverage/python_workspaces$06_Class.coverage" NAME="06_Class Coverage Results" MODIFIED="1541335466730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_07_Faker.coverage" NAME="Seq_07_Faker Coverage Results" MODIFIED="1542455501330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_09_EasyShopping.coverage" NAME="Seq_09_EasyShopping Coverage Results" MODIFIED="1542132539724" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_05_ReadConfig.coverage" NAME="Seq_05_ReadConfig Coverage Results" MODIFIED="1542384591125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$05_Class.coverage" NAME="05_Class Coverage Results" MODIFIED="1541333193857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$01_Conn.coverage" NAME="01_Conn Coverage Results" MODIFIED="1541240894123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Unittests_in_Seq_06_Unittest_py.coverage" NAME="Unittests in Seq_06_Unittest.py Coverage Results" MODIFIED="1542385745644" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$10_one_to_many.coverage" NAME="10_one_to_many Coverage Results" MODIFIED="1541946767173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Config.coverage" NAME="Config Coverage Results" MODIFIED="1542383322880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_Seq_03_many_to_many_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/Seq_03_many-to-many.py) Coverage Results" MODIFIED="1542130469237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$07_many_to_one.coverage" NAME="07_many_to_one Coverage Results" MODIFIED="1541942295612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$03_WTFUpload.coverage" NAME="03_WTFUpload Coverage Results" MODIFIED="1540717931845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
+    <SUITE FILE_PATH="coverage/python_workspaces$FlaskSQLAlchemPaging.coverage" NAME="FlaskSQLAlchemPaging Coverage Results" MODIFIED="1542302614874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging" />
+    <SUITE FILE_PATH="coverage/python_workspaces$13_File_Onload.coverage" NAME="13_File_Onload Coverage Results" MODIFIED="1540475458190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_03_EmailDemo.coverage" NAME="Seq_03_EmailDemo Coverage Results" MODIFIED="1542383329823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$12_Filter_Tempplate.coverage" NAME="12_Filter_Tempplate Coverage Results" MODIFIED="1540390352383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_02_EmailDemo.coverage" NAME="Seq_02_EmailDemo Coverage Results" MODIFIED="1542381947654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$DBUtil.coverage" NAME="DBUtil Coverage Results" MODIFIED="1540725335922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_StuIMS" />
+    <SUITE FILE_PATH="coverage/python_workspaces$14_Form_Submit.coverage" NAME="14_Form_Submit Coverage Results" MODIFIED="1540637707328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$08_many_to_one.coverage" NAME="08_many_to_one Coverage Results" MODIFIED="1541942519809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$09_one_to_many.coverage" NAME="09_one_to_many Coverage Results" MODIFIED="1541950275715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$StuIMS2.coverage" NAME="StuIMS2 Coverage Results" MODIFIED="1541086520723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_StuIMS2" />
+    <SUITE FILE_PATH="coverage/python_workspaces$03_Create_Table.coverage" NAME="03_Create_Table Coverage Results" MODIFIED="1541244748427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Unittests_for_Seq_06_Unittest_MyTest_testSum_3.coverage" NAME="Unittests for Seq_06_Unittest.MyTest.testSum_3 Coverage Results" MODIFIED="1542385774044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Model.coverage" NAME="Model Coverage Results" MODIFIED="1542301419433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_app_py___1_.coverage" NAME="Flask (Seq_08_Flask_ORM/app.py) Coverage Results" MODIFIED="1542039538800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Unittests_for_Seq_06_Unittest_MyTest_testSum_2.coverage" NAME="Unittests for Seq_06_Unittest.MyTest.testSum_2 Coverage Results" MODIFIED="1542385355874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="594639872">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="25" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.3" value="3" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="11" />
+          <entry key="project.open.time.6" value="7" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="29" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="MD" value="11" />
+          <entry key="css" value="1" />
+          <entry key="html" value="48" />
+          <entry key="jpg" value="3" />
+          <entry key="js" value="2" />
+          <entry key="py" value="109" />
+          <entry key="sql" value="5" />
+          <entry key="xml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="48" />
+          <entry key="Image" value="3" />
+          <entry key="JavaScript" value="2" />
+          <entry key="Markdown" value="11" />
+          <entry key="Python" value="109" />
+          <entry key="SQL" value="5" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="MD" value="239" />
+          <entry key="css" value="28" />
+          <entry key="dummy" value="138" />
+          <entry key="html" value="4486" />
+          <entry key="js" value="54" />
+          <entry key="py" value="18976" />
+          <entry key="sql" value="73" />
+          <entry key="txt" value="177" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="28" />
+          <entry key="HTML" value="4486" />
+          <entry key="JavaScript" value="54" />
+          <entry key="Markdown" value="239" />
+          <entry key="PLAIN_TEXT" value="315" />
+          <entry key="Python" value="18974" />
+          <entry key="SQL" value="75" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="python_workspaces" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Flask Main" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>password</find>
+      <find>passwd</find>
+      <find>table</find>
+      <find>husband</find>
+      <find>cascade</find>
+      <find>cacsade</find>
+      <find>create_engine</find>
+      <find>metadata</find>
+      <find>您的数据</find>
+      <find>owner_hostowner</find>
+      <find>pro</find>
+      <find>SQLALCHEMY_TRACK_MODIFICATIONS</find>
+      <find>temp</find>
+      <find>templates</find>
+      <find>template_folder</find>
+      <find>Ozaki1994</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>您的数据库密码</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_11_Basic</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Seq_05_StuIMS2/templates/index.html" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/Paging.sql" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/templates/index.html" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/PagingDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/templates/index01.html" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/templates/index02.html" />
+        <option value="$PROJECT_DIR$/Seq_05_StuIMS2/StuIMS2.py" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/PagingDemo2.py" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/templates/index03.html" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/PagingDemo3.py" />
+        <option value="$PROJECT_DIR$/Seq_05_StuIMS2/DBUtil.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/README.MD" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/02_Conn.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/03_Create_Table.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/04_Transation.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/05_Class.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/06_Class.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/06_ClassAndQuery.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/07_many_to_one.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/10_one_to_many.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/09_many_to_one.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/09_one_to_many.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/10_one_to_one.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/08_many_to_one.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/11_many_to_many.py" />
+        <option value="$PROJECT_DIR$/Seq_06_Paging/DBUtil.py" />
+        <option value="$PROJECT_DIR$/Seq_08_Flask_ORM/Model/model.py" />
+        <option value="$PROJECT_DIR$/Seq_08_Flask_ORM/Seq_02_one-to-many.py" />
+        <option value="$PROJECT_DIR$/Seq_07_Python_ORM/01_Conn.py" />
+        <option value="$PROJECT_DIR$/Seq_08_Flask_ORM/Seq_03_many-to-many.py" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/app.py" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/templates/06easyShoping.html" />
+        <option value="$PROJECT_DIR$/Seq_08_Flask_ORM/app.py" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/model.py" />
+        <option value="$PROJECT_DIR$/Seq_08_Flask_ORM/README.MD" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/Model.py" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/EasyShoppingDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_09_EasyShopping/templates/06easyShopping.html" />
+        <option value="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/Model.py" />
+        <option value="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/app.py" />
+        <option value="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py" />
+        <option value="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/templates/index.html" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_01_VironDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/Seq_02_EmailDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_02_EmailDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Config.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_03_EmailDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_03_BaseConfig.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_05_ReadConfig.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_06_Unittest.py" />
+        <option value="$PROJECT_DIR$/Seq_11_Basic/Seq_07_Faker.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1273" />
+    <option name="width" value="1294" />
+    <option name="height" value="1407" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyPep8Inspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python_workspaces" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_workspaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\static" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\templates" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_08_Flask_ORM" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\FlaskDemo\templates" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_11_Basic" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_10_FlaskSQLAlchemPaging" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_10_FlaskSQLAlchemPaging\templates" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_08_Flask_ORM" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Seq_05_ReadConfig" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_11_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_11_Basic/Seq_05_ReadConfig.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_07_Faker" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_11_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_11_Basic/Seq_07_Faker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Seq_11_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Seq_06_Unittest.MyTest.testSum_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Seq_11_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;Seq_06_Unittest.MyTest.testSum_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in Seq_06_Unittest.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Seq_11_Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/Seq_11_Basic/Seq_06_Unittest.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Seq_05_ReadConfig" />
+      <item itemvalue="Python tests.Unittests in Seq_06_Unittest.py" />
+      <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_3" />
+      <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_2" />
+      <item itemvalue="Python.Seq_07_Faker" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Seq_07_Faker" />
+        <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_3" />
+        <item itemvalue="Python tests.Unittests in Seq_06_Unittest.py" />
+        <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_2" />
+        <item itemvalue="Python.Seq_05_ReadConfig" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a0a85d2-6a6d-4c8e-ae8b-0ef8017da1c1" name="Default Changelist" comment="" />
+      <created>1540382527327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540382527327</updated>
+    </task>
+    <task id="LOCAL-00001" summary="静态文件的加载、表单的一般处理">
+      <created>1540477480112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540477480112</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Flask 中 WTF的学习&#10;WTF 实现 From的例子">
+      <created>1540654467022</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1540654467022</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Flask 中 分页的实现以及两次优化">
+      <created>1541234836984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1541234836984</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Flask 中 分页的实现以及两次优化">
+      <created>1541234896172</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541234896172</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Flask中的ORM框架 flask-sqlalchemy 的使用">
+      <created>1542135386117</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542135386117</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Flask中的ORM框架 flask-sqlalchemy 包的版本注意事项">
+      <created>1542307187375</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542307187375</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Flask中的ORM实现易购商城系统">
+      <created>1542307236697</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1542307236697</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Flask中的ORM框架实现 简单的分页功能，代码后期还需优化">
+      <created>1542307281246</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1542307281246</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_Seq_06_Unittest_py - 2018.11.17 at 00h 20m 41s.xml">
+      <configuration name="Unittests in Seq_06_Unittest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Seq_06_Unittest_MyTest_testSum_3 - 2018.11.17 at 00h 21m 44s.xml">
+      <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Seq_06_Unittest_MyTest_testSum_2 - 2018.11.17 at 00h 22m 36s.xml">
+      <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Seq_06_Unittest_py - 2018.11.17 at 00h 28m 48s.xml">
+      <configuration name="Unittests in Seq_06_Unittest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_Seq_06_Unittest_py - 2018.11.17 at 00h 29m 05s.xml">
+      <configuration name="Unittests in Seq_06_Unittest.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Seq_06_Unittest_MyTest_testSum_3 - 2018.11.17 at 00h 29m 24s.xml">
+      <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_Seq_06_Unittest_MyTest_testSum_3 - 2018.11.17 at 00h 29m 34s.xml">
+      <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48833334" visible="true" weight="0.26094005" />
+      <window_info id="Structure" order="1" sideWeight="0.51166666" side_tool="true" weight="0.22528364" />
+      <window_info id="Favorites" order="2" sideWeight="0.50060314" side_tool="true" weight="0.27471638" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.293239" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294025" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3294025" />
+      <window_info anchor="bottom" id="Messages" order="14" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24959481" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49" visible="true" weight="0.22528364" />
+      <window_info id="Structure" order="1" sideWeight="0.51" side_tool="true" visible="true" weight="0.22528364" />
+      <window_info id="Favorites" order="2" sideWeight="0.50060314" side_tool="true" weight="0.27471638" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5283019" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3294025" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="静态文件的加载、表单的一般处理" />
+    <MESSAGE value="Flask 中 WTF的学习&#10;WTF 实现 From的例子" />
+    <MESSAGE value="Flask 中 分页的实现以及两次优化" />
+    <MESSAGE value="Flask中的ORM框架 flask-sqlalchemy 的使用" />
+    <MESSAGE value="Flask中的ORM框架 flask-sqlalchemy 包的版本注意事项" />
+    <MESSAGE value="Flask中的ORM实现易购商城系统" />
+    <MESSAGE value="Flask中的ORM框架实现 简单的分页功能，代码后期还需优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flask中的ORM框架实现 简单的分页功能，代码后期还需优化" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/DBUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="82" selection-start-line="6" selection-start-column="75" selection-end-line="6" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_05_StuIMS2/DBUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="81">
+            <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/03_DataOperation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/sqlalchemy/engine/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="97" column="4" selection-start-line="97" selection-start-column="4" selection-end-line="97" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/06_ClassAndQuery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/05_Class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="103" lean-forward="true" selection-start-line="9" selection-start-column="94" selection-end-line="9" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/04_Transation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_06_Paging/Paging.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/sqlalchemy/orm/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="949" lean-forward="true" selection-start-line="945" selection-start-column="11" selection-end-line="954" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/10_one_to_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2017">
+          <caret line="100" column="52" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/07_many_to_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="27">
+            <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/11_many_to_many.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="15" selection-start-column="5" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/08_many_to_one.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-20">
+          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/09_one_to_many.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2440">
+          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_06_Paging/DBUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/02_Create_Table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_05_StuIMS2/StuIMS2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_06_Paging/PagingDemo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_06_Paging/PagingDemo3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1107">
+          <caret line="41" column="78" selection-start-line="41" selection-start-column="78" selection-end-line="41" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/StuIMS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_07_Python_ORM/01_Conn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/static/img/ad-02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_08_Flask_ORM/Seq_01_Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="2" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_08_Flask_ORM/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_08_Flask_ORM/Seq_03_many-to-many.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1161">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_08_Flask_ORM/Seq_02_one-to-many.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_08_Flask_ORM/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="162">
+            <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/EasyShoppingDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/flask_sqlalchemy/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="433" column="8" selection-start-line="433" selection-start-column="8" selection-end-line="433" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/02_WTFFormDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="9" column="52" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/app.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="673">
+          <caret line="39" column="3" selection-start-line="39" selection-start-column="3" selection-end-line="39" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/templates/06easyShopping.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="324" column="9" selection-start-line="324" selection-start-column="9" selection-end-line="324" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/Seq_02_EmailDemo.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_06_Unittest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_05_ReadConfig.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="42" selection-end-line="3" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_04_Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_03_EmailDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="12" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_02_EmailDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="4" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="9" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_01_VironDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_07_Faker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/untitled/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/untitled/untitled/urls.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>
