@@ -2,14 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb4e767-7c20-43ae-97d6-ad02958d4da1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/initData.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_04_Ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/Seq_10_SiteMap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/README.MD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/initData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/app/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_10_SiteMap/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_Django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_09_Ajax/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_09_Ajax/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_09_Ajax/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_09_Ajax/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_09_Ajax/db.sqlite3" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,11 +36,11 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/python_Django$Seq_03_FormDemo.coverage" NAME="Seq_03_FormDemo Coverage Results" MODIFIED="1543718211389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_03_FormDemo" />
     <SUITE FILE_PATH="coverage/python_Django$testDemo.coverage" NAME="testDemo Coverage Results" MODIFIED="1544463095619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_MyView/hello" />
-    <SUITE FILE_PATH="coverage/python_Django$initData.coverage" NAME="initData Coverage Results" MODIFIED="1544462349016" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_MyView/hello" />
+    <SUITE FILE_PATH="coverage/python_Django$initData.coverage" NAME="initData Coverage Results" MODIFIED="1544626495771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_SiteMap/app" />
     <SUITE FILE_PATH="coverage/python_Django$initData__2_.coverage" NAME="initData (2) Coverage Results" MODIFIED="1544619318083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax/app" />
     <SUITE FILE_PATH="coverage/python_Django$Seq_02_Http.coverage" NAME="Seq_02_Http Coverage Results" MODIFIED="1543325194167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_02_Http" />
     <SUITE FILE_PATH="coverage/python_Django$initData__1_.coverage" NAME="initData (1) Coverage Results" MODIFIED="1544464753171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_08_MySql" />
-    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="Seq_09_Ajax Coverage Results" MODIFIED="1544542604160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax" />
+    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="Seq_10_SiteMap Coverage Results" MODIFIED="1544627724209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_SiteMap" />
     <SUITE FILE_PATH="coverage/python_Django$queryDemo.coverage" NAME="queryDemo Coverage Results" MODIFIED="1544107591053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite/app" />
     <SUITE FILE_PATH="coverage/python_Django$queryData2.coverage" NAME="queryData2 Coverage Results" MODIFIED="1544450980064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Blog/blog" />
     <SUITE FILE_PATH="coverage/python_Django$manage__1_.coverage" NAME="Seq_04_PictureVerfication Coverage Results" MODIFIED="1543853586637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_PictureVerification" />
@@ -52,33 +68,35 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="MD" value="17" />
+          <entry key="MD" value="18" />
           <entry key="html" value="40" />
-          <entry key="py" value="85" />
+          <entry key="py" value="90" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="40" />
-          <entry key="Markdown" value="17" />
-          <entry key="Python" value="85" />
+          <entry key="Markdown" value="18" />
+          <entry key="Python" value="90" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="MD" value="950" />
+          <entry key="MD" value="1054" />
           <entry key="dummy" value="2" />
           <entry key="html" value="3664" />
-          <entry key="py" value="15180" />
-          <entry key="txt" value="202" />
+          <entry key="py" value="15718" />
+          <entry key="txt" value="215" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3664" />
-          <entry key="Markdown" value="950" />
-          <entry key="PLAIN_TEXT" value="204" />
-          <entry key="Python" value="15178" />
+          <entry key="Markdown" value="1054" />
+          <entry key="PLAIN_TEXT" value="217" />
+          <entry key="Python" value="15716" />
           <entry key="RegExp" value="1" />
           <entry key="SQL" value="1" />
         </counts>
@@ -88,22 +106,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="191">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="626">
-              <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding>
-                <element signature="e#635#667#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="721">
-              <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+            <state relative-caret-position="640">
+              <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <marker date="1544620757242" expanded="true" signature="120:356" ph="..." />
@@ -117,50 +123,71 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_04_Ajax.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="20" column="18" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="20" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/models.py">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/initData.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <caret line="10" column="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="42" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="891">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="670">
+              <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
               <folding>
-                <marker date="1544618908420" expanded="true" signature="56:61" ph="..." />
+                <element signature="e#638#670#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/django/core/management/base.py">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="426" column="25" lean-forward="true" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+            <state relative-caret-position="378">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <marker date="1544624998394" expanded="true" signature="57:366" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/README.MD">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/README.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="189">
-                <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="34" />
+              <first_editor relative-caret-position="405">
+                <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -168,31 +195,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/initData.py">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/app/initData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="459">
+              <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_08_MySql/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="243">
-                <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="14" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html">
+        <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="42" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="42" />
+            <state relative-caret-position="378">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -220,6 +235,7 @@
       <find>上下文</find>
       <find>您的数据库密码</find>
       <find>url</find>
+      <find>temp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -228,11 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/Seq_03_FormDemo/urls.py" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/templates/Seq_07_View2.html" />
-        <option value="$PROJECT_DIR$/Seq_03_FormDemo/hello/views2.py" />
-        <option value="$PROJECT_DIR$/Seq_01_DjangoBaseSkills/Seq_01_DjangoBaseSkills/settings.py" />
-        <option value="$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_01_Reg.html" />
         <option value="$PROJECT_DIR$/Seq_04_PictureVerification/templates/Seq_02_upload.html" />
         <option value="$PROJECT_DIR$/Seq_04_PictureVerification/Seq_04_PictureVerification/settings.py" />
         <option value="$PROJECT_DIR$/Seq_04_PictureVerification/app/forms.py" />
@@ -279,6 +290,11 @@
         <option value="$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/urls.py" />
         <option value="$PROJECT_DIR$/Seq_09_Ajax/app/views.py" />
         <option value="$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html" />
+        <option value="$PROJECT_DIR$/Seq_10_SiteMap/app/initData.py" />
+        <option value="$PROJECT_DIR$/Seq_10_SiteMap/README.MD" />
+        <option value="$PROJECT_DIR$/Seq_10_SiteMap/app/models.py" />
+        <option value="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/settings.py" />
+        <option value="$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/urls.py" />
       </list>
     </option>
   </component>
@@ -311,30 +327,7 @@
             <path>
               <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_08_MySql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_09_Ajax" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_10_SiteMap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -352,11 +345,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_10_SiteMap" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_09_Ajax\templates" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_09_Ajax" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_08_MySql" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_07_MyView" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_06_Blog\blog" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_Django\Seq_07_MyView\hello" />
@@ -375,29 +368,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Seq_09_Ajax">
-    <configuration name="Seq_07_MyView" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_07_MyView" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_07_MyView" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_07_MyView/manage.py" />
-      <option name="PARAMETERS" value="runserver localhost:8080" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.Seq_10_SiteMap">
     <configuration name="Seq_09_Ajax" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_09_Ajax" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -412,6 +383,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_09_Ajax/manage.py" />
+      <option name="PARAMETERS" value="runserver localhost:8080" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_10_SiteMap" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_10_SiteMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_10_SiteMap" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_10_SiteMap/manage.py" />
       <option name="PARAMETERS" value="runserver localhost:8080" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -464,20 +457,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="testDemo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_07_MyView" />
+    <configuration name="initData" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_10_SiteMap" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_07_MyView/hello" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_10_SiteMap/app" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_07_MyView/hello/testDemo.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_10_SiteMap/app/initData.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -624,6 +617,29 @@
       <option name="customRunCommand" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Seq_10_SiteMap" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Seq_10_SiteMap" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Django server.Seq_03_FormDemo" />
       <item itemvalue="Django server.Seq_04_PictureVerification" />
@@ -631,19 +647,20 @@
       <item itemvalue="Django server.Seq_06_Blog" />
       <item itemvalue="Django server.Seq_08_MySql" />
       <item itemvalue="Django server.Seq_09_Ajax" />
-      <item itemvalue="Python.Seq_07_MyView" />
-      <item itemvalue="Python.testDemo" />
+      <item itemvalue="Django server.Seq_10_SiteMap" />
       <item itemvalue="Python.initData (1)" />
       <item itemvalue="Python.Seq_09_Ajax" />
       <item itemvalue="Python.initData (2)" />
+      <item itemvalue="Python.initData" />
+      <item itemvalue="Python.Seq_10_SiteMap" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Seq_10_SiteMap" />
+        <item itemvalue="Python.initData" />
         <item itemvalue="Python.Seq_09_Ajax" />
         <item itemvalue="Python.initData (2)" />
         <item itemvalue="Python.initData (1)" />
-        <item itemvalue="Python.testDemo" />
-        <item itemvalue="Python.Seq_07_MyView" />
       </list>
     </recent_temporary>
   </component>
@@ -735,7 +752,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544547491488</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jquery+Django通过Ajax交互">
+      <created>1544621506550</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544621506550</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -750,18 +774,18 @@
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.2382496" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.2382496" />
       <window_info id="Structure" order="1" sideWeight="0.5369285" side_tool="true" weight="0.2617504" />
       <window_info id="Favorites" order="2" sideWeight="0.5668239" side_tool="true" weight="0.25364667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294025" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.38286164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3294025" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.41037735" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.41037735" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -817,42 +841,10 @@
     <MESSAGE value="在Django中的测试" />
     <MESSAGE value="在Django中连接MySql数据库" />
     <MESSAGE value="在Django前后台传值、Ajax的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="在Django前后台传值、Ajax的使用" />
+    <MESSAGE value="jquery+Django通过Ajax交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="jquery+Django通过Ajax交互" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/django/db/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_05_SQLite/Seq_05_SQLite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="80" column="50" selection-start-line="80" selection-start-column="43" selection-end-line="80" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_05_SQLite/Seq_05_SQLite/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_05_SQLite/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_05_SQLite/app/initData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_06_Blog/Seq_05_blog/settings.py" />
-    <entry file="file://$PROJECT_DIR$/Seq_06_Blog/Seq_05_blog/urls.py" />
     <entry file="file://$PROJECT_DIR$/Seq_06_Blog/Seq_06_Blog/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1102,7 +1094,7 @@
     <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
-          <caret line="426" column="25" lean-forward="true" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
+          <caret line="426" column="25" selection-start-line="426" selection-start-column="25" selection-end-line="426" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1110,7 +1102,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="189">
-            <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="34" />
+            <caret line="7" column="34" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
@@ -1119,14 +1111,14 @@
     <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_04_Ajax.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="20" selection-end-column="18" />
+          <caret line="20" column="18" selection-start-line="12" selection-start-column="16" selection-end-line="20" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <marker date="1544618908420" expanded="true" signature="56:61" ph="..." />
           </folding>
@@ -1153,17 +1145,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/initData.py">
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="108">
+          <caret line="4" column="42" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="721">
-          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+        <state relative-caret-position="640">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
             <marker date="1544620757242" expanded="true" signature="120:356" ph="..." />
@@ -1175,10 +1174,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_05_CheckSameName.html">
+    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/app/initData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="42" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="270">
+          <caret line="10" column="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/app/initData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <marker date="1544624998394" expanded="true" signature="57:366" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="405">
+            <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="46" column="38" lean-forward="true" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_10_SiteMap/Seq_10_SiteMap/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="22" column="12" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

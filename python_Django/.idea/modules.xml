@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/Seq_07_MyView/.idea/Seq_07_MyView.iml" filepath="$PROJECT_DIR$/Seq_07_MyView/.idea/Seq_07_MyView.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_08_MySql/.idea/Seq_08_MySql.iml" filepath="$PROJECT_DIR$/Seq_08_MySql/.idea/Seq_08_MySql.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_09_Ajax/.idea/Seq_09_Ajax.iml" filepath="$PROJECT_DIR$/Seq_09_Ajax/.idea/Seq_09_Ajax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_10_SiteMap/.idea/Seq_10_SiteMap.iml" filepath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/Seq_10_SiteMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python_Django.iml" filepath="$PROJECT_DIR$/.idea/python_Django.iml" />
     </modules>
   </component>
