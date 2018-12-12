@@ -32,3 +32,30 @@ def ajaxDemo2(request):
 
 def goPage03(request):
     return render(request, "Seq_03_Ajax.html")
+
+
+def goPage04(request):
+    return render(request, "Seq_04_Ajax.html")
+
+
+def add(request):
+    a = int(request.GET['a'])
+    b = int(request.GET['b'])
+    return HttpResponse(str(a + b))
+
+
+def goPage05(request):
+    return render(request, "Seq_05_CheckSameName.html")
+
+
+from app.models import User
+
+
+def checkSameName(request):
+    name = request.GET['name']
+    print(name)
+    lists = User.objects.filter(name=name)
+    if len(lists) >= 1:
+        return HttpResponse("1")
+    else:
+        return HttpResponse("0")

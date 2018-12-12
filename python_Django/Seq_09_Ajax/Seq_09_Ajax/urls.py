@@ -25,5 +25,9 @@ urlpatterns = [
     url('^02$', hv.goPage02),
     url('^ajax2$', hv.ajaxDemo2),
     url('^03$', hv.goPage03),
+    url('^04$', hv.goPage04),
+    url('^add$', hv.add),
+    url('^05$', hv.goPage05),
+    url('^ajaxCheckSameName$', hv.checkSameName),
     path('admin/', admin.site.urls),
 ]

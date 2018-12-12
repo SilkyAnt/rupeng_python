@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery+Django实现Ajax</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+                a = parseInt($("#a").val())
+                b = parseInt($("#b").val())
+
+                $.ajax({
+                    type: "get",
+                    url: "add",
+                    data: {"a": a, "b": b},
+                    dataType: "json",
+                    success: function (data) {
+                        $("#result").text(data)
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<p>请输入两个数字：</p>
+<table>
+    <tr>
+        <td>数字1：</td>
+        <td><input type="number" id="a"></td>
+    </tr>
+    <tr>
+        <td>数字2：</td>
+        <td><input type="number" id="b"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <button id="btn">计算</button>
+        </td>
+    </tr>
+</table>
+<p>计算后的结果: <span id="result"></span></p>
+</body>
+</html>

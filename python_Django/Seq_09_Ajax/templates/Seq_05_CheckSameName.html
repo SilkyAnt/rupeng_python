@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery+SQLite3+Django实现Ajax同名检测</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#username").blur(function (ev) {
+                // ajaxSetup 用来设置POST方法提交数据时候的csrf验证问题
+                {% comment %}
+                $.ajaxSetup({
+                    data: {
+                        csrfmiddlewaretoken:"{{csrf_token}}"
+                    }
+                })
+                {% endcomment %}
+                $.ajax({
+                    type: "get",
+                    url: "ajaxCheckSameName",
+                    data: {"name": $(this).val()},
+                    success: function (data) {
+                        if (parseInt(data) >= 1) {
+                            $("#span").text("该用户名已经存在！")
+                            $("#span").css("color", "red")
+                        } else {
+                            $("#span").text("该用户名可以使用！")
+                            $("#span").css("color", "green")
+                        }
+                    }
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<p>请输入要检测的名字： <input type="text" id="username"></p>
+<p><span id="span"></span></p>
+</body>
+</html>
