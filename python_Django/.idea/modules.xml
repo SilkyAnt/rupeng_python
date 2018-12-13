@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Seq_05_SQLite/.idea/Seq_05_SQLite2/1.iml" filepath="$PROJECT_DIR$/Seq_05_SQLite/.idea/Seq_05_SQLite2/1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_01_DjangoBaseSkills/.idea/Seq_01_DjangoBaseSkills.iml" filepath="$PROJECT_DIR$/Seq_01_DjangoBaseSkills/.idea/Seq_01_DjangoBaseSkills.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_02_Http/.idea/Seq_02_Http.iml" filepath="$PROJECT_DIR$/Seq_02_Http/.idea/Seq_02_Http.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_03_FormDemo/.idea/Seq_03_FormDemo.iml" filepath="$PROJECT_DIR$/Seq_03_FormDemo/.idea/Seq_03_FormDemo.iml" />
@@ -13,6 +12,9 @@
       <module fileurl="file://$PROJECT_DIR$/Seq_08_MySql/.idea/Seq_08_MySql.iml" filepath="$PROJECT_DIR$/Seq_08_MySql/.idea/Seq_08_MySql.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_09_Ajax/.idea/Seq_09_Ajax.iml" filepath="$PROJECT_DIR$/Seq_09_Ajax/.idea/Seq_09_Ajax.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_10_SiteMap/.idea/Seq_10_SiteMap.iml" filepath="$PROJECT_DIR$/Seq_10_SiteMap/.idea/Seq_10_SiteMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_11_Cache/.idea/Seq_11_Cache.iml" filepath="$PROJECT_DIR$/Seq_11_Cache/.idea/Seq_11_Cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_12_Admin/.idea/Seq_12_Admin.iml" filepath="$PROJECT_DIR$/Seq_12_Admin/.idea/Seq_12_Admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_13_MiddleWare/.idea/Seq_13_MiddleWare.iml" filepath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/Seq_13_MiddleWare.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python_Django.iml" filepath="$PROJECT_DIR$/.idea/python_Django.iml" />
     </modules>
   </component>
