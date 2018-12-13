@@ -8,7 +8,7 @@ class Login(models.Model):
 
     # get_absolute_url 这个方法一定要有
     def get_absolute_url(self):
-        return "login/" + self.name
+        return "/login/" + self.name
 
     def __str__(self):
         return self.name + "," + str(self.id)
