@@ -1,0 +1,918 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a847699-e485-4222-96bc-0e3de64d9eca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo06/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo07/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo08/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo09/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo10/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/python_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/python_Django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_Django/Seq_12_Admin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/Seq_12_Admin/db.sqlite3" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/python_spider$Seq_07_check_ip.coverage" NAME="Seq_07_check_ip Coverage Results" MODIFIED="1547042865704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_07_request_post.coverage" NAME="Seq_07_request_post Coverage Results" MODIFIED="1547952355577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_12_request_Timeout.coverage" NAME="Seq_12_request_Timeout Coverage Results" MODIFIED="1547953235867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_09_request_Cookie.coverage" NAME="Seq_09_request_Cookie Coverage Results" MODIFIED="1547953001653" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_18_request_proxy.coverage" NAME="Seq_18_request_proxy Coverage Results" MODIFIED="1547955666361" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_07_Save_Cookie.coverage" NAME="Seq_07_Save_Cookie Coverage Results" MODIFIED="1547371784908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_04_error.coverage" NAME="Seq_04_error Coverage Results" MODIFIED="1547371421742" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$test.coverage" NAME="test Coverage Results" MODIFIED="1547266139457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_05_net_ip.coverage" NAME="Seq_05_net_ip Coverage Results" MODIFIED="1547352092391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_02_demo.coverage" NAME="Seq_02_demo Coverage Results" MODIFIED="1546869366950" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_11_request_Cookie.coverage" NAME="Seq_11_request_Cookie Coverage Results" MODIFIED="1547953135304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_12_Proxy_Post.coverage" NAME="Seq_12_Proxy_Post Coverage Results" MODIFIED="1547354861399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo01" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_16_request_SSL.coverage" NAME="Seq_16_request_SSL Coverage Results" MODIFIED="1547955568387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_14_request_Session.coverage" NAME="Seq_14_request_Session Coverage Results" MODIFIED="1547953559178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_15_request_Session.coverage" NAME="Seq_15_request_Session Coverage Results" MODIFIED="1547954019948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_05_Cookie.coverage" NAME="Seq_05_Cookie Coverage Results" MODIFIED="1547371533522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_10_Proxy_ip.coverage" NAME="Seq_10_Proxy_ip Coverage Results" MODIFIED="1547354321123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo01" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_13_request_Session.coverage" NAME="Seq_13_request_Session Coverage Results" MODIFIED="1547953518685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_01_demo__1_.coverage" NAME="Seq_01_demo (1) Coverage Results" MODIFIED="1546869227819" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_02_py3Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_17_request_proxy.coverage" NAME="Seq_17_request_proxy Coverage Results" MODIFIED="1547955765588" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_09_check_ip.coverage" NAME="Seq_09_check_ip Coverage Results" MODIFIED="1547354607908" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo01" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_01_request.coverage" NAME="Seq_01_request Coverage Results" MODIFIED="1547644828590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo03" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_08_Read_Cookie.coverage" NAME="Seq_08_Read_Cookie Coverage Results" MODIFIED="1547371857359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_11_Proxy_Get.coverage" NAME="Seq_11_Proxy_Get Coverage Results" MODIFIED="1547354750024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo01" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_01_urlerroe.coverage" NAME="Seq_01_urlerroe Coverage Results" MODIFIED="1547371147133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_02_Httperror.coverage" NAME="Seq_02_Httperror Coverage Results" MODIFIED="1547371213160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_06_request_post.coverage" NAME="Seq_06_request_post Coverage Results" MODIFIED="1547952206157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_03_request_json.coverage" NAME="Seq_03_request_json Coverage Results" MODIFIED="1547951628152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_04_request_headers.coverage" NAME="Seq_04_request_headers Coverage Results" MODIFIED="1547952097161" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_04_request_raw.coverage" NAME="Seq_04_request_raw Coverage Results" MODIFIED="1547951946304" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_08_request_file.coverage" NAME="Seq_08_request_file Coverage Results" MODIFIED="1547952552326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_08_check_ip.coverage" NAME="Seq_08_check_ip Coverage Results" MODIFIED="1547043660652" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_06_Save_Cookie.coverage" NAME="Seq_06_Save_Cookie Coverage Results" MODIFIED="1547371698793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo02" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_01_demo.coverage" NAME="Seq_01_demo Coverage Results" MODIFIED="1546868300664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_06_net_ip.coverage" NAME="Seq_06_net_ip Coverage Results" MODIFIED="1547039926444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_01_request__1_.coverage" NAME="Seq_01_request (1) Coverage Results" MODIFIED="1547951116398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+    <SUITE FILE_PATH="coverage/python_spider$Seq_02_request.coverage" NAME="Seq_02_request Coverage Results" MODIFIED="1547951250820" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-580753010">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="17" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.open.time.7" value="4" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="3" />
+          <entry key="project.opened" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="MD" value="3" />
+          <entry key="py" value="58" />
+          <entry key="txt" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Markdown" value="3" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Python" value="58" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="MD" value="604" />
+          <entry key="dummy" value="53" />
+          <entry key="py" value="2501" />
+          <entry key="txt" value="44" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Markdown" value="604" />
+          <entry key="PLAIN_TEXT" value="97" />
+          <entry key="Python" value="2501" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="python_spider" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/README.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="720">
+                <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_11_request_Cookie.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_12_request_Timeout.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_13_request_Session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_01_request_eg1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>session</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_01_demo.py" />
+        <option value="$PROJECT_DIR$/Seq_02_py3Basic/Seq_01_demo.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_02_demo.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_03_Login.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_03_login.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_04_loginP.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_06_net_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_07_canUseIp.txt" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_07_check_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_08_check_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/test.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_09_check_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_05_net_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_10_Proxy_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_09_check_ip.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_11_Proxy_Get.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_12_Proxy_Post.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_02_Httperror.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_01_urlerroe.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_03_HttpError.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_04_error.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_05_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_06_Save_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_07_Save_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_08_Read_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_09_NoCookieLogin.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_10_HaveCookieLogin.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo03/Seq_01_request.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo03/Seq_02_request.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_01_request.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_02_request.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_02_request_get.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_03_request_json.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_04_request_raw.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_04_request_headers.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_06_request_post.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_07_request_post.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_08_file.txt" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_08_request_file.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_09_request_file.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_09_request_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_11_request_Cookie.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_12_request_Timeout.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_13_request_Session.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/README.MD" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="833" />
+    <option name="y" value="40" />
+    <option name="width" value="1734" />
+    <option name="height" value="1407" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>RegExp</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_01_py2Basic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 2.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo01" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo04" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo02" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Seq_17_request_proxy">
+    <configuration name="Seq_14_request_Session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_01_py2Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_15_request_Session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_01_py2Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_16_request_SSL" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_01_py2Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_17_request_proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_01_py2Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seq_18_request_proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_01_py2Basic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Seq_14_request_Session" />
+      <item itemvalue="Python.Seq_15_request_Session" />
+      <item itemvalue="Python.Seq_16_request_SSL" />
+      <item itemvalue="Python.Seq_17_request_proxy" />
+      <item itemvalue="Python.Seq_18_request_proxy" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Seq_17_request_proxy" />
+        <item itemvalue="Python.Seq_18_request_proxy" />
+        <item itemvalue="Python.Seq_16_request_SSL" />
+        <item itemvalue="Python.Seq_15_request_Session" />
+        <item itemvalue="Python.Seq_14_request_Session" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Silky_Ant\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a847699-e485-4222-96bc-0e3de64d9eca" name="Default Changelist" comment="" />
+      <created>1546866912002</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1546866912002</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="833" y="40" width="1734" height="1407" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882168" visible="true" weight="0.2228196" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011783" side_tool="true" weight="0.21310242" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499183" weight="0.5930872" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500817" side_tool="true" weight="0.40814698" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882168" visible="true" weight="0.11248013" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5011783" side_tool="true" weight="0.21310242" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499183" visible="true" weight="0.28783152" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500817" side_tool="true" weight="0.40814698" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_03_loginG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_01_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_02_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_04_loginP.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_05_net_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_06_xici_ip.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="6574" column="20" selection-start-line="6574" selection-start-column="20" selection-end-line="6574" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_08_check_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_06_net_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_09_check_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_07_canUseIp.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_05_xici_ip.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_07_check_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_09_canUseIp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="12" selection-start-line="3" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_10_Proxy_ip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_11_Proxy_Get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_12_Proxy_Post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_02_Httperror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_01_urlerroe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_03_HttpError.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_04_error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_05_Print_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_06_Save_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_06_baidu_cookie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="11" lean-forward="true" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_07_baidu_cookie.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo03/Seq_01_request.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo03/Seq_02_request.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_07_Save_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_08_Read_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_09_NoCookieLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo02/Seq_10_HaveCookieLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="40" column="51" selection-start-line="40" selection-start-column="51" selection-end-line="40" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/rupeng/Python/Python2.7.15/Lib/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_03_request_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_05_request_raw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_04_request_headers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_02_request_get.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_06_request_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_07_request_post.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_08_file.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_08_request_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_09_request_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_10_request_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_11_request_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_12_request_Timeout.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_13_request_Session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_01_request_eg1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="720">
+            <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
