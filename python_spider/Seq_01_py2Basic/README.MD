@@ -29,9 +29,12 @@
     
 ### demo05
 * Beautiful_Soup的使用
+    * 安装包：pip2 install bs4
+    * API：https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/
 
 ### demo06
 * Xpath的使用
+    * 安装包：pip2 install lxml
 
 ### demo07
 * phantomJS

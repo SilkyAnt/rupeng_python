@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4a847699-e485-4222-96bc-0e3de64d9eca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo06/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo07/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo08/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo09/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo10/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/python_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/python_Django.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_Django/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_Django/Seq_12_Admin/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../python_Django/Seq_12_Admin/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_01_Html.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_03_FourObject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_05_Traverse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_06_SeachFileTree.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_07_DataAttr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_spider.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_spider.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_01_py2Basic/.idea/Seq_01_py2Basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_py2Basic/.idea/Seq_01_py2Basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_01_py2Basic/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_py2Basic/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_02_py3Basic/.idea/Seq_02_py3Basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_02_py3Basic/.idea/Seq_02_py3Basic.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../学习资料/第10章 网络爬虫/其他模块/2、Beautiful Soup.doc" beforeDir="false" afterPath="$PROJECT_DIR$/../学习资料/第10章 网络爬虫/其他模块/2、Beautiful Soup.doc" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,110 +110,120 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1903528159">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="MD" value="72" />
+          <entry key="dummy" value="17" />
+          <entry key="html" value="16" />
+          <entry key="py" value="1705" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="16" />
+          <entry key="Markdown" value="72" />
+          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="Python" value="1705" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="MD" value="2" />
+          <entry key="html" value="1" />
+          <entry key="py" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="Markdown" value="2" />
+          <entry key="Python" value="12" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="python_spider" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="720">
-                <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_11_request_Cookie.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_12_request_Timeout.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_13_request_Session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_01_request_eg1.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5720721">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_05_Traverse.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_06_SeachFileTree.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="455">
+                  <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#15#44#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_07_DataAttr.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/README.MD">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="FIRST">
+                  <first_editor relative-caret-position="419">
+                    <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="43">
+                  <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -227,16 +242,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_01_demo.py" />
-        <option value="$PROJECT_DIR$/Seq_02_py3Basic/Seq_01_demo.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_02_demo.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_03_Login.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_03_login.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_04_loginP.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_06_net_ip.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_07_canUseIp.txt" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_07_check_ip.py" />
-        <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_08_check_ip.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/test.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_09_check_ip.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/Seq_05_net_ip.py" />
@@ -276,7 +281,18 @@
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_01_.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_01_Html.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.html" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_03_FourObject.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_05_Traverse.py" />
         <option value="$PROJECT_DIR$/Seq_01_py2Basic/README.MD" />
+        <option value="$PROJECT_DIR$/Seq_02_py3Basic/Seq_06_SeachFileTree.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_06_SeachFileTree.py" />
+        <option value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_07_DataAttr.py" />
       </list>
     </option>
   </component>
@@ -287,10 +303,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="833" />
-    <option name="y" value="40" />
+    <option name="x" value="186" />
+    <option name="y" value="23" />
     <option name="width" value="1734" />
-    <option name="height" value="1407" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -335,12 +351,14 @@
             </path>
             <path>
               <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_01_py2Basic" type="462c0819:PsiDirectoryNode" />
+              <item name="demo05" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python_spider" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 2.7 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="python_spider" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_02_py3Basic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -350,18 +368,21 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo01" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Seq_02_py3Basic" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo04" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo02" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_spider\Seq_01_py2Basic\demo01" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -376,8 +397,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Seq_17_request_proxy">
-    <configuration name="Seq_14_request_Session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Seq_07_DataAttr">
+    <configuration name="Seq_04_TagNameAttrs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_01_py2Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -385,12 +406,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -399,7 +419,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Seq_15_request_Session" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Seq_05_Traverse" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_01_py2Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -407,12 +427,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_05_Traverse.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -421,20 +440,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Seq_16_request_SSL" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_01_py2Basic" />
+    <configuration name="Seq_06_SeachFileTree (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_02_py3Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_02_py3Basic" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_02_py3Basic/Seq_06_SeachFileTree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -443,7 +461,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Seq_17_request_proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Seq_06_SeachFileTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_01_py2Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -451,12 +469,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_06_SeachFileTree.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -465,7 +482,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Seq_18_request_proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Seq_07_DataAttr" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_01_py2Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -473,12 +490,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_07_DataAttr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -488,19 +504,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Seq_14_request_Session" />
-      <item itemvalue="Python.Seq_15_request_Session" />
-      <item itemvalue="Python.Seq_16_request_SSL" />
-      <item itemvalue="Python.Seq_17_request_proxy" />
-      <item itemvalue="Python.Seq_18_request_proxy" />
+      <item itemvalue="Python.Seq_04_TagNameAttrs" />
+      <item itemvalue="Python.Seq_05_Traverse" />
+      <item itemvalue="Python.Seq_06_SeachFileTree" />
+      <item itemvalue="Python.Seq_06_SeachFileTree (1)" />
+      <item itemvalue="Python.Seq_07_DataAttr" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Seq_17_request_proxy" />
-        <item itemvalue="Python.Seq_18_request_proxy" />
-        <item itemvalue="Python.Seq_16_request_SSL" />
-        <item itemvalue="Python.Seq_15_request_Session" />
-        <item itemvalue="Python.Seq_14_request_Session" />
+        <item itemvalue="Python.Seq_07_DataAttr" />
+        <item itemvalue="Python.Seq_06_SeachFileTree" />
+        <item itemvalue="Python.Seq_06_SeachFileTree (1)" />
+        <item itemvalue="Python.Seq_05_Traverse" />
+        <item itemvalue="Python.Seq_04_TagNameAttrs" />
       </list>
     </recent_temporary>
   </component>
@@ -518,16 +534,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="833" y="40" width="1734" height="1407" extended-state="0" />
+    <frame x="186" y="23" width="1734" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882168" visible="true" weight="0.2228196" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49882168" visible="true" weight="0.22241682" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5011783" side_tool="true" weight="0.21310242" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499183" weight="0.5930872" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.499183" visible="true" weight="0.27502635" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39936775" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -535,7 +551,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500817" side_tool="true" weight="0.40814698" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32982087" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -574,72 +590,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_03_loginG.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_01_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_02_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_04_loginP.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-422">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_05_net_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="24" column="20" lean-forward="true" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_06_xici_ip.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="6574" column="20" selection-start-line="6574" selection-start-column="20" selection-end-line="6574" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_08_check_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_06_net_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_09_check_ip.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="50" column="32" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_07_canUseIp.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo01/Seq_05_xici_ip.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -768,9 +718,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/rupeng/Python/Python2.7.15/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://D:/rupeng/Python/Python2.7.15/Lib/json/__init__.py" />
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_03_request_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -843,76 +791,144 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_11_request_Cookie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="147">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_12_request_Timeout.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="168">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_13_request_Session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="21">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_14_request_Session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="21">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_15_request_Session.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
+        <state relative-caret-position="273">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_16_request_SSL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="147">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_17_request_proxy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="189">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_18_request_proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo04/Seq_01_request_eg1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="210">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_02_LocalHtml.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_01_Html.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_03_FourObject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_05_Traverse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="83" column="11" selection-start-line="83" selection-start-column="11" selection-end-line="83" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_04_TagNameAttrs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_py3Basic/Seq_06_SeachFileTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="22" column="47" lean-forward="true" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="720">
-            <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="419">
+            <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_06_SeachFileTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="60" column="14" selection-start-line="60" selection-start-column="14" selection-end-line="60" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_py2Basic/demo05/Seq_07_DataAttr.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
