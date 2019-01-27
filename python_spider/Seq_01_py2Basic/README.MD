@@ -30,11 +30,13 @@
 ### demo05
 * Beautiful_Soup的使用
     * 安装包：pip2 install bs4
-    * API：https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/
+* API：https://beautifulsoup.readthedocs.io/zh_CN/v4.4.0/
 
 ### demo06
 * Xpath的使用
     * 安装包：pip2 install lxml
+* Xpath参考文档：http://www.w3school.com.cn/xpath/index.asp    
+* lxml官网：http://lxml.de/index.html
 
 ### demo07
 * phantomJS
@@ -47,3 +49,7 @@
 
 ### demo10
 * 多线程
+* 多线程爬取图片（爬取斗图网上面的图片）
+
+### demo11
+* 多进程

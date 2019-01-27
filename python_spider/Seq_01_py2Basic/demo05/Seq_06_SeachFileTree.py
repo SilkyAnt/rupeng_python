@@ -1,6 +1,7 @@
 # coding=utf-8
-from bs4 import BeautifulSoup
 import re
+
+from bs4 import BeautifulSoup
 
 # 搜索文档树 find_all( name , attrs , recursive , text , **kwargs )
 html = """
@@ -40,15 +41,17 @@ print "# " * 10
 
 # 校验一个标签包含class属性却不包含id属性
 def has_class_but_no_id(tag):
-    return tag.has_attr('class') and not tag.has_attr('id')
+    t = tag.has_attr('class') and not tag.has_attr("id")
+    print(t)
+    return t
 
 
-# 在mac下python2以及python3没有办法达到预期效果，不知道是不是OS的问题
-tags = soup.find_all(has_class_but_no_id)
-for tag in tags:
-    print tag
+print "B " * 10
 
-print "# " * 10
+tags2 = soup.find_all(has_class_but_no_id)
+for tag in tags2:
+    print(tag)
+    print "K " * 10
 alls = soup.find_all(id="link1")
 for t in alls:
     print(t)
@@ -62,3 +65,12 @@ for t in alls:
     print(t)
 print "# " * 10
 alls = soup.find_all(class_="title")
+
+print "# " * 10
+alls = soup.find_all(text="Tillie")
+alls = soup.find_all(text=["Tillie", "Lacie"])
+alls = soup.find_all(text=re.compile("Dormouse"))
+
+alls = soup.find_all("a", limit=2)
+for t in alls:
+    print t

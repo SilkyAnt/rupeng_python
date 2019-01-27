@@ -15,6 +15,11 @@
       <module fileurl="file://$PROJECT_DIR$/Seq_11_Cache/.idea/Seq_11_Cache.iml" filepath="$PROJECT_DIR$/Seq_11_Cache/.idea/Seq_11_Cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_12_Admin/.idea/Seq_12_Admin.iml" filepath="$PROJECT_DIR$/Seq_12_Admin/.idea/Seq_12_Admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/Seq_13_MiddleWare/.idea/Seq_13_MiddleWare.iml" filepath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/Seq_13_MiddleWare.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_14_MuliDataBase/.idea/Seq_14_MuliDataBase.iml" filepath="$PROJECT_DIR$/Seq_14_MuliDataBase/.idea/Seq_14_MuliDataBase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_15_I18N/.idea/Seq_15_I18N.iml" filepath="$PROJECT_DIR$/Seq_15_I18N/.idea/Seq_15_I18N.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_16_Apache/.idea/Seq_16_Apache.iml" filepath="$PROJECT_DIR$/Seq_16_Apache/.idea/Seq_16_Apache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_17_Blogvenv/.idea/Seq_17_Blogvenv.iml" filepath="$PROJECT_DIR$/Seq_17_Blogvenv/.idea/Seq_17_Blogvenv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seq_18_Blog/.idea/Seq_18_Blog.iml" filepath="$PROJECT_DIR$/Seq_18_Blog/.idea/Seq_18_Blog.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python_Django.iml" filepath="$PROJECT_DIR$/.idea/python_Django.iml" />
     </modules>
   </component>
