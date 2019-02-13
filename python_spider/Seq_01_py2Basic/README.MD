@@ -22,6 +22,8 @@
 
 ### demo03
 * 正则表达式的复习
+    * 参考文章:https://www.cnblogs.com/cdinc/p/5789429.html
+    * 精华文章:https://www.cnblogs.com/greatfish/p/7572131.html
 
 ### demo04
 * request对象
