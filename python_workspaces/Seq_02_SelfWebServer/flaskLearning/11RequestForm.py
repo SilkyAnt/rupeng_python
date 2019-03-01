@@ -1,17 +1,20 @@
-from flask import Flask, render_template,request
+from flask import Flask, render_template, request
 
 app = Flask(__name__, template_folder='../templates', static_folder='', static_url_path='')
 app.debug = True
+
 
 @app.route("/")
 def index():
     return render_template("11Login.html")
 
-@app.route("/forms",methods=['GET','POST'])
+
+@app.route("/forms", methods=['GET', 'POST'])
 def getformData():
     for key in request.values:
-        print(key+":"+request.values.get(key))
+        print(key + ":" + request.values.get(key))
     return "login success"
+
 
 if __name__ == '__main__':
     app.run(port=8080)

@@ -1,6 +1,6 @@
 # 1、导入连接池的模块
 import pymysql
-from DBUtils.PooledDB import PooledDB,SharedDBConnection
+from DBUtils.PooledDB import PooledDB, SharedDBConnection
 
 # 2、创建一个连接池对象
 pool = PooledDB(
@@ -34,4 +34,3 @@ print(conn6)
 
 # 这里的close方法，不会断开和数据库的连接，只是断开了和连接池的连接。
 conn1.close()
-

@@ -22,7 +22,7 @@ class SingleForm(FlaskForm):
     age = IntegerField("请输入年龄", validators=[NumberRange(min=16, max=70, message="年龄范围在16-70之间！")])
     height = DecimalField("请输入身高，单位为厘米")
     birthdate = DateField("请输入出生年月", format="%Y-%m-%d")
-    gender = RadioField("请选择性别", default="f",choices=[("m", "Male"), ("f", "Female")], validators=[DataRequired()])
+    gender = RadioField("请选择性别", default="f", choices=[("m", "Male"), ("f", "Female")], validators=[DataRequired()])
     job = SelectField("请选择工作类型", choices=[
         ('teacher', 'Teacher'),
         ('doctor', 'Doctor'),

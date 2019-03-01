@@ -19,13 +19,13 @@ def index():
     return render_template("Seq_02_FlaskWTF/03_UploadFile.html", form=form)
 
 
-@app.route("/upload",methods=["get","post"])
+@app.route("/upload", methods=["get", "post"])
 def upload():
     form = UploadFile()
     # print(form.attach.data)
     if form.validate_on_submit():
         filename = form.attach.data.filename
-        form.attach.data.save("../static/uploads/"+filename)
+        form.attach.data.save("../static/uploads/" + filename)
         return "ok"
     else:
         return render_template("Seq_02_FlaskWTF/03_UploadFile.html", form=form)

@@ -6,7 +6,7 @@ class Person:
         pass
 
     def getName(self):
-        return self.name;
+        return self.name
 
     def getSex(self):
         return self.sex

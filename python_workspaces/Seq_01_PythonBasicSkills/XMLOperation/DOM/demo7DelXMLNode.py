@@ -1,4 +1,5 @@
 import xml.dom.minidom
+
 xmldoc = xml.dom.minidom.parse("student.xml")
 root = xmldoc.documentElement
 
@@ -14,15 +15,13 @@ fxml = open("student.xml",mode="r+",encoding="utf-8")
 fxml.write(xmldoc.toprettyxml())
 fxml.close()
 '''
-#第二种方法
+# 第二种方法
 stunodes = root.getElementsByTagName("student")
 for s in stunodes:
     if s.getAttribute("sid") == "6":
         root.removeChild(s)
         break
 
-fxml = open("student.xml",mode="r+",encoding="utf-8")
+fxml = open("student.xml", mode="r+", encoding="utf-8")
 fxml.write(xmldoc.toprettyxml())
 fxml.close()
-
-

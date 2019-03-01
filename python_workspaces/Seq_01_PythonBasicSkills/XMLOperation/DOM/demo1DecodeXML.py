@@ -1,22 +1,23 @@
-#第一步：导入模块
+# 第一步：导入模块
 from xml.dom.minidom import *
-#第二步：载入要解析的文档
+
+# 第二步：载入要解析的文档
 xmldoc = parse("student.xml")
-#第三步：获取根节点
+# 第三步：获取根节点
 root = xmldoc.documentElement
 print(root)
 print(root.nodeName)
 print(root.nodeValue)
 print(root.nodeType)
 print(len(root.childNodes))
-#方法一：根据节点类型，取出所有跟节点下的student节点
-stuLists=[]
+# 方法一：根据节点类型，取出所有跟节点下的student节点
+stuLists = []
 for node in root.childNodes:
-    if node.nodeType==1:
+    if node.nodeType == 1:
         stuLists.append(node)
 print(stuLists)
 
-#方法二：
+# 方法二：
 stunodes = root.getElementsByTagName("student")
 print(stunodes)
 '''

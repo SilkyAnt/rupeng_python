@@ -1,7 +1,8 @@
-#使用TCP协议传输大文件到服务器
+# 使用TCP协议传输大文件到服务器
 import socket
 
 client = None
+
 
 def getTcpCliet():
     global client
@@ -10,10 +11,11 @@ def getTcpCliet():
     client.connect((clienthost, 9999))
     return client
 
-def sendFile(filename,buffSize):
+
+def sendFile(filename, buffSize):
     getTcpCliet()
-    f = open(filename,mode="rb")
-    fcontent = f.read(1024*1024)
+    f = open(filename, mode="rb")
+    fcontent = f.read(1024 * 1024)
     n = 1
     while fcontent:
         client.sendall(fcontent)
@@ -25,4 +27,4 @@ def sendFile(filename,buffSize):
     client.close()
 
 
-sendFile("pycharm-professional-2018.2.1.exe",1024*1024)
+sendFile("pycharm-professional-2018.2.1.exe", 1024 * 1024)

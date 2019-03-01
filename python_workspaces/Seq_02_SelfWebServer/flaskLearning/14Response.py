@@ -1,16 +1,19 @@
 # 学习 Response
-from flask import Flask,make_response
+from flask import Flask, make_response
 
 app = Flask(__name__)
 app.debug = True
+
 
 @app.route("/")
 def index():
     return "hello,world"
 
+
 @app.route("/ping")
 def ping():
-    return "hello,world",200,{"Content-Type":"text/css"}
+    return "hello,world", 200, {"Content-Type": "text/css"}
+
 
 @app.route("/res")
 def res():
@@ -20,5 +23,6 @@ def res():
     res.status_code = 404
     return res
 
-if __name__=="__main__":
+
+if __name__ == "__main__":
     app.run(port=8080)

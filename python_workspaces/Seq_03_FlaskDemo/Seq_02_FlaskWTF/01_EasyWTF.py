@@ -4,7 +4,7 @@ from flask import Flask, render_template
 # 引入模块
 from flask_wtf import FlaskForm
 from wtforms import StringField
-from wtforms.validators import DataRequired,length
+from wtforms.validators import DataRequired, length
 
 app = Flask(__name__, template_folder="../templates")
 app.debug = True
@@ -15,7 +15,7 @@ app.secret_key = "1"
 class SingleForm(FlaskForm):
     # 定义一个字段
     user = StringField("请输入用户名", validators=[DataRequired(message="内容不能为空！")])
-    nick = StringField("请输入昵称",validators=[length(min=6,max=10,message="长度在6-10之间")])
+    nick = StringField("请输入昵称", validators=[length(min=6, max=10, message="长度在6-10之间")])
 
 
 @app.route("/login", methods=["get", "post"])
