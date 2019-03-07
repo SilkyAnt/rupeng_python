@@ -1,0 +1,354 @@
+1、MySQL 中查看所有数据库的命令
+
+
+
+
+
+
+
+
+2、MySQL查看表结构的详细信息的命令 
+
+
+
+
+
+
+
+3、数据库由（）组成？
+  A、表 B、关系 C、操作对象 D、命令
+
+
+
+
+
+
+4、数据库的完整性要求包含()
+  A、域 B、实体 C、引用 D、自定义
+
+
+
+
+
+
+5、在一张表中，同时出现了两个相同的ID主键，这违背了()完整性？
+  A、域 B、实体 C、引用 D、自定义
+
+
+
+
+
+
+
+
+6、数据库存金钱类型可以float、double、decimal ,相比较而已（）最好用。
+  A、float B、double  C、decimal D、money 
+
+
+
+
+
+
+float是浮点数，不能指定小数位,float有个坏处，当你给定的数据是整数的时候，那么它就以整数给你处理。这样我们在存取货币值的时候自然遇到问题，我的default值为：0.00而实际存储是0，同样我存取货币为12.00，实际存储是12.
+double的存储值最大为16位，保留几位小数可以设置，
+decimal 的最大存储值为38位，保留几位小数可以设置，
+decimal 类型可以精确地表示非常大或非常精确的小数。大至 1028（正或负）以及有效位数多达 28 位的数字可以作为 decimal类型存储而不失其精确性。该类型对于必须避免舍入错误的应用程序（如记账）很有用。
+
+
+
+
+
+
+7、下面对MySQL的性能优化，说法正确的是()
+  A、对查询进行优化，应尽量避免全表扫描，首先应考虑在 where 及 order by 涉及的列上建立索引
+  B、应尽量避免在 where 子句中使用!=或<>操作符，否则将引擎放弃使用索引而进行全表扫描
+  C、应尽量避免在 where 子句中对字段进行 null 值判断，否则将导致引擎放弃使用索引而进行全表扫描，如：
+　　select id from t where num is null
+　　可以在num上设置默认值0，确保表中num列没有null值，然后这样查询：
+　　select id from t where num=0
+  D、应尽量避免在 where 子句中使用 or 来连接条件，否则将导致引擎放弃使用索引而进行全表扫描，如：
+　　select id from t where num=10 or num=20
+　　可以这样查询：
+　　select id from t where num=10
+　　union all
+　　select id from t where num=20
+
+
+
+
+
+
+
+
+
+8、（   ）数据类型可以直接把图像文件存到数据库中。
+   A、LongBlob B、text  C、img  D、binary
+
+
+
+
+
+
+
+
+
+
+9、 如果在MySQL中存入一张不大于10M的图片，最好选择（  ）
+   A、TinyBlob类型  
+   B、Blob类型  
+   C、MediumBlob类型 
+   D、LongBlob类型 
+
+
+
+
+
+
+
+A、TinyBlob类型  最大能容纳255B的数据
+B、Blob类型  最大能容纳65KB的
+C、MediumBlob类型  最大能容纳16MB的数据
+D、LongBlob类型  最大能容纳4GB的数据
+
+
+10、如果要修改一个某个字段的值，使用()语句。
+A、update  B、select  C、insert  D、delete
+
+
+
+
+
+
+
+
+11、如果要把Date转化为String类型，使用()函数
+A、update  B、DATE_FORMAT(date,format)  C、STR_TO_DATE(str,format)   D、MD5()
+
+
+
+
+
+
+12、使用()函数返回date在一年中的季度？
+A、YEAR(date)  B、WEEK(date)  C、QUARTER(date)  D、NOW() 
+
+
+
+
+
+13、MySql中使用()给用户分配权限
+A、 update B、grant C、revoke D、create 
+
+
+
+
+
+
+14、下面（）可以求出最大值?
+A、 max()  B、min()  C、avg()  D、sum()
+
+
+
+
+
+
+15、模糊查询可以使用()
+A、 like   B、regexp  C、rlike  D、blur
+
+
+
+
+
+
+https://dev.mysql.com/doc/refman/5.7/en/regexp.html
+16、分组后要刷选，使用()语句
+A、 group by   B、having   C、order by   D、where
+
+
+
+
+
+
+
+17、左外联合查询和右外联合查询的区别?
+
+
+
+
+
+
+
+18、(   )是导出命令
+A、export B、 import C、mysqldump D、source 
+
+
+
+
+
+
+19、(   )TABLE语句来更改现有表结构(如添加或删除列，更改列属性等)。
+A、drop 
+B、alter 
+C、create 
+D、change
+
+
+
+
+
+
+20、（）命令列出某个数据库内所有表
+A、describe  B、list tables C、show tables D、show databases
+
+
+
+
+21、mysql如何实现插入时数据时，如果数据不存在则插入，如果存在则更新的操作？
+
+
+
+
+
+
+
+1、replace into tbl_name(col_name, …) values(…)
+2、replace into tbl_name(col_name, …) select …
+3、replace into tbl_name set col_name=value, …
+其中 “into” 关键字可以省略，不过最好加上 “into”，这样意思更加直观。另外，对于那些没有给予值的列，MySQL 将自动为这些列赋上默认值。
+
+
+
+
+22、SQL语言包括哪几部分？每部分都有哪些操作关键字？
+
+
+
+
+
+
+答：SQL语言包括数据定义(DDL)、数据操纵(DML),数据控制(DCL)和数据查询（DQL）四个部分。
+数据定义：Create Table,Alter Table,Drop Table, Craete/Drop Index等
+数据操纵：Select ,insert,update,delete,
+数据控制：grant,revoke
+数据查询：select
+
+
+
+
+
+
+
+
+23、?完整性约束包括哪些？
+
+
+
+
+
+
+
+答：数据完整性(Data Integrity)是指数据的精确(Accuracy)和可靠性(Reliability)。
+分为以下四类：
+1) 实体完整性：规定表的每一行在表中是惟一的实体。
+2) 域完整性：是指表中的列必须满足某种特定的数据类型约束，其中约束又包括取值范围、精度等规定。
+3) 参照完整性：是指两个表的主关键字和外关键字的数据应一致，保证了表之间的数据的一致性，防止了数据丢失或无意义的数据在数据库中扩散。
+4) 用户定义的完整性：不同的关系数据库系统根据其应用环境的不同，往往还需要一些特殊的约束条件。用户定义的完整性即是针对某个特定关系数据库的约束条件，它反映某一具体应用必须满足的语义要求。与表有关的约束：包括列约束(NOT NULL（非空约束）)和表约束(PRIMARY KEY、foreign key、check、UNIQUE) 。
+
+
+24、你是否了解MySQL数据库的几种引擎？
+
+
+
+
+InnoDB：
+InnoDB是一个健壮的事务型存储引擎，这种存储引擎已经被很多互联网公司使用，为用户操作非常大的数据存储提供了一个强大的解决方案。
+在以下场合下，使用InnoDB是最理想的选择：
+1、更新密集的表。InnoDB存储引擎特别适合处理多重并发的更新请求。
+2、事务。InnoDB存储引擎是支持事务的标准MySQL存储引擎。
+3、自动灾难恢复。与其它存储引擎不同，InnoDB表能够自动从灾难中恢复。
+4、外键约束。MySQL支持外键的存储引擎只有InnoDB。
+5、支持自动增加列AUTO_INCREMENT属性。
+一般来说，如果需要事务支持，并且有较高的并发读取频率，InnoDB是不错的选择。
+MEMORY：
+使用MySQL Memory存储引擎的出发点是速度。为得到最快的响应时间，采用的逻辑存储介质是系统内存。
+虽然在内存中存储表数据确实会提供很高的性能，但当mysqld守护进程崩溃时，所有的Memory数据都会丢失。
+获得速度的同时也带来了一些缺陷。
+一般在以下几种情况下使用Memory存储引擎：
+1.目标数据较小，而且被非常频繁地访问。在内存中存放数据，所以会造成内存的使用，可以通过参数max_heap_table_size控制Memory表的大小，设置此参数，就可以限制Memory表的最大大小。
+2.如果数据是临时的，而且要求必须立即可用，那么就可以存放在内存表中。
+3.存储在Memory表中的数据如果突然丢失，不会对应用服务产生实质的负面影响。
+
+
+25、一张表，里面有ID自增主键，当insert了17条记录之后，删除了第15,16,17条记录，再把Mysql重启，再insert一条记录，这条记录的ID是18还是15 ？
+
+
+
+
+26、Mysql的技术特点是什么？
+
+
+
+
+
+Mysql数据库软件是一个客户端或服务器系统，其中包括：支持各种客户端程序和库的多线程SQL服务器、不同的后端、广泛的应用程序编程接口和管理工具。
+
+
+
+
+
+27、Heap表是什么？
+
+
+
+
+
+
+
+HEAP表存在于内存中，用于临时高速存储。
+§?BLOB或TEXT字段是不允许的
+§?只能使用比较运算符=，<，>，=>，= <
+§?HEAP表不支持AUTO_INCREMENT
+§?索引不可为NULL
+
+
+
+
+
+28、Mysql服务器默认端口是什么？
+
+
+
+
+
+Mysql服务器的默认端口是3306。
+
+
+
+29、与Oracle相比，Mysql有什么优势？
+
+
+
+
+
+§?Mysql是开源软件，随时可用，无需付费。
+§?Mysql是便携式的
+§?带有命令提示符的GUI。
+§?使用Mysql查询浏览器支持管理
+
+
+
+30、如何区分FLOAT和DOUBLE？
+
+
+
+
+
+
+
+以下是FLOAT和DOUBLE的区别：
+§?浮点数以8位精度存储在FLOAT中，并且有四个字节。
+§?浮点数存储在DOUBLE中，精度为18位，有八个字节。
+
+
+
+

@@ -1,0 +1,99 @@
+1、python中有哪些安装包的方法？
+  pip  easy_install  手动安装 
+在Windows里，easy_install和pip这两个命令在python安装目录下的scripts里面，所以需要把scripts加到环境变量的PATH里，这样用起来就更方便，linux下不需要注意这个问题。
+2、easy_install 的安装
+  1、python的环境已配置好
+  2、下载地址：https://pypi.python.org/pypi/ez_setup
+  3、下载 ez_setup.py 到桌面后，按住键盘的 shift 键，右击鼠标，选中“在此处打开命令窗口”，进入 DOS 界面，输入命令：python ez_setup.py
+3、easy_install的使用？
+   安装一个包
+easy_install 包名
+easy_install "包名 == 包的版本号"
+升级一个包
+easy_install -U "包名 >= 包的版本号"
+卸载
+  easy_install -m PackageName
+4、、pip的安装
+  pip 的安装
+待根据上述操作，安装好easy_install 之后，再安装pip
+下载地址：https://pypi.python.org/pypi/pip
+下载到桌面，解压，然后，进入存放 setup.py 的目录中，按住键盘的 shift 键，右击鼠标，选中“在此处打开命令窗口”，进入 DOS 界面，输入命令：python setup.py install ，开始安装。
+5、pip的用法
+  1、安装一个包
+pip install 包名
+pip install 包名 == 包的版本号
+2、升级一个包 (如果不提供version号，升级到最新版本）
+pip install --upgrade 包名 >= 包的版本号
+3、删除一个包
+pip uninstall  包名
+6、手动安装 
+  以安装Beautifulsoup4为例：
+如果想安装最新的版本，请直接下载安装包来手动安装，下载地址：
+https://pypi.python.org/pypi/beautifulsoup4#downloads
+下载完成之后解压，运行下面的命令即可完成安装：python setup.py install
+Unofficial Windows Binaries for Python Extension Packages
+https://www.lfd.uci.edu/~gohlke/pythonlibs/
+
+7、.whl文件的扩张名？
+https://wheel.readthedocs.io/en/stable/
+whl格式本质上是一个压缩包，里面包含了py文件，以及经过编译的pyd文件。使得可以在不具备编译环境的情况下，选择合适自己的python环境进行安装。 
+https://www.lfd.uci.edu/~gohlke/pythonlibs/  
+pip install xxxx.whl
+
+或者如果是升级
+pip install -U xxxx.whl
+
+即可。
+8、常见pip命令
+pip help
+pip list
+pip list --outdated  列出可升级的包
+修改pip服务器的镜像：
+pip list --outdate -i https://pypi.tuna.tsinghua.edu.cn/simple
+阿里云 http://mirrors.aliyun.com/pypi/simple/
+??
+中国科技大学 https://pypi.mirrors.ustc.edu.cn/simple/
+??
+豆瓣(douban) http://pypi.douban.com/simple/
+??
+清华大学 https://pypi.tuna.tsinghua.edu.cn/simple/
+
+
+windows下修改pip的镜像
+
+直接在user目录中创建一个pip目录，如：C:\Users\xx\pip，新建文件pip.ini，
+
+pip search "query"
+
+9、正则表达式中（）字符匹配前一个字符1次或无限次？
+A、+  B、*  C、？ D、^
+10、函数中的*args和**kw有什么不同？
+11、如果想对+加号重载，要重写下面(  )方法?
+A、__div__ B、__add__ C、__sub__ D、__mul__
+
+
+12、Python中用（）来创建该集合对象的迭代器，用（）来遍历该集合对象的下一个值？
+A、iter   next  B、next iter  C、StopIteration next  D、iter  StopIteration 
+
+13、一个普通函数如果包含(),就变成一个生成器?
+A、yield  B、iter C、next D、generator
+
+14、Python通过(  )模块提供对正则表达式的支持
+A、re  B、regular  C、math D、os
+
+15、一个while语句的无限循环，每次迭代时不需要任何操作，使用什么语句？
+16、在函数的外部的for循环中定义的变量，是局部变量吗?
+17、strings, tuples, 和 numbers 是不可更改的对象吗，而 list,dict 等则是可以修改的对象吗？
+18、倒排列表中的元素，使用（）方法：
+A、insert B、reverse C、append D、pop
+19、一个 try 语句可能包含多个except子句，分别来处理不同的特定的异常。最多只有一个分支会被执行，这句话对吗？
+20、下面()可以是读取文件？
+A、r B、r+ C、w+ D、w
+21、（）语句适用于对资源进行访问的场合，确保不管使用过程中是否发生异常都会执行必要的“清理”操作，释放资源，比如文件使用后自动关闭、线程中锁的自动获取和释放等。
+
+22、字典是另一种可变容器模型，且可存储任意类型对象，键必须是唯一的，但值则不必，值可以取任何数据类型，但键必须是不可变的，如字符串，数字或元组。
+23、列表的小标值可以是负数吗?
+24、（）是一个无序且不重复的元素集合。作为一个无序的集合，sets不记录元素位置或者插入点
+25、创建一个空集合必须用 set() 而不是{ }，因为{ } 是用来创建一个空字典
+26、编写代码，实现把内容写入文件
+27、编写代码，实现读取文件
