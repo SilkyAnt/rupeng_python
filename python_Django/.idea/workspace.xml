@@ -2,32 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cb4e767-7c20-43ae-97d6-ad02958d4da1" name="Default Changelist" comment="Django 多种缓存的配置以及设置">
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/Seq_13_MiddleWare.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_01_HelloMiddleWare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_02_BlockedIPMiddleWare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_03_AuthorityWare.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_01_login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_02_Admin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_Django.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_workspaces/.idea/python_workspaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/.idea/python_workspaces.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_workspaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,179 +17,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/python_Django$Seq_03_FormDemo.coverage" NAME="Seq_03_FormDemo Coverage Results" MODIFIED="1543718211389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_03_FormDemo" />
-    <SUITE FILE_PATH="coverage/python_Django$testDemo.coverage" NAME="testDemo Coverage Results" MODIFIED="1544463095619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_MyView/hello" />
-    <SUITE FILE_PATH="coverage/python_Django$initData.coverage" NAME="initData Coverage Results" MODIFIED="1544626495771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_SiteMap/app" />
     <SUITE FILE_PATH="coverage/python_Django$initData__2_.coverage" NAME="initData (2) Coverage Results" MODIFIED="1544619318083" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax/app" />
-    <SUITE FILE_PATH="coverage/python_Django$Seq_02_Http.coverage" NAME="Seq_02_Http Coverage Results" MODIFIED="1543325194167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_02_Http" />
-    <SUITE FILE_PATH="coverage/python_Django$initData__1_.coverage" NAME="initData (1) Coverage Results" MODIFIED="1544464753171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_08_MySql" />
-    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="Seq_13_MiddleWare Coverage Results" MODIFIED="1544714741059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_13_MiddleWare" />
-    <SUITE FILE_PATH="coverage/python_Django$queryDemo.coverage" NAME="queryDemo Coverage Results" MODIFIED="1544107591053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite/app" />
-    <SUITE FILE_PATH="coverage/python_Django$queryData2.coverage" NAME="queryData2 Coverage Results" MODIFIED="1544450980064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Blog/blog" />
-    <SUITE FILE_PATH="coverage/python_Django$manage__1_.coverage" NAME="Seq_04_PictureVerfication Coverage Results" MODIFIED="1543853586637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_PictureVerification" />
-    <SUITE FILE_PATH="coverage/python_Django$Seq_09_Ajax.coverage" NAME="Seq_09_Ajax Coverage Results" MODIFIED="1544619998442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax" />
-    <SUITE FILE_PATH="coverage/python_Django$Seq_04_PictureVerfication.coverage" NAME="Seq_04_PictureVerfication Coverage Results" MODIFIED="1543935553915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_PictureVerification" />
+    <SUITE FILE_PATH="coverage/python_Django$manage.coverage" NAME="manage Coverage Results" MODIFIED="1551961482350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_15_I18N" />
     <SUITE FILE_PATH="coverage/python_Django$initData__3_.coverage" NAME="initData (3) Coverage Results" MODIFIED="1544629804416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Cache/app" />
+    <SUITE FILE_PATH="coverage/python_Django$Seq_09_Ajax.coverage" NAME="Seq_09_Ajax Coverage Results" MODIFIED="1544619998442" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_09_Ajax" />
+    <SUITE FILE_PATH="coverage/python_Django$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1551961303274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_16_Apache" />
+    <SUITE FILE_PATH="coverage/python_Django$initData__1_.coverage" NAME="initData (1) Coverage Results" MODIFIED="1544464753171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_08_MySql" />
     <SUITE FILE_PATH="coverage/python_Django$sqlite3Demo.coverage" NAME="sqlite3Demo Coverage Results" MODIFIED="1544023379170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite" />
+    <SUITE FILE_PATH="coverage/python_Django$Seq_04_PictureVerfication.coverage" NAME="Seq_04_PictureVerfication Coverage Results" MODIFIED="1543935553915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_PictureVerification" />
+    <SUITE FILE_PATH="coverage/python_Django$initData.coverage" NAME="initData Coverage Results" MODIFIED="1544626495771" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_SiteMap/app" />
     <SUITE FILE_PATH="coverage/python_Django$queryData.coverage" NAME="queryData Coverage Results" MODIFIED="1544450001290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Blog/blog" />
+    <SUITE FILE_PATH="coverage/python_Django$queryData2.coverage" NAME="queryData2 Coverage Results" MODIFIED="1544450980064" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Blog/blog" />
+    <SUITE FILE_PATH="coverage/python_Django$Seq_03_FormDemo.coverage" NAME="Seq_03_FormDemo Coverage Results" MODIFIED="1543718211389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_03_FormDemo" />
+    <SUITE FILE_PATH="coverage/python_Django$queryDemo.coverage" NAME="queryDemo Coverage Results" MODIFIED="1544107591053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_05_SQLite/app" />
+    <SUITE FILE_PATH="coverage/python_Django$Seq_02_Http.coverage" NAME="Seq_02_Http Coverage Results" MODIFIED="1543325194167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_02_Http" />
+    <SUITE FILE_PATH="coverage/python_Django$Seq_12_Admin.coverage" NAME="Seq_12_Admin Coverage Results" MODIFIED="1551961207765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_12_Admin" />
+    <SUITE FILE_PATH="coverage/python_Django$testDemo.coverage" NAME="testDemo Coverage Results" MODIFIED="1544463095619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_MyView/hello" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1547686156">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="21" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="3" />
-          <entry key="project.open.time.6" value="7" />
-          <entry key="project.open.time.7" value="10" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="24" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="MD" value="20" />
-          <entry key="html" value="43" />
-          <entry key="py" value="113" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="43" />
-          <entry key="Markdown" value="20" />
-          <entry key="Python" value="113" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="MD" value="1244" />
-          <entry key="dummy" value="9" />
-          <entry key="html" value="3674" />
-          <entry key="py" value="17024" />
-          <entry key="txt" value="258" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="3674" />
-          <entry key="Markdown" value="1244" />
-          <entry key="PLAIN_TEXT" value="267" />
-          <entry key="Python" value="17022" />
-          <entry key="RegExp" value="1" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="191">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_15_I18N/templates/Seq_01_index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Seq_15_I18N/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Seq_12_Admin/README.MD">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="216">
-                <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/settings.py">
+        <entry file="file://D:/rupeng/Python/Python36/Lib/gettext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-              <folding>
-                <element signature="e#641#673#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_01_HelloMiddleWare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="26" />
-              <folding>
-                <marker date="1544714429310" expanded="true" signature="121:126" ph="..." />
-                <marker date="1544714429310" expanded="true" signature="196:205" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/manage.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_02_BlockedIPMiddleWare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#1#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_01_login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="22" column="7" selection-start-line="22" selection-start-column="7" selection-end-line="22" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_02_Admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_03_AuthorityWare.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="292">
+              <caret line="263" selection-start-line="263" selection-end-line="263" />
             </state>
           </provider>
         </entry>
@@ -248,7 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Seq_07_MyView/templates/index.html" />
         <option value="$PROJECT_DIR$/Seq_07_MyView/initData.py" />
         <option value="$PROJECT_DIR$/Seq_07_MyView/hello/initData.py" />
         <option value="$PROJECT_DIR$/Seq_07_MyView/templates/login.html" />
@@ -299,14 +151,9 @@
         <option value="$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/settings.py" />
         <option value="$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_02_BlockedIPMiddleWare.py" />
         <option value="$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_03_AuthorityWare.py" />
+        <option value="D:/rupeng/Python/Python36/Lib/gettext.py" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="1273" />
@@ -321,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -331,18 +179,18 @@
             <path>
               <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_12_Admin" type="462c0819:PsiDirectoryNode" />
+              <item name="Seq_15_I18N" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -372,29 +220,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Seq_13_MiddleWare">
-    <configuration name="Seq_10_SiteMap" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_10_SiteMap" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_10_SiteMap" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_10_SiteMap/manage.py" />
-      <option name="PARAMETERS" value="runserver localhost:8080" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.manage">
     <configuration name="Seq_11_Cache" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_11_Cache" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -461,20 +287,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="initData (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Seq_11_Cache" />
+    <configuration name="manage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_16_Apache" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Cache/app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_16_Apache" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_11_Cache/app/initData.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_16_Apache/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Seq_15_I18N" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_15_I18N" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_15_I18N/manage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -724,19 +572,19 @@
       <item itemvalue="Django server.Seq_11_Cache" />
       <item itemvalue="Django server.Seq_12_Admin" />
       <item itemvalue="Django server.Seq_13_MiddleWare" />
-      <item itemvalue="Python.Seq_10_SiteMap" />
-      <item itemvalue="Python.initData (3)" />
       <item itemvalue="Python.Seq_11_Cache" />
       <item itemvalue="Python.Seq_12_Admin" />
       <item itemvalue="Python.Seq_13_MiddleWare" />
+      <item itemvalue="Python.manage" />
+      <item itemvalue="Python.manage (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Seq_13_MiddleWare" />
+        <item itemvalue="Python.manage" />
+        <item itemvalue="Python.manage (1)" />
         <item itemvalue="Python.Seq_12_Admin" />
+        <item itemvalue="Python.Seq_13_MiddleWare" />
         <item itemvalue="Python.Seq_11_Cache" />
-        <item itemvalue="Python.initData (3)" />
-        <item itemvalue="Python.Seq_10_SiteMap" />
       </list>
     </recent_temporary>
   </component>
@@ -750,6 +598,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542713739941</updated>
+      <workItem from="1551937252150" duration="1345000" />
     </task>
     <task id="LOCAL-00001" summary="diango基础、配置视图及地址映射、模板的使用、request对象">
       <created>1543253584488</created>
@@ -866,6 +715,9 @@
     <option name="localTasksCounter" value="17" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1345000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -877,20 +729,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.24230146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.24635333" />
       <window_info id="Structure" order="1" sideWeight="0.5369285" side_tool="true" weight="0.2617504" />
       <window_info id="Favorites" order="2" sideWeight="0.5668239" side_tool="true" weight="0.25364667" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49918962" weight="0.3294025" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" weight="0.3294025" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918962" weight="0.3287891" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49918962" weight="0.38286164" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49837926" weight="0.3294025" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49918962" weight="0.41037735" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49918962" weight="0.40978348" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008104" side_tool="true" weight="0.38286164" />
       <window_info anchor="bottom" id="Terminal" order="11" />
@@ -955,9 +806,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="diango基础、配置视图及地址映射、模板的使用、request对象" />
@@ -977,64 +839,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Django 实现简单的后台管理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Seq_07_MyView/README.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="162">
-            <caret line="6" selection-start-line="6" selection-end-line="15" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_08_MySql/initData.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/Seq_09_Ajax/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="26" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_01_Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_02_Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="7" column="27" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_09_Ajax/templates/Seq_03_Ajax.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/rupeng/Python/Python36/Lib/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1238,13 +1042,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_12_Admin/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Seq_11_Cache/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1259,16 +1056,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="582">
           <caret line="621" selection-start-line="621" selection-end-line="621" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_12_Admin/Seq_12_Admin/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#636#668#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1300,16 +1087,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/manage.py">
+    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="597">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#641#673#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_01_HelloMiddleWare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="114">
           <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="26" />
           <folding>
             <marker date="1544714429310" expanded="true" signature="121:126" ph="..." />
@@ -1317,6 +1114,16 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_02_BlockedIPMiddleWare.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_01_login.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -1327,15 +1134,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/templates/Seq_02_Admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
+        <state relative-caret-position="342">
           <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="53" column="16" lean-forward="true" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1343,15 +1143,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
           <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/app/middleware/Seq_02_BlockedIPMiddleWare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#53#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1365,23 +1156,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_13_MiddleWare/Seq_13_MiddleWare/urls.py">
+    <entry file="file://$PROJECT_DIR$/Seq_12_Admin/Seq_12_Admin/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        <state relative-caret-position="532">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#641#673#0" expanded="true" />
+            <element signature="e#636#668#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_14_MuliDataBase/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_15_I18N/Seq_15_I18N/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_15_I18N/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_16_Apache/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_18_Blog/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="418">
+            <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_12_Admin/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_12_Admin/README.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="216">
-            <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <first_editor relative-caret-position="190">
+            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_15_I18N/templates/Seq_01_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_15_I18N/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/rupeng/Python/Python36/Lib/gettext.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    <title>简易博客系统-编辑页面</title>
+{% endblock %}
+{% block header %}
+    <script type="text/javascript" src="{% static 'tinymce/tinymce.min.js' %}"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "textarea",
+            //width: 800,
+            height: 300,
+            forced_root_block: false,
+            plugins: [
+                "advlist autolink lists link image charmap print preview anchor sh4tinymce upload",
+                "searchreplace visualblocks code fullscreen",
+                "insertdatetime table contextmenu paste"
+            ],
+            toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter" +
+                " alignright alignjustify | bullist numlist outdent indent | preview link image sh4tinymce"
+        });
+    </script>
+
+{% endblock %}
+{% block content %}
+    <h3>编辑博客</h3>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+{% endblock %}

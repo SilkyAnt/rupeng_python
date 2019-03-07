@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+    <title>简易博客系统-草稿箱</title>
+{% endblock %}
+{% block content %}
+    {% for blog in drafts %}
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog.title }}</a></h3>
+                    <p>{{ blog.text }}</p>
+                    <p>created_date:{{ blog.created_date }}</p>
+                    {% if blog.published_date %}
+                        <p>published_date:{{ blog.published_date }}</p>
+                    {% else %}
+                        {% if  user.is_authenticated %}
+                            {% if user.username == blog.author.username %}
+                                <div style="float: right">
+
+                                    <a href="{% url 'publish' pk=blog.pk %}" class="btn btn-default">发布<span
+                                            class="glyphicon glyphicon-upload"></span></a>
+                                    <a href="{% url 'deleteBlog' pk=blog.pk %}" class="btn btn-warning" id="deleteBtn">删除<span
+                                            class="glyphicon glyphicon-remove"></span></a>
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+{% block js %}
+    <script src="{% static 'js/draft.js' %}"></script>
+{% endblock %}

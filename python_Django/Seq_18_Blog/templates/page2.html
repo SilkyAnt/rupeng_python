@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>page2</title>
+{% endblock %}
+{% block content %}
+    {% for blog in p.object_list %}
+        <div class="content">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog.title }}</a></h3>
+
+                    <p>{{ blog.text }}</p>
+                    <p>created_date:{{ blog.created_date }}</p>
+                    <p>published_date:{{ blog.published_date }}</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    <div class="pagination">
+        {% if p.has_previous %}
+            <a href="page?currentPage={{ p.previous_page_number }}">previous</a>
+        {% endif %}
+        <span class="current">
+        Page  {{ p.number }} of {{ p.paginator.num_pages }}
+    </span>
+        {% if p.has_next %}
+            <a href="page?currentPage={{ p.next_page_number }}">next</a>
+        {% endif %}
+    </div>
+{% endblock %}

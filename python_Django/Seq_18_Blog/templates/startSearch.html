@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block  content %}
+    <div style="height: 50px"></div>
+    <div id="searchbox" style="clear: both;">
+        <form action="search" method="get">
+            <div class="content">
+                <label>
+                    <input type="text" class="textfield searchtip" name="q" size="24" value="">
+                </label>
+                <input type="submit" class="button" value="搜索">
+            </div>
+        </form>
+    </div>
+{% endblock %}

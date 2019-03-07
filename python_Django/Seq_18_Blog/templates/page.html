@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>简易博客系统-展示所有博客</title>
+{% endblock %}
+{% block content %}
+    {% for blog in lists %}
+        {% if blog.published_date %}
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3><a href="{% url 'blog_detail' pk=blog.pk %}">{{ blog.title }}</a></h3>
+
+                        <p>{{ blog.text }}</p>
+                        <p>created_date:{{ blog.created_date }}</p>
+                        <p>published_date:{{ blog.published_date }}</p>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}
+
+{% block footer %}
+    <a href="page?currentPage=1">首页</a>
+    <a href="page?currentPage={{ currentPage|add:1 }}">下一页</a>
+    <a href="page?currentPage={{ currentPage|add:-1 }}">上一页</a>
+    <a href="page?currentPage={{ lastPage }}">尾页</a>
+{% endblock %}

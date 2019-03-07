@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1.0,minimum=1.0,user-scalable=no">
+    {% block title %}
+        <title>简易博客系统-基本模板</title>
+    {% endblock %}
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    {% comment %}在页面上使用CSS文件{% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}" type="text/css"/>
+
+</head>
+{% block header %}{% endblock %}
+<body>
+<div class="container">
+    <div class="page-header">
+        <p style="float: left;"><img id="logoImg" src="{% static 'imgs/blog.png' %}" class="logo"/></p>
+        <p>
+        <h1><a href="/">Django Boys Blog</a></h1></p>
+
+    </div>
+
+
+    <div style="float: right">
+
+        {% if  user.is_authenticated %}
+            Hello,{{ user.username }}
+            <a class="btn btn-default" href="{% url 'auth_logout' %}">注销 <span
+                    class="glyphicon glyphicon-off"></span></a>
+            <a class="btn btn-default" href="{% url 'addblog' %}">添加<span class="glyphicon glyphicon-plus"></span></a>
+        {% else %}
+            <a class="btn btn-default" href="{% url 'auth_login' %}" class="top-menu">登录&nbsp;<span
+                    class="glyphicon glyphicon-lock"></span></a>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'startSearch' %}" class="top-menu">搜索&nbsp;<span
+                class="glyphicon glyphicon-search"></span></a>
+
+        <a class="btn btn-default" href="{% url 'drafts' %}">草稿箱<span class="glyphicon glyphicon-edit"></span></a>
+
+    </div>
+    {% block  content %}基本模板要展示的内容，其他页面要覆盖这个内容{% endblock %}
+
+    <script src="{% static 'js/blog.js' %}"></script>
+    {% block js %}{% endblock %}
+    {% block footer %}{% endblock %}
+</div>
+
+</body>
+</html>

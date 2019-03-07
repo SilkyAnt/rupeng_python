@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}
+    <title>简易博客系统-博客详情</title>
+{% endblock %}
+{% block content %}
+    <h4>博客的标题:</h4>
+    <h1>{{ blog.title }}</h1>
+    <h4>博客的内容:</h4><p> {{ blog.text }}</p>
+    <div class="date">
+        {% if blog.published_date %}
+            <h4>博客的发表日期:</h4> {{ blog.published_date }}
+            <div style="float: right">
+
+            </div>
+        {% endif %}
+    </div>
+    <h4>博客的编写日期:</h4><p>{{ blog.created_date }}</p>
+    <h4>博客的作者:</h4><p>{{ blog.author.username }}</p>
+{% endblock %}
+{% block footer %}
+    {% if  user.is_authenticated %}
+        {% if user.username == blog.author.username %}
+            <div style="float:right">
+                <a class="btn btn-default" href="{% url 'blog_edit' pk=blog.pk %}">修改<span
+                        class="glyphicon glyphicon-pencil"></span></a>
+                {% if blog.published_date %}
+                    <a href="{% url 'setNone' pk=blog.pk %}" class="btn btn-default">删除<span
+                            class="glyphicon glyphicon-remove"></span></a>
+                {% endif %}
+            </div>
+        {% endif %}
+    {% endif %}
+{% endblock %}

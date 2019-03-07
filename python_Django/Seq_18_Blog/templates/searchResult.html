@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h3>{{ list_header }}</h3>
+    <h3>搜索结果：</h3>
+    共{{ blogs.count }}篇博文:
+    {% for b in blogs %}
+        <h4>{{ b.title }}</h4>
+        <h5>{{ b.author.username }}</h5>
+        <h5><a href="{% url 'blog_detail' pk=b.pk %}">详情</a></h5>
+    {% endfor %}
+{% endblock %}
