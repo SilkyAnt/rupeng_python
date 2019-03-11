@@ -41,13 +41,13 @@
 * lxml官网：http://lxml.de/index.html
 
 ### demo07
-* phantomJS
+* phantomJS  暂时还没补充完整
 
 ### demo08
-* Selenium
+* Selenium  暂时还没有补充完整
 
 ### demo09
-* pQuery
+* pQuery  暂时还没有补充完整
 
 ### demo10
 * 多线程
@@ -55,3 +55,7 @@
 
 ### demo11
 * 多进程
+
+### demo12
+* 爬取猫眼电影
+* 爬取豆瓣电影，进程，协程，线程效率比较

@@ -1,74 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a0a85d2-6a6d-4c8e-ae8b-0ef8017da1c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="2a0a85d2-6a6d-4c8e-ae8b-0ef8017da1c1" name="Default Changelist" comment="代码格式化">
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_workspaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_workspaces.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo1SelectionSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo1SelectionSort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo2BubbleSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo2BubbleSort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo3FastSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo3FastSort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/DesignPattern/demo1Factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/DesignPattern/demo1Factory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/DesignPattern/demo1Singleton.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/DesignPattern/demo1Singleton.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/FileOperation/FileNew.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/FileOperation/FileNew.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ForOperation/for8.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ForOperation/for8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo10_sql_inject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo10_sql_inject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo11_sql_transaction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo11_sql_transaction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo12_Normal_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo12_Normal_Insertion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo13_Batch_Insertion.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo13_Batch_Insertion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo14_Pooled.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo14_Pooled.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo15_Save_Images.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo15_Save_Images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo16_Read_Images.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo16_Read_Images.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo17_PyMySQLUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo17_PyMySQLUtils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo1_conn.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo1_conn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo2_select.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo2_select.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo3_add.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo3_add.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo4_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo4_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo5_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo5_delete.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo6_select_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo6_select_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo7_select_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo7_select_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo8_select_input.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo8_select_input.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo9_sql_inject.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo9_sql_inject.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo1EmailText.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo1EmailText.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo2EmailHtml.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo2EmailHtml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo3EmailAttachment.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo3EmailAttachment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo4EmailImg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo4EmailImg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo5EmailLocalImg.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo5EmailLocalImg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo10TcpsmallfileServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo10TcpsmallfileServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo11TcpBigFileClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo11TcpBigFileClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo12TcpBigFileServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo12TcpBigFileServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo13TcpBigFileClient2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo13TcpBigFileClient2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo14TcpBigFileClient3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo14TcpBigFileClient3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo1scoketClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo1scoketClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo2scoketServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo2scoketServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo3udpClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo3udpClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo4udpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo4udpServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo5QQTcpClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo5QQTcpClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo6QQTcpServer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo6QQTcpServer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo7QQUDPOne.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo7QQUDPOne.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo8QQUDPTwo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo8QQUDPTwo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo9TcpsmallfileClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo9TcpsmallfileClient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo1Basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo1Basic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo2Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo2Create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo3Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo3Create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo4Create.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo4Create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo5ProcessSync.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo5ProcessSync.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo6SaleTick.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo6SaleTick.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo7ProducerConsumer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo7ProducerConsumer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo8Decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo8Decorator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo1DecodeXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo1DecodeXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo2DecodeXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo2DecodeXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo3DecodeXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo3DecodeXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo4DecodeXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo4DecodeXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo5DecodeXML.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo5DecodeXML.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo6AddXMLNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo6AddXMLNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo7DelXMLNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo7DelXMLNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo8ModifyXMLNode.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo8ModifyXMLNode.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/for1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/for1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/list1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/list1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/01Hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/01Hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/02Hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/02Hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/03Hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/03Hello.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -84,8 +23,9 @@
     <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_Model_model_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/Model/model.py) Coverage Results" MODIFIED="1542045018355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/python_workspaces$DBUtil.coverage" NAME="DBUtil Coverage Results" MODIFIED="1540725335922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_04_StuIMS" />
     <SUITE FILE_PATH="coverage/python_workspaces$07_If_Template.coverage" NAME="07_If_Template Coverage Results" MODIFIED="1540384906384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$01_Abort.coverage" NAME="01_Abort Coverage Results" MODIFIED="1551847239779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_03_FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$FlaskSQLAlchemPaging.coverage" NAME="FlaskSQLAlchemPaging Coverage Results" MODIFIED="1542302614874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging" />
-    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_09_EasyShopping_EasyShoppingDemo_py_.coverage" NAME="Flask (Seq_09_EasyShopping/EasyShoppingDemo.py) Coverage Results" MODIFIED="1542255352647" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_09_EasyShopping_EasyShoppingDemo_py_.coverage" NAME="Flask (Seq_09_EasyShopping/EasyShoppingDemo.py) Coverage Results" MODIFIED="1551845814342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/python_workspaces$06_Class.coverage" NAME="06_Class Coverage Results" MODIFIED="1541335466730" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$Unittests_for_Seq_06_Unittest_MyTest_testSum_3.coverage" NAME="Unittests for Seq_06_Unittest.MyTest.testSum_3 Coverage Results" MODIFIED="1542385774044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
     <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_Seq_02_one_to_many_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/Seq_02_one-to-many.py) Coverage Results" MODIFIED="1542046256015" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -100,7 +40,7 @@
     <SUITE FILE_PATH="coverage/python_workspaces$Seq_03_EmailDemo.coverage" NAME="Seq_03_EmailDemo Coverage Results" MODIFIED="1542383329823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
     <SUITE FILE_PATH="coverage/python_workspaces$02_WTFFormDemo.coverage" NAME="02_WTFFormDemo Coverage Results" MODIFIED="1540648014856" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
     <SUITE FILE_PATH="coverage/python_workspaces$demo1SelectionSort.coverage" NAME="demo1SelectionSort Coverage Results" MODIFIED="1551453239461" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm" />
-    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_10_FlaskSQLAlchemPaging_FlaskSQLAlchemPaging_py_.coverage" NAME="Flask (Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py) Coverage Results" MODIFIED="1542304013133" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_10_FlaskSQLAlchemPaging_FlaskSQLAlchemPaging_py_.coverage" NAME="Flask (Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py) Coverage Results" MODIFIED="1551454362266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/python_workspaces$PagingDemo.coverage" NAME="PagingDemo Coverage Results" MODIFIED="1541212914248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_06_Paging" />
     <SUITE FILE_PATH="coverage/python_workspaces$09_Macro_Template.coverage" NAME="09_Macro_Template Coverage Results" MODIFIED="1540388849917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$03_WTFUpload.coverage" NAME="03_WTFUpload Coverage Results" MODIFIED="1540717931845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo/Seq_02_FlaskWTF" />
@@ -110,6 +50,7 @@
     <SUITE FILE_PATH="coverage/python_workspaces$01_Conn.coverage" NAME="01_Conn Coverage Results" MODIFIED="1541240894123" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$13_File_Onload.coverage" NAME="13_File_Onload Coverage Results" MODIFIED="1540475458190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$14_Form_Submit.coverage" NAME="14_Form_Submit Coverage Results" MODIFIED="1540637707328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Unittests_for_Seq_06_Unittest_MyTest.coverage" NAME="Unittests for Seq_06_Unittest.MyTest Coverage Results" MODIFIED="1551845562106" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
     <SUITE FILE_PATH="coverage/python_workspaces$Config.coverage" NAME="Config Coverage Results" MODIFIED="1542383322880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
     <SUITE FILE_PATH="coverage/python_workspaces$08_many_to_one.coverage" NAME="08_many_to_one Coverage Results" MODIFIED="1541942519809" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$Seq_05_ReadConfig.coverage" NAME="Seq_05_ReadConfig Coverage Results" MODIFIED="1542384591125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
@@ -118,11 +59,12 @@
     <SUITE FILE_PATH="coverage/python_workspaces$06_Jinja2.coverage" NAME="06_Jinja2 Coverage Results" MODIFIED="1540384366323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$12_Filter_Tempplate.coverage" NAME="12_Filter_Tempplate Coverage Results" MODIFIED="1540390352383" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$08_For_Template.coverage" NAME="08_For_Template Coverage Results" MODIFIED="1540386503701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
-    <SUITE FILE_PATH="coverage/python_workspaces$Seq_07_Faker.coverage" NAME="Seq_07_Faker Coverage Results" MODIFIED="1542455501330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
+    <SUITE FILE_PATH="coverage/python_workspaces$Seq_07_Faker.coverage" NAME="Seq_07_Faker Coverage Results" MODIFIED="1551845511706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_11_Basic" />
     <SUITE FILE_PATH="coverage/python_workspaces$Flask__Seq_08_Flask_ORM_app_py_.coverage" NAME="Flask (Seq_08_Flask_ORM/app.py) Coverage Results" MODIFIED="1542039639612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/python_workspaces$10_one_to_one.coverage" NAME="10_one_to_one Coverage Results" MODIFIED="1542034655765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$05_Class.coverage" NAME="05_Class Coverage Results" MODIFIED="1541333193857" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$demo10_sql_inject.coverage" NAME="demo10_sql_inject Coverage Results" MODIFIED="1551453657407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation" />
+    <SUITE FILE_PATH="coverage/python_workspaces$list1.coverage" NAME="list1 Coverage Results" MODIFIED="1551848052605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test" />
     <SUITE FILE_PATH="coverage/python_workspaces$11_base.coverage" NAME="11_base Coverage Results" MODIFIED="1540389653005" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/FlaskDemo" />
     <SUITE FILE_PATH="coverage/python_workspaces$11_many_to_many.coverage" NAME="11_many_to_many Coverage Results" MODIFIED="1542038000789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
     <SUITE FILE_PATH="coverage/python_workspaces$09_one_to_many.coverage" NAME="09_one_to_many Coverage Results" MODIFIED="1541950275715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Seq_07_Python_ORM" />
@@ -152,66 +94,7 @@
     <favorites_list name="python_workspaces" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo3DecodeXML.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo4DecodeXML.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo5DecodeXML.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo6AddXMLNode.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo7DelXMLNode.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo8ModifyXMLNode.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/01Hello.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/02Hello.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/03Hello.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -242,6 +125,8 @@
       <find>templates</find>
       <find>template_folder</find>
       <find>Ozaki1994</find>
+      <find>sendfile</find>
+      <find>send_file</find>
     </findStrings>
     <replaceStrings>
       <replace>您的数据库密码</replace>
@@ -256,23 +141,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo8_select_input.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo9_sql_inject.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo10_sql_inject.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo11_sql_transaction.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo12_Normal_Insertion.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo13_Batch_Insertion.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo14_Pooled.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo15_Save_Images.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo16_Read_Images.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo17_PyMySQLUtils.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo1EmailText.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo2EmailHtml.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo3EmailAttachment.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo4EmailImg.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo5EmailLocalImg.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo1scoketClient.py" />
-        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo2scoketServer.py" />
         <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo3udpClient.py" />
         <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo4udpServer.py" />
         <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo5QQTcpClient.py" />
@@ -307,12 +175,29 @@
         <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/02Hello.py" />
         <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/03Hello.py" />
         <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/05URL_For.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/06Redirect.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/07Template.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/08Redirect.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/09RequestArgs.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/10RequestValues.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/11RequestForm.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/12RequestProperty.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/13RequestFile.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/14Response.py" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/templates/01Hello.html" />
+        <option value="$PROJECT_DIR$/Seq_02_SelfWebServer/01_webServer.py" />
+        <option value="$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/01_EasyWTF.py" />
+        <option value="$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/02_WTFFormDemo.py" />
+        <option value="$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/03_WTFUpload.py" />
+        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/FileOperation/FileNew.py" />
+        <option value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Readme.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="29" />
-    <option name="y" value="40" />
+    <option name="x" value="1143" />
+    <option name="y" value="24" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
@@ -341,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -348,27 +234,10 @@
               <item name="python_workspaces" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_workspaces" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_workspaces" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_workspaces" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_02_SelfWebServer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_workspaces" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_workspaces" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_02_SelfWebServer" type="462c0819:PsiDirectoryNode" />
-              <item name="flaskLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python_workspaces" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_workspaces" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_11_Basic" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -378,21 +247,21 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\static" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\templates" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_08_Flask_ORM" />
-      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\FlaskDemo\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_11_Basic" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_10_FlaskSQLAlchemPaging" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_10_FlaskSQLAlchemPaging\templates" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces" />
       <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_08_Flask_ORM" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\static" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_09_EasyShopping\templates" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\Seq_08_Flask_ORM" />
+      <recent name="D:\Workspaces\git_workspaces\rupeng_python\python_workspaces\FlaskDemo\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -407,7 +276,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo10_sql_inject">
+  <component name="RunManager" selected="Python.list1">
+    <configuration name="01_Abort" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="python_workspaces" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_03_FlaskDemo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_03_FlaskDemo/01_Abort.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Seq_07_Faker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Seq_11_Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -415,9 +306,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="D:\rupeng\Python\Python36\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_11_Basic" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -430,7 +321,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo10_sql_inject" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="list1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_workspaces" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -438,12 +329,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo10_sql_inject.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/list1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -452,51 +343,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo1SelectionSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_workspaces" />
+    <configuration name="Flask (Seq_09_EasyShopping/EasyShoppingDemo.py)" type="Python.FlaskServer" factoryName="Flask server" temporary="true" nameIsGenerated="true">
+      <module name="Seq_09_EasyShopping" />
+      <option name="target" value="$PROJECT_DIR$/Seq_09_EasyShopping/EasyShoppingDemo.py" />
+      <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="D:\rupeng\Python\Python36\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo1SelectionSort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="demo3FastSort" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="python_workspaces" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seq_01_PythonBasicSkills/Algorithm/demo3FastSort.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for Seq_06_Unittest.MyTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="Seq_11_Basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -507,24 +369,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;Seq_06_Unittest.MyTest.testSum_3&quot;" />
+      <option name="_new_target" value="&quot;Seq_06_Unittest.MyTest&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Flask server.Flask (Seq_09_EasyShopping/EasyShoppingDemo.py)" />
       <item itemvalue="Python.Seq_07_Faker" />
-      <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_3" />
-      <item itemvalue="Python.demo1SelectionSort" />
-      <item itemvalue="Python.demo3FastSort" />
-      <item itemvalue="Python.demo10_sql_inject" />
+      <item itemvalue="Python.01_Abort" />
+      <item itemvalue="Python.list1" />
+      <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demo10_sql_inject" />
-        <item itemvalue="Python.demo3FastSort" />
-        <item itemvalue="Python.demo1SelectionSort" />
+        <item itemvalue="Python.list1" />
+        <item itemvalue="Python.01_Abort" />
+        <item itemvalue="Flask server.Flask (Seq_09_EasyShopping/EasyShoppingDemo.py)" />
+        <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest" />
         <item itemvalue="Python.Seq_07_Faker" />
-        <item itemvalue="Python tests.Unittests for Seq_06_Unittest.MyTest.testSum_3" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +400,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1540382527327</updated>
-      <workItem from="1551453089400" duration="1065000" />
+      <workItem from="1551453089400" duration="1342000" />
+      <workItem from="1551844992891" duration="5692000" />
+      <workItem from="1551851403666" duration="585000" />
+      <workItem from="1551852623300" duration="283000" />
+      <workItem from="1551934942392" duration="1927000" />
     </task>
     <task id="LOCAL-00001" summary="静态文件的加载、表单的一般处理">
       <created>1540477480112</created>
@@ -596,7 +462,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542307281246</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="代码格式化">
+      <created>1551454316259</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551454316260</updated>
+    </task>
+    <task id="LOCAL-00010" summary="python_01_基础">
+      <created>1551850665390</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551850665390</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -621,9 +501,12 @@
     <history-entry file="Unittests_for_Seq_06_Unittest_MyTest_testSum_3 - 2018.11.17 at 00h 29m 34s.xml">
       <configuration name="Unittests for Seq_06_Unittest.MyTest.testSum_3" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_Seq_06_Unittest_MyTest - 2019.03.06 at 12h 12m 42s.xml">
+      <configuration name="Unittests for Seq_06_Unittest.MyTest" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1065000" />
+    <option name="totallyTimeSpent" value="9829000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -635,24 +518,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="29" y="40" width="1294" height="1407" extended-state="0" />
-    <editor active="true" />
+    <frame x="1143" y="24" width="1294" height="1407" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48833334" visible="true" weight="0.2649919" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48833334" visible="true" weight="0.2828201" />
       <window_info id="Structure" order="1" sideWeight="0.51166666" side_tool="true" weight="0.22528364" />
       <window_info id="Favorites" order="2" sideWeight="0.50060314" side_tool="true" weight="0.27471638" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3294025" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2927025" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2927025" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39937106" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329591" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3287891" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49837926" visible="true" weight="0.3287891" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50162077" side_tool="true" weight="0.3287891" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.329591" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.3294025" />
       <window_info anchor="bottom" id="Messages" order="14" />
@@ -689,6 +571,46 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="静态文件的加载、表单的一般处理" />
     <MESSAGE value="Flask 中 WTF的学习&#10;WTF 实现 From的例子" />
@@ -697,303 +619,334 @@
     <MESSAGE value="Flask中的ORM框架 flask-sqlalchemy 包的版本注意事项" />
     <MESSAGE value="Flask中的ORM实现易购商城系统" />
     <MESSAGE value="Flask中的ORM框架实现 简单的分页功能，代码后期还需优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="Flask中的ORM框架实现 简单的分页功能，代码后期还需优化" />
+    <MESSAGE value="代码格式化" />
+    <MESSAGE value="python_01_基础" />
+    <MESSAGE value="python_01_基础_对应资料的整理" />
+    <MESSAGE value="python_01_基础_对应的资料" />
+    <option name="LAST_COMMIT_MESSAGE" value="python_01_基础_对应的资料" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo9_sql_inject.py">
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/11RequestForm.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/12RequestProperty.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/13RequestFile.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/14Response.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/templates/01Hello.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="266">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo10_sql_inject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/templates/03Hello.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo11_sql_transaction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/templates/11Login.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo12_Normal_Insertion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/templates/13upload.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo13_Batch_Insertion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/templates/main.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo14_Pooled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo15_Save_Images.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo16_Read_Images.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/demo17_PyMySQLUtils.py">
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/DBUtil.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/MySqlOperation/dog.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo1EmailText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#86#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo2EmailHtml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#88#102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo3EmailAttachment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#97#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo4EmailImg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="e#86#100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/Email/demo5EmailLocalImg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-          <folding>
-            <element signature="e#90#104#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo1scoketClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo2scoketServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo3udpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo4udpServer.py">
+    <entry file="file://$PROJECT_DIR$/Seq_10_FlaskSQLAlchemPaging/FlaskSQLAlchemPaging.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo5QQTcpClient.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo6QQTcpServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo7QQUDPOne.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo8QQUDPTwo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo9TcpsmallfileClient.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo10TcpsmallfileServer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo11TcpBigFileClient.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo12TcpBigFileServer.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo13TcpBigFileClient2.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/NetworkOperation/demo14TcpBigFileClient3.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo1Basic.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo2Create.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo3Create.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo4Create.py">
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/StuIMS.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="380">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo5ProcessSync.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/Seq_04_StuIMS/README.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo6SaleTick.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo7ProducerConsumer.py">
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_07_Faker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="456">
+          <caret line="12" column="39" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ProcessOperation/demo8Decorator.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://D:/rupeng/Python/Python36/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/for1.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_06_Unittest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/list1.py">
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_01_VironDemo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo1DecodeXML.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo2DecodeXML.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo3DecodeXML.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo4DecodeXML.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo5DecodeXML.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo6AddXMLNode.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo7DelXMLNode.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/XMLOperation/DOM/demo8ModifyXMLNode.py">
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_02_EmailDemo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        <state relative-caret-position="494">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/EasyShoppingDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/01_Abort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/02_Cookie.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/03_CookieIE.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_09_EasyShopping/Model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="122" column="2" selection-start-line="122" selection-start-column="2" selection-end-line="122" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/01_EasyWTF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#28#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/02_WTFFormDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-38">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#28#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_03_FlaskDemo/Seq_02_FlaskWTF/03_WTFUpload.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#7#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S03_NetworkOperation/demo14TcpBigFileClient3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="e#19#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/06Redirect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/01Hello.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/01_webServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S05_Algorithm/01_SelectionSort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S05_Algorithm/02_BubbleSort.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/02Hello.py">
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S05_Algorithm/03_FastSort.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/03Hello.py">
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S07_MySqlOperation/01_conn.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Seq_02_SelfWebServer/flaskLearning/04dynRoute.py">
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/for1.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S02_ProcessOperation/demo8Decorator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S02_ProcessOperation/demo2Create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S02_ProcessOperation/demo3Create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-639">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S02_ProcessOperation/demo4Create.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1057">
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/DesignPattern/练习题.txt" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S02_ProcessOperation/demo1Basic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/test/list1.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/ForOperation/for8.py" />
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S01_FileOperation/FileNew.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S07_MySqlOperation/12_Normal_Insertion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="22" selection-end-line="13" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S07_MySqlOperation/16_Read_Images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S07_MySqlOperation/13_Batch_Insertion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#119#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/S07_MySqlOperation/09_sql_inject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_01_PythonBasicSkills/Readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Seq_11_Basic/Seq_03_EmailDemo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
