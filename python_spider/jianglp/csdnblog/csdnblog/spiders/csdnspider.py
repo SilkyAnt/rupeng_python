@@ -22,7 +22,7 @@ class CsdnspiderSpider(scrapy.Spider):
         item['readnum'] = response.xpath('//span[@class="read-count"]/text()').extract()[0]
         print(item['readnum'])
         print(response)
-        t = response.xpath("//div[@class='markdown_views']//*/text()").extract()
+        t = response.xpath("//*[@id='content_views']//*/text()").extract()
         text = ""
         try:
             for a in range(0, len(t)):
