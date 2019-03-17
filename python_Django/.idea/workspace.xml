@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3cb4e767-7c20-43ae-97d6-ad02958d4da1" name="Default Changelist" comment="Django 多种缓存的配置以及设置">
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/python_Django.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_Django.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_workspaces/.idea/python_workspaces.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/.idea/python_workspaces.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_workspaces/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_08_Flask_ORM/.idea/Seq_08_Flask_ORM.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_09_EasyShopping/.idea/Seq_09_EasyShopping.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../python_workspaces/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_workspaces/Seq_10_FlaskSQLAlchemPaging/.idea/Seq_10_FlaskSQLAlchemPaging.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../python_spider/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../python_spider/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://D:/rupeng/Python/Python36/Lib/gettext.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="263" selection-start-line="263" selection-end-line="263" />
+            <state relative-caret-position="444">
+              <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -168,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,15 +173,11 @@
               <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
               <item name="python_Django" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="python_Django" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python_Django" type="462c0819:PsiDirectoryNode" />
-              <item name="Seq_15_I18N" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -599,6 +592,8 @@
       <option name="presentableId" value="Default" />
       <updated>1542713739941</updated>
       <workItem from="1551937252150" duration="1345000" />
+      <workItem from="1552372414989" duration="1028000" />
+      <workItem from="1552443154020" duration="29000" />
     </task>
     <task id="LOCAL-00001" summary="diango基础、配置视图及地址映射、模板的使用、request对象">
       <created>1543253584488</created>
@@ -716,7 +711,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1345000" />
+    <option name="totallyTimeSpent" value="2402000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -730,7 +725,7 @@
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.24635333" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.46307153" visible="true" weight="0.25445706" />
       <window_info id="Structure" order="1" sideWeight="0.5369285" side_tool="true" weight="0.2617504" />
       <window_info id="Favorites" order="2" sideWeight="0.5668239" side_tool="true" weight="0.25364667" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1238,8 +1233,8 @@
     </entry>
     <entry file="file://D:/rupeng/Python/Python36/Lib/gettext.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        <state relative-caret-position="444">
+          <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
         </state>
       </provider>
     </entry>
